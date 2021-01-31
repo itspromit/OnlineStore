@@ -18,7 +18,9 @@ import appModules.ProductSelect_Action;
 import appModules.SignIn_Action;
 import appModules.Verification_Action;
 
-public class Framework_004 {
+
+public class Framework_005 {
+
 	public WebDriver driver;
 	private String sTestCaseName;
 	private int iTestCaseRow;
@@ -130,6 +132,5 @@ public class Framework_004 {
 	    // Closing the opened driver
 	    driver.close();
   		}
-
 
 }
