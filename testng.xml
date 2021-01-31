@@ -6,12 +6,13 @@
        </listeners>  
   	<test name="Random Test">
 		<classes>
-       		<!-- 	-->
+       		
        			<class name="automationFramework.Framework_001" />
        			<class name="automationFramework.Framework_002" />
        			<class name="automationFramework.Framework_003" />
+       			<class name="automationFramework.Framework_004" />
        			<class name="automationFramework.Framework_005" />
-				  
+		  
 		</classes>
-  	</test> <!-- Test -->
-</suite> <!-- Suite -->
+  	</test> 
+</suite> 
