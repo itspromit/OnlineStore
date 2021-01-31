@@ -9,7 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,8 +20,8 @@ public class Utils {
 		String sBrowserName;
 		try{
 		sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
-		if(sBrowserName.equals("Mozilla")){
-			driver = new FirefoxDriver();
+		if(sBrowserName.equals("Chrome")){
+			driver = new ChromeDriver();
 			Log.info("New driver instantiated");
 		    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		    Log.info("Implicit wait applied on the driver for 10 seconds");
