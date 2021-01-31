@@ -9,6 +9,7 @@
        		<!-- 	-->
        			<class name="automationFramework.Framework_001" />
        			<class name="automationFramework.Framework_002" />
+       			<class name="automationFramework.Framework_003" />
        			
 				  
 		</classes>
