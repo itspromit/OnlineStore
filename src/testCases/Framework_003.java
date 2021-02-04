@@ -44,6 +44,7 @@ public class Framework_003 {
 		ProductSelect_Action.productNumber(iTestCaseRow);
 		ProductListing_Page.PopUpAddToCart.btn_GoToCart().click();
 		CheckOut_Action.Execute();
+		System.out.println("Prithu");
 		PaymentDetails_Action.execute(iTestCaseRow);
 		Confirmation_Action.Execute();
 		Verification_Action.Execute();
