@@ -45,7 +45,7 @@ public class Framework_003 {
 		ProductListing_Page.PopUpAddToCart.btn_GoToCart().click();
 		CheckOut_Action.Execute();
 		PaymentDetails_Action.execute(iTestCaseRow);
-		System.out.println("Promit");
+		System.out.println("Promit Ghosh");
 		Confirmation_Action.Execute();
 		Verification_Action.Execute();
 		ExcelUtils.setCellData("Pass", iTestCaseRow, Constant.Col_Result);
