@@ -41,7 +41,7 @@ public class Framework_005 {
 	  	// From above method we get long test case name including package and class name etc.
 	  	// The below method will refine your test case name, exactly the name use have used
 	  	sTestCaseName = Utils.getTestCaseName(this.toString());
-	  	System.out.println("New Changes");
+	  	System.out.println("New Changes into file");
 	  	// Start printing the logs and printing the Test Case name
 		Log.startTestCase(sTestCaseName);
 		
