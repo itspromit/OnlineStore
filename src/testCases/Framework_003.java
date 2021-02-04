@@ -46,6 +46,7 @@ public class Framework_003 {
 		CheckOut_Action.Execute();
 		System.out.println("Prithu");
 		PaymentDetails_Action.execute(iTestCaseRow);
+		System.out.println("Promit Ghosh");
 		Confirmation_Action.Execute();
 		Verification_Action.Execute();
 		ExcelUtils.setCellData("Pass", iTestCaseRow, Constant.Col_Result);
