@@ -7,12 +7,12 @@
   	<test name="Random Test">
 		<classes>
        		
-       			<class name="automationFramework.Framework_001" />
-       			<class name="automationFramework.Framework_002" />
-       			<class name="automationFramework.Framework_003" />
-       			<class name="automationFramework.Framework_004" />
-       			<class name="automationFramework.Framework_005" />
+       			<class name="testCases.Framework_001" />
+       			<class name="testCases.Framework_002" />
+       			<class name="testCases.Framework_003" />
+       			<class name="testCases.Framework_004" />
+       			<class name="testCases.Framework_005" />
 		  
 		</classes>
-  	</test> 
-</suite> 
+  	</test> <!-- Test -->  
+</suite> <!-- Suite --> 

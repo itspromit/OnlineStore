@@ -21,6 +21,7 @@ public class Utils {
 		try{
 		sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
 		if(sBrowserName.equals("Chrome")){
+			System.setProperty("webdriver.chrome.driver", "D:\\Regression Automation Suite\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
 			Log.info("New driver instantiated");
 		    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

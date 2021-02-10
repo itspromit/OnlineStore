@@ -1,11 +1,11 @@
 package utility;
 
 public class Constant {
-	    public static final String URL = "http://www.onlinestore.toolsqa.com";
+	    public static final String URL = "www.gmail.com";
 	    public static final String Username = "testuser_1";
 	    public static final String Password ="Test@123";
-		public static final String Path_TestData = "D://ToolsQA//OnlineStore//src//testData//";
-		public static final String File_TestData = "TestData.xlsx";
+		public static final String Path_TestData = "D:\\Regression Automation Suite\\OnlineStore\\src\\testData\\TestData.xlsx";
+		//public static final String File_TestData = "TestData.xlsx";
 		
 		//Test Data Sheet Columns
 		public static final int Col_TestCaseName = 0;	
