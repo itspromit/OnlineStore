@@ -46,7 +46,7 @@ public class Framework_001{
 		// Setting up the Test Data Excel file using Constants variables
 		// For Constant Variables please see http://www.toolsqa.com/constant-variables/
 		// For setting up Excel for Data driven testing, please see http://www.toolsqa.com/data-driven-testing-excel-poi/
-		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Sheet1");
+		ExcelUtils.setExcelFile(Constant.Path_TestData ,"Sheet1");
 		
 		// Fetching the Test Case row number from the Test Data Sheet
 		// This row number will be feed to so many functions, to get the relevant data from the Test Data sheet 
