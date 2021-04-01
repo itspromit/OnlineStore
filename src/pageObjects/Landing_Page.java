@@ -4,97 +4,49 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import utility.Log;
 import utility.Utils;
-    public class Landing_Page extends BaseClass{
-            private static WebElement element = null;
-            private static List<WebElement> list= null;
+    public class Landing_Page {
            
-        public Landing_Page (WebDriver driver){
-            	super(driver);
-        }    
-        public static WebElement Desktops_menu() throws Exception{
-            try{ 
-	        	 element = driver.findElement(By.xpath("//li[text()='Desktops']"));
-	             
-            }catch (Exception e){
-           		String error=e.toString();
-           		Log.info(error);
-           		
-           		}
-           	return element;
-        }
+    	
+        WebDriver driver;   
         
-        public static WebElement LaptopsandNotebooks_menu() throws Exception{
-            try{ 
-	        	 element = driver.findElement(By.xpath("//li[text()='Laptops & Notebooks']"));
-	             
-            }catch (Exception e){
-           		String error=e.toString();
-           		Log.info(error);
-           		
-           		}
-           	return element;
-        }
+        @FindBy(xpath="//a[text()='Desktops']")
+        WebElement Desktops_menu;
         
-        public static WebElement Components_menu() throws Exception{
-            try{ 
-	        	 element = driver.findElement(By.xpath("//li[text()='Components']"));
-	             
-            }catch (Exception e){
-           		String error=e.toString();
-           		Log.info(error);
-           		
-           		}
-           	return element;
-        }
+        @FindBy(xpath="//a[text()='Laptops & Notebooks']")
+        WebElement LaptopsandNotebooks_menu;
         
-        public static WebElement Tablets_menu() throws Exception{
-            try{ 
-	        	 element = driver.findElement(By.xpath("//li[text()='Tablets']"));
-	             
-            }catch (Exception e){
-           		String error=e.toString();
-           		Log.info(error);
-           		
-           		}
-           	return element;
-        }
+        @FindBy(xpath="//a[text()='Components']")
+        WebElement Components_menu;
         
-        public static WebElement Software_menu() throws Exception{
-            try{ 
-	        	 element = driver.findElement(By.xpath("//li[text()='Software']"));
-	             
-            }catch (Exception e){
-           		String error=e.toString();
-           		Log.info(error);
-           		
-           		}
-           	return element;
-        }
-        public static WebElement PhonesandPDAs_menu() throws Exception{
-            try{ 
-	        	 element = driver.findElement(By.xpath("//li[text()='Phones & PDAs']"));
-	             
-            }catch (Exception e){
-           		String error=e.toString();
-           		Log.info(error);
-           		
-           		}
-           	return element;
-        }
-        public static WebElement lnk_LogOut() throws Exception{
-            try{
-	        	element = driver.findElement(By.id("account_logout"));
-	        
-	            Log.info("Log Out link is found on the Home Page");
-            }catch (Exception e){
-            	Log.error("Log Out link is not found on the Home Page");
-           		throw(e);
-           		}
-           	return element;
-        }
+        @FindBy(xpath="//a[text()='Tablets']")
+        WebElement Tablets_menu;
+       
+        
+        @FindBy(xpath="//a[text()='Software']")
+        WebElement Software_menu;
+        
+        @FindBy(xpath="//a[text()='Phones & PDAs']")
+        WebElement PhonesandPDAs_menu;
+        
+        @FindBy(xpath="//a[text()='Cameras']")
+        WebElement Cameras_menu;
+        
+        
+        @FindBy(xpath="//a[text()='MP3 Players']")
+        WebElement MP3Players_menu;
+        
+        @FindBy(xpath="//a[text()='Your Store']")
+        WebElement YourStore;
+        
+        @FindBy(xpath="//span[text()='123456789']")
+        WebElement Contact_No;
+        
+        @FindBy(xpath="//a[@class='fa fa-phone']")
+        WebElement Contact_Us;
         
         
 
