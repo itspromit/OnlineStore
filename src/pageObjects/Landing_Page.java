@@ -4,7 +4,9 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 import utility.Log;
 import utility.Utils;
@@ -48,7 +50,23 @@ import utility.Utils;
         @FindBy(xpath="//a[@class='fa fa-phone']")
         WebElement Contact_Us;
         
+        @FindBy(xpath="//a[@class='dropdown-toggle']")
+        WebElement MyAccount_menu;
         
-
+        @FindBy(xpath="//span[text()='My Account']")
+        WebElement MyAccount_title;
+        
+        @FindBy(xpath="//ul[@class='dropdown-menu dropdown-menu-right']")
+        WebElement MyAccount_dropdown;
+        
+        @FindBy(id="wishlist-total")
+        WebElement WishList_menu;
+        
+        @FindBy(xpath="//a[text()='Shopping Cart']")
+        WebElement ShoppingCart_menu;
+        
+        @FindBy(xpath="//a[text()='Checkout']")
+        WebElement Checkout_menu;
+        
       
     }
