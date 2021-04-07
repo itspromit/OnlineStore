@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.PageFactory;
 
 import utility.Log;
 import utility.Utils;
@@ -75,5 +75,34 @@ import utility.Utils;
         @FindBy(id="cart")
         public WebElement Cart;
         
-      
+        @FindBy(xpath="//div[@class='collapse navbar-collapse navbar-ex1-collapse']")
+        public WebElement Menu_bar;
+        
+        @FindBy(xpath="//a[text()='Desktops']/following-sibling::div[1]")
+        public WebElement Desktop_dropdown;
+        
+        @FindBy(xpath="//a[text()='Laptops & Notebooks']/following-sibling::div[1]")
+        public WebElement LaptopsandNotebooks_dropdown;
+        
+        @FindBy(xpath="//a[text()='Components']/following-sibling::div[1]")
+        public WebElement Components_dropdown;
+        
+        @FindBy(xpath="//a[text()='MP3 Players']/following-sibling::div[1]")
+        public WebElement MP3Players_dropdown;
+        
+        @FindBy(xpath="//a[text()='Desktops']/following-sibling::div[1]")
+        List<WebElement> Menu_bar_elements;
+        
+        @FindBy(xpath="//a[text()='Desktops']/following-sibling::div[1]/descendant::li")
+        List<WebElement> Desktop_dropdown_elements;
+        
+        @FindBy(xpath="//a[text()='Laptops & Notebooks']/following-sibling::div[1]/descendant::li")
+        List<WebElement> LaptopsandNotebooks_dropdown_elements;
+        
+        @FindBy(xpath="//a[text()='Components']/following-sibling::div[1]/descendant::li")
+        List<WebElement> Components_dropdown_elements;
     }
+    
+  //*[@id="menu"]/div[2]/ul/li[1]/a
+  //*[@id="menu"]/div[2]/ul/li[1]/div
+  //*[@id="menu"]/div[2]/ul/li[1]/div/div/ul
