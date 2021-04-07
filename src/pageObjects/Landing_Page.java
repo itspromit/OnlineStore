@@ -93,14 +93,20 @@ import utility.Utils;
         @FindBy(xpath="//a[text()='Desktops']/following-sibling::div[1]")
         List<WebElement> Menu_bar_elements;
         
-        @FindBy(xpath="//a[text()='Desktops']/following-sibling::div[1]/descendant::li")
+        @FindBy(xpath="//a[text()='Desktops']/following-sibling::div[1]/descendant::a")
         List<WebElement> Desktop_dropdown_elements;
         
-        @FindBy(xpath="//a[text()='Laptops & Notebooks']/following-sibling::div[1]/descendant::li")
+        @FindBy(xpath="//a[text()='Laptops & Notebooks']/following-sibling::div[1]/descendant::a")
         List<WebElement> LaptopsandNotebooks_dropdown_elements;
         
-        @FindBy(xpath="//a[text()='Components']/following-sibling::div[1]/descendant::li")
+        @FindBy(xpath="//a[text()='Components']/following-sibling::div[1]/descendant::a")
         List<WebElement> Components_dropdown_elements;
+        
+        @FindBy(xpath="//a[text()='MP3 Players']/following-sibling::div[1]/descendant::a")
+        List<WebElement> MP3Players_elements;
+        
+        @FindBy(xpath="//ul[@class='dropdown-menu dropdown-menu-right']/descendant::a")
+        public WebElement MyAccount_dropdown_options;
     }
     
   //*[@id="menu"]/div[2]/ul/li[1]/a
