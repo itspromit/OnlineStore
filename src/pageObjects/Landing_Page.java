@@ -107,6 +107,33 @@ import utility.Utils;
         
         @FindBy(xpath="//ul[@class='dropdown-menu dropdown-menu-right']/descendant::a")
         public WebElement MyAccount_dropdown_options;
+        
+        @FindBy(xpath="//h3[text()='Featured']")
+        public WebElement Featured_option;
+        
+        @FindBy(xpath="//a[text()='MacBook']")
+        public WebElement MacBook_title;
+        
+        @FindBy(xpath="//a[text()='MacBook']/ancestor::div[1]/preceding-sibling::div/child::a")
+        public WebElement MacBook_option;
+        
+        @FindBy(xpath="//a[text()='iPhone']")
+        public WebElement iPhone_title;
+        
+        @FindBy(xpath="//a[text()='iPhone']/ancestor::div[1]/preceding-sibling::div/child::a")
+        public WebElement iPhone_option;
+        
+        @FindBy(xpath="//a[contains(text(),'Apple Cinema 30')]")
+        public WebElement AppleCinema_title;
+        
+        @FindBy(xpath="//a[contains(text(),'Apple Cinema 30')]/ancestor::div[1]/preceding-sibling::div/child::a")
+        public WebElement AppleCinema_option;
+        
+        @FindBy(xpath="//a[contains(text(),'Canon EOS 5D')]")
+        public WebElement CanonEOS5D_title;
+        
+        @FindBy(xpath="//a[contains(text(),'Canon EOS 5D')]/ancestor::div[1]/preceding-sibling::div/child::a")
+        public WebElement CanonEOS5D_option;
     }
     
   //*[@id="menu"]/div[2]/ul/li[1]/a
