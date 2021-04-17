@@ -94,6 +94,20 @@ public class RegisterAccount_Page {
 	@FindBy(xpath="//div[text()='I have read and agree to the ']")
     public WebElement Confirmation_msg;
 	
+	@FindBy(xpath="//div[text()='I have read and agree to the ']/descendant::b[text()='Privacy Policy']")
+    public WebElement PrivacyPolicy_text;
+	
+	@FindBy(xpath="//div[text()='I have read and agree to the ']/descendant::b[text()='Privacy Policy']/parent::a")
+    public WebElement PrivacyPolicy_link;
+	
+	@FindBy(xpath="//div[text()='I have read and agree to the ']/descendant::input[@class='btn btn-primary']")
+    public WebElement Continue_button;
+	
+	@FindBy(id="column-right")
+    public WebElement Menu_bar;
+	
+	
+	
 	//*[@id="content"]/form/div/div/text()[1]
 	
 }
