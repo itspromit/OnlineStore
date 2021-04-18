@@ -103,8 +103,11 @@ public class RegisterAccount_Page {
 	@FindBy(xpath="//div[text()='I have read and agree to the ']/descendant::input[@class='btn btn-primary']")
     public WebElement Continue_button;
 	
-	@FindBy(id="column-right")
+	@FindBy(xpath="//aside[@id='column-right']")
     public WebElement Menu_bar;
+	
+	@FindBy(xpath="//aside[@id='column-right']/descendant::a")
+	public List<WebElement> Menubar_items;
 	
 	
 	
