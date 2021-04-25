@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import utility.Log;
 import utility.Utils;
-public class RegisterAccount_Page {
+public class RegisterAccount_Page extends Landing_Page {
 	
            
 	@FindBy(xpath="//a[text()='Account']")

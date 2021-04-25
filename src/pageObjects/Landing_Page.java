@@ -134,6 +134,56 @@ import utility.Utils;
         
         @FindBy(xpath="//a[contains(text(),'Canon EOS 5D')]/ancestor::div[1]/preceding-sibling::div/child::a")
         public WebElement CanonEOS5D_option;
+        
+        @FindBy(xpath="//h5[text()='Information']")
+        public WebElement Information_section_header;
+        
+        @FindBy(xpath="//h5[text()='Information']/parent::div")
+        public WebElement Information_section;
+        
+        @FindBy(xpath="//h5[text()='Information']/parent::div/child::ul[@class='list-unstyled']")
+        public WebElement Information_section_menu;
+        
+        @FindBy(xpath="//h5[text()='Information']/parent::div/descendant::a")
+        public List<WebElement> Information_section_menu_items;
+        
+        @FindBy(xpath="//h5[text()='Customer Service']")
+        public WebElement CustomerService_section_header;
+        
+        @FindBy(xpath="//h5[text()='Customer Service']/parent::div")
+        public WebElement CustomerService_section;
+        
+        @FindBy(xpath="//h5[text()='Customer Service']/parent::div/child::ul[@class='list-unstyled']")
+        public WebElement CustomerService_section_menu;
+        
+        @FindBy(xpath="//h5[text()='Customer Service']/parent::div/descendant::a")
+        public List<WebElement> CustomerService_section_menu_items;
+        
+        @FindBy(xpath="//h5[text()='Extras']")
+        public WebElement Extras_section_header;
+        
+        @FindBy(xpath="//h5[text()='Extras']/parent::div")
+        public WebElement Extras_section;
+        
+        @FindBy(xpath="//h5[text()='Extras']/parent::div/child::ul[@class='list-unstyled']")
+        public WebElement Extras_section_menu;
+        
+        @FindBy(xpath="//h5[text()='Extras']/parent::div/descendant::a")
+        public List<WebElement> Extras_section_menu_items;
+        
+        @FindBy(xpath="//h5[text()='My Account']")
+        public WebElement MyAccount_section_header;
+        
+        @FindBy(xpath="//h5[text()='My Account']/parent::div")
+        public WebElement MyAccount_section;
+        
+        @FindBy(xpath="//h5[text()='My Account']/parent::div/child::ul[@class='list-unstyled']")
+        public WebElement MyAccount_section_menu;
+        
+        @FindBy(xpath="//h5[text()='My Account']/parent::div/descendant::a")
+        public List<WebElement> MyAccount_section_menu_items;
+        
+        
     }
     
   //*[@id="menu"]/div[2]/ul/li[1]/a

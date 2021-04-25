@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import utility.Log;
 import utility.Utils;
-    public class LogIn_Page  {
+    public class LogIn_Page extends RegisterAccount_Page {
     	@FindBy(xpath="//a[text()='Login']")
         public WebElement Login_menu;
     	

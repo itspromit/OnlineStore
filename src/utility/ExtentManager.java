@@ -23,7 +23,7 @@ public static ExtentReports getInstance() {
 		
 		report.loadConfig(new File("ReportsConfig.xml"));
 
-		report.addSystemInfo("Selenium Version", "2.53.1").addSystemInfo(
+		report.addSystemInfo("Selenium Version", "4.0.0-alpha-7").addSystemInfo(
 				"Environment", "QA");
 		
 		return report;
