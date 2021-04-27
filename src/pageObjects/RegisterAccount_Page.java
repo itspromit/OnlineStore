@@ -13,6 +13,14 @@ import utility.Utils;
 public class RegisterAccount_Page extends Landing_Page {
 	
            
+	
+	public RegisterAccount_Page(WebDriver driver) {
+		super(driver);
+		
+		PageFactory.initElements(driver, this);
+		// TODO Auto-generated constructor stub
+	}
+
 	@FindBy(xpath="//a[text()='Account']")
     public WebElement Account_menu;
 	

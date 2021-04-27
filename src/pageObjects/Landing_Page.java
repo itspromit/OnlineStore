@@ -12,8 +12,7 @@ import utility.Log;
 import utility.Utils;
     public class Landing_Page {
            
-    	
-        //WebDriver driver;   
+          
         
         @FindBy(xpath="//a[text()='Desktops']")
         public WebElement Desktops_menu;
@@ -182,6 +181,11 @@ import utility.Utils;
         
         @FindBy(xpath="//h5[text()='My Account']/parent::div/descendant::a")
         public List<WebElement> MyAccount_section_menu_items;
+        
+        public Landing_Page(WebDriver driver) {
+        	
+        	PageFactory.initElements(driver, this);
+        }
         
         
     }

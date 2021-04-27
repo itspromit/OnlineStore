@@ -11,6 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 import utility.Log;
 import utility.Utils;
     public class LogIn_Page extends RegisterAccount_Page {
+    	
+    	 
     	@FindBy(xpath="//a[text()='Login']")
         public WebElement Login_menu;
     	
@@ -55,5 +57,11 @@ import utility.Utils;
     	
     	@FindBy(xpath="//h2[text()='Returning Customer']/ancestor::div[@class='col-sm-6']/descendant::input[@class='btn btn-primary']")
     	public WebElement Login_button;
+    	
+    	public LogIn_Page(WebDriver driver) {
+        	super(driver);
+        	PageFactory.initElements(driver, this);
+        }
+        
     	
     }
