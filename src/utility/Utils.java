@@ -15,12 +15,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utils {
-		public static WebDriver driver = null;
-	public static WebDriver OpenBrowser(int iTestCaseRow) throws Exception{
+		//public static WebDriver driver = null;
+	public static WebDriver OpenBrowser(WebDriver driver) throws Exception{
 		String sBrowserName;
 		try{
-		sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
-		if(sBrowserName.equals("Chrome")){
+		//sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
+		//if(sBrowserName.equals("Chrome")){
 			System.setProperty("webdriver.chrome.driver", "D:\\Regression Automation Suite\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
 			Log.info("New driver instantiated");
@@ -28,7 +28,7 @@ public class Utils {
 		    Log.info("Implicit wait applied on the driver for 10 seconds");
 		    driver.get(Constant.URL);
 		    Log.info("Web application launched successfully");
-			}
+			//}
 		}catch (Exception e){
 			Log.error("Class Utils | Method OpenBrowser | Exception desc : "+e.getMessage());
 		}
@@ -49,36 +49,7 @@ public class Utils {
 					}
 			}
 	
-	 public static void mouseHoverAction(WebElement mainElement, String subElement){
-		
-		 Actions action = new Actions(driver);
-         action.moveToElement(mainElement).perform();
-         if(subElement.equals("Accessories")){
-        	 action.moveToElement(driver.findElement(By.linkText("Accessories")));
-        	 Log.info("Accessories link is found under Product Category");
-         }
-         if(subElement.equals("iMacs")){
-        	 action.moveToElement(driver.findElement(By.linkText("iMacs")));
-        	 Log.info("iMacs link is found under Product Category");
-         }
-         if(subElement.equals("iPads")){
-        	 action.moveToElement(driver.findElement(By.linkText("iPads")));
-        	 Log.info("iPads link is found under Product Category");
-         }
-         if(subElement.equals("iPhones")){
-        	 action.moveToElement(driver.findElement(By.linkText("iPhones")));
-        	 Log.info("iPhones link is found under Product Category");
-         }
-         action.click();
-         action.perform();
-         Log.info("Click action is performed on the selected Product Type");
-	 }
-	 public static void waitForElement(WebElement element){
-		 
-		 WebDriverWait wait = new WebDriverWait(driver, 10);
-	     wait.until(ExpectedConditions.elementToBeClickable(element));
-	 	}
-		
+	
 	 public static void takeScreenshot(WebDriver driver, String sTestCaseName) throws Exception{
 			try{
 				File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
