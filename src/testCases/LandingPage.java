@@ -25,30 +25,38 @@ import utility.Utils;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import org.apache.log4j.xml.DOMConfigurator;
-
+import utility.Log;
 
 public class LandingPage {
-	
+
 	WebDriver driver;
 	Landing_Page LP;
-	
+
 	@BeforeSuite
 	public void fnCheckforActiveBrowser() {
 		try {
-		driver= Utils.OpenBrowser(driver);
-		}
-		catch(Exception e) {
+			driver = Utils.OpenBrowser(driver);
+		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
 		}
-		
+
 	}
-	
+
 	@BeforeClass
 	public void fnCheck() {
-		 
+		try {
+			if (driver.getTitle().contains("Your Store")) {
+				Log.info("User on landing page");
+				System.out.println("User on landing page");
+			} else {
+
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+
 	}
-	
 
 }
