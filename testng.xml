@@ -7,11 +7,8 @@
   	<test name="Random Test">
 		<classes>
        		
-       			<class name="testCases.Framework_001" />
-       			<class name="testCases.Framework_002" />
-       			<class name="testCases.Framework_003" />
-       			<class name="testCases.Framework_004" />
-       			<class name="testCases.Framework_005" />
+       			<class name="testCases.LandingPage" />
+       			
 		  
 		</classes>
   	</test> <!-- Test -->  

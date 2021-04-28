@@ -1,7 +1,7 @@
 package utility;
 
 public class Constant {
-	    public static final String URL = "www.gmail.com";
+	    public static final String URL = "http://tutorialsninja.com/demo/";
 	    public static final String Username = "testuser_1";
 	    public static final String Password ="Test@123";
 		public static final String Path_TestData = "D:\\Regression Automation Suite\\OnlineStore\\src\\testData\\TestData.xlsx";
