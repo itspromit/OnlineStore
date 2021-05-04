@@ -30,7 +30,7 @@ public class RegisterAccount_Page extends Landing_Page {
 	@FindBy(xpath="//a[text()='Account']/parent::li/preceding-sibling::li/child::a")
     public WebElement Home_menu;
 	
-	@FindBy(xpath="//h1[text()='Register']")
+	@FindBy(xpath="//h1[text()='Register Account']")
     public WebElement Page_Header;
 	
 	@FindBy(xpath="//p[text()='If you already have an account with us, please login at the ']")

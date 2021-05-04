@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utils {
+	public static WebDriver existing_driver;
 		
 	public static WebDriver OpenBrowser(WebDriver driver) throws Exception{
 		try{
@@ -29,6 +30,7 @@ public class Utils {
 		    System.out.println("Implicit wait applied on the driver for 10 seconds");
 		    driver.get(Constant.URL);
 		    driver.manage().window().maximize();
+		    existing_driver= driver;
 		    
 		    Log.info("Web application launched successfully");
 		    System.out.println("Web application launched successfully");
@@ -37,6 +39,10 @@ public class Utils {
 			Log.error("Class Utils | Method OpenBrowser | Exception desc : "+e.getMessage());
 		}
 		return driver;
+	}
+	
+	public static WebDriver Return_driver() {
+		return existing_driver;
 	}
 	
 	public static String getTestCaseName(String sTestCase)throws Exception{

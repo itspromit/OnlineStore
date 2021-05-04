@@ -34,28 +34,49 @@ public class RegisterAccount {
 
 	WebDriver driver;
 	RegisterAccount_Page R_Acc;
-	LandingPage LPage;
-	
+	// LandingPage LPage;
+
 	@BeforeClass
 	public void fnCheck_RegisterAccount_page() {
-		
-		try {
-			//LPage= new LandingPage();
-			//driver= LPage.driver;
-			R_Acc = new RegisterAccount_Page(driver);
-			if (driver.getTitle().contains("Register Account")) {
-				Log.info("User on landing page");
-				System.out.println("User on Register Account page");
-			} else {
-				System.out.println("User not on RegisterAccount page");
-				driver.get("http://tutorialsninja.com/demo/index.php?route=account/register");
 
+		try {
+
+			if (driver == null) {
+				driver=Utils.Return_driver();
+				R_Acc = new RegisterAccount_Page(driver);
+				if (driver.getTitle().contains("Register Account")) {
+					Log.info("User on landing page");
+					System.out.println("User on Register Account page");
+				} else {
+					System.out.println("User not on RegisterAccount page");
+					driver.get("http://tutorialsninja.com/demo/index.php?route=account/register");
+
+				}
 			}
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
 		}
 
+	}
+
+	@Test(priority = 0)
+	public void fnCheckPage_title() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Page_Header)) {
+				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Page_Header),
+						"Register Account")) {
+					System.out.println("Page title is being displyed correctly");
+				} else {
+					System.out.println("Incorrect Page title is being displyed");
+				}
+			} else {
+				System.out.println("Page title is not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
 	}
 
 }

@@ -32,11 +32,13 @@ public class LandingPage {
 
 	WebDriver driver;
 	Landing_Page LP;
+	WebDriver existing_driver;
 
 	@BeforeSuite
 	public void fnCheckforActiveBrowser() {
 		try {
 			driver = Utils.OpenBrowser(driver);
+			
 
 		} catch (Exception e) {
 			String Ex = e.toString();
