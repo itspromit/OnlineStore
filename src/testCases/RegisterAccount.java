@@ -34,10 +34,14 @@ public class RegisterAccount {
 
 	WebDriver driver;
 	RegisterAccount_Page R_Acc;
+	LandingPage LPage;
 	
 	@BeforeClass
-	public void fnCheck() {
+	public void fnCheck_RegisterAccount_page() {
+		
 		try {
+			//LPage= new LandingPage();
+			//driver= LPage.driver;
 			R_Acc = new RegisterAccount_Page(driver);
 			if (driver.getTitle().contains("Register Account")) {
 				Log.info("User on landing page");
