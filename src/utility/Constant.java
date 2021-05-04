@@ -1,11 +1,14 @@
 package utility;
 
+import org.openqa.selenium.WebDriver;
+
 public class Constant {
 	    public static final String URL = "http://tutorialsninja.com/demo/";
 	    public static final String Username = "testuser_1";
 	    public static final String Password ="Test@123";
 		public static final String Path_TestData = "D:\\Regression Automation Suite\\OnlineStore\\src\\testData\\TestData.xlsx";
 		//public static final String File_TestData = "TestData.xlsx";
+		public static WebDriver existing_driver= null;
 		
 		//Test Data Sheet Columns
 		public static final int Col_TestCaseName = 0;	

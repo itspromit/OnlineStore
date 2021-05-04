@@ -1,5 +1,6 @@
 package utility;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -173,21 +174,49 @@ public class CommonFunctionandEvents {
 		}
 		return bstatus;
 	}
+
 	public static String[] fnStringSplit(String text, String symbol) {
-		String[] msg= null;
-		
+		String[] msg = null;
+
 		try {
-			if(text.contains(symbol)) {
-				msg= text.split(symbol);
+			if (text.contains(symbol)) {
+				msg = text.split(symbol);
+			} else {
+				msg = new String[] { text };
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+		return msg;
+	}
+
+	public static boolean fnValidateArray_Elements(List<WebElement> list, String[] s) {
+		try {
+			int a = 0;
+			String[] arr = new String[list.size()];
+			for (int i = 0; i < list.size(); i++) {
+				arr[i] = list.get(i).getText();
+			}
+
+			for (int j = 0; j < arr.length; j++) {
+				if (arr[j].contentEquals(s[j])) {
+					a = a + 1;
+				}
+			}
+			if ((a==arr.length) && (a==s.length)) {
+				bstatus= true;
 			}
 			else {
-				msg= new String[] {text};
+				bstatus= false;
 			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+			bstatus= false;
 		}
-		 catch (Exception e) {
-				String Ex = e.toString();
-				System.out.println(Ex);
-		 }
-		return msg;
+
+		return bstatus;
+
 	}
 }

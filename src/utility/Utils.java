@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utils {
-		public static WebDriver existing_driver = null;
+		
 	public static WebDriver OpenBrowser(WebDriver driver) throws Exception{
 		try{
 		//sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
@@ -23,11 +23,15 @@ public class Utils {
 			System.setProperty("webdriver.chrome.driver", "D:\\Regression Automation Suite\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
 			Log.info("New driver instantiated");
+			System.out.println("New driver instantiated");
 		    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		    Log.info("Implicit wait applied on the driver for 10 seconds");
+		    System.out.println("Implicit wait applied on the driver for 10 seconds");
 		    driver.get(Constant.URL);
+		    driver.manage().window().maximize();
 		    
 		    Log.info("Web application launched successfully");
+		    System.out.println("Web application launched successfully");
 			//}
 		}catch (Exception e){
 			Log.error("Class Utils | Method OpenBrowser | Exception desc : "+e.getMessage());
