@@ -34,7 +34,8 @@ public class RegisterAccount {
 
 	WebDriver driver;
 	RegisterAccount_Page R_Acc;
-	// LandingPage LPage;
+	LandingPage LPage;
+	int y;
 
 	@BeforeClass
 	public void fnCheck_RegisterAccount_page() {
@@ -44,11 +45,11 @@ public class RegisterAccount {
 			if (driver == null) {
 				driver=Utils.Return_driver();
 				R_Acc = new RegisterAccount_Page(driver);
+				
 				if (driver.getTitle().contains("Register Account")) {
 					Log.info("User on landing page");
-					System.out.println("User on Register Account page");
 				} else {
-					System.out.println("User not on RegisterAccount page");
+					Log.info("User not on RegisterAccount page");
 					driver.get("http://tutorialsninja.com/demo/index.php?route=account/register");
 
 				}
@@ -66,12 +67,12 @@ public class RegisterAccount {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Page_Header)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Page_Header),
 						"Register Account")) {
-					System.out.println("Page title is being displyed correctly");
+					Log.info("Page title is being displyed correctly");
 				} else {
-					System.out.println("Incorrect Page title is being displyed");
+					Log.info("Incorrect Page title is being displyed");
 				}
 			} else {
-				System.out.println("Page title is not getting displayed");
+				Log.info("Page title is not getting displayed");
 			}
 		} catch (Exception e) {
 			String Ex = e.toString();
