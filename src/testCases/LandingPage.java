@@ -62,6 +62,7 @@ public class LandingPage {
 			} else {
 
 				driver.get(Constant.URL);
+				Log.info("User navigating to landing page");
 
 			}
 		} catch (Exception e) {
@@ -83,9 +84,13 @@ public class LandingPage {
 
 	@AfterMethod
 	public void After_method(Method test_method) {
+		try {
+			Log.endTestCase(test_method.getName());
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
 
-		Log.endTestCase(test_method.getName());
-	
 	}
 
 	@Test(priority = 0)
@@ -108,7 +113,7 @@ public class LandingPage {
 	}
 
 	@Test(priority = 1)
-	public void TC02_fnCheckPage_LandingPage_SystemMenu() {
+	public void TC02_fnCheck_LandingPage_SystemMenu() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Menu_bar)) {
 				Log.info("Menu bar is being displyed");
@@ -121,15 +126,101 @@ public class LandingPage {
 		}
 	}
 
-	@AfterClass
-	public void fnDelete_PageObject() {
+	@Test(priority = 2)
+	public void TC03_fnCheck_LandingPage_SystemMenu_Elements() {
 		try {
-				LP = null;
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Menu_bar)) {
+				if (CommonFunctionandEvents.fnValidateArray_Elements(LP.Menu_bar_elements,
+						Constant.SystemMenu_elements)) {
+					Log.info("All system menu options getting displayed correctly");
+				} else {
+					Log.info("All system menu options are not getting displayed correctly");
+				}
+
+			} else {
+				Log.info("Menu bar is not getting displayed");
+			}
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
 		}
-		System.out.println(x);
+	}
+
+	@Test(priority = 3)
+	public void TC04_fnCheck_LandingPage_ContactNo_menu() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Contact_No)) {
+				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(LP.Contact_No),
+						"123456789")) {
+					Log.info("Contact No is getting displayed correctly");
+				} else {
+					Log.info("Incorrect Contact No getting displayed");
+				}
+
+			} else {
+				Log.info("Contact No is not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+	
+	@Test(priority = 4)
+	public void TC05_fnCheck_LandingPage_ContactNo_menu() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Contact_No)) {
+				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(LP.Contact_No),
+						"123456789")) {
+					Log.info("Contact No is getting displayed correctly");
+				} else {
+					Log.info("Incorrect Contact No getting displayed");
+				}
+
+			} else {
+				Log.info("Contact No is not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+	
+	@Test(priority = 5)
+	public void TC06_fnCheck_LandingPage_ContactNo_Page() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Contact_No)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.Contact_No)) {
+					if(CommonFunctionandEvents.Window_count(driver)) {
+						if (CommonFunctionandEvents.New_Tab(driver, Constant.Contact_No)) {
+							Log.info("Correct tab is opened");
+						}
+						else {
+							Log.info("Incorrect tab is opened");
+						}
+					}
+					Log.info("Contact No is getting displayed correctly");
+				} else {
+					Log.info("Incorrect Contact No getting displayed");
+				}
+
+			} else {
+				Log.info("Contact No is not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@AfterClass
+	public void fnDelete_PageObject() {
+		try {
+			LP = null;
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
 
 	}
 

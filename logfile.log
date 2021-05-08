@@ -1,0 +1,33 @@
+2021-05-08 20:39:38,186 INFO  [Log] New driver instantiated 
+2021-05-08 20:39:38,202 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2021-05-08 20:39:40,347 INFO  [Log] Web application launched successfully 
+2021-05-08 20:39:40,520 INFO  [Log] User on landing page 
+2021-05-08 20:39:40,539 INFO  [Log] **************************************************************************************** 
+2021-05-08 20:39:40,540 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-05-08 20:39:40,830 INFO  [Log] Page title is being displyed correctly 
+2021-05-08 20:39:40,832 INFO  [Log] **************************************************************************************** 
+2021-05-08 20:39:40,832 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-05-08 20:39:40,860 INFO  [Log] User not on RegisterAccount page 
+2021-05-08 20:39:41,658 INFO  [Log] Page title is being displyed correctly 
+2021-05-08 20:42:09,233 INFO  [Log] New driver instantiated 
+2021-05-08 20:42:09,313 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2021-05-08 20:42:13,300 INFO  [Log] Web application launched successfully 
+2021-05-08 20:42:13,596 INFO  [Log] User on landing page 
+2021-05-08 20:42:13,617 INFO  [Log] **************************************************************************************** 
+2021-05-08 20:42:13,617 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-05-08 20:42:14,119 INFO  [Log] Page title is being displyed correctly 
+2021-05-08 20:42:14,122 INFO  [Log] **************************************************************************************** 
+2021-05-08 20:42:14,123 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-05-08 20:42:14,187 INFO  [Log] User not on RegisterAccount page 
+2021-05-08 20:42:15,036 INFO  [Log] Page title is being displyed correctly 
+2021-05-08 20:46:28,096 INFO  [Log] New driver instantiated 
+2021-05-08 20:46:28,124 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2021-05-08 20:46:30,000 INFO  [Log] Web application launched successfully 
+2021-05-08 20:46:30,728 INFO  [Log] User on landing page 
+2021-05-08 20:46:30,771 INFO  [Log] **************************************************************************************** 
+2021-05-08 20:46:30,772 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-05-08 20:46:31,690 INFO  [Log] Page title is being displyed correctly 
+2021-05-08 20:46:31,693 INFO  [Log] **************************************************************************************** 
+2021-05-08 20:46:31,693 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-05-08 20:46:31,815 INFO  [Log] User not on RegisterAccount page 
+2021-05-08 20:46:32,437 INFO  [Log] Page title is being displyed correctly 

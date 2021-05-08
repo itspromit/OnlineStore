@@ -1,5 +1,6 @@
 package utility;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -204,11 +205,32 @@ public class CommonFunctionandEvents {
 					a = a + 1;
 				}
 			}
-			if ((a==arr.length) && (a==s.length)) {
+			if ((a == arr.length) && (a == s.length)) {
+				bstatus = true;
+			} else {
+				bstatus = false;
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+			bstatus = false;
+		}
+
+		return bstatus;
+
+	}
+
+	public static boolean Window_count(WebDriver driver) {
+		
+		try {
+			ArrayList<String> Tabs = new ArrayList<String>(driver.getWindowHandles());
+			if(Tabs.size()>1) {
 				bstatus= true;
+				Log.info("New tab is opened");
 			}
 			else {
 				bstatus= false;
+				Log.info("No new tab is opened");
 			}
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -217,6 +239,32 @@ public class CommonFunctionandEvents {
 		}
 
 		return bstatus;
-
+	}
+	
+	public static boolean New_Tab(WebDriver driver, String url) {
+		try {
+			String currentWindowHandle= driver.getWindowHandle();
+			ArrayList<String> WindowHandles = new ArrayList<String>(driver.getWindowHandles());
+			for (String handle : WindowHandles) {
+		        if (!currentWindowHandle.equals(handle)) {
+		            driver.switchTo().window(handle);
+		        }
+		    }
+			
+			if(fnTextEquals(driver.getCurrentUrl(), url)){
+				Log.info("User navigated to correct page");
+			}
+			else {
+				Log.info("User navigated to incorrect page");
+			}
+			driver.close();
+			driver.switchTo().defaultContent();
+			
+		}
+		catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+		return bstatus;
 	}
 }

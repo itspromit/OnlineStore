@@ -8,7 +8,10 @@ public class Constant {
 	    public static final String Password ="Test@123";
 		public static final String Path_TestData = "D:\\Regression Automation Suite\\OnlineStore\\src\\testData\\TestData.xlsx";
 		//public static final String File_TestData = "TestData.xlsx";
-		public static WebDriver existing_driver= null;
+		
+		
+		public static final String[] SystemMenu_elements= {"Desktops", "Laptops & Notebooks", "Components", "Tablets", "Software", "Phones & PDAs", "Cameras", "MP3 Players"};
+		public static final String Contact_No= "http://tutorialsninja.com/demo/index.php?route=information/contact";
 		
 		//Test Data Sheet Columns
 		public static final int Col_TestCaseName = 0;	
