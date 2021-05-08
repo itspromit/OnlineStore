@@ -26,8 +26,7 @@ public class Utils {
 			Log.info("New driver instantiated");
 			System.out.println("New driver instantiated");
 		    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		    Log.info("Implicit wait applied on the driver for 10 seconds");
-		    System.out.println("Implicit wait applied on the driver for 10 seconds");
+		    Log.info("Implicit wait applied on the driver for 20 seconds");
 		    driver.get(Constant.URL);
 		    driver.manage().window().maximize();
 		    existing_driver= driver;
