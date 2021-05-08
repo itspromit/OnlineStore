@@ -72,6 +72,27 @@ public class LandingPage {
 
 	}
 
+	@AfterClass
+	public void fnDelete_PageObject() {
+		try {
+			LP = null;
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+
+	}
+
+	@AfterSuite
+	public void Browser_Close() {
+		try {
+			driver.quit();
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
 	@BeforeMethod
 	public void Before_method(Method test_method) {
 		try {
@@ -165,7 +186,7 @@ public class LandingPage {
 			System.out.println(Ex);
 		}
 	}
-	
+
 	@Test(priority = 4)
 	public void TC05_fnCheck_LandingPage_ContactNo_menu() {
 		try {
@@ -185,17 +206,16 @@ public class LandingPage {
 			System.out.println(Ex);
 		}
 	}
-	
+
 	@Test(priority = 5)
 	public void TC06_fnCheck_LandingPage_ContactNo_Page() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Contact_No)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.Contact_No)) {
-					if(CommonFunctionandEvents.Window_count(driver)) {
+					if (CommonFunctionandEvents.Window_count(driver)) {
 						if (CommonFunctionandEvents.New_Tab(driver, Constant.Contact_No)) {
 							Log.info("Correct tab is opened");
-						}
-						else {
+						} else {
 							Log.info("Incorrect tab is opened");
 						}
 					}
@@ -213,24 +233,4 @@ public class LandingPage {
 		}
 	}
 
-	@AfterClass
-	public void fnDelete_PageObject() {
-		try {
-			LP = null;
-		} catch (Exception e) {
-			String Ex = e.toString();
-			System.out.println(Ex);
-		}
-
-	}
-
-	@AfterSuite
-	public void Browser_Close() {
-		try {
-			driver.quit();
-		} catch (Exception e) {
-			String Ex = e.toString();
-			System.out.println(Ex);
-		}
-	}
 }
