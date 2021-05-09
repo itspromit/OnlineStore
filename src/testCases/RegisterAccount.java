@@ -1,7 +1,9 @@
 package testCases;
 
+import java.lang.reflect.Method;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import pageObjects.Landing_Page;
 import pageObjects.RegisterAccount_Page;
@@ -47,10 +49,19 @@ public class RegisterAccount {
 				R_Acc = new RegisterAccount_Page(driver);
 				
 				if (driver.getTitle().contains("Register Account")) {
-					Log.info("User on landing page");
+					Log.info("User on Register Account page");
 				} else {
 					Log.info("User not on RegisterAccount page");
-					driver.get("http://tutorialsninja.com/demo/index.php?route=account/register");
+					driver.navigate().to(Constant.RegisterAccount_Page);
+
+				}
+			}
+			else {
+				if (driver.getTitle().contains("Register Account")) {
+					Log.info("User on RegisterAccount page");
+				} else {
+					Log.info("User not on RegisterAccount page");
+					driver.navigate().to(Constant.RegisterAccount_Page);
 
 				}
 			}
@@ -60,9 +71,42 @@ public class RegisterAccount {
 		}
 
 	}
+	
+	@AfterClass
+	public void fnDelete_PageObject() {
+		try {
+			R_Acc = null;
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+
+	}
+	
+	@BeforeMethod
+	public void Before_method(Method test_method) {
+		try {
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			Log.startTestCase(test_method.getName());
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@AfterMethod
+	public void After_method(Method test_method) {
+		try {
+			Log.endTestCase(test_method.getName());
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+
+	}
 
 	@Test
-	public void fnCheckPage_title() {
+	public void TC20_fnCheck_RegisterAccount_Page_title() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Page_Header)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Page_Header),

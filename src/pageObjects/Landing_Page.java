@@ -46,8 +46,11 @@ import utility.Utils;
         @FindBy(xpath="//span[text()='123456789']")
         public WebElement Contact_No;
         
-        @FindBy(xpath="//a[@class='fa fa-phone']")
-        public WebElement Contact_Us;
+        @FindBy(xpath="//i[@class='fa fa-phone']/parent::a")
+        public WebElement Contact_No_icon_link;
+        
+        @FindBy(xpath="//i[@class='fa fa-phone']")
+        public WebElement Contact_No_icon;
         
         @FindBy(xpath="//a[@class='dropdown-toggle']")
         public WebElement MyAccount_menu;
@@ -55,13 +58,13 @@ import utility.Utils;
         @FindBy(xpath="//ul[@class='dropdown-menu dropdown-menu-right']")
         public WebElement MyAccount_dropdown;
         
-        @FindBy(id="wishlist-total")
+        @FindBy(xpath="//i[@class='fa fa-heart']/parent::a")
         public WebElement WishList_menu;
         
-        @FindBy(xpath="//a[text()='Shopping Cart']")
+        @FindBy(xpath="//i[@class='fa fa-shopping-cart']/parent::a")
         public WebElement ShoppingCart_menu;
         
-        @FindBy(xpath="//a[text()='Checkout']")
+        @FindBy(xpath="//i[@class='fa fa-share']/parent::a")
         public WebElement Checkout_menu;
         
         @FindBy(xpath="//input[@class='form-control input-lg']")
