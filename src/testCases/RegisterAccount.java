@@ -61,7 +61,7 @@ public class RegisterAccount {
 
 	}
 
-	@Test(priority = 0)
+	@Test
 	public void fnCheckPage_title() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Page_Header)) {

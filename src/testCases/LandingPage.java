@@ -2,6 +2,8 @@ package testCases;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 import pageObjects.Landing_Page;
 import java.lang.reflect.Method;
 
@@ -96,6 +98,7 @@ public class LandingPage {
 	@BeforeMethod
 	public void Before_method(Method test_method) {
 		try {
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			Log.startTestCase(test_method.getName());
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -114,7 +117,7 @@ public class LandingPage {
 
 	}
 
-	@Test(priority = 0)
+	@Test
 	public void TC01_fnCheck_LandingPage_title() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.YourStore)) {
@@ -133,7 +136,7 @@ public class LandingPage {
 		}
 	}
 
-	@Test(priority = 1)
+	@Test
 	public void TC02_fnCheck_LandingPage_SystemMenu() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Menu_bar)) {
@@ -147,7 +150,7 @@ public class LandingPage {
 		}
 	}
 
-	@Test(priority = 2)
+	@Test
 	public void TC03_fnCheck_LandingPage_SystemMenu_Elements() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Menu_bar)) {
@@ -167,7 +170,7 @@ public class LandingPage {
 		}
 	}
 
-	@Test(priority = 3)
+	@Test
 	public void TC04_fnCheck_LandingPage_ContactNo_menu() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Contact_No)) {
@@ -187,7 +190,7 @@ public class LandingPage {
 		}
 	}
 
-	@Test(priority = 4)
+	@Test
 	public void TC05_fnCheck_LandingPage_ContactNo_menu() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Contact_No)) {
@@ -207,7 +210,7 @@ public class LandingPage {
 		}
 	}
 
-	@Test(priority = 5)
+	@Test
 	public void TC06_fnCheck_LandingPage_ContactNo_Page() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Contact_No)) {

@@ -75,3 +75,84 @@
 2021-05-09 00:35:30,098 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
 2021-05-09 00:35:30,178 INFO  [Log] User not on RegisterAccount page 
 2021-05-09 00:35:32,086 INFO  [Log] Page title is being displyed correctly 
+2021-05-09 00:38:29,967 INFO  [Log] New driver instantiated 
+2021-05-09 00:38:29,985 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2021-05-09 00:38:33,406 INFO  [Log] Web application launched successfully 
+2021-05-09 00:38:33,535 INFO  [Log] User on landing page 
+2021-05-09 00:38:33,556 INFO  [Log] **************************************************************************************** 
+2021-05-09 00:38:33,556 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-05-09 00:38:33,810 INFO  [Log] Page title is being displyed correctly 
+2021-05-09 00:38:33,813 INFO  [Log] **************************************************************************************** 
+2021-05-09 00:38:33,814 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-05-09 00:38:33,845 INFO  [Log] User not on RegisterAccount page 
+2021-05-09 00:38:34,874 INFO  [Log] Page title is being displyed correctly 
+2021-05-09 00:48:42,329 INFO  [Log] New driver instantiated 
+2021-05-09 00:48:42,367 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2021-05-09 00:48:46,479 INFO  [Log] Web application launched successfully 
+2021-05-09 00:48:47,146 INFO  [Log] User on landing page 
+2021-05-09 00:48:47,196 INFO  [Log] **************************************************************************************** 
+2021-05-09 00:48:47,196 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-05-09 00:48:48,376 INFO  [Log] Page title is being displyed correctly 
+2021-05-09 00:48:48,379 INFO  [Log] **************************************************************************************** 
+2021-05-09 00:48:48,380 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-05-09 00:48:48,518 INFO  [Log] User not on RegisterAccount page 
+2021-05-09 00:48:50,297 INFO  [Log] Page title is being displyed correctly 
+2021-05-09 00:49:49,048 INFO  [Log] New driver instantiated 
+2021-05-09 00:49:49,148 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2021-05-09 00:49:54,347 INFO  [Log] Web application launched successfully 
+2021-05-09 00:49:56,533 INFO  [Log] User on landing page 
+2021-05-09 00:49:56,847 INFO  [Log] **************************************************************************************** 
+2021-05-09 00:49:56,848 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-05-09 00:49:58,320 INFO  [Log] Page title is being displyed correctly 
+2021-05-09 00:49:58,323 INFO  [Log] **************************************************************************************** 
+2021-05-09 00:49:58,323 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-05-09 00:49:58,364 INFO  [Log] User not on RegisterAccount page 
+2021-05-09 00:49:59,264 INFO  [Log] Page title is being displyed correctly 
+2021-05-09 00:50:41,798 INFO  [Log] New driver instantiated 
+2021-05-09 00:50:41,827 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2021-05-09 00:50:45,318 INFO  [Log] Web application launched successfully 
+2021-05-09 00:50:45,708 INFO  [Log] User on landing page 
+2021-05-09 00:50:45,739 INFO  [Log] **************************************************************************************** 
+2021-05-09 00:50:45,739 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-05-09 00:50:46,254 INFO  [Log] Page title is being displyed correctly 
+2021-05-09 00:50:46,258 INFO  [Log] **************************************************************************************** 
+2021-05-09 00:50:46,258 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-05-09 00:50:46,318 INFO  [Log] User not on RegisterAccount page 
+2021-05-09 00:50:48,498 INFO  [Log] Page title is being displyed correctly 
+2021-05-09 16:07:44,977 INFO  [Log] New driver instantiated 
+2021-05-09 16:07:45,098 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2021-05-09 16:07:52,570 INFO  [Log] Web application launched successfully 
+2021-05-09 16:07:52,880 INFO  [Log] User on landing page 
+2021-05-09 16:07:52,908 INFO  [Log] **************************************************************************************** 
+2021-05-09 16:07:52,908 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-05-09 16:07:55,859 INFO  [Log] Page title is being displyed correctly 
+2021-05-09 16:07:55,866 INFO  [Log] **************************************************************************************** 
+2021-05-09 16:07:55,867 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-05-09 16:07:55,881 INFO  [Log] **************************************************************************************** 
+2021-05-09 16:07:55,881 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas begun execution 
+2021-05-09 16:07:55,960 INFO  [Log] Menu bar is being displyed 
+2021-05-09 16:07:55,962 INFO  [Log] **************************************************************************************** 
+2021-05-09 16:07:55,962 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas completed execution 
+2021-05-09 16:07:55,969 INFO  [Log] **************************************************************************************** 
+2021-05-09 16:07:55,970 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas begun execution 
+2021-05-09 16:07:56,489 INFO  [Log] All system menu options are not getting displayed correctly 
+2021-05-09 16:07:56,492 INFO  [Log] **************************************************************************************** 
+2021-05-09 16:07:56,493 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas completed execution 
+2021-05-09 16:07:56,521 INFO  [Log] **************************************************************************************** 
+2021-05-09 16:07:56,522 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas begun execution 
+2021-05-09 16:07:56,616 INFO  [Log] Contact No is not getting displayed 
+2021-05-09 16:07:56,619 INFO  [Log] **************************************************************************************** 
+2021-05-09 16:07:56,619 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas completed execution 
+2021-05-09 16:07:56,657 INFO  [Log] User not on RegisterAccount page 
+2021-05-09 16:07:57,950 INFO  [Log] Page title is being displyed correctly 
+2021-05-09 16:07:57,961 INFO  [Log] **************************************************************************************** 
+2021-05-09 16:07:57,961 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_menuhas begun execution 
+2021-05-09 16:07:58,086 INFO  [Log] Contact No is getting displayed correctly 
+2021-05-09 16:07:58,088 INFO  [Log] **************************************************************************************** 
+2021-05-09 16:07:58,089 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_menuhas completed execution 
+2021-05-09 16:07:58,095 INFO  [Log] **************************************************************************************** 
+2021-05-09 16:07:58,095 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas begun execution 
+2021-05-09 16:07:58,599 INFO  [Log] No new tab is opened 
+2021-05-09 16:07:58,600 INFO  [Log] Contact No is getting displayed correctly 
+2021-05-09 16:07:58,603 INFO  [Log] **************************************************************************************** 
+2021-05-09 16:07:58,603 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas completed execution 
