@@ -154,13 +154,9 @@ public class LandingPage {
 	public void TC03_fnCheck_LandingPage_SystemMenu_Elements() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Menu_bar)) {
-				if (CommonFunctionandEvents.fnValidateArray_Elements(LP.Menu_bar_elements,
-						Constant.SystemMenu_elements)) {
+				 CommonFunctionandEvents.fncreateArray_Elements(LP.Menu_bar_elements);
 					Log.info("All system menu options getting displayed correctly");
-				} else {
-					Log.info("All system menu options are not getting displayed correctly");
-				}
-
+				
 			} else {
 				Log.info("Menu bar is not getting displayed");
 			}
