@@ -192,67 +192,143 @@ public class CommonFunctionandEvents {
 		return msg;
 	}
 
-	public static void fncreateArray_Elements(List<WebElement> list) {
+	public static String[] fncreateArray_Elements(List<WebElement> list, String[] arr) {
 		try {
-			int a = 0;
-			String[] arr = new String[list.size()];
+
+			arr = new String[list.size()];
 			for (int i = 0; i < list.size(); i++) {
 				arr[i] = list.get(i).getText();
-				Log.info(arr[i]);
+
 			}
 
-			
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
-			
-		}
 
-		
+		}
+		return arr;
+
+	}
+
+	public static boolean fnValidateArray(String[] Arr, String[] Arr1) {
+		int a = 0;
+		for (int i = 0; i < Arr.length; i++) {
+			for (int j = 0; j < Arr1.length; j++) {
+				if (Arr[i].contentEquals(Arr1[j])) {
+					a = a + 1;
+				}
+			}
+		}
+			if ((a == Arr.length) && (a == Arr1.length)) {
+				bstatus = true;
+				Log.info("Both arrays are equal");
+			} else {
+                bstatus= true;
+				if (Arr.length > Arr1.length) {
+					int x = 0;
+					Log.info("The following Array 1 elements missing in Array 2:-");
+					for (int b = 0; b < Arr.length; b++) {
+						for (int c = 0; c < Arr1.length; c++) {
+							if (Arr[b].contentEquals(Arr1[c])) {
+								x = x + 1;
+							}
+						}
+						if (x == 0) {
+							Log.info(Arr[b]);
+						}
+						x = 0;
+					}
+				} else if (Arr1.length > Arr.length) {
+					int y = 0;
+					Log.info("The following Array 2 elements missing in Array :-");
+					for (int d = 0; d < Arr1.length; d++) {
+						for (int e = 0; e < Arr.length; e++) {
+							if (Arr1[d].contentEquals(Arr[e])) {
+								y = y + 1;
+							}
+						}
+						if (y == 0) {
+							Log.info(Arr1[d]);
+						}
+						y = 0;
+					}
+				}
+				else {
+					int x = 0;
+					Log.info("The following Array 1 elements missing in Array 2:-");
+					for (int b = 0; b < Arr.length; b++) {
+						for (int c = 0; c < Arr1.length; c++) {
+							if (Arr[b].contentEquals(Arr1[c])) {
+								x = x + 1;
+							}
+						}
+						if (x == 0) {
+							Log.info(Arr[b]);
+						}
+						x = 0;
+					}
+					int y = 0;
+					Log.info("The following Array 2 elements missing in Array :-");
+					for (int d = 0; d < Arr1.length; d++) {
+						for (int e = 0; e < Arr.length; e++) {
+							if (Arr1[d].contentEquals(Arr[e])) {
+								y = y + 1;
+							}
+						}
+						if (y == 0) {
+							Log.info(Arr1[d]);
+						}
+						y = 0;
+					}
+					
+					
+				}
+			}
+	
+
+		return bstatus;
+
 	}
 
 	public static boolean Window_count(WebDriver driver) {
-		
+
 		try {
 			ArrayList<String> Tabs = new ArrayList<String>(driver.getWindowHandles());
-			if(Tabs.size()>1) {
-				bstatus= true;
+			if (Tabs.size() > 1) {
+				bstatus = true;
 				Log.info("New tab is opened");
-			}
-			else {
-				bstatus= false;
+			} else {
+				bstatus = false;
 				Log.info("No new tab is opened");
 			}
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
-			bstatus= false;
+			bstatus = false;
 		}
 
 		return bstatus;
 	}
-	
+
 	public static boolean New_Tab(WebDriver driver, String url) {
 		try {
-			String currentWindowHandle= driver.getWindowHandle();
+			String currentWindowHandle = driver.getWindowHandle();
 			ArrayList<String> WindowHandles = new ArrayList<String>(driver.getWindowHandles());
 			for (String handle : WindowHandles) {
-		        if (!currentWindowHandle.equals(handle)) {
-		            driver.switchTo().window(handle);
-		        }
-		    }
-			
-			if(fnTextEquals(driver.getCurrentUrl(), url)){
-				Log.info("User navigated to correct page");
+				if (!currentWindowHandle.equals(handle)) {
+					driver.switchTo().window(handle);
+				}
 			}
-			else {
+
+			if (fnTextEquals(driver.getCurrentUrl(), url)) {
+				Log.info("User navigated to correct page");
+			} else {
 				Log.info("User navigated to incorrect page");
 			}
 			driver.close();
 			driver.switchTo().defaultContent();
-			
-		}
-		catch (Exception e) {
+
+		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
 		}

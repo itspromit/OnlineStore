@@ -39,6 +39,7 @@ public class LandingPage {
 	Landing_Page LP;
 	WebDriver existing_driver;
 	int x = 0;
+	String[] S= null;
 
 	@BeforeSuite
 	public void fnCheckforActiveBrowser() {
@@ -154,8 +155,12 @@ public class LandingPage {
 	public void TC03_fnCheck_LandingPage_SystemMenu_Elements() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Menu_bar)) {
-				 CommonFunctionandEvents.fncreateArray_Elements(LP.Menu_bar_elements);
-					Log.info("All system menu options getting displayed correctly");
+				if(CommonFunctionandEvents.fnValidateArray(CommonFunctionandEvents.fncreateArray_Elements(LP.Menu_bar_elements, S), Constant.SystemMenu_elements)) {
+					Log.info("All System Menu bar elements are getting correctly displayed");
+				}
+				else {
+					Log.info("All System Menu bar elements are not getting correctly displayed");
+				}		
 				
 			} else {
 				Log.info("Menu bar is not getting displayed");

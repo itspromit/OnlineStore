@@ -92,7 +92,7 @@ import utility.Utils;
         @FindBy(xpath="//a[text()='MP3 Players']/following-sibling::div[1]")
         public WebElement MP3Players_dropdown;
         
-        @FindBy(xpath="//a[text()='Desktops']/following-sibling::div[1]")
+        @FindBy(xpath="//div[@class='collapse navbar-collapse navbar-ex1-collapse']/child::ul/child::li")
         public List<WebElement> Menu_bar_elements;
         
         @FindBy(xpath="//a[text()='Desktops']/following-sibling::div[1]/descendant::a")
