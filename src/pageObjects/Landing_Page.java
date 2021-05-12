@@ -107,8 +107,8 @@ import utility.Utils;
         @FindBy(xpath="//a[text()='MP3 Players']/following-sibling::div[1]/descendant::a")
         public List<WebElement> MP3Players_elements;
         
-        @FindBy(xpath="//ul[@class='dropdown-menu dropdown-menu-right']/descendant::a")
-        public WebElement MyAccount_dropdown_options;
+        @FindBy(xpath="//ul[@class='dropdown-menu dropdown-menu-right']/descendant::li")
+        public List<WebElement> MyAccount_dropdown_options;
         
         @FindBy(xpath="//h3[text()='Featured']")
         public WebElement Featured_option;

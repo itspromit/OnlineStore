@@ -10,9 +10,10 @@ public class Constant {
 		//public static final String File_TestData = "TestData.xlsx";
 		public static final String RegisterAccount_Page= "http://tutorialsninja.com/demo/index.php?route=account/register";
 		
-		public static final String[] SystemMenu_elements= {"Desktops", "Laptops & Notebooks", "Components", "Tablets", "Software", "Phones & PDAs", "Cameras", "MP3 Players"};
+		public static final String[] SystemMenu_elements= {"Desktops", "Laptops & Notebooks", "Components", "Tablets", "Software", "Phones & PDAs", "Cameras", "MP3 Players", "Promit"};
 		public static final String Contact_No= "http://tutorialsninja.com/demo/index.php?route=information/contact";
-		
+		public static final String[] MyAccount_elements= {"Register", "Login"};
+		public static final String Login_Page= "http://tutorialsninja.com/demo/index.php?route=account/login";
 		//Test Data Sheet Columns
 		public static final int Col_TestCaseName = 0;	
 		public static final int Col_UserName =1 ;

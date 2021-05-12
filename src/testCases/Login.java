@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import pageObjects.Landing_Page;
 import pageObjects.RegisterAccount_Page;
+import pageObjects.LogIn_Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,10 +33,11 @@ import com.relevantcodes.extentreports.LogStatus;
 import utility.Log;
 import utility.Constant;
 
-public class RegisterAccount {
+public class Login {
 
 	WebDriver driver;
-	RegisterAccount_Page R_Acc;
+	LogIn_Page Login;
+	LandingPage LPage;
 	int y;
 
 	@BeforeClass
@@ -45,21 +47,21 @@ public class RegisterAccount {
 
 			if (driver == null) {
 				driver = Utils.Return_driver();
-				R_Acc = new RegisterAccount_Page(driver);
+				Login = new LogIn_Page(driver);
 
-				if (driver.getTitle().contains("Register Account")) {
-					Log.info("User on Register Account page");
+				if (driver.getTitle().contains("Account Login")) {
+					Log.info("User on Login page");
 				} else {
-					Log.info("User not on RegisterAccount page");
-					driver.navigate().to(Constant.RegisterAccount_Page);
+					Log.info("User not on Login page");
+					driver.navigate().to(Constant.Login_Page);
 
 				}
 			} else {
-				if (driver.getTitle().contains("Register Account")) {
-					Log.info("User on RegisterAccount page");
+				if (driver.getTitle().contains("Account Login")) {
+					Log.info("User on Login page");
 				} else {
-					Log.info("User not on RegisterAccount page");
-					driver.navigate().to(Constant.RegisterAccount_Page);
+					Log.info("User not on Login page");
+					driver.navigate().to(Constant.Login_Page);
 
 				}
 			}
@@ -73,7 +75,7 @@ public class RegisterAccount {
 	@AfterClass
 	public void fnDelete_PageObject() {
 		try {
-			R_Acc = null;
+			Login = null;
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -84,11 +86,11 @@ public class RegisterAccount {
 	@BeforeMethod
 	public void Before_method(Method test_method) {
 		try {
-			if (driver.getTitle().contains("Register Account")) {
+			if (driver.getTitle().contains("Account Login")) {
 
 			} else {
 
-				driver.navigate().to(Constant.RegisterAccount_Page);
+				driver.navigate().to(Constant.Login_Page);
 
 			}
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -110,32 +112,13 @@ public class RegisterAccount {
 		}
 
 	}
-
+	
 	@Test
-	public void TC20_fnCheck_RegisterAccount_Page_title() {
+	public void TC41_fnCheck_Login_Page_Home_menu() {
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Page_Header)) {
-				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Page_Header),
-						"Register Account")) {
-					Log.info("Page title is being displyed correctly");
-				} else {
-					Log.info("Incorrect Page title is being displyed");
-				}
-			} else {
-				Log.info("Page title is not getting displayed");
-			}
-		} catch (Exception e) {
-			String Ex = e.toString();
-			System.out.println(Ex);
-		}
-	}
-
-	@Test
-	public void TC21_fnCheck_RegisterAccount_Page_Home_menu() {
-		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Home_menu)) {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Home_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(
-						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.Home_menu, "class"), "fa fa-home")) {
+						CommonFunctionandEvents.fnGetElementAttribute(Login.Home_menu, "class"), "fa fa-home")) {
 					Log.info("Home menu is being displyed correctly");
 				} else {
 					Log.info("Incorrect name of Home menu is being displyed");
@@ -150,10 +133,10 @@ public class RegisterAccount {
 	}
 
 	@Test
-	public void TC22_fnCheck_RegisterAccount_Page_Home_menu_functionality() {
+	public void TC42_fnCheck_Login_Page_Home_menu_functionality() {
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Home_menu)) {
-				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, R_Acc.Home_menu)) {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Home_menu)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Home_menu)) {
 					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Your Store")) {
 						Log.info("User navigated to Landing page upon clicking on Home menu");
 					} else {
@@ -172,10 +155,10 @@ public class RegisterAccount {
 	}
 
 	@Test
-	public void TC23_fnCheck_RegisterAccount_Page_Account_menu() {
+	public void TC43_fnCheck_Login_Page_Account_menu() {
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Account_menu)) {
-				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Account_menu),
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Account_menu)) {
+				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Account_menu),
 						"Account")) {
 					Log.info("Account menu is being displyed correctly");
 				} else {
@@ -191,10 +174,10 @@ public class RegisterAccount {
 	}
 
 	@Test
-	public void TC24_fnCheck_RegisterAccount_Page_Account_menu_functionality() {
+	public void TC44_fnCheck_Login_Page_Account_menu_functionality() {
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Account_menu)) {
-				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, R_Acc.Account_menu)) {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Account_menu)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Account_menu)) {
 					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Account Login")) {
 						Log.info("User navigated to Login page upon clicking on Account menu");
 					} else {
@@ -213,17 +196,17 @@ public class RegisterAccount {
 	}
 
 	@Test
-	public void TC25_fnCheck_RegisterAccount_Page_Register_menu() {
+	public void TC45_fnCheck_Login_Page_Login_menu() {
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Register_menu)) {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Login_menu)) {
 				if (CommonFunctionandEvents
-						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Register_menu), "Register")) {
-					Log.info("Register menu is being displyed correctly");
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Login_menu), "Login")) {
+					Log.info("Login menu is being displyed correctly");
 				} else {
-					Log.info("Incorrect name of Register menu is being displyed");
+					Log.info("Incorrect name of Login menu is being displyed");
 				}
 			} else {
-				Log.info("Register menu is not getting displayed");
+				Log.info("Login menu is not getting displayed");
 			}
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -232,20 +215,20 @@ public class RegisterAccount {
 	}
 
 	@Test
-	public void TC26_fnCheck_RegisterAccount_Page_Home_menu_functionality() {
+	public void TC26_fnCheck_Login_Page_Home_menu_functionality() {
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Register_menu)) {
-				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, R_Acc.Register_menu)) {
-					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Register Account")) {
-						Log.info("User navigated to Register Account page upon clicking on Register menu");
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Login_menu)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Login_menu)) {
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Account Login")) {
+						Log.info("User navigated to Login page upon clicking on Login menu");
 					} else {
-						Log.info("User navigated to incorrect page upon clicking on Register menu");
+						Log.info("User navigated to incorrect page upon clicking on Login menu");
 					}
 				} else {
-					Log.info("Register menu is not clickable");
+					Log.info("Login menu is not clickable");
 				}
 			} else {
-				Log.info("Register menu is not getting displayed");
+				Log.info("Login menu is not getting displayed");
 			}
 		} catch (Exception e) {
 			String Ex = e.toString();

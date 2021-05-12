@@ -198,6 +198,7 @@ public class CommonFunctionandEvents {
 			arr = new String[list.size()];
 			for (int i = 0; i < list.size(); i++) {
 				arr[i] = list.get(i).getText();
+				Log.info(list.get(i).getText());
 
 			}
 
@@ -223,10 +224,10 @@ public class CommonFunctionandEvents {
 				bstatus = true;
 				Log.info("Both arrays are equal");
 			} else {
-                bstatus= true;
+                bstatus= false;
 				if (Arr.length > Arr1.length) {
 					int x = 0;
-					Log.info("The following Array 1 elements missing in Array 2:-");
+					Log.info("The following Array1 elements missing in Array2:-");
 					for (int b = 0; b < Arr.length; b++) {
 						for (int c = 0; c < Arr1.length; c++) {
 							if (Arr[b].contentEquals(Arr1[c])) {
@@ -240,7 +241,7 @@ public class CommonFunctionandEvents {
 					}
 				} else if (Arr1.length > Arr.length) {
 					int y = 0;
-					Log.info("The following Array 2 elements missing in Array :-");
+					Log.info("The following Array2 elements missing in Array1 :-");
 					for (int d = 0; d < Arr1.length; d++) {
 						for (int e = 0; e < Arr.length; e++) {
 							if (Arr1[d].contentEquals(Arr[e])) {
@@ -255,7 +256,7 @@ public class CommonFunctionandEvents {
 				}
 				else {
 					int x = 0;
-					Log.info("The following Array 1 elements missing in Array 2:-");
+					Log.info("The following Array1 elements missing in Array2:-");
 					for (int b = 0; b < Arr.length; b++) {
 						for (int c = 0; c < Arr1.length; c++) {
 							if (Arr[b].contentEquals(Arr1[c])) {
@@ -268,7 +269,7 @@ public class CommonFunctionandEvents {
 						x = 0;
 					}
 					int y = 0;
-					Log.info("The following Array 2 elements missing in Array :-");
+					Log.info("The following Array2 elements missing in Array1 :-");
 					for (int d = 0; d < Arr1.length; d++) {
 						for (int e = 0; e < Arr.length; e++) {
 							if (Arr1[d].contentEquals(Arr[e])) {

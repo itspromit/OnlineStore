@@ -39,7 +39,7 @@ public class LandingPage {
 	Landing_Page LP;
 	WebDriver existing_driver;
 	int x = 0;
-	String[] S= null;
+	
 
 	@BeforeSuite
 	public void fnCheckforActiveBrowser() {
@@ -153,15 +153,17 @@ public class LandingPage {
 
 	@Test
 	public void TC03_fnCheck_LandingPage_SystemMenu_Elements() {
+		String[] S = null;
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Menu_bar)) {
-				if(CommonFunctionandEvents.fnValidateArray(CommonFunctionandEvents.fncreateArray_Elements(LP.Menu_bar_elements, S), Constant.SystemMenu_elements)) {
+				if (CommonFunctionandEvents.fnValidateArray(
+						CommonFunctionandEvents.fncreateArray_Elements(LP.Menu_bar_elements, S),
+						Constant.SystemMenu_elements)) {
 					Log.info("All System Menu bar elements are getting correctly displayed");
-				}
-				else {
+				} else {
 					Log.info("All System Menu bar elements are not getting correctly displayed");
-				}		
-				
+				}
+
 			} else {
 				Log.info("Menu bar is not getting displayed");
 			}
@@ -278,8 +280,36 @@ public class LandingPage {
 			String Ex = e.toString();
 			System.out.println(Ex);
 		}
+		driver.navigate().refresh();
 	}
-	
+
+	@Test
+	public void TC09_fnCheck_LandingPage_MyAccount_Elements() {
+		String[] S1= null;
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.MyAccount_menu)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.MyAccount_menu)) {
+					if (CommonFunctionandEvents.fnValidateArray(
+							CommonFunctionandEvents.fncreateArray_Elements(LP.MyAccount_dropdown_options, S1),
+							Constant.MyAccount_elements)) {
+						Log.info("All My Account dropdown options are getting correctly displayed");
+					} else {
+						Log.info("All System Menu bar elements are not getting correctly displayed");
+					}
+				} else {
+					Log.info("My Account menu is not clickable");
+
+				}
+
+			} else {
+				Log.info("My Account menu is not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
 	@Test
 	public void TC10_fnCheck_LandingPage_WishList_menu() {
 		try {
@@ -299,7 +329,7 @@ public class LandingPage {
 			System.out.println(Ex);
 		}
 	}
-	
+
 	@Test
 	public void TC11_fnCheck_LandingPage_WishList_menu_functionality() {
 		try {
@@ -322,13 +352,13 @@ public class LandingPage {
 			System.out.println(Ex);
 		}
 	}
-	
+
 	@Test
 	public void TC12_fnCheck_LandingPage_ShoppingCart_menu() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.ShoppingCart_menu)) {
-				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(LP.ShoppingCart_menu),
-						"Shopping Cart")) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementText(LP.ShoppingCart_menu), "Shopping Cart")) {
 					Log.info("Shopping Cart menu is getting displayed correctly");
 				} else {
 					Log.info("Incorrect name for Shopping Cart menu getting displayed");
@@ -342,7 +372,7 @@ public class LandingPage {
 			System.out.println(Ex);
 		}
 	}
-	
+
 	@Test
 	public void TC13_fnCheck_LandingPage_ShoppingCart_menu_functionality() {
 		try {
@@ -385,7 +415,7 @@ public class LandingPage {
 			System.out.println(Ex);
 		}
 	}
-	
+
 	@Test
 	public void TC15_fnCheck_LandingPage_Checkout_menu_functionality() {
 		try {
@@ -408,6 +438,5 @@ public class LandingPage {
 			System.out.println(Ex);
 		}
 	}
-
 
 }

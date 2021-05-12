@@ -21,13 +21,13 @@ public class RegisterAccount_Page extends Landing_Page {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(xpath="//a[text()='Account']")
+	@FindBy(xpath="//ul[@class='breadcrumb']/descendant::a[text()='Account']")
     public WebElement Account_menu;
 	
-	@FindBy(xpath="//a[text()='Register']")
+	@FindBy(xpath="//ul[@class='breadcrumb']/descendant::a[text()='Register']")
     public WebElement Register_menu;
 	
-	@FindBy(xpath="//a[text()='Account']/parent::li/preceding-sibling::li/child::a")
+	@FindBy(xpath="//ul[@class='breadcrumb']/descendant::a/child::i")
     public WebElement Home_menu;
 	
 	@FindBy(xpath="//h1[text()='Register Account']")
