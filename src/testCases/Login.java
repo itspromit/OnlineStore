@@ -39,6 +39,8 @@ public class Login {
 	LogIn_Page Login;
 	LandingPage LPage;
 	int y;
+	ExtentReports Report;
+	ExtentTest Test;
 
 	@BeforeClass
 	public void fnCheck_RegisterAccount_page() {
@@ -48,23 +50,25 @@ public class Login {
 			if (driver == null) {
 				driver = Utils.Return_driver();
 				Login = new LogIn_Page(driver);
+				//LPage= new LandingPage();
+				Report= LandingPage.Return_Report();
 
 				if (driver.getTitle().contains("Account Login")) {
-					Log.info("User on Login page");
+
 				} else {
 					Log.info("User not on Login page");
-					driver.navigate().to(Constant.Login_Page);
 
 				}
 			} else {
 				if (driver.getTitle().contains("Account Login")) {
-					Log.info("User on Login page");
+
 				} else {
-					Log.info("User not on Login page");
+
 					driver.navigate().to(Constant.Login_Page);
 
 				}
 			}
+
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -85,17 +89,24 @@ public class Login {
 
 	@BeforeMethod
 	public void Before_method(Method test_method) {
+
 		try {
+			Test = Report.startTest(test_method.getName());
 			if (driver.getTitle().contains("Account Login")) {
+				Log.info("User on Login page");
+				Test.log(LogStatus.INFO, "User on Login page");
 
 			} else {
-
+				Log.info("User not on Login page");
+				Test.log(LogStatus.INFO, "User not on Login page");
 				driver.navigate().to(Constant.Login_Page);
+				Log.info("User navigated to Login page");
+				Test.log(LogStatus.INFO, "User navigated to Login page");
 
 			}
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-
 			Log.startTestCase(test_method.getName());
+
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -106,13 +117,15 @@ public class Login {
 	public void After_method(Method test_method) {
 		try {
 			Log.endTestCase(test_method.getName());
+			Report.endTest(Test);
+			Report.flush();
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
 		}
 
 	}
-	
+
 	@Test
 	public void TC41_fnCheck_Login_Page_Home_menu() {
 		try {
@@ -120,11 +133,14 @@ public class Login {
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementAttribute(Login.Home_menu, "class"), "fa fa-home")) {
 					Log.info("Home menu is being displyed correctly");
+					Test.log(LogStatus.PASS, "Home menu is being displyed correctly");
 				} else {
 					Log.info("Incorrect name of Home menu is being displyed");
+					Test.log(LogStatus.FAIL, "Incorrect name of Home menu is being displyed");
 				}
 			} else {
 				Log.info("Home menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Home menu is not getting displayed");
 			}
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -139,14 +155,18 @@ public class Login {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Home_menu)) {
 					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Your Store")) {
 						Log.info("User navigated to Landing page upon clicking on Home menu");
+						Test.log(LogStatus.PASS, "User navigated to Landing page upon clicking on Home menu");
 					} else {
 						Log.info("User navigated to incorrect page upon clicking on Home menu");
+						Test.log(LogStatus.FAIL, "User navigated to incorrect page upon clicking on Home menu");
 					}
 				} else {
 					Log.info("Shopping Cart menu is not clickable");
+					Test.log(LogStatus.FAIL, "Shopping Cart menu is not clickable");
 				}
 			} else {
 				Log.info("Home menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Home menu is not getting displayed");
 			}
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -161,11 +181,14 @@ public class Login {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Account_menu),
 						"Account")) {
 					Log.info("Account menu is being displyed correctly");
+					Test.log(LogStatus.PASS, "Account menu is being displyed correctly");
 				} else {
 					Log.info("Incorrect name of Account menu is being displyed");
+					Test.log(LogStatus.FAIL, "Incorrect name of Account menu is being displyed");
 				}
 			} else {
 				Log.info("Account menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Account menu is not getting displayed");
 			}
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -180,14 +203,18 @@ public class Login {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Account_menu)) {
 					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Account Login")) {
 						Log.info("User navigated to Login page upon clicking on Account menu");
+						Test.log(LogStatus.PASS, "User navigated to Login page upon clicking on Account menu");
 					} else {
 						Log.info("User navigated to incorrect page upon clicking on Account menu");
+						Test.log(LogStatus.FAIL, "User navigated to incorrect page upon clicking on Account menu");
 					}
 				} else {
 					Log.info("Account menu is not clickable");
+					Test.log(LogStatus.FAIL, "Account menu is not clickable");
 				}
 			} else {
 				Log.info("Account menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Account menu is not getting displayed");
 			}
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -199,14 +226,17 @@ public class Login {
 	public void TC45_fnCheck_Login_Page_Login_menu() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Login_menu)) {
-				if (CommonFunctionandEvents
-						.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Login_menu), "Login")) {
+				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Login_menu),
+						"Login")) {
 					Log.info("Login menu is being displyed correctly");
+					Test.log(LogStatus.PASS, "Login menu is being displyed correctly");
 				} else {
 					Log.info("Incorrect name of Login menu is being displyed");
+					Test.log(LogStatus.FAIL, "Incorrect name of Login menu is being displyed");
 				}
 			} else {
 				Log.info("Login menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Login menu is not getting displayed");
 			}
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -215,20 +245,24 @@ public class Login {
 	}
 
 	@Test
-	public void TC26_fnCheck_Login_Page_Home_menu_functionality() {
+	public void TC46_fnCheck_Login_Page_Home_menu_functionality() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Login_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Login_menu)) {
 					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Account Login")) {
 						Log.info("User navigated to Login page upon clicking on Login menu");
+						Test.log(LogStatus.PASS, "User navigated to Login page upon clicking on Login menu");
 					} else {
 						Log.info("User navigated to incorrect page upon clicking on Login menu");
+						Test.log(LogStatus.FAIL, "User navigated to incorrect page upon clicking on Login menu");
 					}
 				} else {
 					Log.info("Login menu is not clickable");
+					Test.log(LogStatus.FAIL, "Login menu is not clickable");
 				}
 			} else {
 				Log.info("Login menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Login menu is not getting displayed");
 			}
 		} catch (Exception e) {
 			String Ex = e.toString();
