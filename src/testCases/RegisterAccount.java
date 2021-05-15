@@ -406,4 +406,100 @@ public class RegisterAccount {
 		}
 	}
 
+	@Test
+	public void TC32_fnCheck_RegisterAccount_Page_PersonalDetails_section_FirstName_label() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.FirstName_label)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementText(R_Acc.FirstName_label),
+						"First Name")) {
+					Log.info("First Name field label in Personal Details section getting displayed");
+					Test.log(LogStatus.PASS, "First Name field label in Personal Details section getting displayed");
+				} else {
+					Log.info("Incorrect First Name field label in Personal Details section getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect First Name field label in Personal Details section getting displayed");
+				}
+
+			} else {
+				Log.info("First Name field label in Personal Details section not getting displayed");
+				Test.log(LogStatus.FAIL, "First Name field label in Personal Details section not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC33_fnCheck_RegisterAccount_Page_PersonalDetails_section_FirstName_field() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.FirstName_field)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.FirstName_field, "placeholder"),
+						"First Name")) {
+					Log.info("First Name field in Personal Details section getting displayed");
+					Test.log(LogStatus.PASS, "First Name field in Personal Details section getting displayed");
+				} else {
+					Log.info("Incorrect First Name field label in Personal Details section getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect First Name field in Personal Details section getting displayed");
+				}
+
+			} else {
+				Log.info("First Name field in Personal Details section not getting displayed");
+				Test.log(LogStatus.FAIL, "First Name field in Personal Details section not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC34_fnCheck_RegisterAccount_Page_PersonalDetails_section_LastName_label() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.LastName_label)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementText(R_Acc.LastName_label),
+						"Last Name")) {
+					Log.info("Last Name field label in Personal Details section getting displayed");
+					Test.log(LogStatus.PASS, "Last Name field label in Personal Details section getting displayed");
+				} else {
+					Log.info("Incorrect Last Name field label in Personal Details section getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect Last Name field label in Personal Details section getting displayed");
+				}
+
+			} else {
+				Log.info("Last Name field label in Personal Details section not getting displayed");
+				Test.log(LogStatus.FAIL, "Last Name field label in Personal Details section not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC35_fnCheck_RegisterAccount_Page_PersonalDetails_section_LastName_field() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.LastName_field)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.LastName_field, "placeholder"),
+						"Last Name")) {
+					Log.info("Last Name field in Personal Details section getting displayed");
+					Test.log(LogStatus.PASS, "Last Name field in Personal Details section getting displayed");
+				} else {
+					Log.info("Incorrect Last Name field label in Personal Details section getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect Last Name field in Personal Details section getting displayed");
+				}
+
+			} else {
+				Log.info("Last Name field in Personal Details section not getting displayed");
+				Test.log(LogStatus.FAIL, "Last Name field in Personal Details section not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
 }
