@@ -32,6 +32,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import utility.Log;
 import utility.Constant;
+import utility.ExcelUtils;
 
 public class Login {
 
@@ -41,6 +42,8 @@ public class Login {
 	int y;
 	ExtentReports Report;
 	ExtentTest Test;
+	String Str;
+	String[] S;
 
 	@BeforeClass
 	public void fnCheck_RegisterAccount_page() {
@@ -68,6 +71,7 @@ public class Login {
 
 				}
 			}
+			ExcelUtils.setExcelFile(Constant.Path_TestData, "Login");
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -106,6 +110,17 @@ public class Login {
 			}
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			Log.startTestCase(test_method.getName());
+			
+			for(int i=0; i<ExcelUtils.getRowUsed();i++) {
+				if (ExcelUtils.getCellData(i, Constant.Col_TestCaseName).contentEquals(test_method.getName())) {
+					Str= ExcelUtils.getCellData(i, Constant.Col_Test_Data);
+					break;
+				}
+			}
+			
+			if (Str.contains(",")) {
+				S=CommonFunctionandEvents.fnStringSplit(Str, ",");
+			}
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -131,7 +146,7 @@ public class Login {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Home_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(
-						CommonFunctionandEvents.fnGetElementAttribute(Login.Home_menu, "class"), "fa fa-home")) {
+						CommonFunctionandEvents.fnGetElementAttribute(Login.Home_menu, "class"), Str)) {
 					Log.info("Home menu is being displyed correctly");
 					Test.log(LogStatus.PASS, "Home menu is being displyed correctly");
 				} else {
@@ -153,7 +168,7 @@ public class Login {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Home_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Home_menu)) {
-					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Your Store")) {
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
 						Log.info("User navigated to Landing page upon clicking on Home menu");
 						Test.log(LogStatus.PASS, "User navigated to Landing page upon clicking on Home menu");
 					} else {
@@ -179,7 +194,7 @@ public class Login {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Account_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Account_menu),
-						"Account")) {
+						Str)) {
 					Log.info("Account menu is being displyed correctly");
 					Test.log(LogStatus.PASS, "Account menu is being displyed correctly");
 				} else {
@@ -201,7 +216,7 @@ public class Login {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Account_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Account_menu)) {
-					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Account Login")) {
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
 						Log.info("User navigated to Login page upon clicking on Account menu");
 						Test.log(LogStatus.PASS, "User navigated to Login page upon clicking on Account menu");
 					} else {
@@ -227,7 +242,7 @@ public class Login {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Login_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Login_menu),
-						"Login")) {
+						Str)) {
 					Log.info("Login menu is being displyed correctly");
 					Test.log(LogStatus.PASS, "Login menu is being displyed correctly");
 				} else {
@@ -249,7 +264,7 @@ public class Login {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Login_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Login_menu)) {
-					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Account Login")) {
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
 						Log.info("User navigated to Login page upon clicking on Login menu");
 						Test.log(LogStatus.PASS, "User navigated to Login page upon clicking on Login menu");
 					} else {

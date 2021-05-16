@@ -21,7 +21,7 @@ public static ExtentReports getInstance() {
 		
 		ExtentReports report = new ExtentReports(FilePath, true, DisplayOrder.NEWEST_FIRST);
 		
-		report.loadConfig(new File("C:\\Users\\Mukesh\\git\\OnlineStore\\"+"ReportsConfig.xml"));
+		report.loadConfig(new File("ReportsConfig.xml"));
 
 		report.addSystemInfo("Selenium Version", "4.0.0-alpha-7").addSystemInfo(
 				"Environment", "QA");

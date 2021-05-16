@@ -31,6 +31,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import utility.Log;
 import utility.Constant;
+import utility.ExcelUtils;
 
 public class RegisterAccount {
 
@@ -40,6 +41,8 @@ public class RegisterAccount {
 	int y;
 	ExtentReports Report;
 	ExtentTest Test;
+	String Str;
+	String[] S;
 
 	@BeforeClass
 	public void fnCheck_RegisterAccount_page() {
@@ -68,6 +71,7 @@ public class RegisterAccount {
 
 				}
 			}
+			ExcelUtils.setExcelFile(Constant.Path_TestData, "Register Account");
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -105,6 +109,17 @@ public class RegisterAccount {
 			}
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			Log.startTestCase(test_method.getName());
+			
+			for(int i=0; i<ExcelUtils.getRowUsed();i++) {
+				if (ExcelUtils.getCellData(i, Constant.Col_TestCaseName).contentEquals(test_method.getName())) {
+					Str= ExcelUtils.getCellData(i, Constant.Col_Test_Data);
+					break;
+				}
+			}
+			
+			if (Str.contains(",")) {
+				S=CommonFunctionandEvents.fnStringSplit(Str, ",");
+			}
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -130,7 +145,7 @@ public class RegisterAccount {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Page_Header)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Page_Header),
-						"Register Account")) {
+						Str)) {
 					Log.info("Page title is being displyed correctly");
 					Test.log(LogStatus.PASS, "Page title is being displyed correctly");
 				} else {
@@ -152,7 +167,7 @@ public class RegisterAccount {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Home_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(
-						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.Home_menu, "class"), "fa fa-home")) {
+						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.Home_menu, "class"), Str)) {
 					Log.info("Home menu is being displyed correctly");
 					Test.log(LogStatus.PASS, "Home menu is being displyed correctly");
 				} else {
@@ -174,7 +189,7 @@ public class RegisterAccount {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Home_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, R_Acc.Home_menu)) {
-					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Your Store")) {
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
 						Log.info("User navigated to Landing page upon clicking on Home menu");
 						Test.log(LogStatus.PASS, "User navigated to Landing page upon clicking on Home menu");
 					} else {
@@ -200,7 +215,7 @@ public class RegisterAccount {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Account_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Account_menu),
-						"Account")) {
+						Str)) {
 					Log.info("Account menu is being displyed correctly");
 					Test.log(LogStatus.PASS, "Account menu is being displyed correctly");
 				} else {
@@ -222,7 +237,7 @@ public class RegisterAccount {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Account_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, R_Acc.Account_menu)) {
-					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Account Login")) {
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
 						Log.info("User navigated to Login page upon clicking on Account menu");
 						Test.log(LogStatus.PASS, "User navigated to Login page upon clicking on Account menu");
 					} else {
@@ -248,7 +263,7 @@ public class RegisterAccount {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Register_menu)) {
 				if (CommonFunctionandEvents
-						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Register_menu), "Register")) {
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Register_menu), Str)) {
 					Log.info("Register menu is being displyed correctly");
 					Test.log(LogStatus.PASS, "Register menu is being displyed correctly");
 				} else {
@@ -270,7 +285,7 @@ public class RegisterAccount {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Register_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, R_Acc.Register_menu)) {
-					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Register Account")) {
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
 						Log.info("User navigated to Register Account page upon clicking on Register menu");
 						Test.log(LogStatus.PASS,
 								"User navigated to Register Account page upon clicking on Register menu");
@@ -321,8 +336,8 @@ public class RegisterAccount {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.LoginPage_link)) {
 				if (CommonFunctionandEvents.fnTextContains(
-						CommonFunctionandEvents.fnGetElementText(R_Acc.Register_Account_msg),
-						Constant.RegisterAccount_msg)) {
+						CommonFunctionandEvents.fnGetElementText(R_Acc.LoginPage_link),
+						Str)) {
 					Log.info("Login Page link getting displayed");
 					Test.log(LogStatus.PASS, "Login Page link getting displayed");
 				} else {
@@ -345,7 +360,7 @@ public class RegisterAccount {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.LoginPage_link)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, R_Acc.LoginPage_link)) {
-					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Account Login")) {
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
 						Log.info("User navigated to Login page upon clicking on Login Page link");
 						Test.log(LogStatus.PASS, "User navigated to Login page upon clicking on Login Page link");
 					} else {
@@ -388,7 +403,7 @@ public class RegisterAccount {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PersonalDetails_header)) {
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementText(R_Acc.PersonalDetails_header),
-						"Your Personal Details")) {
+						Str)) {
 					Log.info("Personal Details section header getting displayed");
 					Test.log(LogStatus.PASS, "Personal Details section header getting displayed");
 				} else {
@@ -412,7 +427,7 @@ public class RegisterAccount {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.FirstName_label)) {
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementText(R_Acc.FirstName_label),
-						"First Name")) {
+						Str)) {
 					Log.info("First Name field label in Personal Details section getting displayed");
 					Test.log(LogStatus.PASS, "First Name field label in Personal Details section getting displayed");
 				} else {
@@ -436,11 +451,11 @@ public class RegisterAccount {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.FirstName_field)) {
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.FirstName_field, "placeholder"),
-						"First Name")) {
+						Str)) {
 					Log.info("First Name field in Personal Details section getting displayed");
 					Test.log(LogStatus.PASS, "First Name field in Personal Details section getting displayed");
 				} else {
-					Log.info("Incorrect First Name field label in Personal Details section getting displayed");
+					Log.info("Incorrect First Name field in Personal Details section getting displayed");
 					Test.log(LogStatus.FAIL, "Incorrect First Name field in Personal Details section getting displayed");
 				}
 
@@ -460,7 +475,7 @@ public class RegisterAccount {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.LastName_label)) {
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementText(R_Acc.LastName_label),
-						"Last Name")) {
+						Str)) {
 					Log.info("Last Name field label in Personal Details section getting displayed");
 					Test.log(LogStatus.PASS, "Last Name field label in Personal Details section getting displayed");
 				} else {
@@ -484,11 +499,11 @@ public class RegisterAccount {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.LastName_field)) {
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.LastName_field, "placeholder"),
-						"Last Name")) {
+						Str)) {
 					Log.info("Last Name field in Personal Details section getting displayed");
 					Test.log(LogStatus.PASS, "Last Name field in Personal Details section getting displayed");
 				} else {
-					Log.info("Incorrect Last Name field label in Personal Details section getting displayed");
+					Log.info("Incorrect Last Name field in Personal Details section getting displayed");
 					Test.log(LogStatus.FAIL, "Incorrect Last Name field in Personal Details section getting displayed");
 				}
 
@@ -501,5 +516,102 @@ public class RegisterAccount {
 			System.out.println(Ex);
 		}
 	}
+	
+	@Test
+	public void TC36_fnCheck_RegisterAccount_Page_PersonalDetails_section_Email_label() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.EMail_label)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementText(R_Acc.EMail_label),
+						Str)) {
+					Log.info("E-Mail field label in Personal Details section getting displayed");
+					Test.log(LogStatus.PASS, "E-Mail field label in Personal Details section getting displayed");
+				} else {
+					Log.info("Incorrect E-Mail field label in Personal Details section getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect E-Mail field label in Personal Details section getting displayed");
+				}
+
+			} else {
+				Log.info("E-Mail field label in Personal Details section not getting displayed");
+				Test.log(LogStatus.FAIL, "E-Mail field label in Personal Details section not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC37_fnCheck_RegisterAccount_Page_PersonalDetails_section_Email_field() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.EMail_field)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.EMail_field, "placeholder"),
+						Str)) {
+					Log.info("E-Mail field in Personal Details section getting displayed");
+					Test.log(LogStatus.PASS, "E-Mail field in Personal Details section getting displayed");
+				} else {
+					Log.info("Incorrect E-Mail field in Personal Details section getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect E-Mail field in Personal Details section getting displayed");
+				}
+
+			} else {
+				Log.info("E-Mail field in Personal Details section not getting displayed");
+				Test.log(LogStatus.FAIL, "E-Mail field in Personal Details section not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC38_fnCheck_RegisterAccount_Page_PersonalDetails_section_Telephone_label() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Telephone_label)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementText(R_Acc.Telephone_label),
+						Str)) {
+					Log.info("Telephone field label in Personal Details section getting displayed");
+					Test.log(LogStatus.PASS, "Telephone field label in Personal Details section getting displayed");
+				} else {
+					Log.info("Incorrect Telephone field label in Personal Details section getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect Telephone field label in Personal Details section getting displayed");
+				}
+
+			} else {
+				Log.info("Telephone field label in Personal Details section not getting displayed");
+				Test.log(LogStatus.FAIL, "Telephone field label in Personal Details section not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC39_fnCheck_RegisterAccount_Page_PersonalDetails_section_Telephone_field() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Telephone_field)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.Telephone_field, "placeholder"),
+						Str)) {
+					Log.info("Telephone field in Personal Details section getting displayed");
+					Test.log(LogStatus.PASS, "Telephone field in Personal Details section getting displayed");
+				} else {
+					Log.info("Incorrect Telephone field in Personal Details section getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect Telephone field in Personal Details section getting displayed");
+				}
+
+			} else {
+				Log.info("Last Name field in Personal Details section not getting displayed");
+				Test.log(LogStatus.FAIL, "Last Name field in Personal Details section not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
 
 }

@@ -23,25 +23,27 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-import utility.CommonFunctionandEvents;
-import utility.ExtentManager;
-import utility.Utils;
+//import utility.CommonFunctionandEvents;
+//import utility.ExtentManager;
+import utility.*;
+
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import utility.Log;
-import utility.Constant;
+//import utility.Log;
+//import utility.Constant;
 
 public class LandingPage {
 
 	WebDriver driver;
 	Landing_Page LP;
 	WebDriver existing_driver;
-	int x = 0;
 	ExtentReports Report;
 	ExtentTest Test;
 	static ExtentReports Report_old;
+	String Str;
+	String[] S;
 
 
 	@BeforeSuite
@@ -71,7 +73,7 @@ public class LandingPage {
 			} else {
 				driver.get(Constant.URL);
 			}
-			    
+			 ExcelUtils.setExcelFile(Constant.Path_TestData, "Landing Page");   
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -83,6 +85,7 @@ public class LandingPage {
 	public void fnDelete_PageObject() {
 		try {
 			LP = null;
+			
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -121,6 +124,18 @@ public class LandingPage {
 			Log.startTestCase(test_method.getName());
 			
 			
+			for(int i=0; i<ExcelUtils.getRowUsed();i++) {
+				if (ExcelUtils.getCellData(i, Constant.Col_TestCaseName).contentEquals(test_method.getName())) {
+					Str= ExcelUtils.getCellData(i, Constant.Col_Test_Data);
+					break;
+				}
+			}
+			
+			if (Str.contains(",")) {
+				S=CommonFunctionandEvents.fnStringSplit(Str, ",");
+			}
+			
+			
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -145,7 +160,7 @@ public class LandingPage {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.YourStore)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(LP.YourStore),
-						"Your Store")) {
+						Str)) {
 					Log.info("Page title is being displyed correctly");
 					Test.log(LogStatus.PASS, "Page title is being displyed correctly");
 				} else {
@@ -181,12 +196,12 @@ public class LandingPage {
 
 	@Test
 	public void TC03_fnCheck_LandingPage_SystemMenu_Elements() {
-		String[] S = null;
+		String[] S1=null;
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Menu_bar)) {
 				if (CommonFunctionandEvents.fnValidateArray(
-						CommonFunctionandEvents.fncreateArray_Elements(LP.Menu_bar_elements, S),
-						Constant.SystemMenu_elements)) {
+						CommonFunctionandEvents.fncreateArray_Elements(LP.Menu_bar_elements, S1),
+						S)) {
 					Log.info("All System Menu bar elements are getting correctly displayed");
 					Test.log(LogStatus.PASS, "All System Menu bar elements are getting correctly displayed");
 				} else {
@@ -209,7 +224,7 @@ public class LandingPage {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Contact_No)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(LP.Contact_No),
-						"123456789")) {
+						Str)) {
 					Log.info("Contact No is getting displayed correctly");
 					Test.log(LogStatus.PASS, "Contact No is getting displayed correctly");
 				} else {
@@ -287,7 +302,7 @@ public class LandingPage {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.MyAccount_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(LP.MyAccount_menu),
-						"My Account")) {
+						Str)) {
 					Log.info("My Account menu is getting displayed correctly");
 					Test.log(LogStatus.PASS, "My Account menu is getting displayed correctly");
 				} else {
@@ -341,7 +356,7 @@ public class LandingPage {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.MyAccount_menu)) {
 					if (CommonFunctionandEvents.fnValidateArray(
 							CommonFunctionandEvents.fncreateArray_Elements(LP.MyAccount_dropdown_options, S1),
-							Constant.MyAccount_elements)) {
+							S)) {
 						Log.info("All My Account dropdown options are getting correctly displayed");
 						Test.log(LogStatus.PASS, "All My Account dropdown options are getting correctly displayed");
 					} else {
@@ -369,7 +384,7 @@ public class LandingPage {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.WishList_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(LP.WishList_menu),
-						"Wish List")) {
+						Str)) {
 					Log.info("Wish List menu is getting displayed correctly");
 					Test.log(LogStatus.PASS, "Wish List menu is getting displayed correctly");
 				} else {
@@ -392,7 +407,7 @@ public class LandingPage {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.WishList_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.WishList_menu)) {
-					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Account Login")) {
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
 						Log.info("User navigated to the correct page i.e. Login page");
 						Test.log(LogStatus.PASS, "User navigated to the correct page i.e. Login page");
 					} else {
@@ -420,7 +435,7 @@ public class LandingPage {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.ShoppingCart_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(
-						CommonFunctionandEvents.fnGetElementText(LP.ShoppingCart_menu), "Shopping Cart")) {
+						CommonFunctionandEvents.fnGetElementText(LP.ShoppingCart_menu), Str)) {
 					Log.info("Shopping Cart menu is getting displayed correctly");
 					Test.log(LogStatus.PASS, "Shopping Cart menu is getting displayed correctly");
 				} else {
@@ -443,7 +458,7 @@ public class LandingPage {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.ShoppingCart_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.ShoppingCart_menu)) {
-					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Shopping Cart")) {
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
 						Log.info("User navigated to the Shopping Cart page");
 						Test.log(LogStatus.PASS, "User navigated to the Shopping Cart page");
 					} else {
@@ -470,7 +485,7 @@ public class LandingPage {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Checkout_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(LP.Checkout_menu),
-						"Checkout")) {
+						Str)) {
 					Log.info("Checkout menu is getting displayed correctly");
 					Test.log(LogStatus.PASS, "Checkout menu is getting displayed correctly");
 				} else {
@@ -493,7 +508,7 @@ public class LandingPage {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Checkout_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.Checkout_menu)) {
-					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), "Shopping Cart")) {
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
 						Log.info("User navigated to correct page i.e. the Shopping Cart page");
 						Test.log(LogStatus.PASS, "User navigated to correct page i.e. the Shopping Cart page");
 					} else {

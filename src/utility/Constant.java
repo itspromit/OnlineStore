@@ -6,7 +6,7 @@ public class Constant {
 	    public static final String URL = "http://tutorialsninja.com/demo/";
 	    public static final String Username = "testuser_1";
 	    public static final String Password ="Test@123";
-		public static final String Path_TestData = "D:\\Regression Automation Suite\\OnlineStore\\src\\testData\\TestData.xlsx";
+		public static final String Path_TestData = "C:\\Users\\Mukesh\\git\\OnlineStore\\src\\testData\\TestData.xlsx";
 		//public static final String File_TestData = "TestData.xlsx";
 		public static final String RegisterAccount_Page= "http://tutorialsninja.com/demo/index.php?route=account/register";
 		
@@ -18,18 +18,7 @@ public class Constant {
 		public static final String RegisterAccount_msg= "If you already have an account with us, please login at the ";
 		//Test Data Sheet Columns
 		public static final int Col_TestCaseName = 0;	
-		public static final int Col_UserName =1 ;
-		public static final int Col_Password = 2;
-		public static final int Col_Browser = 3;
-		public static final int Col_ProductType = 4;
-		public static final int Col_ProductNumber = 5;
-		public static final int Col_FirstName = 6;
-		public static final int Col_LastName = 7;
-		public static final int Col_Address = 8;
-		public static final int Col_City = 9;
-		public static final int Col_Country = 10;
-		public static final int Col_Phone = 11;
-		public static final int Col_Email = 12;
-		public static final int Col_Result = 13;
+		public static final int Col_Test_Data =1 ;
+		public static final int Col_Result = 2;
 		public static final String Path_ScreenShot = "D://ToolsQA//OnlineStore//src//Screenshots//";
 	}
