@@ -59,7 +59,7 @@ public class Login {
 				if (driver.getTitle().contains("Account Login")) {
 
 				} else {
-					Log.info("User not on Login page");
+					driver.navigate().to(Constant.Login_Page);
 
 				}
 			} else {
@@ -149,13 +149,16 @@ public class Login {
 						CommonFunctionandEvents.fnGetElementAttribute(Login.Home_menu, "class"), Str)) {
 					Log.info("Home menu is being displyed correctly");
 					Test.log(LogStatus.PASS, "Home menu is being displyed correctly");
+					Test.getRunStatus();
 				} else {
 					Log.info("Incorrect name of Home menu is being displyed");
 					Test.log(LogStatus.FAIL, "Incorrect name of Home menu is being displyed");
+					Test.getRunStatus();
 				}
 			} else {
 				Log.info("Home menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Home menu is not getting displayed");
+				Test.getRunStatus();
 			}
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -284,5 +287,145 @@ public class Login {
 			System.out.println(Ex);
 		}
 	}
+	
+	@Test
+	public void TC47_fnCheck_Login_Page_NewCustomer_section() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.NewCustomer_menu)) {
+				Log.info("New Customer section getting displayed");
+				Test.log(LogStatus.PASS, "New Customer section getting displayed");
+			} else {
+				Log.info("New Customer section not getting displayed");
+				Test.log(LogStatus.FAIL, "New Customer section not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+	
+	@Test
+	public void TC48_fnCheck_Login_Page_NewCustomer_section_header() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.NewCustomer_header)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementText(Login.NewCustomer_header),
+						Str)) {
+					Log.info("New Customer section header getting displayed");
+					Test.log(LogStatus.PASS, "New Customer section header getting displayed");
+				} else {
+					Log.info("Incorrect New Customer section header getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect New Customer section header getting displayed");
+				}
+
+			} else {
+				Log.info("New Customer section header not getting displayed");
+				Test.log(LogStatus.FAIL, "New Customer section header not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC49_fnCheck_Login_Page_NewCustomer_section_RegisterAccount_label() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.RegisterAccount_label)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementText(Login.RegisterAccount_label),
+						Str)) {
+					Log.info("New Customer section Register Account label getting displayed");
+					Test.log(LogStatus.PASS, "New Customer section Register Account label getting displayed");
+				} else {
+					Log.info("Incorrect New Customer section Register Account label getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect New Customer section Register Account label getting displayed");
+				}
+
+			} else {
+				Log.info("New Customer section Register Account label not getting displayed");
+				Test.log(LogStatus.FAIL, "New Customer section Register Account label  not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC50_fnCheck_Login_Page_NewCustomer_section_text() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.NewCustomer_text)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementText(Login.NewCustomer_text),
+						Constant.NewCustomer_msg)) {
+					Log.info("New Customer section text getting displayed");
+					Test.log(LogStatus.PASS, "New Customer section text getting displayed");
+				} else {
+					Log.info("Incorrect New Customer section text getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect New Customer section text getting displayed");
+				}
+
+			} else {
+				Log.info("New Customer section text not getting displayed");
+				Test.log(LogStatus.FAIL, "New Customer section text not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+	
+	@Test
+	public void TC51_fnCheck_Login_Page_NewCustomer_section_Continue_button() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Continue_button)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementText(Login.Continue_button),
+						Str)) {
+					Log.info("Continue button in New Customer section getting displayed");
+					Test.log(LogStatus.PASS, "Continue button in New Customer section getting displayed");
+				} else {
+					Log.info("Incorrect name of Continue button in New Customer section getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect name of Continue button in New Customer section getting displayed");
+				}
+
+			} else {
+				Log.info("Continue button in New Customer section not getting displayed");
+				Test.log(LogStatus.FAIL, "Continue button in New Customer section not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC52_fnCheck_Login_Page_NewCustomer_section_Continue_button_functionality() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Continue_button)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Continue_button)) {
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
+						Log.info("User navigated to Register Account page upon clicking on Continue button");
+						Test.log(LogStatus.PASS, "User navigated to Login page upon clicking on Login menu");
+					} else {
+						Log.info("User navigated to incorrect page upon clicking on Continue button");
+						Test.log(LogStatus.FAIL, "User navigated to incorrect page upon clicking on Continue button");
+					}
+				} else {
+					Log.info("Continue button is not clickable");
+					Test.log(LogStatus.FAIL, "Continue button is not clickable");
+				}
+			} else {
+				Log.info("Continue button in New Customer section not getting displayed");
+				Test.log(LogStatus.FAIL, "Continue button in New Customer section not getting displayed");
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+
 
 }

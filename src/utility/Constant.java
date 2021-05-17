@@ -16,6 +16,7 @@ public class Constant {
 		public static final String Login_Page= "http://tutorialsninja.com/demo/index.php?route=account/login";
 		
 		public static final String RegisterAccount_msg= "If you already have an account with us, please login at the ";
+		public static final String NewCustomer_msg= "By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.";
 		//Test Data Sheet Columns
 		public static final int Col_TestCaseName = 0;	
 		public static final int Col_Test_Data =1 ;
