@@ -11,6 +11,7 @@ import pageObjects.LogIn_Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
@@ -42,6 +43,7 @@ public class Login {
 	int y;
 	ExtentReports Report;
 	ExtentTest Test;
+	boolean Result;
 	String Str;
 	String[] S;
 
@@ -147,19 +149,24 @@ public class Login {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Home_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementAttribute(Login.Home_menu, "class"), Str)) {
+					Result= true;
 					Log.info("Home menu is being displyed correctly");
 					Test.log(LogStatus.PASS, "Home menu is being displyed correctly");
-					Test.getRunStatus();
+					
+					
 				} else {
+					Result= false;
 					Log.info("Incorrect name of Home menu is being displyed");
 					Test.log(LogStatus.FAIL, "Incorrect name of Home menu is being displyed");
-					Test.getRunStatus();
+					
 				}
 			} else {
+				Result= false;
 				Log.info("Home menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Home menu is not getting displayed");
-				Test.getRunStatus();
+				
 			}
+			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -172,20 +179,25 @@ public class Login {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Home_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Home_menu)) {
 					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
+						Result= true;
 						Log.info("User navigated to Landing page upon clicking on Home menu");
 						Test.log(LogStatus.PASS, "User navigated to Landing page upon clicking on Home menu");
 					} else {
+						Result= false; 
 						Log.info("User navigated to incorrect page upon clicking on Home menu");
 						Test.log(LogStatus.FAIL, "User navigated to incorrect page upon clicking on Home menu");
 					}
 				} else {
+					Result= false;
 					Log.info("Shopping Cart menu is not clickable");
 					Test.log(LogStatus.FAIL, "Shopping Cart menu is not clickable");
 				}
 			} else {
+				Result= false;
 				Log.info("Home menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Home menu is not getting displayed");
 			}
+			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -198,16 +210,20 @@ public class Login {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Account_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Account_menu),
 						Str)) {
+					Result= true;
 					Log.info("Account menu is being displyed correctly");
 					Test.log(LogStatus.PASS, "Account menu is being displyed correctly");
 				} else {
+					Result= false;
 					Log.info("Incorrect name of Account menu is being displyed");
 					Test.log(LogStatus.FAIL, "Incorrect name of Account menu is being displyed");
 				}
 			} else {
+				Result= false;
 				Log.info("Account menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Account menu is not getting displayed");
 			}
+			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -220,20 +236,25 @@ public class Login {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Account_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Account_menu)) {
 					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
+						Result= true;
 						Log.info("User navigated to Login page upon clicking on Account menu");
 						Test.log(LogStatus.PASS, "User navigated to Login page upon clicking on Account menu");
 					} else {
+						Result= false;
 						Log.info("User navigated to incorrect page upon clicking on Account menu");
 						Test.log(LogStatus.FAIL, "User navigated to incorrect page upon clicking on Account menu");
 					}
 				} else {
+					Result= false;
 					Log.info("Account menu is not clickable");
 					Test.log(LogStatus.FAIL, "Account menu is not clickable");
 				}
 			} else {
+				Result= false;
 				Log.info("Account menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Account menu is not getting displayed");
 			}
+			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -246,16 +267,20 @@ public class Login {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Login_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Login_menu),
 						Str)) {
+					Result= true;
 					Log.info("Login menu is being displyed correctly");
 					Test.log(LogStatus.PASS, "Login menu is being displyed correctly");
 				} else {
+					Result= false;
 					Log.info("Incorrect name of Login menu is being displyed");
 					Test.log(LogStatus.FAIL, "Incorrect name of Login menu is being displyed");
 				}
 			} else {
+				Result= false;
 				Log.info("Login menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Login menu is not getting displayed");
 			}
+			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -268,20 +293,25 @@ public class Login {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Login_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Login_menu)) {
 					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
+						Result= true;
 						Log.info("User navigated to Login page upon clicking on Login menu");
 						Test.log(LogStatus.PASS, "User navigated to Login page upon clicking on Login menu");
 					} else {
+						Result= false;
 						Log.info("User navigated to incorrect page upon clicking on Login menu");
 						Test.log(LogStatus.FAIL, "User navigated to incorrect page upon clicking on Login menu");
 					}
 				} else {
+					Result= false;
 					Log.info("Login menu is not clickable");
 					Test.log(LogStatus.FAIL, "Login menu is not clickable");
 				}
 			} else {
+				Result= false;
 				Log.info("Login menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Login menu is not getting displayed");
 			}
+			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -292,12 +322,15 @@ public class Login {
 	public void TC47_fnCheck_Login_Page_NewCustomer_section() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.NewCustomer_menu)) {
+				Result= true;
 				Log.info("New Customer section getting displayed");
 				Test.log(LogStatus.PASS, "New Customer section getting displayed");
 			} else {
+				Result= false;
 				Log.info("New Customer section not getting displayed");
 				Test.log(LogStatus.FAIL, "New Customer section not getting displayed");
 			}
+			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -311,17 +344,21 @@ public class Login {
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementText(Login.NewCustomer_header),
 						Str)) {
+					Result= true;
 					Log.info("New Customer section header getting displayed");
 					Test.log(LogStatus.PASS, "New Customer section header getting displayed");
 				} else {
+					Result= false;
 					Log.info("Incorrect New Customer section header getting displayed");
 					Test.log(LogStatus.FAIL, "Incorrect New Customer section header getting displayed");
 				}
 
 			} else {
+				Result= false;
 				Log.info("New Customer section header not getting displayed");
 				Test.log(LogStatus.FAIL, "New Customer section header not getting displayed");
 			}
+			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -335,17 +372,21 @@ public class Login {
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementText(Login.RegisterAccount_label),
 						Str)) {
+					Result= true;
 					Log.info("New Customer section Register Account label getting displayed");
 					Test.log(LogStatus.PASS, "New Customer section Register Account label getting displayed");
 				} else {
+					Result= false;
 					Log.info("Incorrect New Customer section Register Account label getting displayed");
 					Test.log(LogStatus.FAIL, "Incorrect New Customer section Register Account label getting displayed");
 				}
 
 			} else {
+				Result= false;
 				Log.info("New Customer section Register Account label not getting displayed");
 				Test.log(LogStatus.FAIL, "New Customer section Register Account label  not getting displayed");
 			}
+			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -359,17 +400,21 @@ public class Login {
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementText(Login.NewCustomer_text),
 						Constant.NewCustomer_msg)) {
+					Result= true;
 					Log.info("New Customer section text getting displayed");
 					Test.log(LogStatus.PASS, "New Customer section text getting displayed");
 				} else {
+					Result= false;
 					Log.info("Incorrect New Customer section text getting displayed");
 					Test.log(LogStatus.FAIL, "Incorrect New Customer section text getting displayed");
 				}
 
 			} else {
+				Result= false;
 				Log.info("New Customer section text not getting displayed");
 				Test.log(LogStatus.FAIL, "New Customer section text not getting displayed");
 			}
+			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -383,17 +428,21 @@ public class Login {
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementText(Login.Continue_button),
 						Str)) {
+					Result= true;
 					Log.info("Continue button in New Customer section getting displayed");
 					Test.log(LogStatus.PASS, "Continue button in New Customer section getting displayed");
 				} else {
+					Result= false;
 					Log.info("Incorrect name of Continue button in New Customer section getting displayed");
 					Test.log(LogStatus.FAIL, "Incorrect name of Continue button in New Customer section getting displayed");
 				}
 
 			} else {
+				Result= false;
 				Log.info("Continue button in New Customer section not getting displayed");
 				Test.log(LogStatus.FAIL, "Continue button in New Customer section not getting displayed");
 			}
+			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -406,20 +455,25 @@ public class Login {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Continue_button)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Continue_button)) {
 					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
+						Result= true;
 						Log.info("User navigated to Register Account page upon clicking on Continue button");
 						Test.log(LogStatus.PASS, "User navigated to Login page upon clicking on Login menu");
 					} else {
+						Result= false;
 						Log.info("User navigated to incorrect page upon clicking on Continue button");
 						Test.log(LogStatus.FAIL, "User navigated to incorrect page upon clicking on Continue button");
 					}
 				} else {
+					Result= false;
 					Log.info("Continue button is not clickable");
 					Test.log(LogStatus.FAIL, "Continue button is not clickable");
 				}
 			} else {
+				Result= false;
 				Log.info("Continue button in New Customer section not getting displayed");
 				Test.log(LogStatus.FAIL, "Continue button in New Customer section not getting displayed");
 			}
+			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);

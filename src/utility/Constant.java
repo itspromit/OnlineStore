@@ -21,5 +21,5 @@ public class Constant {
 		public static final int Col_TestCaseName = 0;	
 		public static final int Col_Test_Data =1 ;
 		public static final int Col_Result = 2;
-		public static final String Path_ScreenShot = "D://ToolsQA//OnlineStore//src//Screenshots//";
+		public static final String Path_ScreenShot = "C:\\Users\\Mukesh\\git\\OnlineStore\\src\\Screenshots\\";
 	}
