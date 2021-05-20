@@ -371,12 +371,11 @@ public class LandingPage {
 			}
 			if (Result == true) {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
-						driver.getCurrentUrl());
+						"document.body.style.backgroundColor = 'green';"
+						);
 			} else {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
-						driver.getCurrentUrl());
+						"document.body.style.backgroundColor = 'red';");
 			}
 			
 			Assert.assertEquals(Result, true);
@@ -496,11 +495,11 @@ public class LandingPage {
 			if (Result == true) {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
-						LP.MyAccount_dropdown_options);
+						LP.MyAccount_dropdown);
 			} else {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
 						"arguments[0].setAttribute('style','background: yellow; border: 2px solid black;');",
-						LP.MyAccount_dropdown_options);
+						LP.MyAccount_dropdown);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -574,12 +573,11 @@ public class LandingPage {
 			}
 			if (Result == true) {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
-						driver.getTitle());
+						"document.body.style.backgroundColor = 'green';"
+						);
 			} else {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: yellow; border: 2px solid black;');",
-						driver.getTitle());
+						"document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -651,12 +649,11 @@ public class LandingPage {
 			}
 			if (Result == true) {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
-						driver.getTitle());
+						"document.body.style.backgroundColor = 'green';"
+						);
 			} else {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: yellow; border: 2px solid black;');",
-						driver.getTitle());
+						"document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -702,7 +699,7 @@ public class LandingPage {
 						LP.Checkout_menu);
 			} else {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: yellow; border: 2px solid black;');",
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						LP.Checkout_menu);
 			}
 			Assert.assertEquals(Result, true);
@@ -740,12 +737,11 @@ public class LandingPage {
 			}
 			if (Result == true) {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
-						driver.getTitle());
+						"document.body.style.backgroundColor = 'green';"
+						);
 			} else {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: yellow; border: 2px solid black;');",
-						driver.getTitle());
+						"document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {

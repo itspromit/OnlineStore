@@ -132,9 +132,12 @@ public class RegisterAccount {
 	@AfterMethod
 	public void After_method(Method test_method) {
 		try {
+			Thread.sleep(3000);
+			Utils.takeScreenshot(driver, test_method.getName());
 			Log.endTestCase(test_method.getName());
 			Report.endTest(Test);
 			Report.flush();
+			driver.navigate().refresh();
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -161,6 +164,16 @@ public class RegisterAccount {
 				Log.info("Page title is not getting displayed");
 				Test.log(LogStatus.FAIL, "Page title is not getting displayed");
 			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Page_Header);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.Page_Header);
+			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -186,6 +199,17 @@ public class RegisterAccount {
 				Result = false;
 				Log.info("Home menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Home menu is not getting displayed");
+			}
+
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Home_menu);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.Home_menu);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -218,6 +242,13 @@ public class RegisterAccount {
 				Log.info("Home menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Home menu is not getting displayed");
 			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
+			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -243,6 +274,16 @@ public class RegisterAccount {
 				Result = false;
 				Log.info("Account menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Account menu is not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Account_menu);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.Account_menu);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -275,6 +316,13 @@ public class RegisterAccount {
 				Log.info("Account menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Account menu is not getting displayed");
 			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
+			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -300,6 +348,16 @@ public class RegisterAccount {
 				Result = false;
 				Log.info("Register menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Register menu is not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Register_menu);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.Register_menu);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -333,6 +391,13 @@ public class RegisterAccount {
 				Log.info("Register menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Register menu is not getting displayed");
 			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
+			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -361,6 +426,16 @@ public class RegisterAccount {
 				Log.info("Register Account message not getting displayed");
 				Test.log(LogStatus.FAIL, "Register Account message not getting displayed");
 			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Register_Account_msg);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.Register_Account_msg);
+			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -387,6 +462,16 @@ public class RegisterAccount {
 				Result = false;
 				Log.info("Login Page link not getting displayed");
 				Test.log(LogStatus.FAIL, "Login Page link not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.LoginPage_link);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.LoginPage_link);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -419,6 +504,14 @@ public class RegisterAccount {
 				Log.info("Login Page link is not getting displayed");
 				Test.log(LogStatus.FAIL, "Login Page link is not getting displayed");
 			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"document.body.style.backgroundColor = 'green';"
+						);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"document.body.style.backgroundColor = 'red';");
+			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -437,6 +530,16 @@ public class RegisterAccount {
 				Result = false;
 				Log.info("Personal Details section not getting displayed");
 				Test.log(LogStatus.FAIL, "Personal Details section not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.PersonalDetails_section);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.PersonalDetails_section);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -464,6 +567,16 @@ public class RegisterAccount {
 				Result = false;
 				Log.info("Personal Details section header not getting displayed");
 				Test.log(LogStatus.FAIL, "Personal Details section header not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.PersonalDetails_header);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.PersonalDetails_header);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -493,6 +606,16 @@ public class RegisterAccount {
 				Log.info("First Name field label in Personal Details section not getting displayed");
 				Test.log(LogStatus.FAIL, "First Name field label in Personal Details section not getting displayed");
 			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.FirstName_label);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.FirstName_label);
+			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -520,6 +643,16 @@ public class RegisterAccount {
 				Result = false;
 				Log.info("First Name field in Personal Details section not getting displayed");
 				Test.log(LogStatus.FAIL, "First Name field in Personal Details section not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.FirstName_field);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.FirstName_field);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -549,6 +682,16 @@ public class RegisterAccount {
 				Log.info("Last Name field label in Personal Details section not getting displayed");
 				Test.log(LogStatus.FAIL, "Last Name field label in Personal Details section not getting displayed");
 			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.LastName_label);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.LastName_label);
+			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -575,6 +718,16 @@ public class RegisterAccount {
 				Result = false;
 				Log.info("Last Name field in Personal Details section not getting displayed");
 				Test.log(LogStatus.FAIL, "Last Name field in Personal Details section not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.LastName_field);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.LastName_field);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -604,6 +757,16 @@ public class RegisterAccount {
 				Log.info("E-Mail field label in Personal Details section not getting displayed");
 				Test.log(LogStatus.FAIL, "E-Mail field label in Personal Details section not getting displayed");
 			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.EMail_label);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.EMail_label);
+			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -630,6 +793,16 @@ public class RegisterAccount {
 				Result = false;
 				Log.info("E-Mail field in Personal Details section not getting displayed");
 				Test.log(LogStatus.FAIL, "E-Mail field in Personal Details section not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.EMail_field);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.EMail_field);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -659,6 +832,16 @@ public class RegisterAccount {
 				Log.info("Telephone field label in Personal Details section not getting displayed");
 				Test.log(LogStatus.FAIL, "Telephone field label in Personal Details section not getting displayed");
 			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Telephone_label);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.Telephone_label);
+			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -683,6 +866,17 @@ public class RegisterAccount {
 				Log.info("Last Name field in Personal Details section not getting displayed");
 				Test.log(LogStatus.FAIL, "Last Name field in Personal Details section not getting displayed");
 			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Telephone_field);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.Telephone_field);
+			}
+			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
