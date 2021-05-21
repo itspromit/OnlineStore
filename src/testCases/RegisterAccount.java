@@ -1241,7 +1241,7 @@ public class RegisterAccount {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PrivacyPolicy_text)) {
 				if (CommonFunctionandEvents
-						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.PrivacyPolicy_text), Str)) {
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.PrivacyPolicy_text), Constant.Privacy_Policy)) {
 					Result = true;
 					Log.info("Privacy Policy text getting displayed");
 					Test.log(LogStatus.PASS, "Privacy Policy text getting displayed");
