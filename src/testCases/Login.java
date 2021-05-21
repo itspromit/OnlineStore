@@ -148,7 +148,7 @@ public class Login {
 	}
 
 	@Test
-	public void TC41_fnCheck_Login_Page_Home_menu() {
+	public void TC55_fnCheck_Login_Page_Home_menu() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Home_menu)) {
 				if (CommonFunctionandEvents
@@ -188,7 +188,7 @@ public class Login {
 	}
 
 	@Test
-	public void TC42_fnCheck_Login_Page_Home_menu_functionality() {
+	public void TC56_fnCheck_Login_Page_Home_menu_functionality() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Home_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Home_menu)) {
@@ -226,7 +226,7 @@ public class Login {
 	}
 
 	@Test
-	public void TC43_fnCheck_Login_Page_Account_menu() {
+	public void TC57_fnCheck_Login_Page_Account_menu() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Account_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Account_menu),
@@ -262,7 +262,7 @@ public class Login {
 	}
 
 	@Test
-	public void TC44_fnCheck_Login_Page_Account_menu_functionality() {
+	public void TC58_fnCheck_Login_Page_Account_menu_functionality() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Account_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Account_menu)) {
@@ -300,7 +300,7 @@ public class Login {
 	}
 
 	@Test
-	public void TC45_fnCheck_Login_Page_Login_menu() {
+	public void TC59_fnCheck_Login_Page_Login_menu() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Login_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Login_menu),
@@ -336,7 +336,7 @@ public class Login {
 	}
 
 	@Test
-	public void TC46_fnCheck_Login_Page_Home_menu_functionality() {
+	public void TC60_fnCheck_Login_Page_Home_menu_functionality() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Login_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Login_menu)) {
@@ -374,7 +374,7 @@ public class Login {
 	}
 
 	@Test
-	public void TC47_fnCheck_Login_Page_NewCustomer_section() {
+	public void TC61_fnCheck_Login_Page_NewCustomer_section() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.NewCustomer_menu)) {
 				Result = true;
@@ -403,7 +403,7 @@ public class Login {
 	}
 
 	@Test
-	public void TC48_fnCheck_Login_Page_NewCustomer_section_header() {
+	public void TC62_fnCheck_Login_Page_NewCustomer_section_header() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.NewCustomer_header)) {
 				if (CommonFunctionandEvents
@@ -440,7 +440,7 @@ public class Login {
 	}
 
 	@Test
-	public void TC49_fnCheck_Login_Page_NewCustomer_section_RegisterAccount_label() {
+	public void TC63_fnCheck_Login_Page_NewCustomer_section_RegisterAccount_label() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.RegisterAccount_label)) {
 				if (CommonFunctionandEvents
@@ -477,7 +477,7 @@ public class Login {
 	}
 
 	@Test
-	public void TC50_fnCheck_Login_Page_NewCustomer_section_text() {
+	public void TC64_fnCheck_Login_Page_NewCustomer_section_text() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.NewCustomer_text)) {
 				if (CommonFunctionandEvents.fnTextContains(
@@ -514,7 +514,7 @@ public class Login {
 	}
 
 	@Test
-	public void TC51_fnCheck_Login_Page_NewCustomer_section_Continue_button() {
+	public void TC65_fnCheck_Login_Page_NewCustomer_section_Continue_button() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Continue_button)) {
 				if (CommonFunctionandEvents
@@ -552,7 +552,7 @@ public class Login {
 	}
 
 	@Test
-	public void TC52_fnCheck_Login_Page_NewCustomer_section_Continue_button_functionality() {
+	public void TC66_fnCheck_Login_Page_NewCustomer_section_Continue_button_functionality() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Continue_button)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Continue_button)) {

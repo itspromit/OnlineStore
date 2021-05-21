@@ -96,6 +96,9 @@ public class RegisterAccount_Page extends Landing_Page {
 	@FindBy(xpath="//legend[text()='Newsletter']/parent::fieldset/descendant::label[text()='Subscribe']")
 	public WebElement Subscribe_label;
 	
+	@FindBy(xpath="//legend[text()='Newsletter']/parent::fieldset/descendant::div[@class='col-sm-10']")
+	public WebElement Subscribe_field_options;
+	
 	@FindBy(xpath="//legend[text()='Newsletter']/parent::fieldset/descendant::label[@class='radio-inline']")
 	public List<WebElement> Radio_buttons;
 	
