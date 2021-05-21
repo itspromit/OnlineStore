@@ -135,6 +135,7 @@ public class RegisterAccount {
 			Thread.sleep(3000);
 			Utils.takeScreenshot(driver, test_method.getName());
 			Log.endTestCase(test_method.getName());
+			Test.log(LogStatus.INFO, Test.addScreenCapture(Constant.Path_ScreenShot));
 			Report.endTest(Test);
 			Report.flush();
 			driver.navigate().refresh();
@@ -505,12 +506,11 @@ public class RegisterAccount {
 				Test.log(LogStatus.FAIL, "Login Page link is not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"document.body.style.backgroundColor = 'green';"
-						);
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"document.body.style.backgroundColor = 'red';");
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {

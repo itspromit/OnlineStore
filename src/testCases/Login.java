@@ -55,8 +55,8 @@ public class Login {
 			if (driver == null) {
 				driver = Utils.Return_driver();
 				Login = new LogIn_Page(driver);
-				//LPage= new LandingPage();
-				Report= LandingPage.Return_Report();
+				// LPage= new LandingPage();
+				Report = LandingPage.Return_Report();
 
 				if (driver.getTitle().contains("Account Login")) {
 
@@ -112,16 +112,16 @@ public class Login {
 			}
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			Log.startTestCase(test_method.getName());
-			
-			for(int i=0; i<ExcelUtils.getRowUsed();i++) {
+
+			for (int i = 0; i < ExcelUtils.getRowUsed(); i++) {
 				if (ExcelUtils.getCellData(i, Constant.Col_TestCaseName).contentEquals(test_method.getName())) {
-					Str= ExcelUtils.getCellData(i, Constant.Col_Test_Data);
+					Str = ExcelUtils.getCellData(i, Constant.Col_Test_Data);
 					break;
 				}
 			}
-			
+
 			if (Str.contains(",")) {
-				S=CommonFunctionandEvents.fnStringSplit(Str, ",");
+				S = CommonFunctionandEvents.fnStringSplit(Str, ",");
 			}
 
 		} catch (Exception e) {
@@ -133,9 +133,13 @@ public class Login {
 	@AfterMethod
 	public void After_method(Method test_method) {
 		try {
+			Thread.sleep(3000);
+			Utils.takeScreenshot(driver, test_method.getName());
 			Log.endTestCase(test_method.getName());
+			Test.log(LogStatus.INFO, Test.addScreenCapture(Constant.Path_ScreenShot));
 			Report.endTest(Test);
 			Report.flush();
+			driver.navigate().refresh();
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -147,25 +151,35 @@ public class Login {
 	public void TC41_fnCheck_Login_Page_Home_menu() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Home_menu)) {
-				if (CommonFunctionandEvents.fnTextContains(
-						CommonFunctionandEvents.fnGetElementAttribute(Login.Home_menu, "class"), Str)) {
-					Result= true;
+				if (CommonFunctionandEvents
+						.fnTextContains(CommonFunctionandEvents.fnGetElementAttribute(Login.Home_menu, "class"), Str)) {
+					Result = true;
 					Log.info("Home menu is being displyed correctly");
 					Test.log(LogStatus.PASS, "Home menu is being displyed correctly");
-					
-					
+
 				} else {
-					Result= false;
+					Result = false;
 					Log.info("Incorrect name of Home menu is being displyed");
 					Test.log(LogStatus.FAIL, "Incorrect name of Home menu is being displyed");
-					
+
 				}
 			} else {
-				Result= false;
+				Result = false;
 				Log.info("Home menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Home menu is not getting displayed");
-				
+
 			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						Login.Home_menu);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						Login.Home_menu);
+			}
+
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -179,23 +193,30 @@ public class Login {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Home_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Home_menu)) {
 					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
-						Result= true;
+						Result = true;
 						Log.info("User navigated to Landing page upon clicking on Home menu");
 						Test.log(LogStatus.PASS, "User navigated to Landing page upon clicking on Home menu");
 					} else {
-						Result= false; 
+						Result = false;
 						Log.info("User navigated to incorrect page upon clicking on Home menu");
 						Test.log(LogStatus.FAIL, "User navigated to incorrect page upon clicking on Home menu");
 					}
 				} else {
-					Result= false;
+					Result = false;
 					Log.info("Shopping Cart menu is not clickable");
 					Test.log(LogStatus.FAIL, "Shopping Cart menu is not clickable");
 				}
 			} else {
-				Result= false;
+				Result = false;
 				Log.info("Home menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Home menu is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -210,18 +231,28 @@ public class Login {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Account_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Account_menu),
 						Str)) {
-					Result= true;
+					Result = true;
 					Log.info("Account menu is being displyed correctly");
 					Test.log(LogStatus.PASS, "Account menu is being displyed correctly");
 				} else {
-					Result= false;
+					Result = false;
 					Log.info("Incorrect name of Account menu is being displyed");
 					Test.log(LogStatus.FAIL, "Incorrect name of Account menu is being displyed");
 				}
 			} else {
-				Result= false;
+				Result = false;
 				Log.info("Account menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Account menu is not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						Login.Account_menu);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						Login.Account_menu);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -236,23 +267,30 @@ public class Login {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Account_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Account_menu)) {
 					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
-						Result= true;
+						Result = true;
 						Log.info("User navigated to Login page upon clicking on Account menu");
 						Test.log(LogStatus.PASS, "User navigated to Login page upon clicking on Account menu");
 					} else {
-						Result= false;
+						Result = false;
 						Log.info("User navigated to incorrect page upon clicking on Account menu");
 						Test.log(LogStatus.FAIL, "User navigated to incorrect page upon clicking on Account menu");
 					}
 				} else {
-					Result= false;
+					Result = false;
 					Log.info("Account menu is not clickable");
 					Test.log(LogStatus.FAIL, "Account menu is not clickable");
 				}
 			} else {
-				Result= false;
+				Result = false;
 				Log.info("Account menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Account menu is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -267,18 +305,28 @@ public class Login {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Login_menu)) {
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Login_menu),
 						Str)) {
-					Result= true;
+					Result = true;
 					Log.info("Login menu is being displyed correctly");
 					Test.log(LogStatus.PASS, "Login menu is being displyed correctly");
 				} else {
-					Result= false;
+					Result = false;
 					Log.info("Incorrect name of Login menu is being displyed");
 					Test.log(LogStatus.FAIL, "Incorrect name of Login menu is being displyed");
 				}
 			} else {
-				Result= false;
+				Result = false;
 				Log.info("Login menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Login menu is not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						Login.Login_menu);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						Login.Login_menu);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -293,23 +341,30 @@ public class Login {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Login_menu)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Login_menu)) {
 					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
-						Result= true;
+						Result = true;
 						Log.info("User navigated to Login page upon clicking on Login menu");
 						Test.log(LogStatus.PASS, "User navigated to Login page upon clicking on Login menu");
 					} else {
-						Result= false;
+						Result = false;
 						Log.info("User navigated to incorrect page upon clicking on Login menu");
 						Test.log(LogStatus.FAIL, "User navigated to incorrect page upon clicking on Login menu");
 					}
 				} else {
-					Result= false;
+					Result = false;
 					Log.info("Login menu is not clickable");
 					Test.log(LogStatus.FAIL, "Login menu is not clickable");
 				}
 			} else {
-				Result= false;
+				Result = false;
 				Log.info("Login menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Login menu is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -317,18 +372,28 @@ public class Login {
 			System.out.println(Ex);
 		}
 	}
-	
+
 	@Test
 	public void TC47_fnCheck_Login_Page_NewCustomer_section() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.NewCustomer_menu)) {
-				Result= true;
+				Result = true;
 				Log.info("New Customer section getting displayed");
 				Test.log(LogStatus.PASS, "New Customer section getting displayed");
 			} else {
-				Result= false;
+				Result = false;
 				Log.info("New Customer section not getting displayed");
 				Test.log(LogStatus.FAIL, "New Customer section not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						Login.NewCustomer_menu);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						Login.NewCustomer_menu);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -336,27 +401,36 @@ public class Login {
 			System.out.println(Ex);
 		}
 	}
-	
+
 	@Test
 	public void TC48_fnCheck_Login_Page_NewCustomer_section_header() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.NewCustomer_header)) {
-				if (CommonFunctionandEvents.fnTextContains(
-						CommonFunctionandEvents.fnGetElementText(Login.NewCustomer_header),
-						Str)) {
-					Result= true;
+				if (CommonFunctionandEvents
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.NewCustomer_header), Str)) {
+					Result = true;
 					Log.info("New Customer section header getting displayed");
 					Test.log(LogStatus.PASS, "New Customer section header getting displayed");
 				} else {
-					Result= false;
+					Result = false;
 					Log.info("Incorrect New Customer section header getting displayed");
 					Test.log(LogStatus.FAIL, "Incorrect New Customer section header getting displayed");
 				}
 
 			} else {
-				Result= false;
+				Result = false;
 				Log.info("New Customer section header not getting displayed");
 				Test.log(LogStatus.FAIL, "New Customer section header not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						Login.NewCustomer_header);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						Login.NewCustomer_header);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -369,22 +443,31 @@ public class Login {
 	public void TC49_fnCheck_Login_Page_NewCustomer_section_RegisterAccount_label() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.RegisterAccount_label)) {
-				if (CommonFunctionandEvents.fnTextContains(
-						CommonFunctionandEvents.fnGetElementText(Login.RegisterAccount_label),
-						Str)) {
-					Result= true;
+				if (CommonFunctionandEvents
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.RegisterAccount_label), Str)) {
+					Result = true;
 					Log.info("New Customer section Register Account label getting displayed");
 					Test.log(LogStatus.PASS, "New Customer section Register Account label getting displayed");
 				} else {
-					Result= false;
+					Result = false;
 					Log.info("Incorrect New Customer section Register Account label getting displayed");
 					Test.log(LogStatus.FAIL, "Incorrect New Customer section Register Account label getting displayed");
 				}
 
 			} else {
-				Result= false;
+				Result = false;
 				Log.info("New Customer section Register Account label not getting displayed");
 				Test.log(LogStatus.FAIL, "New Customer section Register Account label  not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						Login.RegisterAccount_label);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						Login.RegisterAccount_label);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -398,21 +481,30 @@ public class Login {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.NewCustomer_text)) {
 				if (CommonFunctionandEvents.fnTextContains(
-						CommonFunctionandEvents.fnGetElementText(Login.NewCustomer_text),
-						Constant.NewCustomer_msg)) {
-					Result= true;
+						CommonFunctionandEvents.fnGetElementText(Login.NewCustomer_text), Constant.NewCustomer_msg)) {
+					Result = true;
 					Log.info("New Customer section text getting displayed");
 					Test.log(LogStatus.PASS, "New Customer section text getting displayed");
 				} else {
-					Result= false;
+					Result = false;
 					Log.info("Incorrect New Customer section text getting displayed");
 					Test.log(LogStatus.FAIL, "Incorrect New Customer section text getting displayed");
 				}
 
 			} else {
-				Result= false;
+				Result = false;
 				Log.info("New Customer section text not getting displayed");
 				Test.log(LogStatus.FAIL, "New Customer section text not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						Login.NewCustomer_text);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						Login.NewCustomer_text);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -420,27 +512,37 @@ public class Login {
 			System.out.println(Ex);
 		}
 	}
-	
+
 	@Test
 	public void TC51_fnCheck_Login_Page_NewCustomer_section_Continue_button() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Continue_button)) {
-				if (CommonFunctionandEvents.fnTextContains(
-						CommonFunctionandEvents.fnGetElementText(Login.Continue_button),
-						Str)) {
-					Result= true;
+				if (CommonFunctionandEvents
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(Login.Continue_button), Str)) {
+					Result = true;
 					Log.info("Continue button in New Customer section getting displayed");
 					Test.log(LogStatus.PASS, "Continue button in New Customer section getting displayed");
 				} else {
-					Result= false;
+					Result = false;
 					Log.info("Incorrect name of Continue button in New Customer section getting displayed");
-					Test.log(LogStatus.FAIL, "Incorrect name of Continue button in New Customer section getting displayed");
+					Test.log(LogStatus.FAIL,
+							"Incorrect name of Continue button in New Customer section getting displayed");
 				}
 
 			} else {
-				Result= false;
+				Result = false;
 				Log.info("Continue button in New Customer section not getting displayed");
 				Test.log(LogStatus.FAIL, "Continue button in New Customer section not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						Login.Continue_button);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						Login.Continue_button);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -455,23 +557,30 @@ public class Login {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Continue_button)) {
 				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, Login.Continue_button)) {
 					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
-						Result= true;
+						Result = true;
 						Log.info("User navigated to Register Account page upon clicking on Continue button");
 						Test.log(LogStatus.PASS, "User navigated to Login page upon clicking on Login menu");
 					} else {
-						Result= false;
+						Result = false;
 						Log.info("User navigated to incorrect page upon clicking on Continue button");
 						Test.log(LogStatus.FAIL, "User navigated to incorrect page upon clicking on Continue button");
 					}
 				} else {
-					Result= false;
+					Result = false;
 					Log.info("Continue button is not clickable");
 					Test.log(LogStatus.FAIL, "Continue button is not clickable");
 				}
 			} else {
-				Result= false;
+				Result = false;
 				Log.info("Continue button in New Customer section not getting displayed");
 				Test.log(LogStatus.FAIL, "Continue button in New Customer section not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -479,7 +588,5 @@ public class Login {
 			System.out.println(Ex);
 		}
 	}
-
-
 
 }
