@@ -146,6 +146,7 @@ public class LandingPage {
 			Thread.sleep(3000);
 			Utils.takeScreenshot(driver, test_method.getName());
 			Log.endTestCase(test_method.getName());
+			Test.log(LogStatus.INFO, Test.addScreenCapture(Constant.Path_ScreenShot));
 			Report.endTest(Test);
 			Report.flush();
 			driver.navigate().refresh();
@@ -215,9 +216,8 @@ public class LandingPage {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", LP.Menu_bar);
 			}
-			
+
 			Assert.assertEquals(Result, true);
-			
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -252,12 +252,10 @@ public class LandingPage {
 						LP.Menu_bar);
 			} else {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
-						LP.Menu_bar);
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", LP.Menu_bar);
 			}
-			
+
 			Assert.assertEquals(Result, true);
-			
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -294,7 +292,7 @@ public class LandingPage {
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						LP.Contact_No);
 			}
-			
+
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -370,14 +368,13 @@ public class LandingPage {
 				Test.log(LogStatus.FAIL, "Contact No icon is not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"document.body.style.backgroundColor = 'green';"
-						);
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"document.body.style.backgroundColor = 'red';");
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
-			
+
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -414,7 +411,7 @@ public class LandingPage {
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						LP.MyAccount_menu);
 			}
-			
+
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -537,7 +534,7 @@ public class LandingPage {
 						"arguments[0].setAttribute('style','background: yellow; border: 2px solid black;');",
 						LP.WishList_menu);
 			}
-			
+
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -572,12 +569,11 @@ public class LandingPage {
 				Test.log(LogStatus.FAIL, "Wish List menu is not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"document.body.style.backgroundColor = 'green';"
-						);
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"document.body.style.backgroundColor = 'red';");
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -648,12 +644,11 @@ public class LandingPage {
 				Test.log(LogStatus.FAIL, "Shopping Cart menu is not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"document.body.style.backgroundColor = 'green';"
-						);
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"document.body.style.backgroundColor = 'red';");
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -681,6 +676,7 @@ public class LandingPage {
 				Result = false;
 				Log.info("Checkout menu is not getting displayed");
 				Test.log(LogStatus.FAIL, "Checkout menu is not getting displayed");
+
 			}
 			if (Result) {
 				System.out.println(Result);
@@ -736,12 +732,11 @@ public class LandingPage {
 				Test.log(LogStatus.FAIL, "Checkout Cart menu is not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"document.body.style.backgroundColor = 'green';"
-						);
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"document.body.style.backgroundColor = 'red';");
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
