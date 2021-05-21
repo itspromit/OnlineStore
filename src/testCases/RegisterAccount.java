@@ -863,8 +863,8 @@ public class RegisterAccount {
 				}
 
 			} else {
-				Log.info("Last Name field in Personal Details section not getting displayed");
-				Test.log(LogStatus.FAIL, "Last Name field in Personal Details section not getting displayed");
+				Log.info("Telephone field in Personal Details section not getting displayed");
+				Test.log(LogStatus.FAIL, "Telephone field in Personal Details section not getting displayed");
 			}
 			if (Result) {
 
@@ -875,6 +875,396 @@ public class RegisterAccount {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Telephone_field);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC40_fnCheck_RegisterAccount_Page_YourPassword_section() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.YourPassword_section)) {
+				Result = true;
+				Log.info("Your Password section getting displayed");
+				Test.log(LogStatus.PASS, "Your Password section getting displayed");
+			} else {
+				Result = false;
+				Log.info("Your Password section not getting displayed");
+				Test.log(LogStatus.FAIL, "Your Password section not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.YourPassword_section);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.YourPassword_section);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC41_fnCheck_RegisterAccount_Page_YourPassword_section_Header() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.YourPassword_header)) {
+				if (CommonFunctionandEvents
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.YourPassword_header), Str)) {
+					Result = true;
+					Log.info("Your Password section header getting displayed");
+					Test.log(LogStatus.PASS, "Your Password section header getting displayed");
+				} else {
+					Result = false;
+					Log.info("Incorrect Your Password section header getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect Your Password section header getting displayed");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Your Password section header not getting displayed");
+				Test.log(LogStatus.FAIL, "Your Password section header not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.YourPassword_header);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.YourPassword_header);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC42_fnCheck_RegisterAccount_Page_YourPassword_section_Password_label() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Password_label)) {
+				if (CommonFunctionandEvents
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Password_label), Str)) {
+					Result = true;
+					Log.info("Password field label in Your Password section getting displayed");
+					Test.log(LogStatus.PASS, "Password field label in Your Password section getting displayed");
+				} else {
+					Result = false;
+					Log.info("Incorrect Password field label in Your Password section getting displayed");
+					Test.log(LogStatus.FAIL,
+							"Incorrect Password field label in Your Password section getting displayed");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Password field label in Your Password section not getting displayed");
+				Test.log(LogStatus.FAIL, "Password field label in Your Password section not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Password_label);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.Password_label);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC43_fnCheck_RegisterAccount_Page_YourPassword_section_Password_field() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Password_field)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.Password_field, "placeholder"), Str)) {
+					Log.info("Password field in Your Password section getting displayed");
+					Test.log(LogStatus.PASS, "Password field in Your Password section getting displayed");
+				} else {
+					Log.info("Password field in Your Password section getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect Password field in Your Password section getting displayed");
+				}
+
+			} else {
+				Log.info("Password field in Your Password section not getting displayed");
+				Test.log(LogStatus.FAIL, "Password field in Your Password section not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Password_field);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.Password_field);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC44_fnCheck_RegisterAccount_Page_YourPassword_section_ConfirmPassword_label() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.ConfirmPassword_label)) {
+				if (CommonFunctionandEvents
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.ConfirmPassword_label), Str)) {
+					Result = true;
+					Log.info("Confirm Password field label in Your Password section getting displayed");
+					Test.log(LogStatus.PASS, "Confirm Password field label in Your Password section getting displayed");
+				} else {
+					Result = false;
+					Log.info("Incorrect Confirm Password field label in Your Password section getting displayed");
+					Test.log(LogStatus.FAIL,
+							"Incorrect Confirm Password field label in Your Password section getting displayed");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Confirm Password field label in Your Password section not getting displayed");
+				Test.log(LogStatus.FAIL, "Confirm Password field label in Your Password section not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.ConfirmPassword_label);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.ConfirmPassword_label);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC45_fnCheck_RegisterAccount_Page_YourPassword_section_ConfirmPassword_field() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.ConfirmPassword_field)) {
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.ConfirmPassword_field, "placeholder"),
+						Str)) {
+					Log.info("Password field in Your Password section getting displayed");
+					Test.log(LogStatus.PASS, "Password field in Your Password section getting displayed");
+				} else {
+					Log.info("Password field in Your Password section getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect Password field in Your Password section getting displayed");
+				}
+
+			} else {
+				Log.info("Password field in Your Password section not getting displayed");
+				Test.log(LogStatus.FAIL, "Password field in Your Password section not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.ConfirmPassword_field);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.ConfirmPassword_field);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC46_fnCheck_RegisterAccount_Page_Newsletter_section() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Newsletter_section)) {
+				Result = true;
+				Log.info("Newsletter section getting displayed");
+				Test.log(LogStatus.PASS, "Newsletter section getting displayed");
+			} else {
+				Result = false;
+				Log.info("Newsletter section not getting displayed");
+				Test.log(LogStatus.FAIL, "Newsletter section not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Newsletter_section);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.Newsletter_section);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC47_fnCheck_RegisterAccount_Page_Newsletter_section_Header() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Newsletter_header)) {
+				if (CommonFunctionandEvents
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Newsletter_header), Str)) {
+					Result = true;
+					Log.info("Newsletter section header getting displayed");
+					Test.log(LogStatus.PASS, "Newsletter section header getting displayed");
+				} else {
+					Result = false;
+					Log.info("Incorrect Newsletter section header getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect Newsletter section header getting displayed");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Newsletter section header not getting displayed");
+				Test.log(LogStatus.FAIL, "Newsletter section header not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Newsletter_header);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.Newsletter_header);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC48_fnCheck_RegisterAccount_Page_Newsletter_section_Subscribe_label() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Subscribe_label)) {
+				if (CommonFunctionandEvents
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Subscribe_label), Str)) {
+					Result = true;
+					Log.info("Subscribe field label in Newsletter section getting displayed");
+					Test.log(LogStatus.PASS, "Subscribe field label in Newsletter section getting displayed");
+				} else {
+					Result = false;
+					Log.info("Incorrect Subscribe field label in Newsletter section getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect Subscribe field label in Newsletter section getting displayed");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Subscribe label in Newsletter section not getting displayed");
+				Test.log(LogStatus.FAIL, "Subscribe field label in Newsletter section not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Subscribe_label);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.Subscribe_label);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC49_fnCheck_RegisterAccount_Subscribe_Radiobutton_options() {
+		String[] S1 = null;
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Subscribe_field_options)) {
+				if (CommonFunctionandEvents
+						.fnValidateArray(CommonFunctionandEvents.fncreateArray_Elements(R_Acc.Radio_buttons, S1), S)) {
+					Result = true;
+					Log.info("All Subscribe radio button options are getting correctly displayed");
+					Test.log(LogStatus.PASS, "All Subscribe radio button options are getting correctly displayed");
+				} else {
+					Result = false;
+					Log.info("All Subscribe radio button options are not getting correctly displayed");
+					Test.log(LogStatus.FAIL, "All Subscribe radio button options are not getting correctly displayed");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Subscribe field options not getting displayed");
+				Test.log(LogStatus.FAIL, "Subscribe field options not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Subscribe_field_options);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.Subscribe_field_options);
+			}
+
+			Assert.assertEquals(Result, true);
+
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+	
+	@Test
+	public void TC50_fnCheck_RegisterAccount_Page_PrivacyPolicy_text() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PrivacyPolicy_text)) {
+				if (CommonFunctionandEvents
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.PrivacyPolicy_text), Str)) {
+					Result = true;
+					Log.info("Privacy Policy text getting displayed");
+					Test.log(LogStatus.PASS, "Privacy Policy text getting displayed");
+				} else {
+					Result = false;
+					Log.info("Incorrect Privacy Policy text getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect Privacy Policy text getting displayed");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Privacy Policy text not getting displayed");
+				Test.log(LogStatus.FAIL, "Privacy Policy text not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_text);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_text);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
