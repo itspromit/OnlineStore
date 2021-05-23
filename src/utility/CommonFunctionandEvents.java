@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -340,8 +341,12 @@ public class CommonFunctionandEvents {
 	public static JavascriptExecutor JavaScript_Executor(WebDriver driver) {
 		
 		JavascriptExecutor Jse= (JavascriptExecutor)driver;
-		
 		return Jse;
 		
+	}
+	
+	public static Alert fnValidate_Alert(WebDriver driver) {
+		Alert alert= driver.switchTo().alert();
+		return alert;
 	}
 }

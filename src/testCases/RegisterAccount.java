@@ -1272,5 +1272,85 @@ public class RegisterAccount {
 			System.out.println(Ex);
 		}
 	}
+	
+	@Test
+	public void TC51_fnCheck_RegisterAccount_Page_PrivacyPolicy_link() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PrivacyPolicy_link)) {
+				if (CommonFunctionandEvents
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.PrivacyPolicy_link), Str)) {
+					Result = true;
+					Log.info("Privacy Policy link getting displayed");
+					Test.log(LogStatus.PASS, "Privacy Policy link getting displayed");
+				} else {
+					Result = false;
+					Log.info("Incorrect Privacy Policy link text getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect Privacy Policy link text getting displayed");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Privacy Policy link not getting displayed");
+				Test.log(LogStatus.FAIL, "Privacy Policy link not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_link);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_link);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+	
+	@Test
+	public void TC52_fnCheck_RegisterAccount_Page_PrivacyPolicy_Link_functionality() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PrivacyPolicy_link)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, R_Acc.PrivacyPolicy_link)) {
+					if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PrivacyPolicy_modal_dialog)) {
+						Result = true;
+						Log.info("Privacy Policy modal dialog box opens up");
+						Test.log(LogStatus.PASS, "Privacy Policy modal dialog box opens up");
+					} else {
+						Result = false;
+						Log.info("User navigated to incorrect page upon clicking on Privacy Policy link");
+						Test.log(LogStatus.FAIL, "User navigated to incorrect page upon clicking on Privacy Policy link");
+					}
+				} else {
+					Result = false;
+					Log.info("Privacy Policy link is not clickable");
+					Test.log(LogStatus.FAIL, "Privacy Policy link is not clickable");
+				}
+			} else {
+				Result = false;
+				Log.info("Login Page link is not getting displayed");
+				Test.log(LogStatus.FAIL, "Login Page link is not getting displayed");
+			}
+			if (Result) {
+
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_modal_dialog);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_modal_dialog);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+	
+	
 
 }
