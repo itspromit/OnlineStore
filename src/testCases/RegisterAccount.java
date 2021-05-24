@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 import pageObjects.Landing_Page;
 import pageObjects.RegisterAccount_Page;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -45,6 +46,7 @@ public class RegisterAccount {
 	boolean Result;
 	String Str;
 	String[] S;
+	JavascriptExecutor JS;
 
 	@BeforeClass
 	public void fnCheck_RegisterAccount_page() {
@@ -56,6 +58,7 @@ public class RegisterAccount {
 				R_Acc = new RegisterAccount_Page(driver);
 				// LPage= new LandingPage();
 				Report = LandingPage.Return_Report();
+				JS= CommonFunctionandEvents.JavaScript_Executor(driver);
 
 				if (driver.getTitle().contains("Register Account")) {
 
@@ -150,6 +153,7 @@ public class RegisterAccount {
 	public void TC20_fnCheck_RegisterAccount_Page_title() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Page_Header)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Page_Header);
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Page_Header),
 						Str)) {
 					Result = true;
@@ -166,12 +170,12 @@ public class RegisterAccount {
 				Test.log(LogStatus.FAIL, "Page title is not getting displayed");
 			}
 			if (Result) {
-
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+                
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Page_Header);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Page_Header);
 			}
@@ -186,6 +190,7 @@ public class RegisterAccount {
 	public void TC21_fnCheck_RegisterAccount_Page_Home_menu() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Home_menu)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Home_menu);
 				if (CommonFunctionandEvents
 						.fnTextContains(CommonFunctionandEvents.fnGetElementAttribute(R_Acc.Home_menu, "class"), Str)) {
 					Result = true;
@@ -204,11 +209,11 @@ public class RegisterAccount {
 
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Home_menu);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Home_menu);
 			}
@@ -244,11 +249,11 @@ public class RegisterAccount {
 				Test.log(LogStatus.FAIL, "Home menu is not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
-						.executeScript("document.body.style.backgroundColor = 'green';");
+				JS.executeScript("document.body.style.backgroundColor = 'green';");
+						
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
-						.executeScript("document.body.style.backgroundColor = 'red';");
+				JS.executeScript("document.body.style.backgroundColor = 'red';");
+						
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -261,6 +266,7 @@ public class RegisterAccount {
 	public void TC23_fnCheck_RegisterAccount_Page_Account_menu() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Account_menu)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Account_menu);
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Account_menu),
 						Str)) {
 					Result = true;
@@ -278,11 +284,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Account_menu);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Account_menu);
 			}
@@ -318,11 +324,11 @@ public class RegisterAccount {
 				Test.log(LogStatus.FAIL, "Account menu is not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
-						.executeScript("document.body.style.backgroundColor = 'green';");
+				JS.executeScript("document.body.style.backgroundColor = 'green';");
+						
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
-						.executeScript("document.body.style.backgroundColor = 'red';");
+				JS.executeScript("document.body.style.backgroundColor = 'red';");
+						
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -335,6 +341,7 @@ public class RegisterAccount {
 	public void TC25_fnCheck_RegisterAccount_Page_Register_menu() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Register_menu)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Register_menu);
 				if (CommonFunctionandEvents
 						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Register_menu), Str)) {
 					Result = true;
@@ -352,11 +359,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Register_menu);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Register_menu);
 			}
@@ -393,11 +400,11 @@ public class RegisterAccount {
 				Test.log(LogStatus.FAIL, "Register menu is not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
-						.executeScript("document.body.style.backgroundColor = 'green';");
+				JS.executeScript("document.body.style.backgroundColor = 'green';");
+						
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
-						.executeScript("document.body.style.backgroundColor = 'red';");
+				JS.executeScript("document.body.style.backgroundColor = 'red';");
+						
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -410,6 +417,7 @@ public class RegisterAccount {
 	public void TC27_fnCheck_RegisterAccount_Page_RegisterAccount_msg() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Register_Account_msg)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Register_menu);
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementText(R_Acc.Register_Account_msg),
 						Constant.RegisterAccount_msg)) {
@@ -429,11 +437,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Register_Account_msg);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Register_Account_msg);
 			}
@@ -448,6 +456,7 @@ public class RegisterAccount {
 	public void TC28_fnCheck_RegisterAccount_Page_LoginPage_Link() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.LoginPage_link)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.LoginPage_link);
 				if (CommonFunctionandEvents
 						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.LoginPage_link), Str)) {
 					Result = true;
@@ -466,11 +475,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.LoginPage_link);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.LoginPage_link);
 			}
@@ -506,11 +515,11 @@ public class RegisterAccount {
 				Test.log(LogStatus.FAIL, "Login Page link is not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
-						.executeScript("document.body.style.backgroundColor = 'green';");
+				JS.executeScript("document.body.style.backgroundColor = 'green';");
+						
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
-						.executeScript("document.body.style.backgroundColor = 'red';");
+				JS.executeScript("document.body.style.backgroundColor = 'red';");
+						
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -523,6 +532,7 @@ public class RegisterAccount {
 	public void TC30_fnCheck_RegisterAccount_Page_PersonalDetails_section() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PersonalDetails_section)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.PersonalDetails_section);
 				Result = true;
 				Log.info("Personal Details section getting displayed");
 				Test.log(LogStatus.PASS, "Personal Details section getting displayed");
@@ -533,11 +543,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.PersonalDetails_section);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.PersonalDetails_section);
 			}
@@ -552,6 +562,7 @@ public class RegisterAccount {
 	public void TC31_fnCheck_RegisterAccount_Page_PersonalDetails_section_Header() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PersonalDetails_header)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.PersonalDetails_header);
 				if (CommonFunctionandEvents
 						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.PersonalDetails_header), Str)) {
 					Result = true;
@@ -570,11 +581,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.PersonalDetails_header);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.PersonalDetails_header);
 			}
@@ -589,6 +600,7 @@ public class RegisterAccount {
 	public void TC32_fnCheck_RegisterAccount_Page_PersonalDetails_section_FirstName_label() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.FirstName_label)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.FirstName_label);
 				if (CommonFunctionandEvents
 						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.FirstName_label), Str)) {
 					Result = true;
@@ -608,11 +620,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.FirstName_label);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.FirstName_label);
 			}
@@ -627,6 +639,7 @@ public class RegisterAccount {
 	public void TC33_fnCheck_RegisterAccount_Page_PersonalDetails_section_FirstName_field() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.FirstName_field)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.FirstName_field);
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.FirstName_field, "placeholder"), Str)) {
 					Result = true;
@@ -646,11 +659,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.FirstName_field);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.FirstName_field);
 			}
@@ -665,6 +678,7 @@ public class RegisterAccount {
 	public void TC34_fnCheck_RegisterAccount_Page_PersonalDetails_section_LastName_label() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.LastName_label)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.LastName_label);
 				if (CommonFunctionandEvents
 						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.LastName_label), Str)) {
 					Result = true;
@@ -684,11 +698,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.LastName_label);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.LastName_label);
 			}
@@ -703,6 +717,7 @@ public class RegisterAccount {
 	public void TC35_fnCheck_RegisterAccount_Page_PersonalDetails_section_LastName_field() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.LastName_field)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.LastName_field);
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.LastName_field, "placeholder"), Str)) {
 					Result = true;
@@ -721,11 +736,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.LastName_field);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.LastName_field);
 			}
@@ -740,6 +755,7 @@ public class RegisterAccount {
 	public void TC36_fnCheck_RegisterAccount_Page_PersonalDetails_section_Email_label() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.EMail_label)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.EMail_label);
 				if (CommonFunctionandEvents.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.EMail_label),
 						Str)) {
 					Result = true;
@@ -759,11 +775,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.EMail_label);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.EMail_label);
 			}
@@ -778,6 +794,7 @@ public class RegisterAccount {
 	public void TC37_fnCheck_RegisterAccount_Page_PersonalDetails_section_Email_field() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.EMail_field)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.EMail_field);
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.EMail_field, "placeholder"), Str)) {
 					Result = true;
@@ -796,11 +813,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.EMail_field);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.EMail_field);
 			}
@@ -815,6 +832,7 @@ public class RegisterAccount {
 	public void TC38_fnCheck_RegisterAccount_Page_PersonalDetails_section_Telephone_label() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Telephone_label)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Telephone_label);
 				if (CommonFunctionandEvents
 						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Telephone_label), Str)) {
 					Result = true;
@@ -834,11 +852,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Telephone_label);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Telephone_label);
 			}
@@ -853,6 +871,7 @@ public class RegisterAccount {
 	public void TC39_fnCheck_RegisterAccount_Page_PersonalDetails_section_Telephone_field() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Telephone_field)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Telephone_field);
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.Telephone_field, "placeholder"), Str)) {
 					Log.info("Telephone field in Personal Details section getting displayed");
@@ -868,11 +887,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Telephone_field);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Telephone_field);
 			}
@@ -887,6 +906,7 @@ public class RegisterAccount {
 	public void TC40_fnCheck_RegisterAccount_Page_YourPassword_section() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.YourPassword_section)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.YourPassword_section);
 				Result = true;
 				Log.info("Your Password section getting displayed");
 				Test.log(LogStatus.PASS, "Your Password section getting displayed");
@@ -897,11 +917,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.YourPassword_section);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.YourPassword_section);
 			}
@@ -916,6 +936,7 @@ public class RegisterAccount {
 	public void TC41_fnCheck_RegisterAccount_Page_YourPassword_section_Header() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.YourPassword_header)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.YourPassword_header);
 				if (CommonFunctionandEvents
 						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.YourPassword_header), Str)) {
 					Result = true;
@@ -934,11 +955,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.YourPassword_header);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.YourPassword_header);
 			}
@@ -953,6 +974,7 @@ public class RegisterAccount {
 	public void TC42_fnCheck_RegisterAccount_Page_YourPassword_section_Password_label() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Password_label)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Password_label);
 				if (CommonFunctionandEvents
 						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Password_label), Str)) {
 					Result = true;
@@ -972,11 +994,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Password_label);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Password_label);
 			}
@@ -991,6 +1013,7 @@ public class RegisterAccount {
 	public void TC43_fnCheck_RegisterAccount_Page_YourPassword_section_Password_field() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Password_field)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Password_field);
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.Password_field, "placeholder"), Str)) {
 					Log.info("Password field in Your Password section getting displayed");
@@ -1006,11 +1029,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Password_field);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Password_field);
 			}
@@ -1025,6 +1048,7 @@ public class RegisterAccount {
 	public void TC44_fnCheck_RegisterAccount_Page_YourPassword_section_ConfirmPassword_label() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.ConfirmPassword_label)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.ConfirmPassword_label);
 				if (CommonFunctionandEvents
 						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.ConfirmPassword_label), Str)) {
 					Result = true;
@@ -1044,11 +1068,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.ConfirmPassword_label);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.ConfirmPassword_label);
 			}
@@ -1063,6 +1087,7 @@ public class RegisterAccount {
 	public void TC45_fnCheck_RegisterAccount_Page_YourPassword_section_ConfirmPassword_field() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.ConfirmPassword_field)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.ConfirmPassword_field);
 				if (CommonFunctionandEvents.fnTextContains(
 						CommonFunctionandEvents.fnGetElementAttribute(R_Acc.ConfirmPassword_field, "placeholder"),
 						Str)) {
@@ -1079,11 +1104,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.ConfirmPassword_field);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.ConfirmPassword_field);
 			}
@@ -1098,6 +1123,7 @@ public class RegisterAccount {
 	public void TC46_fnCheck_RegisterAccount_Page_Newsletter_section() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Newsletter_section)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Newsletter_section);
 				Result = true;
 				Log.info("Newsletter section getting displayed");
 				Test.log(LogStatus.PASS, "Newsletter section getting displayed");
@@ -1108,11 +1134,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Newsletter_section);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Newsletter_section);
 			}
@@ -1127,6 +1153,7 @@ public class RegisterAccount {
 	public void TC47_fnCheck_RegisterAccount_Page_Newsletter_section_Header() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Newsletter_header)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Newsletter_header);
 				if (CommonFunctionandEvents
 						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Newsletter_header), Str)) {
 					Result = true;
@@ -1145,11 +1172,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Newsletter_header);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Newsletter_header);
 			}
@@ -1164,6 +1191,7 @@ public class RegisterAccount {
 	public void TC48_fnCheck_RegisterAccount_Page_Newsletter_section_Subscribe_label() {
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Subscribe_label)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Subscribe_label);
 				if (CommonFunctionandEvents
 						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.Subscribe_label), Str)) {
 					Result = true;
@@ -1182,11 +1210,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Subscribe_label);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Subscribe_label);
 			}
@@ -1202,6 +1230,7 @@ public class RegisterAccount {
 		String[] S1 = null;
 		try {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Subscribe_field_options)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Subscribe_field_options);
 				if (CommonFunctionandEvents
 						.fnValidateArray(CommonFunctionandEvents.fncreateArray_Elements(R_Acc.Radio_buttons, S1), S)) {
 					Result = true;
@@ -1219,11 +1248,11 @@ public class RegisterAccount {
 				Test.log(LogStatus.FAIL, "Subscribe field options not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Subscribe_field_options);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Subscribe_field_options);
 			}
@@ -1235,13 +1264,14 @@ public class RegisterAccount {
 			System.out.println(Ex);
 		}
 	}
-	
+
 	@Test
 	public void TC50_fnCheck_RegisterAccount_Page_PrivacyPolicy_text() {
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PrivacyPolicy_text)) {
-				if (CommonFunctionandEvents
-						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.PrivacyPolicy_text), Constant.Privacy_Policy)) {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Confirmation_msg)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Confirmation_msg);
+				if (CommonFunctionandEvents.fnTextContains(
+						CommonFunctionandEvents.fnGetElementText(R_Acc.Confirmation_msg), Constant.Privacy_Policy)) {
 					Result = true;
 					Log.info("Privacy Policy text getting displayed");
 					Test.log(LogStatus.PASS, "Privacy Policy text getting displayed");
@@ -1258,11 +1288,11 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.PrivacyPolicy_text);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.PrivacyPolicy_text);
 			}
@@ -1272,5 +1302,176 @@ public class RegisterAccount {
 			System.out.println(Ex);
 		}
 	}
+
+	@Test
+	public void TC51_fnCheck_RegisterAccount_Page_PrivacyPolicy_link() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PrivacyPolicy_link)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.PrivacyPolicy_link);
+				if (CommonFunctionandEvents
+						.fnTextContains(CommonFunctionandEvents.fnGetElementText(R_Acc.PrivacyPolicy_link), Str)) {
+					Result = true;
+					Log.info("Privacy Policy link getting displayed");
+					Test.log(LogStatus.PASS, "Privacy Policy link getting displayed");
+				} else {
+					Result = false;
+					Log.info("Incorrect Privacy Policy link text getting displayed");
+					Test.log(LogStatus.FAIL, "Incorrect Privacy Policy link text getting displayed");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Privacy Policy link not getting displayed");
+				Test.log(LogStatus.FAIL, "Privacy Policy link not getting displayed");
+			}
+			if (Result) {
+				
+                
+				JS.executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_link);
+			} else {
+				JS.executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_link);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC52_fnCheck_RegisterAccount_Page_PrivacyPolicy_Link_functionality() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PrivacyPolicy_link)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, R_Acc.PrivacyPolicy_link)) {
+					if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PrivacyPolicy_modal_dialog)) {
+						driver.switchTo().activeElement();
+						Result = true;
+						Log.info("Privacy Policy modal dialog box opens up");
+						Test.log(LogStatus.PASS, "Privacy Policy modal dialog box opens up");
+					} else {
+						Result = false;
+						Log.info("User navigated to incorrect page upon clicking on Privacy Policy link");
+						Test.log(LogStatus.FAIL,
+								"User navigated to incorrect page upon clicking on Privacy Policy link");
+					}
+				} else {
+					Result = false;
+					Log.info("Privacy Policy link is not clickable");
+					Test.log(LogStatus.FAIL, "Privacy Policy link is not clickable");
+				}
+			} else {
+				Result = false;
+				Log.info("Login Page link is not getting displayed");
+				Test.log(LogStatus.FAIL, "Login Page link is not getting displayed");
+			}
+			if (Result) {
+
+				JS.executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_modal_dialog);
+			} else {
+				JS.executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_modal_dialog);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC53_fnCheck_RegisterAccount_Page_PrivacyPolicy_Modal_header() {
+		try {
+			if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, R_Acc.PrivacyPolicy_link)) {
+				if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PrivacyPolicy_modal_dialog)) {
+					driver.switchTo().activeElement();
+					if (CommonFunctionandEvents.fnTextContains(
+							CommonFunctionandEvents.fnGetElementText(R_Acc.PrivacyPolicy_modal_header), Str)) {
+						Result = true;
+						Log.info("Privacy Policy modal header getting displayed");
+						Test.log(LogStatus.PASS, "Privacy Policy modal header getting displayed");
+					} else {
+						Result = false;
+						Log.info("Incorrect Privacy Policy modal header getting displayed");
+						Test.log(LogStatus.FAIL, "Incorrect Privacy Policy modal header getting displayed");
+					}
+				} else {
+					Result = false;
+					Log.info("Privacy Policy modal not getting displayed");
+					Test.log(LogStatus.FAIL, "Privacy Policy modal not getting displayed");
+				}
+			} else {
+				Result = false;
+				Log.info("Privacy Policy link is not clickable");
+				Test.log(LogStatus.FAIL, "Privacy Policy link is not clickable");
+			}
+
+			if (Result) {
+
+				JS.executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_modal_header);
+			} else {
+				JS.executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_modal_header);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+	
+	@Test
+	public void TC54_fnCheck_RegisterAccount_Page_PrivacyPolicy_Modal_body_content() {
+		try {
+			if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, R_Acc.PrivacyPolicy_link)) {
+				if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PrivacyPolicy_modal_dialog)) {
+					driver.switchTo().activeElement();
+					if (CommonFunctionandEvents.fnTextContains(
+							CommonFunctionandEvents.fnGetElementText(R_Acc.PrivacyPolicy_modal_body_content), Str)) {
+						Result = true;
+						Log.info("Privacy Policy modal body content getting displayed");
+						Test.log(LogStatus.PASS, "Privacy Policy modal body content getting displayed");
+					} else {
+						Result = false;
+						Log.info("Incorrect Privacy Policy modal body content getting displayed");
+						Test.log(LogStatus.FAIL, "Incorrect Privacy Policy modal body content getting displayed");
+					}
+				} else {
+					Result = false;
+					Log.info("Privacy Policy modal not getting displayed");
+					Test.log(LogStatus.FAIL, "Privacy Policy modal not getting displayed");
+				}
+			} else {
+				Result = false;
+				Log.info("Privacy Policy link is not clickable");
+				Test.log(LogStatus.FAIL, "Privacy Policy link is not clickable");
+			}
+
+			if (Result) {
+
+				JS.executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_modal_body_content);
+			} else {
+				JS.executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						R_Acc.PrivacyPolicy_modal_body_content);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
 
 }
