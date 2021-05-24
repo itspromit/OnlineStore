@@ -1268,10 +1268,10 @@ public class RegisterAccount {
 	@Test
 	public void TC50_fnCheck_RegisterAccount_Page_PrivacyPolicy_text() {
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.PrivacyPolicy_text)) {
-				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.PrivacyPolicy_text);
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Confirmation_msg)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Confirmation_msg);
 				if (CommonFunctionandEvents.fnTextContains(
-						CommonFunctionandEvents.fnGetElementText(R_Acc.PrivacyPolicy_text), Constant.Privacy_Policy)) {
+						CommonFunctionandEvents.fnGetElementText(R_Acc.Confirmation_msg), Constant.Privacy_Policy)) {
 					Result = true;
 					Log.info("Privacy Policy text getting displayed");
 					Test.log(LogStatus.PASS, "Privacy Policy text getting displayed");
