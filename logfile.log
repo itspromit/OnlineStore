@@ -1290,3 +1290,1295 @@
 2021-05-24 22:20:57,007 INFO  [Log] User navigated to Register Account page upon clicking on Continue button 
 2021-05-24 22:21:00,186 INFO  [Log] **************************************************************************************** 
 2021-05-24 22:21:00,186 INFO  [Log] TC66_fnCheck_Login_Page_NewCustomer_section_Continue_button_functionalityhas completed execution 
+2021-05-25 01:59:36,612 INFO  [Log] New driver instantiated 
+2021-05-25 01:59:36,690 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2021-05-25 01:59:38,034 INFO  [Log] Web application launched successfully 
+2021-05-25 01:59:40,502 INFO  [Log] Excel sheet opened 
+2021-05-25 01:59:40,585 INFO  [Log] User on landing page 
+2021-05-25 01:59:40,593 INFO  [Log] **************************************************************************************** 
+2021-05-25 01:59:40,593 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-05-25 01:59:40,593 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:40,606 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:41,182 INFO  [Log] Page title is being displyed correctly 
+2021-05-25 01:59:44,860 INFO  [Log] **************************************************************************************** 
+2021-05-25 01:59:44,861 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-05-25 01:59:46,344 INFO  [Log] User on landing page 
+2021-05-25 01:59:46,352 INFO  [Log] **************************************************************************************** 
+2021-05-25 01:59:46,353 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas begun execution 
+2021-05-25 01:59:46,353 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,353 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,353 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,354 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,354 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,354 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,354 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,355 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,356 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,356 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,356 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,356 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,357 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,359 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,359 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:46,423 INFO  [Log] Menu bar is being displyed 
+2021-05-25 01:59:49,785 INFO  [Log] **************************************************************************************** 
+2021-05-25 01:59:49,785 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas completed execution 
+2021-05-25 01:59:50,326 INFO  [Log] User on landing page 
+2021-05-25 01:59:50,332 INFO  [Log] **************************************************************************************** 
+2021-05-25 01:59:50,333 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas begun execution 
+2021-05-25 01:59:50,333 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:50,333 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:50,333 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:50,598 INFO  [Log] Desktops 
+2021-05-25 01:59:50,682 INFO  [Log] Laptops & Notebooks 
+2021-05-25 01:59:50,765 INFO  [Log] Components 
+2021-05-25 01:59:50,841 INFO  [Log] Tablets 
+2021-05-25 01:59:50,919 INFO  [Log] Software 
+2021-05-25 01:59:50,997 INFO  [Log] Phones & PDAs 
+2021-05-25 01:59:51,072 INFO  [Log] Cameras 
+2021-05-25 01:59:51,153 INFO  [Log] MP3 Players 
+2021-05-25 01:59:51,168 INFO  [Log] The following Array2 elements missing in Array1 :- 
+2021-05-25 01:59:51,168 INFO  [Log] Promit 
+2021-05-25 01:59:51,168 INFO  [Log] All System Menu bar elements are not getting correctly displayed 
+2021-05-25 01:59:54,602 INFO  [Log] **************************************************************************************** 
+2021-05-25 01:59:54,603 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas completed execution 
+2021-05-25 01:59:54,975 INFO  [Log] User on landing page 
+2021-05-25 01:59:54,979 INFO  [Log] **************************************************************************************** 
+2021-05-25 01:59:54,979 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas begun execution 
+2021-05-25 01:59:54,979 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:54,979 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:54,979 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:54,979 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:55,119 INFO  [Log] Contact No is getting displayed correctly 
+2021-05-25 01:59:58,485 INFO  [Log] **************************************************************************************** 
+2021-05-25 01:59:58,485 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas completed execution 
+2021-05-25 01:59:58,957 INFO  [Log] User on landing page 
+2021-05-25 01:59:58,963 INFO  [Log] **************************************************************************************** 
+2021-05-25 01:59:58,963 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas begun execution 
+2021-05-25 01:59:58,963 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,963 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,963 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,963 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,963 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,963 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,963 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,964 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,964 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,964 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,964 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,964 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,964 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,965 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:58,965 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 01:59:59,013 INFO  [Log] Contact No icon getting displayed 
+2021-05-25 02:00:02,394 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:02,394 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas completed execution 
+2021-05-25 02:00:02,769 INFO  [Log] User on landing page 
+2021-05-25 02:00:02,773 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:02,773 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas begun execution 
+2021-05-25 02:00:02,773 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,773 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,773 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,773 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,773 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,773 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,773 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,776 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,776 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,777 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,778 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,778 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,778 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,778 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:02,778 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:03,547 INFO  [Log] No new tab is opened 
+2021-05-25 02:00:03,555 INFO  [Log] User Navigated to Contact No page 
+2021-05-25 02:00:06,722 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:06,722 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas completed execution 
+2021-05-25 02:00:07,069 INFO  [Log] User not on landing page 
+2021-05-25 02:00:07,413 INFO  [Log] User navigating to landing page 
+2021-05-25 02:00:07,417 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:07,418 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas begun execution 
+2021-05-25 02:00:07,418 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:07,418 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:07,418 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:07,418 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:07,418 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:07,563 INFO  [Log] My Account menu is getting displayed correctly 
+2021-05-25 02:00:10,887 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:10,887 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas completed execution 
+2021-05-25 02:00:11,296 INFO  [Log] User on landing page 
+2021-05-25 02:00:11,302 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:11,302 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas begun execution 
+2021-05-25 02:00:11,302 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,303 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,303 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,303 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,303 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,303 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,303 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,303 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,303 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,303 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,303 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,303 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,303 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,304 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,304 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:11,535 INFO  [Log] My Account menu dropdown is getting displayed correctly 
+2021-05-25 02:00:15,047 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:15,047 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas completed execution 
+2021-05-25 02:00:15,449 INFO  [Log] User on landing page 
+2021-05-25 02:00:15,455 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:15,455 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas begun execution 
+2021-05-25 02:00:15,455 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:15,455 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:15,455 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:15,455 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:15,455 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:15,455 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:15,711 INFO  [Log] Register 
+2021-05-25 02:00:15,782 INFO  [Log] Login 
+2021-05-25 02:00:15,794 INFO  [Log] Both arrays are equal 
+2021-05-25 02:00:15,794 INFO  [Log] All My Account dropdown options are getting correctly displayed 
+2021-05-25 02:00:19,186 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:19,186 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas completed execution 
+2021-05-25 02:00:19,748 INFO  [Log] User on landing page 
+2021-05-25 02:00:19,755 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:19,755 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas begun execution 
+2021-05-25 02:00:19,755 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:19,755 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:19,755 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:19,755 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:19,755 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:19,756 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:19,756 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:19,925 INFO  [Log] Wish List menu is getting displayed correctly 
+2021-05-25 02:00:23,310 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:23,310 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas completed execution 
+2021-05-25 02:00:23,742 INFO  [Log] User on landing page 
+2021-05-25 02:00:23,745 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:23,745 INFO  [Log] TC11_fnCheck_LandingPage_WishList_menu_functionalityhas begun execution 
+2021-05-25 02:00:23,745 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:23,745 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:23,745 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:23,745 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:23,745 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:23,746 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:23,746 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:23,746 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:24,363 INFO  [Log] User navigated to the correct page i.e. Login page 
+2021-05-25 02:00:27,649 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:27,650 INFO  [Log] TC11_fnCheck_LandingPage_WishList_menu_functionalityhas completed execution 
+2021-05-25 02:00:28,029 INFO  [Log] User not on landing page 
+2021-05-25 02:00:28,380 INFO  [Log] User navigating to landing page 
+2021-05-25 02:00:28,384 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:28,384 INFO  [Log] TC12_fnCheck_LandingPage_ShoppingCart_menuhas begun execution 
+2021-05-25 02:00:28,384 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:28,384 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:28,384 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:28,384 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:28,384 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:28,384 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:28,385 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:28,385 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:28,385 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:28,507 INFO  [Log] Shopping Cart menu is getting displayed correctly 
+2021-05-25 02:00:31,968 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:31,968 INFO  [Log] TC12_fnCheck_LandingPage_ShoppingCart_menuhas completed execution 
+2021-05-25 02:00:32,381 INFO  [Log] User on landing page 
+2021-05-25 02:00:32,384 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:32,384 INFO  [Log] TC13_fnCheck_LandingPage_ShoppingCart_menu_functionalityhas begun execution 
+2021-05-25 02:00:32,384 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:32,384 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:32,384 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:32,384 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:32,385 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:32,385 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:32,385 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:32,385 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:32,385 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:32,385 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:32,863 INFO  [Log] User navigated to the Shopping Cart page 
+2021-05-25 02:00:36,130 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:36,130 INFO  [Log] TC13_fnCheck_LandingPage_ShoppingCart_menu_functionalityhas completed execution 
+2021-05-25 02:00:36,521 INFO  [Log] User not on landing page 
+2021-05-25 02:00:36,945 INFO  [Log] User navigating to landing page 
+2021-05-25 02:00:36,950 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:36,950 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas begun execution 
+2021-05-25 02:00:36,950 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:36,951 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:36,951 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:36,951 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:36,951 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:36,951 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:36,951 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:36,951 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:36,952 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:36,952 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:36,952 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:37,115 INFO  [Log] Incorrect name for Checkout menu getting displayed 
+2021-05-25 02:00:40,656 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:40,656 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas completed execution 
+2021-05-25 02:00:41,140 INFO  [Log] User on landing page 
+2021-05-25 02:00:41,146 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:41,146 INFO  [Log] TC15_fnCheck_LandingPage_Checkout_menu_functionalityhas begun execution 
+2021-05-25 02:00:41,146 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:41,146 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:41,146 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:41,146 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:41,146 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:41,147 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:41,147 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:41,147 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:41,147 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:41,147 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:41,147 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:41,147 INFO  [Log] Total number of Row used return as < 14 >. 
+2021-05-25 02:00:41,732 INFO  [Log] User navigated to correct page i.e. the Shopping Cart page 
+2021-05-25 02:00:44,944 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:44,944 INFO  [Log] TC15_fnCheck_LandingPage_Checkout_menu_functionalityhas completed execution 
+2021-05-25 02:00:45,939 INFO  [Log] Excel sheet opened 
+2021-05-25 02:00:45,947 INFO  [Log] User on Register Account page 
+2021-05-25 02:00:45,950 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:45,950 INFO  [Log] TC20_fnCheck_RegisterAccount_Page_titlehas begun execution 
+2021-05-25 02:00:45,950 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:45,950 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:46,087 INFO  [Log] Page title is being displyed correctly 
+2021-05-25 02:00:49,281 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:49,281 INFO  [Log] TC20_fnCheck_RegisterAccount_Page_titlehas completed execution 
+2021-05-25 02:00:49,677 INFO  [Log] User on Register Account page 
+2021-05-25 02:00:49,683 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:49,684 INFO  [Log] TC21_fnCheck_RegisterAccount_Page_Home_menuhas begun execution 
+2021-05-25 02:00:49,684 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:49,684 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:49,684 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:49,822 INFO  [Log] Home menu is being displyed correctly 
+2021-05-25 02:00:53,081 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:53,081 INFO  [Log] TC21_fnCheck_RegisterAccount_Page_Home_menuhas completed execution 
+2021-05-25 02:00:53,471 INFO  [Log] User on Register Account page 
+2021-05-25 02:00:53,473 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:53,473 INFO  [Log] TC22_fnCheck_RegisterAccount_Page_Home_menu_functionalityhas begun execution 
+2021-05-25 02:00:53,473 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:53,473 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:53,474 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:53,474 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:54,056 INFO  [Log] User navigated to Landing page upon clicking on Home menu 
+2021-05-25 02:00:57,700 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:57,701 INFO  [Log] TC22_fnCheck_RegisterAccount_Page_Home_menu_functionalityhas completed execution 
+2021-05-25 02:00:58,236 INFO  [Log] User not on RegisterAccount page 
+2021-05-25 02:00:58,620 INFO  [Log] User now navigated to Register Account page 
+2021-05-25 02:00:58,626 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:00:58,626 INFO  [Log] TC23_fnCheck_RegisterAccount_Page_Account_menuhas begun execution 
+2021-05-25 02:00:58,626 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:58,627 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:58,627 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:58,627 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:58,627 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:00:58,768 INFO  [Log] Account menu is being displyed correctly 
+2021-05-25 02:01:02,063 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:02,063 INFO  [Log] TC23_fnCheck_RegisterAccount_Page_Account_menuhas completed execution 
+2021-05-25 02:01:02,383 INFO  [Log] User on Register Account page 
+2021-05-25 02:01:02,389 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:02,389 INFO  [Log] TC24_fnCheck_RegisterAccount_Page_Account_menu_functionalityhas begun execution 
+2021-05-25 02:01:02,389 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:02,390 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:02,390 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:02,390 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:02,390 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:02,391 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:02,874 INFO  [Log] User navigated to Login page upon clicking on Account menu 
+2021-05-25 02:01:06,110 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:06,110 INFO  [Log] TC24_fnCheck_RegisterAccount_Page_Account_menu_functionalityhas completed execution 
+2021-05-25 02:01:06,480 INFO  [Log] User not on RegisterAccount page 
+2021-05-25 02:01:06,783 INFO  [Log] User now navigated to Register Account page 
+2021-05-25 02:01:06,787 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:06,787 INFO  [Log] TC25_fnCheck_RegisterAccount_Page_Register_menuhas begun execution 
+2021-05-25 02:01:06,787 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:06,788 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:06,788 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:06,788 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:06,789 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:06,789 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:06,789 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:06,948 INFO  [Log] Register menu is being displyed correctly 
+2021-05-25 02:01:10,312 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:10,312 INFO  [Log] TC25_fnCheck_RegisterAccount_Page_Register_menuhas completed execution 
+2021-05-25 02:01:10,833 INFO  [Log] User on Register Account page 
+2021-05-25 02:01:10,836 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:10,836 INFO  [Log] TC26_fnCheck_RegisterAccount_Page_Home_menu_functionalityhas begun execution 
+2021-05-25 02:01:10,836 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:10,836 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:10,836 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:10,836 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:10,836 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:10,836 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:10,836 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:10,836 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:11,412 INFO  [Log] User navigated to Register Account page upon clicking on Register menu 
+2021-05-25 02:01:14,709 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:14,709 INFO  [Log] TC26_fnCheck_RegisterAccount_Page_Home_menu_functionalityhas completed execution 
+2021-05-25 02:01:15,030 INFO  [Log] User on Register Account page 
+2021-05-25 02:01:15,033 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:15,033 INFO  [Log] TC27_fnCheck_RegisterAccount_Page_RegisterAccount_msghas begun execution 
+2021-05-25 02:01:15,033 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,033 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,034 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,034 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,034 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,034 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,034 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,034 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,034 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,037 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,037 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,037 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,037 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,037 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,037 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,037 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,037 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,037 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,038 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,038 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,039 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,039 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,039 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,039 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,039 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,041 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,041 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,043 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,043 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,043 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,043 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:15,189 INFO  [Log] Register Account message getting displayed 
+2021-05-25 02:01:18,532 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:18,532 INFO  [Log] TC27_fnCheck_RegisterAccount_Page_RegisterAccount_msghas completed execution 
+2021-05-25 02:01:18,967 INFO  [Log] User on Register Account page 
+2021-05-25 02:01:18,972 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:18,972 INFO  [Log] TC28_fnCheck_RegisterAccount_Page_LoginPage_Linkhas begun execution 
+2021-05-25 02:01:18,972 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:18,972 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:18,972 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:18,972 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:18,972 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:18,973 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:18,973 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:18,973 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:18,973 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:19,117 INFO  [Log] Login Page link getting displayed 
+2021-05-25 02:01:22,364 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:22,364 INFO  [Log] TC28_fnCheck_RegisterAccount_Page_LoginPage_Linkhas completed execution 
+2021-05-25 02:01:22,785 INFO  [Log] User on Register Account page 
+2021-05-25 02:01:22,790 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:22,790 INFO  [Log] TC29_fnCheck_RegisterAccount_Page_LoginPage_Link_functionalityhas begun execution 
+2021-05-25 02:01:22,790 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:22,790 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:22,790 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:22,790 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:22,790 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:22,790 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:22,791 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:22,793 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:22,793 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:22,793 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:23,220 INFO  [Log] User navigated to Login page upon clicking on Login Page link 
+2021-05-25 02:01:26,480 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:26,480 INFO  [Log] TC29_fnCheck_RegisterAccount_Page_LoginPage_Link_functionalityhas completed execution 
+2021-05-25 02:01:26,735 INFO  [Log] User not on RegisterAccount page 
+2021-05-25 02:01:27,087 INFO  [Log] User now navigated to Register Account page 
+2021-05-25 02:01:27,089 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:27,089 INFO  [Log] TC30_fnCheck_RegisterAccount_Page_PersonalDetails_sectionhas begun execution 
+2021-05-25 02:01:27,089 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,090 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,091 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:27,177 INFO  [Log] Personal Details section getting displayed 
+2021-05-25 02:01:30,432 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:30,432 INFO  [Log] TC30_fnCheck_RegisterAccount_Page_PersonalDetails_sectionhas completed execution 
+2021-05-25 02:01:30,962 INFO  [Log] User on Register Account page 
+2021-05-25 02:01:30,968 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:30,968 INFO  [Log] TC31_fnCheck_RegisterAccount_Page_PersonalDetails_section_Headerhas begun execution 
+2021-05-25 02:01:30,968 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:30,968 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:30,968 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:30,968 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:30,968 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:30,968 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:30,968 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:30,968 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:30,968 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:30,968 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:30,968 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:31,156 INFO  [Log] Personal Details section header getting displayed 
+2021-05-25 02:01:34,493 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:34,493 INFO  [Log] TC31_fnCheck_RegisterAccount_Page_PersonalDetails_section_Headerhas completed execution 
+2021-05-25 02:01:34,938 INFO  [Log] User on Register Account page 
+2021-05-25 02:01:34,941 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:34,941 INFO  [Log] TC32_fnCheck_RegisterAccount_Page_PersonalDetails_section_FirstName_labelhas begun execution 
+2021-05-25 02:01:34,941 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:34,941 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:34,941 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:34,941 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:34,941 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:34,942 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:34,942 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:34,942 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:34,942 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:34,942 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:34,942 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:34,942 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:35,120 INFO  [Log] First Name field label in Personal Details section getting displayed 
+2021-05-25 02:01:38,398 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:38,398 INFO  [Log] TC32_fnCheck_RegisterAccount_Page_PersonalDetails_section_FirstName_labelhas completed execution 
+2021-05-25 02:01:38,849 INFO  [Log] User on Register Account page 
+2021-05-25 02:01:38,857 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:38,857 INFO  [Log] TC33_fnCheck_RegisterAccount_Page_PersonalDetails_section_FirstName_fieldhas begun execution 
+2021-05-25 02:01:38,857 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:38,857 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:38,857 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:38,857 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:38,857 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:38,857 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:38,857 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:38,858 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:38,858 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:38,858 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:38,858 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:38,858 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:38,858 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:38,999 INFO  [Log] First Name field in Personal Details section getting displayed 
+2021-05-25 02:01:42,241 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:42,241 INFO  [Log] TC33_fnCheck_RegisterAccount_Page_PersonalDetails_section_FirstName_fieldhas completed execution 
+2021-05-25 02:01:42,609 INFO  [Log] User on Register Account page 
+2021-05-25 02:01:42,611 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:42,611 INFO  [Log] TC34_fnCheck_RegisterAccount_Page_PersonalDetails_section_LastName_labelhas begun execution 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,611 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:42,790 INFO  [Log] Last Name field label in Personal Details section getting displayed 
+2021-05-25 02:01:46,042 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:46,042 INFO  [Log] TC34_fnCheck_RegisterAccount_Page_PersonalDetails_section_LastName_labelhas completed execution 
+2021-05-25 02:01:46,399 INFO  [Log] User on Register Account page 
+2021-05-25 02:01:46,401 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:46,401 INFO  [Log] TC35_fnCheck_RegisterAccount_Page_PersonalDetails_section_LastName_fieldhas begun execution 
+2021-05-25 02:01:46,401 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,401 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,402 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,402 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,402 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,402 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,402 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,402 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,402 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,402 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,402 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,402 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,402 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,402 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,402 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:46,545 INFO  [Log] Last Name field in Personal Details section getting displayed 
+2021-05-25 02:01:49,884 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:49,885 INFO  [Log] TC35_fnCheck_RegisterAccount_Page_PersonalDetails_section_LastName_fieldhas completed execution 
+2021-05-25 02:01:50,344 INFO  [Log] User on Register Account page 
+2021-05-25 02:01:50,347 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:50,347 INFO  [Log] TC36_fnCheck_RegisterAccount_Page_PersonalDetails_section_Email_labelhas begun execution 
+2021-05-25 02:01:50,347 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,347 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,347 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,347 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,347 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,347 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,347 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,347 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,347 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,348 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,348 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,348 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,348 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,348 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,348 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,348 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:50,480 INFO  [Log] E-Mail field label in Personal Details section getting displayed 
+2021-05-25 02:01:53,722 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:53,722 INFO  [Log] TC36_fnCheck_RegisterAccount_Page_PersonalDetails_section_Email_labelhas completed execution 
+2021-05-25 02:01:54,121 INFO  [Log] User on Register Account page 
+2021-05-25 02:01:54,125 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:54,125 INFO  [Log] TC37_fnCheck_RegisterAccount_Page_PersonalDetails_section_Email_fieldhas begun execution 
+2021-05-25 02:01:54,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:54,300 INFO  [Log] E-Mail field in Personal Details section getting displayed 
+2021-05-25 02:01:57,559 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:57,559 INFO  [Log] TC37_fnCheck_RegisterAccount_Page_PersonalDetails_section_Email_fieldhas completed execution 
+2021-05-25 02:01:57,873 INFO  [Log] User on Register Account page 
+2021-05-25 02:01:57,878 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:01:57,878 INFO  [Log] TC38_fnCheck_RegisterAccount_Page_PersonalDetails_section_Telephone_labelhas begun execution 
+2021-05-25 02:01:57,878 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,878 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,878 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,879 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,879 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,880 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,881 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,881 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,881 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,881 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,881 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,881 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,881 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,881 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,881 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,881 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,881 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:57,881 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:01:58,026 INFO  [Log] Telephone field label in Personal Details section getting displayed 
+2021-05-25 02:02:01,283 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:01,283 INFO  [Log] TC38_fnCheck_RegisterAccount_Page_PersonalDetails_section_Telephone_labelhas completed execution 
+2021-05-25 02:02:01,719 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:01,721 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:01,721 INFO  [Log] TC39_fnCheck_RegisterAccount_Page_PersonalDetails_section_Telephone_fieldhas begun execution 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,721 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,722 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,722 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,722 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:01,862 INFO  [Log] Telephone field in Personal Details section getting displayed 
+2021-05-25 02:02:05,114 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:05,114 INFO  [Log] TC39_fnCheck_RegisterAccount_Page_PersonalDetails_section_Telephone_fieldhas completed execution 
+2021-05-25 02:02:05,525 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:05,527 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:05,527 INFO  [Log] TC40_fnCheck_RegisterAccount_Page_YourPassword_sectionhas begun execution 
+2021-05-25 02:02:05,527 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,527 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,527 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,527 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,527 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,527 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,527 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,527 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,528 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,529 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:05,594 INFO  [Log] Your Password section getting displayed 
+2021-05-25 02:02:08,846 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:08,846 INFO  [Log] TC40_fnCheck_RegisterAccount_Page_YourPassword_sectionhas completed execution 
+2021-05-25 02:02:09,285 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:09,288 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:09,289 INFO  [Log] TC41_fnCheck_RegisterAccount_Page_YourPassword_section_Headerhas begun execution 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:09,461 INFO  [Log] Your Password section header getting displayed 
+2021-05-25 02:02:12,698 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:12,698 INFO  [Log] TC41_fnCheck_RegisterAccount_Page_YourPassword_section_Headerhas completed execution 
+2021-05-25 02:02:13,108 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:13,110 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:13,111 INFO  [Log] TC42_fnCheck_RegisterAccount_Page_YourPassword_section_Password_labelhas begun execution 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,111 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:13,243 INFO  [Log] Password field label in Your Password section getting displayed 
+2021-05-25 02:02:16,540 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:16,540 INFO  [Log] TC42_fnCheck_RegisterAccount_Page_YourPassword_section_Password_labelhas completed execution 
+2021-05-25 02:02:16,892 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:16,894 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:16,894 INFO  [Log] TC43_fnCheck_RegisterAccount_Page_YourPassword_section_Password_fieldhas begun execution 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,894 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,895 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:16,895 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:17,037 INFO  [Log] Password field in Your Password section getting displayed 
+2021-05-25 02:02:20,289 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:20,289 INFO  [Log] TC43_fnCheck_RegisterAccount_Page_YourPassword_section_Password_fieldhas completed execution 
+2021-05-25 02:02:20,692 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:20,695 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:20,695 INFO  [Log] TC44_fnCheck_RegisterAccount_Page_YourPassword_section_ConfirmPassword_labelhas begun execution 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,695 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,696 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,696 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,696 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,696 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,696 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,696 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,696 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,696 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,696 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:20,826 INFO  [Log] Confirm Password field label in Your Password section getting displayed 
+2021-05-25 02:02:24,087 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:24,087 INFO  [Log] TC44_fnCheck_RegisterAccount_Page_YourPassword_section_ConfirmPassword_labelhas completed execution 
+2021-05-25 02:02:24,506 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:24,512 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:24,512 INFO  [Log] TC45_fnCheck_RegisterAccount_Page_YourPassword_section_ConfirmPassword_fieldhas begun execution 
+2021-05-25 02:02:24,512 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,513 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,513 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,513 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,513 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,513 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,514 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:24,697 INFO  [Log] Password field in Your Password section getting displayed 
+2021-05-25 02:02:28,017 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:28,017 INFO  [Log] TC45_fnCheck_RegisterAccount_Page_YourPassword_section_ConfirmPassword_fieldhas completed execution 
+2021-05-25 02:02:28,569 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:28,571 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:28,571 INFO  [Log] TC46_fnCheck_RegisterAccount_Page_Newsletter_sectionhas begun execution 
+2021-05-25 02:02:28,571 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,571 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,571 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,571 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,571 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,572 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,573 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,574 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,575 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,575 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,575 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:28,647 INFO  [Log] Newsletter section getting displayed 
+2021-05-25 02:02:31,906 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:31,906 INFO  [Log] TC46_fnCheck_RegisterAccount_Page_Newsletter_sectionhas completed execution 
+2021-05-25 02:02:32,328 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:32,331 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:32,331 INFO  [Log] TC47_fnCheck_RegisterAccount_Page_Newsletter_section_Headerhas begun execution 
+2021-05-25 02:02:32,331 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,331 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,332 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:32,486 INFO  [Log] Newsletter section header getting displayed 
+2021-05-25 02:02:35,827 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:35,827 INFO  [Log] TC47_fnCheck_RegisterAccount_Page_Newsletter_section_Headerhas completed execution 
+2021-05-25 02:02:36,287 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:36,288 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:36,288 INFO  [Log] TC48_fnCheck_RegisterAccount_Page_Newsletter_section_Subscribe_labelhas begun execution 
+2021-05-25 02:02:36,288 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,288 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,288 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,288 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,288 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,288 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,288 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,288 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,289 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:36,421 INFO  [Log] Subscribe field label in Newsletter section getting displayed 
+2021-05-25 02:02:39,684 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:39,684 INFO  [Log] TC48_fnCheck_RegisterAccount_Page_Newsletter_section_Subscribe_labelhas completed execution 
+2021-05-25 02:02:40,121 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:40,125 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:40,125 INFO  [Log] TC49_fnCheck_RegisterAccount_Subscribe_Radiobutton_optionshas begun execution 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,125 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,126 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:40,346 INFO  [Log] Yes 
+2021-05-25 02:02:40,430 INFO  [Log] No 
+2021-05-25 02:02:40,444 INFO  [Log] Both arrays are equal 
+2021-05-25 02:02:40,444 INFO  [Log] All Subscribe radio button options are getting correctly displayed 
+2021-05-25 02:02:43,692 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:43,692 INFO  [Log] TC49_fnCheck_RegisterAccount_Subscribe_Radiobutton_optionshas completed execution 
+2021-05-25 02:02:43,967 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:43,969 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:43,969 INFO  [Log] TC50_fnCheck_RegisterAccount_Page_PrivacyPolicy_texthas begun execution 
+2021-05-25 02:02:43,969 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:43,970 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:44,096 INFO  [Log] Privacy Policy text getting displayed 
+2021-05-25 02:02:47,314 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:47,314 INFO  [Log] TC50_fnCheck_RegisterAccount_Page_PrivacyPolicy_texthas completed execution 
+2021-05-25 02:02:47,701 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:47,705 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:47,705 INFO  [Log] TC51_fnCheck_RegisterAccount_Page_PrivacyPolicy_linkhas begun execution 
+2021-05-25 02:02:47,705 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,705 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,705 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,705 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,705 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,707 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:47,857 INFO  [Log] Privacy Policy link getting displayed 
+2021-05-25 02:02:51,141 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:51,141 INFO  [Log] TC51_fnCheck_RegisterAccount_Page_PrivacyPolicy_linkhas completed execution 
+2021-05-25 02:02:51,619 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:51,623 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:51,623 INFO  [Log] TC52_fnCheck_RegisterAccount_Page_PrivacyPolicy_Link_functionalityhas begun execution 
+2021-05-25 02:02:51,623 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,623 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,624 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:51,950 INFO  [Log] Privacy Policy modal dialog box opens up 
+2021-05-25 02:02:55,231 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:55,232 INFO  [Log] TC52_fnCheck_RegisterAccount_Page_PrivacyPolicy_Link_functionalityhas completed execution 
+2021-05-25 02:02:55,700 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:55,705 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:55,706 INFO  [Log] TC53_fnCheck_RegisterAccount_Page_PrivacyPolicy_Modal_headerhas begun execution 
+2021-05-25 02:02:55,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,706 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,707 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,707 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,707 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,707 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,707 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,707 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,707 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,707 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,707 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,707 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,708 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,708 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,708 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,708 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,708 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,708 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,708 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,708 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,708 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:55,708 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:56,068 INFO  [Log] Privacy Policy modal header getting displayed 
+2021-05-25 02:02:59,374 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:59,374 INFO  [Log] TC53_fnCheck_RegisterAccount_Page_PrivacyPolicy_Modal_headerhas completed execution 
+2021-05-25 02:02:59,895 INFO  [Log] User on Register Account page 
+2021-05-25 02:02:59,900 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:02:59,900 INFO  [Log] TC54_fnCheck_RegisterAccount_Page_PrivacyPolicy_Modal_body_contenthas begun execution 
+2021-05-25 02:02:59,900 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,900 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,900 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,900 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,900 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,900 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,900 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,900 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,900 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,900 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,900 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,900 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:02:59,901 INFO  [Log] Total number of Row used return as < 30 >. 
+2021-05-25 02:03:00,217 INFO  [Log] Privacy Policy modal body content getting displayed 
+2021-05-25 02:03:03,507 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:03,507 INFO  [Log] TC54_fnCheck_RegisterAccount_Page_PrivacyPolicy_Modal_body_contenthas completed execution 
+2021-05-25 02:03:04,504 INFO  [Log] Excel sheet opened 
+2021-05-25 02:03:04,527 INFO  [Log] User on Login page 
+2021-05-25 02:03:04,532 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:04,532 INFO  [Log] TC55_fnCheck_Login_Page_Home_menuhas begun execution 
+2021-05-25 02:03:04,532 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:04,532 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:04,645 INFO  [Log] Home menu is being displyed correctly 
+2021-05-25 02:03:07,937 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:07,937 INFO  [Log] TC55_fnCheck_Login_Page_Home_menuhas completed execution 
+2021-05-25 02:03:08,415 INFO  [Log] User on Login page 
+2021-05-25 02:03:08,417 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:08,417 INFO  [Log] TC56_fnCheck_Login_Page_Home_menu_functionalityhas begun execution 
+2021-05-25 02:03:08,417 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:08,417 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:08,417 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:09,072 INFO  [Log] User navigated to Landing page upon clicking on Home menu 
+2021-05-25 02:03:12,480 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:12,480 INFO  [Log] TC56_fnCheck_Login_Page_Home_menu_functionalityhas completed execution 
+2021-05-25 02:03:12,957 INFO  [Log] User not on Login page 
+2021-05-25 02:03:13,226 INFO  [Log] User navigated to Login page 
+2021-05-25 02:03:13,231 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:13,232 INFO  [Log] TC57_fnCheck_Login_Page_Account_menuhas begun execution 
+2021-05-25 02:03:13,232 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:13,232 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:13,232 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:13,232 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:13,344 INFO  [Log] Account menu is being displyed correctly 
+2021-05-25 02:03:16,610 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:16,611 INFO  [Log] TC57_fnCheck_Login_Page_Account_menuhas completed execution 
+2021-05-25 02:03:17,027 INFO  [Log] User on Login page 
+2021-05-25 02:03:17,032 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:17,032 INFO  [Log] TC58_fnCheck_Login_Page_Account_menu_functionalityhas begun execution 
+2021-05-25 02:03:17,032 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:17,032 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:17,032 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:17,032 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:17,032 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:17,584 INFO  [Log] User navigated to Login page upon clicking on Account menu 
+2021-05-25 02:03:20,806 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:20,806 INFO  [Log] TC58_fnCheck_Login_Page_Account_menu_functionalityhas completed execution 
+2021-05-25 02:03:21,212 INFO  [Log] User on Login page 
+2021-05-25 02:03:21,218 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:21,218 INFO  [Log] TC59_fnCheck_Login_Page_Login_menuhas begun execution 
+2021-05-25 02:03:21,218 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:21,219 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:21,219 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:21,219 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:21,219 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:21,219 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:21,344 INFO  [Log] Login menu is being displyed correctly 
+2021-05-25 02:03:24,599 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:24,599 INFO  [Log] TC59_fnCheck_Login_Page_Login_menuhas completed execution 
+2021-05-25 02:03:25,014 INFO  [Log] User on Login page 
+2021-05-25 02:03:25,018 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:25,018 INFO  [Log] TC60_fnCheck_Login_Page_Home_menu_functionalityhas begun execution 
+2021-05-25 02:03:25,018 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:25,018 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:25,018 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:25,018 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:25,018 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:25,018 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:25,018 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:25,501 INFO  [Log] User navigated to Login page upon clicking on Login menu 
+2021-05-25 02:03:28,773 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:28,773 INFO  [Log] TC60_fnCheck_Login_Page_Home_menu_functionalityhas completed execution 
+2021-05-25 02:03:29,200 INFO  [Log] User on Login page 
+2021-05-25 02:03:29,203 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:29,203 INFO  [Log] TC61_fnCheck_Login_Page_NewCustomer_sectionhas begun execution 
+2021-05-25 02:03:29,203 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,203 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,203 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,203 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,204 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,204 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,204 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,204 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,204 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,204 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,204 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,204 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,205 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,205 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,205 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,205 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,205 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,206 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,206 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:29,253 INFO  [Log] New Customer section getting displayed 
+2021-05-25 02:03:32,583 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:32,583 INFO  [Log] TC61_fnCheck_Login_Page_NewCustomer_sectionhas completed execution 
+2021-05-25 02:03:32,945 INFO  [Log] User on Login page 
+2021-05-25 02:03:32,947 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:32,947 INFO  [Log] TC62_fnCheck_Login_Page_NewCustomer_section_headerhas begun execution 
+2021-05-25 02:03:32,947 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:32,947 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:32,947 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:32,947 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:32,947 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:32,947 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:32,947 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:32,947 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:33,060 INFO  [Log] New Customer section header getting displayed 
+2021-05-25 02:03:36,396 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:36,396 INFO  [Log] TC62_fnCheck_Login_Page_NewCustomer_section_headerhas completed execution 
+2021-05-25 02:03:36,842 INFO  [Log] User on Login page 
+2021-05-25 02:03:36,843 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:36,843 INFO  [Log] TC63_fnCheck_Login_Page_NewCustomer_section_RegisterAccount_labelhas begun execution 
+2021-05-25 02:03:36,843 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:36,843 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:36,843 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:36,844 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:36,844 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:36,844 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:36,844 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:36,844 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:36,844 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:36,951 INFO  [Log] New Customer section Register Account label getting displayed 
+2021-05-25 02:03:40,200 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:40,200 INFO  [Log] TC63_fnCheck_Login_Page_NewCustomer_section_RegisterAccount_labelhas completed execution 
+2021-05-25 02:03:40,623 INFO  [Log] User on Login page 
+2021-05-25 02:03:40,625 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:40,625 INFO  [Log] TC64_fnCheck_Login_Page_NewCustomer_section_texthas begun execution 
+2021-05-25 02:03:40,625 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,625 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,625 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,625 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,626 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,626 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,626 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,626 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,626 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,626 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,626 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,626 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,626 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,627 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,627 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,628 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,629 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,629 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,629 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:40,739 INFO  [Log] New Customer section text getting displayed 
+2021-05-25 02:03:44,047 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:44,047 INFO  [Log] TC64_fnCheck_Login_Page_NewCustomer_section_texthas completed execution 
+2021-05-25 02:03:44,422 INFO  [Log] User on Login page 
+2021-05-25 02:03:44,424 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:44,425 INFO  [Log] TC65_fnCheck_Login_Page_NewCustomer_section_Continue_buttonhas begun execution 
+2021-05-25 02:03:44,425 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:44,425 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:44,425 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:44,425 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:44,425 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:44,425 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:44,425 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:44,425 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:44,425 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:44,425 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:44,556 INFO  [Log] Continue button in New Customer section getting displayed 
+2021-05-25 02:03:47,820 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:47,820 INFO  [Log] TC65_fnCheck_Login_Page_NewCustomer_section_Continue_buttonhas completed execution 
+2021-05-25 02:03:48,173 INFO  [Log] User on Login page 
+2021-05-25 02:03:48,175 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:48,175 INFO  [Log] TC66_fnCheck_Login_Page_NewCustomer_section_Continue_button_functionalityhas begun execution 
+2021-05-25 02:03:48,175 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:48,175 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:48,175 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:48,175 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:48,175 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:48,175 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:48,175 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:48,175 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:48,175 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:48,175 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:48,175 INFO  [Log] Total number of Row used return as < 18 >. 
+2021-05-25 02:03:48,613 INFO  [Log] User navigated to Register Account page upon clicking on Continue button 
+2021-05-25 02:03:51,854 INFO  [Log] **************************************************************************************** 
+2021-05-25 02:03:51,854 INFO  [Log] TC66_fnCheck_Login_Page_NewCustomer_section_Continue_button_functionalityhas completed execution 
