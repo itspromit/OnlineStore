@@ -27,6 +27,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
             //This method is to read the test data from the Excel cell, in this we are passing parameters as Row num and Col num
             public static String getCellData(int RowNum, int ColNum) throws Exception{
                    try{
+ 
                 	  Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
                       String CellData = Cell.getStringCellValue();
                       return CellData;
@@ -75,7 +76,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
         	public static int getRowUsed() throws Exception {
         		try{
         			int RowCount = ExcelWSheet.getLastRowNum();
-        			Log.info("Total number of Row used return as < " + RowCount + " >.");		
+        			//Log.info("Total number of Row used return as < " + RowCount + " >.");		
         			return RowCount;
         		}catch (Exception e){
         			Log.error("Class ExcelUtil | Method getRowUsed | Exception desc : "+e.getMessage());
@@ -83,5 +84,35 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
         			throw (e);
         		}
 
+        	}
+        	
+        	public static int getColumnUsed() throws Exception {
+        		try{
+        			Row = ExcelWSheet.getRow(0);
+        			int ColCount= Row.getLastCellNum();
+        			//Log.info("Total number of Row used return as < " + RowCount + " >.");		
+        			return ColCount;
+        		}catch (Exception e){
+        			Log.error("Class ExcelUtil | Method getRowUsed | Exception desc : "+e.getMessage());
+        			System.out.println(e.getMessage());
+        			throw (e);
+        		}
+
+        	}
+        	
+        	public static String [][] Return_table(){
+        		String[][] S= null;
+        		try {
+        			for(int i=2; i<getRowUsed(); i++) {
+        				for (int j=1; j<getColumnUsed(); j++) {
+        					S[i][j]= getCellData(i,j);
+        				}
+        			}
+        		}
+        		catch (Exception e) {
+        			String Ex = e.toString();
+        			System.out.println(Ex);
+        		}
+        		return S;
         	}
     }

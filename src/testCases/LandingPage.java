@@ -123,9 +123,10 @@ public class LandingPage {
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			Log.startTestCase(test_method.getName());
 
-			for (int i = 0; i < ExcelUtils.getRowUsed(); i++) {
-				if (ExcelUtils.getCellData(i, Constant.Col_TestCaseName).contentEquals(test_method.getName())) {
-					Str = ExcelUtils.getCellData(i, Constant.Col_Test_Data);
+			String[][] Excel_data = ExcelUtils.Return_table();
+			for (int i = 2; i < Excel_data.length; i++) {
+				if (Excel_data[i][1].contentEquals(test_method.getName())) {
+					Str = Excel_data[i][2];
 					break;
 				}
 			}
