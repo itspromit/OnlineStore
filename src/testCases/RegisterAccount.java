@@ -47,6 +47,8 @@ public class RegisterAccount {
 	String Str;
 	String[] S;
 	JavascriptExecutor JS;
+	String[][] Excel_data;
+	
 
 	@BeforeClass
 	public void fnCheck_RegisterAccount_page() {
@@ -77,7 +79,8 @@ public class RegisterAccount {
 				}
 			}
 
-			ExcelUtils.setExcelFile(Constant.Path_TestData, "Register Account");
+			
+			Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Register Account");
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -116,10 +119,10 @@ public class RegisterAccount {
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			Log.startTestCase(test_method.getName());
 
-			String[][] Excel_data = ExcelUtils.Return_table();
-			for (int i = 2; i < Excel_data.length; i++) {
-				if (Excel_data[i][1].contentEquals(test_method.getName())) {
-					Str = Excel_data[i][2];
+			
+			for (int i = 0; i < Excel_data.length; i++) {
+				if (Excel_data[i][0].contentEquals(test_method.getName())) {
+					Str = Excel_data[i][1];
 					break;
 				}
 			}
