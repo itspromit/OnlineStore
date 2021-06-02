@@ -37,8 +37,7 @@ public class ExcelUtils {
 			Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
 			int Cell_Type = Cell.getCellType();
 			if (Cell_Type == 0) {
-				int CellData_no = (int) Cell.getNumericCellValue();
-				CellData = String.valueOf(CellData_no);
+				CellData = String.valueOf(Cell.getNumericCellValue());
 
 			} else {
 				CellData = Cell.getStringCellValue();
