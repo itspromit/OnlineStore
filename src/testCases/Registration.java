@@ -5,8 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import pageObjects.Landing_Page;
-import pageObjects.RegisterAccount_Page;
+import pageObjects.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -49,6 +48,8 @@ public class Registration {
 	String[] S;
 	JavascriptExecutor JS;
 	String[][] Excel_data;
+	MyAccount M_Acc;
+	Logout L_out;
 
 	@BeforeClass
 	public void fnCheck_RegisterAccount_page() {
@@ -58,6 +59,8 @@ public class Registration {
 			if (driver == null) {
 				driver = Utils.Return_driver();
 				R_Acc = new RegisterAccount_Page(driver);
+				M_Acc= new MyAccount(driver);
+				L_out= new Logout(driver);
 				// LPage= new LandingPage();
 				Report = LandingPage.Return_Report();
 				JS = CommonFunctionandEvents.JavaScript_Executor(driver);
@@ -213,10 +216,14 @@ public class Registration {
 				Result = true;
 				Log.info(FName + LName + "Registered succesfully");
 				Test.log(LogStatus.PASS, FName + LName + "Registered succesfully");
+				CommonFunctionandEvents.fnclickArray_Element(M_Acc.MyAccount_dropdown_options_MyAccount_Page, "Logout");
+				L_out.Continue_button_LogoutPage.click();
+				
 			} else {
 				Result = false;
 				Log.info("Registration process failed");
 				Test.log(LogStatus.PASS, "Registration process failed");
+				driver.get(Constant.RegisterAccount_Page);
 			}
 
 			if (Result == true) {

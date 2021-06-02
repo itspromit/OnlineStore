@@ -33,10 +33,17 @@ public class ExcelUtils {
 	// passing parameters as Row num and Col num
 	public static String getCellData(int RowNum, int ColNum) throws Exception {
 		try {
-
+			String CellData = null;
 			Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
-			
-			String CellData = Cell.getStringCellValue();
+			int Cell_Type = Cell.getCellType();
+			if (Cell_Type == 0) {
+				int CellData_no = (int) Cell.getNumericCellValue();
+				CellData = String.valueOf(CellData_no);
+
+			} else {
+				CellData = Cell.getStringCellValue();
+			}
+
 			return CellData;
 		} catch (Exception e) {
 			return "";
@@ -110,20 +117,20 @@ public class ExcelUtils {
 	}
 
 	public static String[][] Return_table(String Path, String SheetName) {
-		String[][] S= null;
+		String[][] S = null;
 		try {
 			FileInputStream ExcelFile = new FileInputStream(Path);
 			// Access the required test data sheet
 			ExcelWBook = new XSSFWorkbook(ExcelFile);
 			ExcelWSheet = ExcelWBook.getSheet(SheetName);
 			int ColCount = ExcelWSheet.getRow(0).getLastCellNum();
-			
+
 			int RowCount = ExcelWSheet.getLastRowNum();
-			
-			S= new String[RowCount][ColCount];
-			for (int i = 1,a1=0; i <= RowCount; i++,a1++) {
-				for (int j = 0,b1=0; j <=ColCount-1; j++,b1++) {
-					S[a1][b1] = getCellData(i,j);
+
+			S = new String[RowCount][ColCount];
+			for (int i = 1, a1 = 0; i <= RowCount; i++, a1++) {
+				for (int j = 0, b1 = 0; j <= ColCount - 1; j++, b1++) {
+					S[a1][b1] = getCellData(i, j);
 				}
 			}
 			return S;
@@ -132,6 +139,6 @@ public class ExcelUtils {
 			System.out.println(Ex);
 			return null;
 		}
-		
+
 	}
 }
