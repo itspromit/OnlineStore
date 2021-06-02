@@ -111,6 +111,9 @@ public class RegisterAccount_Page extends Landing_Page {
 	@FindBy(xpath="//div[text()='I have read and agree to the ']/descendant::b[text()='Privacy Policy']/parent::a")
     public WebElement PrivacyPolicy_link;
 	
+	@FindBy(xpath="//div[@class='pull-right']/descendant::input[@name='agree']")
+    public WebElement PrivacyPolicy_checkbox;
+	
 	@FindBy(xpath="//div[@class='modal-dialog']")
     public WebElement PrivacyPolicy_modal_dialog;
 	

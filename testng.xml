@@ -6,10 +6,8 @@
 	</listeners>
 	<test name="Random Test">
 		<classes>
-
 			<class name="testCases.LandingPage" />
-			<class name="testCases.RegisterAccount" />
-			<class name="testCases.Login" />
+			<class name="testCases.Registration" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite --> 
