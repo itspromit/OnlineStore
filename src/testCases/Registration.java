@@ -216,6 +216,7 @@ public class Registration {
 				Result = true;
 				Log.info(FName + LName + "Registered succesfully");
 				Test.log(LogStatus.PASS, FName + LName + "Registered succesfully");
+				M_Acc.MyAccount_menu.click();
 				CommonFunctionandEvents.fnclickArray_Element(M_Acc.MyAccount_dropdown_options_MyAccount_Page, "Logout");
 				L_out.Continue_button_LogoutPage.click();
 				
@@ -223,8 +224,9 @@ public class Registration {
 				Result = false;
 				Log.info("Registration process failed");
 				Test.log(LogStatus.PASS, "Registration process failed");
-				driver.get(Constant.RegisterAccount_Page);
+				
 			}
+			driver.get(Constant.RegisterAccount_Page);
 
 			if (Result == true) {
 				JS.executeScript("document.body.style.backgroundColor = 'green';");

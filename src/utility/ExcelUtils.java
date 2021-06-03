@@ -35,6 +35,7 @@ public class ExcelUtils {
 		try {
 			String CellData = null;
 			Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
+			Cell.setCellType(1);
 			int Cell_Type = Cell.getCellType();
 			if (Cell_Type == 0) {
 				CellData = String.valueOf(Cell.getNumericCellValue());
