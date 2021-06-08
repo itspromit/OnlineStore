@@ -46,6 +46,8 @@ public class Login {
 	boolean Result;
 	String Str;
 	String[] S;
+	String[][] Excel_data;
+	
 
 	@BeforeClass
 	public void fnCheck_RegisterAccount_page() {
@@ -73,7 +75,8 @@ public class Login {
 
 				}
 			}
-			ExcelUtils.setExcelFile(Constant.Path_TestData, "Login");
+			
+			Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Login");
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -113,13 +116,13 @@ public class Login {
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			Log.startTestCase(test_method.getName());
 
-			for (int i = 0; i < ExcelUtils.getRowUsed(); i++) {
-				if (ExcelUtils.getCellData(i, Constant.Col_TestCaseName).contentEquals(test_method.getName())) {
-					Str = ExcelUtils.getCellData(i, Constant.Col_Test_Data);
+			
+			for (int i = 0; i < Excel_data.length; i++) {
+				if (Excel_data[i][0].contentEquals(test_method.getName())) {
+					Str = Excel_data[i][1];
 					break;
 				}
 			}
-
 			if (Str.contains(",")) {
 				S = CommonFunctionandEvents.fnStringSplit(Str, ",");
 			}

@@ -47,6 +47,8 @@ public class RegisterAccount {
 	String Str;
 	String[] S;
 	JavascriptExecutor JS;
+	String[][] Excel_data;
+	
 
 	@BeforeClass
 	public void fnCheck_RegisterAccount_page() {
@@ -58,7 +60,7 @@ public class RegisterAccount {
 				R_Acc = new RegisterAccount_Page(driver);
 				// LPage= new LandingPage();
 				Report = LandingPage.Return_Report();
-				JS= CommonFunctionandEvents.JavaScript_Executor(driver);
+				JS = CommonFunctionandEvents.JavaScript_Executor(driver);
 
 				if (driver.getTitle().contains("Register Account")) {
 
@@ -76,7 +78,9 @@ public class RegisterAccount {
 
 				}
 			}
-			ExcelUtils.setExcelFile(Constant.Path_TestData, "Register Account");
+
+			
+			Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Register Account");
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -115,9 +119,10 @@ public class RegisterAccount {
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			Log.startTestCase(test_method.getName());
 
-			for (int i = 0; i < ExcelUtils.getRowUsed(); i++) {
-				if (ExcelUtils.getCellData(i, Constant.Col_TestCaseName).contentEquals(test_method.getName())) {
-					Str = ExcelUtils.getCellData(i, Constant.Col_Test_Data);
+			
+			for (int i = 0; i < Excel_data.length; i++) {
+				if (Excel_data[i][0].contentEquals(test_method.getName())) {
+					Str = Excel_data[i][1];
 					break;
 				}
 			}
@@ -170,13 +175,11 @@ public class RegisterAccount {
 				Test.log(LogStatus.FAIL, "Page title is not getting displayed");
 			}
 			if (Result) {
-                
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Page_Header);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Page_Header);
 			}
 			Assert.assertEquals(Result, true);
@@ -209,12 +212,10 @@ public class RegisterAccount {
 
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Home_menu);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Home_menu);
 			}
 			Assert.assertEquals(Result, true);
@@ -250,10 +251,10 @@ public class RegisterAccount {
 			}
 			if (Result == true) {
 				JS.executeScript("document.body.style.backgroundColor = 'green';");
-						
+
 			} else {
 				JS.executeScript("document.body.style.backgroundColor = 'red';");
-						
+
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -284,12 +285,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Account_menu);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Account_menu);
 			}
 			Assert.assertEquals(Result, true);
@@ -325,10 +324,10 @@ public class RegisterAccount {
 			}
 			if (Result == true) {
 				JS.executeScript("document.body.style.backgroundColor = 'green';");
-						
+
 			} else {
 				JS.executeScript("document.body.style.backgroundColor = 'red';");
-						
+
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -359,12 +358,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Register_menu);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Register_menu);
 			}
 			Assert.assertEquals(Result, true);
@@ -401,10 +398,10 @@ public class RegisterAccount {
 			}
 			if (Result == true) {
 				JS.executeScript("document.body.style.backgroundColor = 'green';");
-						
+
 			} else {
 				JS.executeScript("document.body.style.backgroundColor = 'red';");
-						
+
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -437,12 +434,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Register_Account_msg);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Register_Account_msg);
 			}
 			Assert.assertEquals(Result, true);
@@ -475,12 +470,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.LoginPage_link);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.LoginPage_link);
 			}
 			Assert.assertEquals(Result, true);
@@ -516,10 +509,10 @@ public class RegisterAccount {
 			}
 			if (Result == true) {
 				JS.executeScript("document.body.style.backgroundColor = 'green';");
-						
+
 			} else {
 				JS.executeScript("document.body.style.backgroundColor = 'red';");
-						
+
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
@@ -543,12 +536,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.PersonalDetails_section);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.PersonalDetails_section);
 			}
 			Assert.assertEquals(Result, true);
@@ -581,12 +572,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.PersonalDetails_header);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.PersonalDetails_header);
 			}
 			Assert.assertEquals(Result, true);
@@ -620,12 +609,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.FirstName_label);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.FirstName_label);
 			}
 			Assert.assertEquals(Result, true);
@@ -659,12 +646,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.FirstName_field);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.FirstName_field);
 			}
 			Assert.assertEquals(Result, true);
@@ -698,12 +683,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.LastName_label);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.LastName_label);
 			}
 			Assert.assertEquals(Result, true);
@@ -736,12 +719,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.LastName_field);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.LastName_field);
 			}
 			Assert.assertEquals(Result, true);
@@ -775,12 +756,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.EMail_label);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.EMail_label);
 			}
 			Assert.assertEquals(Result, true);
@@ -813,12 +792,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.EMail_field);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.EMail_field);
 			}
 			Assert.assertEquals(Result, true);
@@ -852,12 +829,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Telephone_label);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Telephone_label);
 			}
 			Assert.assertEquals(Result, true);
@@ -887,12 +862,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Telephone_field);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Telephone_field);
 			}
 			Assert.assertEquals(Result, true);
@@ -917,12 +890,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.YourPassword_section);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.YourPassword_section);
 			}
 			Assert.assertEquals(Result, true);
@@ -955,12 +926,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.YourPassword_header);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.YourPassword_header);
 			}
 			Assert.assertEquals(Result, true);
@@ -994,12 +963,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Password_label);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Password_label);
 			}
 			Assert.assertEquals(Result, true);
@@ -1029,12 +996,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Password_field);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Password_field);
 			}
 			Assert.assertEquals(Result, true);
@@ -1068,12 +1033,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.ConfirmPassword_label);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.ConfirmPassword_label);
 			}
 			Assert.assertEquals(Result, true);
@@ -1104,12 +1067,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.ConfirmPassword_field);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.ConfirmPassword_field);
 			}
 			Assert.assertEquals(Result, true);
@@ -1134,12 +1095,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Newsletter_section);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Newsletter_section);
 			}
 			Assert.assertEquals(Result, true);
@@ -1172,12 +1131,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Newsletter_header);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Newsletter_header);
 			}
 			Assert.assertEquals(Result, true);
@@ -1210,12 +1167,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Subscribe_label);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Subscribe_label);
 			}
 			Assert.assertEquals(Result, true);
@@ -1248,12 +1203,10 @@ public class RegisterAccount {
 				Test.log(LogStatus.FAIL, "Subscribe field options not getting displayed");
 			}
 			if (Result == true) {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Subscribe_field_options);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.Subscribe_field_options);
 			}
 
@@ -1288,12 +1241,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.PrivacyPolicy_text);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.PrivacyPolicy_text);
 			}
 			Assert.assertEquals(Result, true);
@@ -1325,14 +1276,11 @@ public class RegisterAccount {
 				Test.log(LogStatus.FAIL, "Privacy Policy link not getting displayed");
 			}
 			if (Result) {
-				
-                
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.PrivacyPolicy_link);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.PrivacyPolicy_link);
 			}
 			Assert.assertEquals(Result, true);
@@ -1370,12 +1318,10 @@ public class RegisterAccount {
 			}
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.PrivacyPolicy_modal_dialog);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.PrivacyPolicy_modal_dialog);
 			}
 			Assert.assertEquals(Result, true);
@@ -1414,12 +1360,10 @@ public class RegisterAccount {
 
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.PrivacyPolicy_modal_header);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.PrivacyPolicy_modal_header);
 			}
 			Assert.assertEquals(Result, true);
@@ -1428,7 +1372,7 @@ public class RegisterAccount {
 			System.out.println(Ex);
 		}
 	}
-	
+
 	@Test
 	public void TC54_fnCheck_RegisterAccount_Page_PrivacyPolicy_Modal_body_content() {
 		try {
@@ -1458,12 +1402,10 @@ public class RegisterAccount {
 
 			if (Result) {
 
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.PrivacyPolicy_modal_body_content);
 			} else {
-				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+				JS.executeScript("arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						R_Acc.PrivacyPolicy_modal_body_content);
 			}
 			Assert.assertEquals(Result, true);
@@ -1472,6 +1414,5 @@ public class RegisterAccount {
 			System.out.println(Ex);
 		}
 	}
-
 
 }

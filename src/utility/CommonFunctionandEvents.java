@@ -213,6 +213,25 @@ public class CommonFunctionandEvents {
 
 	}
 
+	public static void fnclickArray_Element(List<WebElement> list, String Text) {
+		try {
+
+			for (int i = 0; i < list.size(); i++) {
+				if (Text.contentEquals(list.get(i).getText())) {
+					list.get(i).click();
+					break;
+				}
+
+			}
+
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+
+		}
+
+	}
+
 	public static boolean fnValidateArray(String[] Arr, String[] Arr1) {
 		int a = 0;
 		for (int i = 0; i < Arr.length; i++) {
@@ -222,72 +241,69 @@ public class CommonFunctionandEvents {
 				}
 			}
 		}
-			if ((a == Arr.length) && (a == Arr1.length)) {
-				bstatus = true;
-				Log.info("Both arrays are equal");
+		if ((a == Arr.length) && (a == Arr1.length)) {
+			bstatus = true;
+			Log.info("Both arrays are equal");
+		} else {
+			bstatus = false;
+			if (Arr.length > Arr1.length) {
+				int x = 0;
+				Log.info("The following Array1 elements missing in Array2:-");
+				for (int b = 0; b < Arr.length; b++) {
+					for (int c = 0; c < Arr1.length; c++) {
+						if (Arr[b].contentEquals(Arr1[c])) {
+							x = x + 1;
+						}
+					}
+					if (x == 0) {
+						Log.info(Arr[b]);
+					}
+					x = 0;
+				}
+			} else if (Arr1.length > Arr.length) {
+				int y = 0;
+				Log.info("The following Array2 elements missing in Array1 :-");
+				for (int d = 0; d < Arr1.length; d++) {
+					for (int e = 0; e < Arr.length; e++) {
+						if (Arr1[d].contentEquals(Arr[e])) {
+							y = y + 1;
+						}
+					}
+					if (y == 0) {
+						Log.info(Arr1[d]);
+					}
+					y = 0;
+				}
 			} else {
-                bstatus= false;
-				if (Arr.length > Arr1.length) {
-					int x = 0;
-					Log.info("The following Array1 elements missing in Array2:-");
-					for (int b = 0; b < Arr.length; b++) {
-						for (int c = 0; c < Arr1.length; c++) {
-							if (Arr[b].contentEquals(Arr1[c])) {
-								x = x + 1;
-							}
+				int x = 0;
+				Log.info("The following Array1 elements missing in Array2:-");
+				for (int b = 0; b < Arr.length; b++) {
+					for (int c = 0; c < Arr1.length; c++) {
+						if (Arr[b].contentEquals(Arr1[c])) {
+							x = x + 1;
 						}
-						if (x == 0) {
-							Log.info(Arr[b]);
-						}
-						x = 0;
 					}
-				} else if (Arr1.length > Arr.length) {
-					int y = 0;
-					Log.info("The following Array2 elements missing in Array1 :-");
-					for (int d = 0; d < Arr1.length; d++) {
-						for (int e = 0; e < Arr.length; e++) {
-							if (Arr1[d].contentEquals(Arr[e])) {
-								y = y + 1;
-							}
-						}
-						if (y == 0) {
-							Log.info(Arr1[d]);
-						}
-						y = 0;
+					if (x == 0) {
+						Log.info(Arr[b]);
 					}
+					x = 0;
 				}
-				else {
-					int x = 0;
-					Log.info("The following Array1 elements missing in Array2:-");
-					for (int b = 0; b < Arr.length; b++) {
-						for (int c = 0; c < Arr1.length; c++) {
-							if (Arr[b].contentEquals(Arr1[c])) {
-								x = x + 1;
-							}
+				int y = 0;
+				Log.info("The following Array2 elements missing in Array1 :-");
+				for (int d = 0; d < Arr1.length; d++) {
+					for (int e = 0; e < Arr.length; e++) {
+						if (Arr1[d].contentEquals(Arr[e])) {
+							y = y + 1;
 						}
-						if (x == 0) {
-							Log.info(Arr[b]);
-						}
-						x = 0;
 					}
-					int y = 0;
-					Log.info("The following Array2 elements missing in Array1 :-");
-					for (int d = 0; d < Arr1.length; d++) {
-						for (int e = 0; e < Arr.length; e++) {
-							if (Arr1[d].contentEquals(Arr[e])) {
-								y = y + 1;
-							}
-						}
-						if (y == 0) {
-							Log.info(Arr1[d]);
-						}
-						y = 0;
+					if (y == 0) {
+						Log.info(Arr1[d]);
 					}
-					
-					
+					y = 0;
 				}
+
 			}
-	
+		}
 
 		return bstatus;
 
@@ -337,16 +353,16 @@ public class CommonFunctionandEvents {
 		}
 		return bstatus;
 	}
-	
+
 	public static JavascriptExecutor JavaScript_Executor(WebDriver driver) {
-		
-		JavascriptExecutor Jse= (JavascriptExecutor)driver;
+
+		JavascriptExecutor Jse = (JavascriptExecutor) driver;
 		return Jse;
-		
+
 	}
-	
+
 	public static Alert fnValidate_Alert(WebDriver driver) {
-		Alert alert= driver.switchTo().alert();
+		Alert alert = driver.switchTo().alert();
 		return alert;
 	}
 }
