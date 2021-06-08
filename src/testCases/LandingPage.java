@@ -46,7 +46,6 @@ public class LandingPage {
 	String Str;
 	String[] S;
 	String[][] Excel_data;
-	
 
 	@BeforeSuite
 	public void fnCheckforActiveBrowser() {
@@ -76,7 +75,7 @@ public class LandingPage {
 				driver.get(Constant.URL);
 			}
 			Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Landing Page");
-			
+
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
@@ -126,7 +125,6 @@ public class LandingPage {
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			Log.startTestCase(test_method.getName());
 
-			
 			for (int i = 0; i < Excel_data.length; i++) {
 				if (Excel_data[i][0].contentEquals(test_method.getName())) {
 					Str = Excel_data[i][1];
@@ -749,4 +747,202 @@ public class LandingPage {
 		}
 	}
 
+	@Test
+	public void TC16_fnCheck_LandingPage_Desktop_menu_functionality() {
+		String[] S1 = null;
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Desktops_menu)) {
+				if (CommonFunctionandEvents.fnMenuHover(driver, LP.Desktops_menu)) {
+					if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Desktop_dropdown)) {
+						if (CommonFunctionandEvents.fnValidateArray(
+								CommonFunctionandEvents.fncreateArray_Elements(LP.Desktop_dropdown_elements, S1), S)) {
+							Result = true;
+							Log.info("All items within Desktop menu displaying correctly");
+							Test.log(LogStatus.PASS, "All items within Desktop menu displaying correctly");
+						} else {
+							Result = false;
+							Log.info("All items within Desktop menu not displaying correctly");
+							Test.log(LogStatus.FAIL, "All items within Desktop menu not displaying correctly");
+						}
+					} else {
+						Result = false;
+						Log.info("Desktop menu dropdown not displaying");
+						Test.log(LogStatus.FAIL, "Desktop menu dropdown not displaying");
+					}
+
+				} else {
+					Result = false;
+					Log.info("Desktop menu is not hoverable");
+					Test.log(LogStatus.FAIL, "Desktop menu is not hoverable");
+				}
+			} else {
+				Result = false;
+				Log.info("Desktop menu is not displaying");
+				Test.log(LogStatus.FAIL, "Desktop menu is not displaying");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						LP.Desktops_menu);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.Desktops_menu);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	
+	@Test
+	public void TC17_fnCheck_LandingPage_LaptopsNotebooks_menu_functionality() {
+		String[] S1 = null;
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.LaptopsandNotebooks_menu)) {
+				if (CommonFunctionandEvents.fnMenuHover(driver, LP.LaptopsandNotebooks_menu)) {
+					if (CommonFunctionandEvents.fnIsElementDisplayed(LP.LaptopsandNotebooks_dropdown)) {
+						if (CommonFunctionandEvents.fnValidateArray(
+								CommonFunctionandEvents.fncreateArray_Elements(LP.LaptopsandNotebooks_dropdown_elements, S1), S)) {
+							Result = true;
+							Log.info("All items within Laptops&Desktops menu displaying correctly");
+							Test.log(LogStatus.PASS, "All items within Laptops&Desktops menu displaying correctly");
+						} else {
+							Result = false;
+							Log.info("All items within Laptops&Desktops menu not displaying correctly");
+							Test.log(LogStatus.FAIL, "All items within Laptops&Desktops menu not displaying correctly");
+						}
+					} else {
+						Result = false;
+						Log.info("Laptops&Desktops menu dropdown not displaying");
+						Test.log(LogStatus.FAIL, "Laptops&Desktops menu dropdown not displaying");
+					}
+
+				} else {
+					Result = false;
+					Log.info("Laptops&Desktops menu is not hoverable");
+					Test.log(LogStatus.FAIL, "Laptops&Desktops menu is not hoverable");
+				}
+			} else {
+				Result = false;
+				Log.info("Laptops&Desktops menu is not displaying");
+				Test.log(LogStatus.FAIL, "Laptops&Desktops menu is not displaying");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						LP.LaptopsandNotebooks_menu);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.LaptopsandNotebooks_menu);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+	
+	@Test
+	public void TC18_fnCheck_LandingPage_Components_menu_functionality() {
+		String[] S1 = null;
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Components_menu)) {
+				if (CommonFunctionandEvents.fnMenuHover(driver, LP.Components_menu)) {
+					if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Components_dropdown)) {
+						if (CommonFunctionandEvents.fnValidateArray(
+								CommonFunctionandEvents.fncreateArray_Elements(LP.Components_dropdown_elements, S1), S)) {
+							Result = true;
+							Log.info("All items within Components menu displaying correctly");
+							Test.log(LogStatus.PASS, "All items within Components menu displaying correctly");
+						} else {
+							Result = false;
+							Log.info("All items within Components menu not displaying correctly");
+							Test.log(LogStatus.FAIL, "All items within Components menu not displaying correctly");
+						}
+					} else {
+						Result = false;
+						Log.info("Laptops&Desktops menu dropdown not displaying");
+						Test.log(LogStatus.FAIL, "Components menu dropdown not displaying");
+					}
+
+				} else {
+					Result = false;
+					Log.info("Laptops&Desktops menu is not hoverable");
+					Test.log(LogStatus.FAIL, "Components menu is not hoverable");
+				}
+			} else {
+				Result = false;
+				Log.info("Laptops&Desktops menu is not displaying");
+				Test.log(LogStatus.FAIL, "Laptops&Desktops menu is not displaying");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						LP.Components_menu);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.Components_menu);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC19_fnCheck_LandingPage_MP3Players_menu_functionality() {
+		String[] S1 = null;
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.MP3Players_menu)) {
+				if (CommonFunctionandEvents.fnMenuHover(driver, LP.MP3Players_menu)) {
+					if (CommonFunctionandEvents.fnIsElementDisplayed(LP.MP3Players_dropdown)) {
+						if (CommonFunctionandEvents.fnValidateArray(
+								CommonFunctionandEvents.fncreateArray_Elements(LP.MP3Players_elements, S1), S)) {
+							Result = true;
+							Log.info("All items within MP3Players menu displaying correctly");
+							Test.log(LogStatus.PASS, "All items within MP3Players menu displaying correctly");
+						} else {
+							Result = false;
+							Log.info("All items within MP3Players menu not displaying correctly");
+							Test.log(LogStatus.FAIL, "All items within MP3Players menu not displaying correctly");
+						}
+					} else {
+						Result = false;
+						Log.info("MP3Players menu dropdown not displaying");
+						Test.log(LogStatus.FAIL, "MP3Players menu dropdown not displaying");
+					}
+
+				} else {
+					Result = false;
+					Log.info("MP3Players menu is not hoverable");
+					Test.log(LogStatus.FAIL, "MP3Players menu is not hoverable");
+				}
+			} else {
+				Result = false;
+				Log.info("Laptops&Desktops menu is not displaying");
+				Test.log(LogStatus.FAIL, "Laptops&Desktops menu is not displaying");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						LP.MP3Players_menu);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.MP3Players_menu);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	
 }

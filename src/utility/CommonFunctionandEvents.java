@@ -75,11 +75,27 @@ public class CommonFunctionandEvents {
 
 	}
 
+	public static boolean fnMenuHover(WebDriver driver, WebElement element1) {
+		try {
+			Actions builder = new Actions(driver);
+			builder.moveToElement(element1).build().perform();
+			
+
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+			bstatus = false;
+		}
+		return bstatus;
+
+	}
+	
 	public static boolean fnMenuHoverClick(WebDriver driver, WebElement element1, WebElement element2) {
 		try {
 			Actions builder = new Actions(driver);
 			builder.moveToElement(element1).build().perform();
 			builder.moveToElement(element2).click().build().perform();
+			
 
 		} catch (Exception e) {
 			String Ex = e.toString();
