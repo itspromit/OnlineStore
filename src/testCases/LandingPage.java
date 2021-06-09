@@ -75,6 +75,9 @@ public class LandingPage {
 				driver.get(Constant.URL);
 			}
 			Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Landing Page");
+			for (int i=0; i<Excel_data.length;i++) {
+				System.out.println(Excel_data[i][0]);
+			}
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -135,6 +138,7 @@ public class LandingPage {
 			if (Str.contains(",")) {
 				S = CommonFunctionandEvents.fnStringSplit(Str, ",");
 			}
+			
 
 		} catch (Exception e) {
 			String Ex = e.toString();

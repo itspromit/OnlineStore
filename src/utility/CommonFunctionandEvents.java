@@ -216,7 +216,7 @@ public class CommonFunctionandEvents {
 			arr = new String[list.size()];
 			for (int i = 0; i < list.size(); i++) {
 				arr[i] = list.get(i).getText();
-				Log.info(list.get(i).getText());
+				//Log.info(list.get(i).getText());
 
 			}
 
