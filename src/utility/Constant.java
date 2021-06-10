@@ -6,7 +6,7 @@ public class Constant {
 	    public static final String URL = "http://tutorialsninja.com/demo/";
 	    public static final String Username = "testuser_1";
 	    public static final String Password ="Test@123";
-		public static final String Path_TestData = "E:\\Regression_Automation_Suite\\OnlineStore_Replica\\OnlineStore\\src\\testData\\TestData.xlsx";
+		public static final String Path_TestData = "src\\testData\\TestData.xlsx";
 		//public static final String File_TestData = "TestData.xlsx";
 		public static final String RegisterAccount_Page= "http://tutorialsninja.com/demo/index.php?route=account/register";
 		
@@ -25,5 +25,5 @@ public class Constant {
 		//public static final int Col_TestCaseName = 0;	
 		//public static final int Col_Test_Data =1 ;
 		//public static final int Col_Result = 2;
-		public static final String Path_ScreenShot = "E:\\Regression_Automation_Suite\\OnlineStore_Replica\\OnlineStore\\src\\Screenshots\\";
+		public static final String Path_ScreenShot = "src\\Screenshots\\";
 	}

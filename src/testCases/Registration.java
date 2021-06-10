@@ -223,7 +223,7 @@ public class Registration {
 			} else {
 				Result = false;
 				Log.info("Registration process failed");
-				Test.log(LogStatus.PASS, "Registration process failed");
+				Test.log(LogStatus.FAIL, "Registration process failed");
 				
 			}
 			driver.get(Constant.RegisterAccount_Page);
