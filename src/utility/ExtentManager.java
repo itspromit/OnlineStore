@@ -17,7 +17,7 @@ public static ExtentReports getInstance() {
 
 		String FileName = modifiedDateFormat+".html";
 		
-		String FilePath = "E:\\Regression_Automation_Suite\\OnlineStore_Replica\\OnlineStore\\src\\Reports"+FileName;
+		String FilePath = "src\\Reports\\"+FileName;
 		
 		ExtentReports report = new ExtentReports(FilePath, true, DisplayOrder.NEWEST_FIRST);
 		
