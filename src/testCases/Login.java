@@ -47,7 +47,6 @@ public class Login {
 	String Str;
 	String[] S;
 	String[][] Excel_data;
-	
 
 	@BeforeClass
 	public void fnCheck_RegisterAccount_page() {
@@ -75,7 +74,7 @@ public class Login {
 
 				}
 			}
-			
+
 			Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Login");
 
 		} catch (Exception e) {
@@ -116,7 +115,6 @@ public class Login {
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			Log.startTestCase(test_method.getName());
 
-			
 			for (int i = 0; i < Excel_data.length; i++) {
 				if (Excel_data[i][0].contentEquals(test_method.getName())) {
 					Str = Excel_data[i][1];
@@ -586,6 +584,77 @@ public class Login {
 						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC67_fnCheck_LoginPage_Righ_Side_Menu() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Right_Menu_bar)) {
+				Result = true;
+				Log.info("Right Hand side Menu bar is being displyed");
+				Test.log(LogStatus.PASS, "Right Hand side Menu bar is being displyed");
+
+			} else {
+				Result = false;
+				Log.info("Right Hand side Menu bar is not getting displayed");
+				Test.log(LogStatus.FAIL, "Right Hand side Menu bar is not getting displayed");
+			}
+			if (Result) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						Login.Right_Menu_bar);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						Login.Right_Menu_bar);
+			}
+
+			Assert.assertEquals(Result, true);
+
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC68_fnCheck_LoginPage_Right_Side_Menu_Elements() {
+		String[] S1 = null;
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Right_Menu_bar)) {
+				if (CommonFunctionandEvents.fnValidateArray(
+						CommonFunctionandEvents.fncreateArray_Elements(Login.Right_Menubar_items, S1), S)) {
+					Result = true;
+					Log.info("All Right hand side Menu bar elements are getting correctly displayed");
+					Test.log(LogStatus.PASS, "All Right hand side Menu bar elements are getting correctly displayed");
+				} else {
+					Result = false;
+					Log.info("All Right hand side Menu bar elements are not getting correctly displayed");
+					Test.log(LogStatus.FAIL,
+							"All Right hand side Menu bar elements are not getting correctly displayed");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Right hand side Menu bar is not getting displayed");
+				Test.log(LogStatus.FAIL, "Right hand side Menu bar is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						Login.Right_Menu_bar);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						Login.Right_Menu_bar);
+			}
+
+			Assert.assertEquals(Result, true);
+
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);
