@@ -125,7 +125,7 @@ public class ExcelUtils {
 			// Access the required test data sheet
 			ExcelWBook = new XSSFWorkbook(ExcelFile);
 			ExcelWSheet = ExcelWBook.getSheet(SheetName);
-			int ColCount = ExcelWSheet.getRow(0).getLastCellNum();
+			int ColCount = ExcelWSheet.getRow(1).getLastCellNum();
 
 			int RowCount = ExcelWSheet.getLastRowNum();
 			S = new String[RowCount][ColCount];
