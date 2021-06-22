@@ -237,6 +237,7 @@ public class Registration {
 			}
 
 			Assert.assertEquals(Result, true);
+			
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);

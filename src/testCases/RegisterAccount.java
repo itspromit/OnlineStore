@@ -1174,6 +1174,7 @@ public class RegisterAccount {
 						R_Acc.Subscribe_label);
 			}
 			Assert.assertEquals(Result, true);
+			
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);

@@ -1221,3 +1221,317 @@
 2021-06-10 21:35:56,833 INFO  [Log] Registration process failed 
 2021-06-10 21:36:00,211 INFO  [Log] **************************************************************************************** 
 2021-06-10 21:36:00,211 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas completed execution 
+2021-06-13 19:20:44,748 INFO  [Log] New driver instantiated 
+2021-06-13 19:20:44,891 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2021-06-13 19:20:47,374 INFO  [Log] Web application launched successfully 
+2021-06-13 19:20:54,796 INFO  [Log] User on landing page 
+2021-06-13 19:20:54,806 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:20:54,806 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-06-13 19:20:55,644 INFO  [Log] Page title is being displyed correctly 
+2021-06-13 19:20:59,860 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:20:59,860 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-06-13 19:21:00,834 INFO  [Log] User on landing page 
+2021-06-13 19:21:00,844 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:00,844 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas begun execution 
+2021-06-13 19:21:00,907 INFO  [Log] Menu bar is being displyed 
+2021-06-13 19:21:04,367 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:04,367 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas completed execution 
+2021-06-13 19:21:04,886 INFO  [Log] User on landing page 
+2021-06-13 19:21:04,895 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:04,895 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas begun execution 
+2021-06-13 19:21:05,599 INFO  [Log] The following Array2 elements missing in Array1 :- 
+2021-06-13 19:21:05,599 INFO  [Log] Promit 
+2021-06-13 19:21:05,599 INFO  [Log] All System Menu bar elements are not getting correctly displayed 
+2021-06-13 19:21:08,965 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:08,965 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas completed execution 
+2021-06-13 19:21:09,419 INFO  [Log] User on landing page 
+2021-06-13 19:21:09,424 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:09,424 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas begun execution 
+2021-06-13 19:21:09,570 INFO  [Log] Contact No is getting displayed correctly 
+2021-06-13 19:21:12,972 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:12,973 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas completed execution 
+2021-06-13 19:21:13,639 INFO  [Log] User on landing page 
+2021-06-13 19:21:13,647 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:13,647 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas begun execution 
+2021-06-13 19:21:13,789 INFO  [Log] Contact No icon getting displayed 
+2021-06-13 19:21:17,392 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:17,393 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas completed execution 
+2021-06-13 19:21:17,787 INFO  [Log] User on landing page 
+2021-06-13 19:21:17,791 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:17,791 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas begun execution 
+2021-06-13 19:21:19,402 INFO  [Log] No new tab is opened 
+2021-06-13 19:21:19,411 INFO  [Log] User Navigated to Contact No page 
+2021-06-13 19:21:22,793 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:22,795 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas completed execution 
+2021-06-13 19:21:23,157 INFO  [Log] User not on landing page 
+2021-06-13 19:21:23,517 INFO  [Log] User navigating to landing page 
+2021-06-13 19:21:23,522 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:23,522 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas begun execution 
+2021-06-13 19:21:23,662 INFO  [Log] My Account menu is getting displayed correctly 
+2021-06-13 19:21:27,007 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:27,007 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas completed execution 
+2021-06-13 19:21:27,893 INFO  [Log] User on landing page 
+2021-06-13 19:21:27,896 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:27,896 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas begun execution 
+2021-06-13 19:21:28,155 INFO  [Log] My Account menu dropdown is getting displayed correctly 
+2021-06-13 19:21:31,827 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:31,827 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas completed execution 
+2021-06-13 19:21:32,249 INFO  [Log] User on landing page 
+2021-06-13 19:21:32,256 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:32,256 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas begun execution 
+2021-06-13 19:21:32,534 INFO  [Log] Both arrays are equal 
+2021-06-13 19:21:32,534 INFO  [Log] All My Account dropdown options are getting correctly displayed 
+2021-06-13 19:21:35,942 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:35,942 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas completed execution 
+2021-06-13 19:21:36,313 INFO  [Log] User on landing page 
+2021-06-13 19:21:36,316 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:36,316 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas begun execution 
+2021-06-13 19:21:36,425 INFO  [Log] Wish List menu is getting displayed correctly 
+2021-06-13 19:21:39,936 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:39,936 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas completed execution 
+2021-06-13 19:21:40,383 INFO  [Log] User on landing page 
+2021-06-13 19:21:40,386 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:40,386 INFO  [Log] TC11_fnCheck_LandingPage_WishList_menu_functionalityhas begun execution 
+2021-06-13 19:21:41,129 INFO  [Log] User navigated to the correct page i.e. Login page 
+2021-06-13 19:21:44,459 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:44,459 INFO  [Log] TC11_fnCheck_LandingPage_WishList_menu_functionalityhas completed execution 
+2021-06-13 19:21:44,862 INFO  [Log] User not on landing page 
+2021-06-13 19:21:45,463 INFO  [Log] User navigating to landing page 
+2021-06-13 19:21:45,467 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:45,467 INFO  [Log] TC12_fnCheck_LandingPage_ShoppingCart_menuhas begun execution 
+2021-06-13 19:21:45,614 INFO  [Log] Shopping Cart menu is getting displayed correctly 
+2021-06-13 19:21:49,046 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:49,046 INFO  [Log] TC12_fnCheck_LandingPage_ShoppingCart_menuhas completed execution 
+2021-06-13 19:21:49,406 INFO  [Log] User on landing page 
+2021-06-13 19:21:49,411 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:49,412 INFO  [Log] TC13_fnCheck_LandingPage_ShoppingCart_menu_functionalityhas begun execution 
+2021-06-13 19:21:49,922 INFO  [Log] User navigated to the Shopping Cart page 
+2021-06-13 19:21:53,213 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:53,214 INFO  [Log] TC13_fnCheck_LandingPage_ShoppingCart_menu_functionalityhas completed execution 
+2021-06-13 19:21:53,565 INFO  [Log] User not on landing page 
+2021-06-13 19:21:53,969 INFO  [Log] User navigating to landing page 
+2021-06-13 19:21:53,982 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:53,982 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas begun execution 
+2021-06-13 19:21:54,215 INFO  [Log] Incorrect name for Checkout menu getting displayed 
+2021-06-13 19:21:57,829 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:57,829 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas completed execution 
+2021-06-13 19:21:58,397 INFO  [Log] User on landing page 
+2021-06-13 19:21:58,403 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:21:58,403 INFO  [Log] TC15_fnCheck_LandingPage_Checkout_menu_functionalityhas begun execution 
+2021-06-13 19:21:58,905 INFO  [Log] User navigated to correct page i.e. the Shopping Cart page 
+2021-06-13 19:22:02,226 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:22:02,226 INFO  [Log] TC15_fnCheck_LandingPage_Checkout_menu_functionalityhas completed execution 
+2021-06-13 19:22:02,609 INFO  [Log] User not on landing page 
+2021-06-13 19:22:03,018 INFO  [Log] User navigating to landing page 
+2021-06-13 19:22:03,021 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:22:03,022 INFO  [Log] TC16_fnCheck_LandingPage_Desktop_menu_functionalityhas begun execution 
+2021-06-13 19:22:03,609 INFO  [Log] Both arrays are equal 
+2021-06-13 19:22:03,609 INFO  [Log] All items within Desktop menu displaying correctly 
+2021-06-13 19:22:07,135 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:22:07,135 INFO  [Log] TC16_fnCheck_LandingPage_Desktop_menu_functionalityhas completed execution 
+2021-06-13 19:22:07,531 INFO  [Log] User on landing page 
+2021-06-13 19:22:07,537 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:22:07,537 INFO  [Log] TC17_fnCheck_LandingPage_LaptopsNotebooks_menu_functionalityhas begun execution 
+2021-06-13 19:22:07,952 INFO  [Log] Both arrays are equal 
+2021-06-13 19:22:07,952 INFO  [Log] All items within Laptops&Desktops menu displaying correctly 
+2021-06-13 19:22:11,525 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:22:11,526 INFO  [Log] TC17_fnCheck_LandingPage_LaptopsNotebooks_menu_functionalityhas completed execution 
+2021-06-13 19:22:12,001 INFO  [Log] User on landing page 
+2021-06-13 19:22:12,005 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:22:12,005 INFO  [Log] TC18_fnCheck_LandingPage_Components_menu_functionalityhas begun execution 
+2021-06-13 19:22:12,674 INFO  [Log] Both arrays are equal 
+2021-06-13 19:22:12,675 INFO  [Log] All items within Components menu displaying correctly 
+2021-06-13 19:22:16,330 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:22:16,330 INFO  [Log] TC18_fnCheck_LandingPage_Components_menu_functionalityhas completed execution 
+2021-06-13 19:22:16,745 INFO  [Log] User on landing page 
+2021-06-13 19:22:16,747 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:22:16,747 INFO  [Log] TC19_fnCheck_LandingPage_MP3Players_menu_functionalityhas begun execution 
+2021-06-13 19:22:17,935 INFO  [Log] Both arrays are equal 
+2021-06-13 19:22:17,935 INFO  [Log] All items within MP3Players menu displaying correctly 
+2021-06-13 19:22:21,299 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:22:21,300 INFO  [Log] TC19_fnCheck_LandingPage_MP3Players_menu_functionalityhas completed execution 
+2021-06-13 19:22:22,531 INFO  [Log] User on Register Account page 
+2021-06-13 19:22:22,533 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:22:22,534 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas begun execution 
+2021-06-13 19:22:22,930 INFO  [Log] First Name is entered 
+2021-06-13 19:22:23,078 INFO  [Log] Last Name is entered 
+2021-06-13 19:22:23,285 INFO  [Log] E-mail is entered 
+2021-06-13 19:22:23,464 INFO  [Log] Telepnone number is entered 
+2021-06-13 19:22:23,627 INFO  [Log] Password is entered 
+2021-06-13 19:22:23,788 INFO  [Log] Confirm Password is entered 
+2021-06-13 19:22:23,912 INFO  [Log] Privacy Policy required checkbox is checked 
+2021-06-13 19:22:24,413 INFO  [Log] Continue button is clicked 
+2021-06-13 19:22:24,420 INFO  [Log] Registration process failed 
+2021-06-13 19:22:27,885 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:22:27,885 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas completed execution 
+2021-06-13 19:22:28,346 INFO  [Log] User on Register Account page 
+2021-06-13 19:22:28,347 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:22:28,347 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas begun execution 
+2021-06-13 19:22:28,497 INFO  [Log] First Name is entered 
+2021-06-13 19:22:28,648 INFO  [Log] Last Name is entered 
+2021-06-13 19:22:28,814 INFO  [Log] E-mail is entered 
+2021-06-13 19:22:28,954 INFO  [Log] Telepnone number is entered 
+2021-06-13 19:22:29,090 INFO  [Log] Password is entered 
+2021-06-13 19:22:29,228 INFO  [Log] Confirm Password is entered 
+2021-06-13 19:22:29,383 INFO  [Log] Privacy Policy required checkbox is checked 
+2021-06-13 19:22:29,805 INFO  [Log] Continue button is clicked 
+2021-06-13 19:22:29,815 INFO  [Log] Registration process failed 
+2021-06-13 19:22:33,376 INFO  [Log] **************************************************************************************** 
+2021-06-13 19:22:33,376 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas completed execution 
+2021-06-22 22:40:26,095 INFO  [Log] New driver instantiated 
+2021-06-22 22:40:26,157 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2021-06-22 22:40:28,442 INFO  [Log] Web application launched successfully 
+2021-06-22 22:40:32,721 INFO  [Log] User on landing page 
+2021-06-22 22:40:32,733 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:40:32,733 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-06-22 22:40:33,209 INFO  [Log] Page title is being displyed correctly 
+2021-06-22 22:40:36,631 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:40:36,631 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-06-22 22:40:37,800 INFO  [Log] User on landing page 
+2021-06-22 22:40:37,809 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:40:37,809 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas begun execution 
+2021-06-22 22:40:37,868 INFO  [Log] Menu bar is being displyed 
+2021-06-22 22:40:41,222 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:40:41,222 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas completed execution 
+2021-06-22 22:40:41,713 INFO  [Log] User on landing page 
+2021-06-22 22:40:41,717 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:40:41,717 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas begun execution 
+2021-06-22 22:40:42,347 INFO  [Log] The following Array2 elements missing in Array1 :- 
+2021-06-22 22:40:42,347 INFO  [Log] Promit 
+2021-06-22 22:40:42,348 INFO  [Log] All System Menu bar elements are not getting correctly displayed 
+2021-06-22 22:40:45,733 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:40:45,734 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas completed execution 
+2021-06-22 22:40:46,164 INFO  [Log] User on landing page 
+2021-06-22 22:40:46,168 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:40:46,168 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas begun execution 
+2021-06-22 22:40:46,311 INFO  [Log] Contact No is getting displayed correctly 
+2021-06-22 22:40:49,611 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:40:49,611 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas completed execution 
+2021-06-22 22:40:49,980 INFO  [Log] User on landing page 
+2021-06-22 22:40:49,984 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:40:49,984 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas begun execution 
+2021-06-22 22:40:50,044 INFO  [Log] Contact No icon getting displayed 
+2021-06-22 22:40:53,329 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:40:53,330 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas completed execution 
+2021-06-22 22:40:53,748 INFO  [Log] User on landing page 
+2021-06-22 22:40:53,751 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:40:53,751 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas begun execution 
+2021-06-22 22:40:54,463 INFO  [Log] No new tab is opened 
+2021-06-22 22:40:54,469 INFO  [Log] User Navigated to Contact No page 
+2021-06-22 22:40:57,639 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:40:57,639 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas completed execution 
+2021-06-22 22:40:57,901 INFO  [Log] User not on landing page 
+2021-06-22 22:40:58,258 INFO  [Log] User navigating to landing page 
+2021-06-22 22:40:58,266 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:40:58,266 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas begun execution 
+2021-06-22 22:40:58,426 INFO  [Log] My Account menu is getting displayed correctly 
+2021-06-22 22:41:01,736 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:01,736 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas completed execution 
+2021-06-22 22:41:02,162 INFO  [Log] User on landing page 
+2021-06-22 22:41:02,168 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:02,168 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas begun execution 
+2021-06-22 22:41:02,402 INFO  [Log] My Account menu dropdown is getting displayed correctly 
+2021-06-22 22:41:05,986 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:05,987 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas completed execution 
+2021-06-22 22:41:06,328 INFO  [Log] User on landing page 
+2021-06-22 22:41:06,337 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:06,337 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas begun execution 
+2021-06-22 22:41:06,662 INFO  [Log] Both arrays are equal 
+2021-06-22 22:41:06,662 INFO  [Log] All My Account dropdown options are getting correctly displayed 
+2021-06-22 22:41:10,004 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:10,004 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas completed execution 
+2021-06-22 22:41:10,355 INFO  [Log] User on landing page 
+2021-06-22 22:41:10,359 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:10,360 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas begun execution 
+2021-06-22 22:41:10,472 INFO  [Log] Wish List menu is getting displayed correctly 
+2021-06-22 22:41:13,763 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:13,763 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas completed execution 
+2021-06-22 22:41:14,178 INFO  [Log] User on landing page 
+2021-06-22 22:41:14,181 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:14,181 INFO  [Log] TC11_fnCheck_LandingPage_WishList_menu_functionalityhas begun execution 
+2021-06-22 22:41:14,664 INFO  [Log] User navigated to the correct page i.e. Login page 
+2021-06-22 22:41:17,829 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:17,829 INFO  [Log] TC11_fnCheck_LandingPage_WishList_menu_functionalityhas completed execution 
+2021-06-22 22:41:18,097 INFO  [Log] User not on landing page 
+2021-06-22 22:41:18,426 INFO  [Log] User navigating to landing page 
+2021-06-22 22:41:18,429 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:18,429 INFO  [Log] TC12_fnCheck_LandingPage_ShoppingCart_menuhas begun execution 
+2021-06-22 22:41:18,544 INFO  [Log] Shopping Cart menu is getting displayed correctly 
+2021-06-22 22:41:21,861 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:21,861 INFO  [Log] TC12_fnCheck_LandingPage_ShoppingCart_menuhas completed execution 
+2021-06-22 22:41:22,307 INFO  [Log] User on landing page 
+2021-06-22 22:41:22,310 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:22,310 INFO  [Log] TC13_fnCheck_LandingPage_ShoppingCart_menu_functionalityhas begun execution 
+2021-06-22 22:41:22,677 INFO  [Log] User navigated to the Shopping Cart page 
+2021-06-22 22:41:25,978 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:25,978 INFO  [Log] TC13_fnCheck_LandingPage_ShoppingCart_menu_functionalityhas completed execution 
+2021-06-22 22:41:26,253 INFO  [Log] User not on landing page 
+2021-06-22 22:41:26,627 INFO  [Log] User navigating to landing page 
+2021-06-22 22:41:26,634 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:26,634 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas begun execution 
+2021-06-22 22:41:26,768 INFO  [Log] Incorrect name for Checkout menu getting displayed 
+2021-06-22 22:41:30,131 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:30,131 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas completed execution 
+2021-06-22 22:41:30,471 INFO  [Log] User on landing page 
+2021-06-22 22:41:30,473 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:30,473 INFO  [Log] TC15_fnCheck_LandingPage_Checkout_menu_functionalityhas begun execution 
+2021-06-22 22:41:30,920 INFO  [Log] User navigated to correct page i.e. the Shopping Cart page 
+2021-06-22 22:41:34,122 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:34,123 INFO  [Log] TC15_fnCheck_LandingPage_Checkout_menu_functionalityhas completed execution 
+2021-06-22 22:41:34,501 INFO  [Log] User not on landing page 
+2021-06-22 22:41:34,860 INFO  [Log] User navigating to landing page 
+2021-06-22 22:41:34,870 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:34,870 INFO  [Log] TC16_fnCheck_LandingPage_Desktop_menu_functionalityhas begun execution 
+2021-06-22 22:41:35,337 INFO  [Log] Both arrays are equal 
+2021-06-22 22:41:35,337 INFO  [Log] All items within Desktop menu displaying correctly 
+2021-06-22 22:41:38,627 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:38,627 INFO  [Log] TC16_fnCheck_LandingPage_Desktop_menu_functionalityhas completed execution 
+2021-06-22 22:41:39,020 INFO  [Log] User on landing page 
+2021-06-22 22:41:39,023 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:39,023 INFO  [Log] TC17_fnCheck_LandingPage_LaptopsNotebooks_menu_functionalityhas begun execution 
+2021-06-22 22:41:39,401 INFO  [Log] Both arrays are equal 
+2021-06-22 22:41:39,401 INFO  [Log] All items within Laptops&Desktops menu displaying correctly 
+2021-06-22 22:41:42,736 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:42,736 INFO  [Log] TC17_fnCheck_LandingPage_LaptopsNotebooks_menu_functionalityhas completed execution 
+2021-06-22 22:41:43,137 INFO  [Log] User on landing page 
+2021-06-22 22:41:43,138 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:43,139 INFO  [Log] TC18_fnCheck_LandingPage_Components_menu_functionalityhas begun execution 
+2021-06-22 22:41:43,662 INFO  [Log] Both arrays are equal 
+2021-06-22 22:41:43,662 INFO  [Log] All items within Components menu displaying correctly 
+2021-06-22 22:41:47,033 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:47,033 INFO  [Log] TC18_fnCheck_LandingPage_Components_menu_functionalityhas completed execution 
+2021-06-22 22:41:47,407 INFO  [Log] User on landing page 
+2021-06-22 22:41:47,410 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:47,410 INFO  [Log] TC19_fnCheck_LandingPage_MP3Players_menu_functionalityhas begun execution 
+2021-06-22 22:41:48,428 INFO  [Log] Both arrays are equal 
+2021-06-22 22:41:48,428 INFO  [Log] All items within MP3Players menu displaying correctly 
+2021-06-22 22:41:51,735 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:51,736 INFO  [Log] TC19_fnCheck_LandingPage_MP3Players_menu_functionalityhas completed execution 
+2021-06-22 22:41:52,865 INFO  [Log] User on Register Account page 
+2021-06-22 22:41:52,869 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:52,870 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas begun execution 
+2021-06-22 22:41:53,165 INFO  [Log] First Name is entered 
+2021-06-22 22:41:53,338 INFO  [Log] Last Name is entered 
+2021-06-22 22:41:53,513 INFO  [Log] E-mail is entered 
+2021-06-22 22:41:53,696 INFO  [Log] Telepnone number is entered 
+2021-06-22 22:41:53,859 INFO  [Log] Password is entered 
+2021-06-22 22:41:54,028 INFO  [Log] Confirm Password is entered 
+2021-06-22 22:41:54,145 INFO  [Log] Privacy Policy required checkbox is checked 
+2021-06-22 22:41:54,564 INFO  [Log] Continue button is clicked 
+2021-06-22 22:41:54,574 INFO  [Log] Registration process failed 
+2021-06-22 22:41:58,012 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:58,012 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas completed execution 
+2021-06-22 22:41:58,308 INFO  [Log] User on Register Account page 
+2021-06-22 22:41:58,311 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:41:58,311 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas begun execution 
+2021-06-22 22:41:58,451 INFO  [Log] First Name is entered 
+2021-06-22 22:41:58,583 INFO  [Log] Last Name is entered 
+2021-06-22 22:41:58,770 INFO  [Log] E-mail is entered 
+2021-06-22 22:41:58,910 INFO  [Log] Telepnone number is entered 
+2021-06-22 22:41:59,044 INFO  [Log] Password is entered 
+2021-06-22 22:41:59,182 INFO  [Log] Confirm Password is entered 
+2021-06-22 22:41:59,332 INFO  [Log] Privacy Policy required checkbox is checked 
+2021-06-22 22:41:59,681 INFO  [Log] Continue button is clicked 
+2021-06-22 22:41:59,698 INFO  [Log] Registration process failed 
+2021-06-22 22:42:03,216 INFO  [Log] **************************************************************************************** 
+2021-06-22 22:42:03,217 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas completed execution 
