@@ -23,7 +23,7 @@ public class Utils {
 	public static WebDriver OpenBrowser(WebDriver driver, String sBrowserName) throws Exception {
 		try {
 			// sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
-			if (sBrowserName.equals("Chrome")) {
+			if (sBrowserName.equalsIgnoreCase("Chrome")) {
 				System.setProperty("webdriver.chrome.driver", "src\\Resources\\chromedriver.exe");
 				DesiredCapabilities caps = new DesiredCapabilities();
 
@@ -47,8 +47,8 @@ public class Utils {
 				System.out.println(caps.getCapability("browserName"));
 				System.out.println(caps.getCapability("Version"));
 				System.out.println(caps.getCapability("platform"));
-			} else if (sBrowserName.equals("Firefox")) {
-				System.setProperty("webdriver.chrome.driver", "src\\Resources\\geckodriver.exe");
+			} else if (sBrowserName.equalsIgnoreCase("Firefox")) {
+				System.setProperty("webdriver.gecko.driver", "src\\Resources\\geckodriver.exe");
 				driver = new FirefoxDriver();
 				Log.info("New driver instantiated");
 				System.out.println("New driver instantiated");

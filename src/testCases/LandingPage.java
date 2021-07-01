@@ -52,6 +52,7 @@ public class LandingPage {
 	@BeforeTest
 	public void fnCheckforActiveBrowser(String browser) {
 		try {
+			System.out.println(browser);
 			Report = ExtentManager.getInstance();
 			Report_old = Report;
 			DOMConfigurator.configure("log4j.xml");

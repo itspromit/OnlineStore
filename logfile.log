@@ -4162,3 +4162,663 @@ Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrom
 2021-07-02 00:53:12,023 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas completed execution 
 2021-07-02 00:53:12,158 INFO  [Log] **************************************************************************************** 
 2021-07-02 00:53:12,158 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas completed execution 
+2021-07-02 01:10:28,296 INFO  [Log] Page title is not getting displayed 
+2021-07-02 01:10:28,296 INFO  [Log] Page title is not getting displayed 
+2021-07-02 01:10:31,312 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:10:31,312 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:10:31,329 INFO  [Log] Menu bar is not getting displayed 
+2021-07-02 01:10:31,368 INFO  [Log] Menu bar is not getting displayed 
+2021-07-02 01:10:34,355 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:10:34,366 INFO  [Log] Menu bar is not getting displayed 
+2021-07-02 01:10:34,387 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:10:34,392 INFO  [Log] Menu bar is not getting displayed 
+2021-07-02 01:19:58,502 ERROR [Log] Class Utils | Method OpenBrowser | Exception desc : The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases 
+2021-07-02 01:19:58,802 INFO  [Log] Page title is not getting displayed 
+2021-07-02 01:20:01,822 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:01,840 INFO  [Log] Menu bar is not getting displayed 
+2021-07-02 01:20:03,956 ERROR [Log] Class Utils | Method OpenBrowser | Exception desc : Could not start a new session. Response code 500. Message: Unable to find a matching set of capabilities
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-7E7STVE', ip: '192.168.29.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}] 
+2021-07-02 01:20:03,990 INFO  [Log] Page title is not getting displayed 
+2021-07-02 01:20:04,856 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:04,866 INFO  [Log] Menu bar is not getting displayed 
+2021-07-02 01:20:07,016 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:07,024 INFO  [Log] Menu bar is not getting displayed 
+2021-07-02 01:20:07,880 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:07,900 INFO  [Log] Contact No is not getting displayed 
+2021-07-02 01:20:10,042 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:10,055 INFO  [Log] Menu bar is not getting displayed 
+2021-07-02 01:20:10,913 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:10,931 INFO  [Log] Contact No icon is not getting displayed 
+2021-07-02 01:20:13,076 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:13,098 INFO  [Log] Contact No is not getting displayed 
+2021-07-02 01:20:13,950 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:13,959 INFO  [Log] Contact No icon is not getting displayed 
+2021-07-02 01:20:16,112 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:16,129 INFO  [Log] Contact No icon is not getting displayed 
+2021-07-02 01:20:16,975 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:16,986 INFO  [Log] My Account menu is not getting displayed 
+2021-07-02 01:20:19,149 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:19,163 INFO  [Log] Contact No icon is not getting displayed 
+2021-07-02 01:20:20,009 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:20,022 INFO  [Log] My Account menu is not getting displayed 
+2021-07-02 01:20:22,173 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:22,182 INFO  [Log] My Account menu is not getting displayed 
+2021-07-02 01:20:23,123 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:23,132 INFO  [Log] My Account menu is not getting displayed 
+2021-07-02 01:20:25,196 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:25,217 INFO  [Log] My Account menu is not getting displayed 
+2021-07-02 01:20:26,151 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:26,166 INFO  [Log] Wish List menu is not getting displayed 
+2021-07-02 01:20:28,235 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:28,244 INFO  [Log] My Account menu is not getting displayed 
+2021-07-02 01:20:29,194 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:29,205 INFO  [Log] Wish List menu is not getting displayed 
+2021-07-02 01:20:31,253 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:31,265 INFO  [Log] Wish List menu is not getting displayed 
+2021-07-02 01:20:32,223 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:32,230 INFO  [Log] Shopping Cart menu is not getting displayed 
+2021-07-02 01:20:34,299 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:34,306 INFO  [Log] Wish List menu is not getting displayed 
+2021-07-02 01:20:35,268 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:35,276 INFO  [Log] Shopping Cart menu is not getting displayed 
+2021-07-02 01:20:37,313 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:37,318 INFO  [Log] Shopping Cart menu is not getting displayed 
+2021-07-02 01:20:38,284 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:38,292 INFO  [Log] Checkout menu is not getting displayed 
+2021-07-02 01:20:40,323 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:40,335 INFO  [Log] Shopping Cart menu is not getting displayed 
+2021-07-02 01:20:41,313 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:41,322 INFO  [Log] Checkout Cart menu is not getting displayed 
+2021-07-02 01:20:43,346 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:43,352 INFO  [Log] Checkout menu is not getting displayed 
+2021-07-02 01:20:44,330 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:44,336 INFO  [Log] Desktop menu is not displaying 
+2021-07-02 01:20:46,362 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:46,369 INFO  [Log] Checkout Cart menu is not getting displayed 
+2021-07-02 01:20:47,349 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:47,358 INFO  [Log] Laptops&Desktops menu is not displaying 
+2021-07-02 01:20:49,386 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:49,388 INFO  [Log] Desktop menu is not displaying 
+2021-07-02 01:20:50,387 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:50,397 INFO  [Log] Laptops&Desktops menu is not displaying 
+2021-07-02 01:20:52,390 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:52,395 INFO  [Log] Laptops&Desktops menu is not displaying 
+2021-07-02 01:20:53,421 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:53,427 INFO  [Log] Laptops&Desktops menu is not displaying 
+2021-07-02 01:20:55,411 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:55,416 INFO  [Log] Laptops&Desktops menu is not displaying 
+2021-07-02 01:20:56,439 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:58,431 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:20:58,446 INFO  [Log] Laptops&Desktops menu is not displaying 
+2021-07-02 01:21:01,461 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:22:29,279 ERROR [Log] Class Utils | Method OpenBrowser | Exception desc : The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases 
+2021-07-02 01:22:29,434 INFO  [Log] Page title is not getting displayed 
+2021-07-02 01:22:32,456 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:22:32,467 INFO  [Log] Menu bar is not getting displayed 
+2021-07-02 01:22:35,486 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:22:35,495 INFO  [Log] Menu bar is not getting displayed 
+2021-07-02 01:22:38,515 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:22:38,522 INFO  [Log] Contact No is not getting displayed 
+2021-07-02 01:22:40,850 INFO  [Log] New driver instantiated 
+2021-07-02 01:22:40,973 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2021-07-02 01:22:41,526 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:22:41,537 INFO  [Log] Contact No icon is not getting displayed 
+2021-07-02 01:22:44,435 INFO  [Log] Web application launched successfully 
+2021-07-02 01:22:44,555 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:22:44,559 INFO  [Log] Contact No icon is not getting displayed 
+2021-07-02 01:22:47,567 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:22:47,575 INFO  [Log] My Account menu is not getting displayed 
+2021-07-02 01:22:50,581 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:22:50,583 INFO  [Log] My Account menu is not getting displayed 
+2021-07-02 01:22:50,737 INFO  [Log] User on landing page 
+2021-07-02 01:22:50,746 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:22:50,746 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-07-02 01:22:51,675 INFO  [Log] Page title is being displyed correctly 
+2021-07-02 01:22:53,733 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:22:53,736 INFO  [Log] My Account menu is not getting displayed 
+2021-07-02 01:22:55,583 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:22:55,583 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-07-02 01:22:56,745 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:22:56,747 INFO  [Log] Wish List menu is not getting displayed 
+2021-07-02 01:22:57,737 INFO  [Log] User on landing page 
+2021-07-02 01:22:57,743 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:22:57,743 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas begun execution 
+2021-07-02 01:22:57,811 INFO  [Log] Menu bar is being displyed 
+2021-07-02 01:22:59,764 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:22:59,768 INFO  [Log] Wish List menu is not getting displayed 
+2021-07-02 01:23:01,158 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:01,158 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas completed execution 
+2021-07-02 01:23:01,688 INFO  [Log] User on landing page 
+2021-07-02 01:23:01,693 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:01,693 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas begun execution 
+2021-07-02 01:23:02,539 INFO  [Log] The following Array2 elements missing in Array1 :- 
+2021-07-02 01:23:02,539 INFO  [Log] Promit 
+2021-07-02 01:23:02,539 INFO  [Log] All System Menu bar elements are not getting correctly displayed 
+2021-07-02 01:23:02,773 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:23:02,775 INFO  [Log] Shopping Cart menu is not getting displayed 
+2021-07-02 01:23:05,780 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:23:05,783 INFO  [Log] Shopping Cart menu is not getting displayed 
+2021-07-02 01:23:05,927 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:05,927 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas completed execution 
+2021-07-02 01:23:06,416 INFO  [Log] User on landing page 
+2021-07-02 01:23:06,425 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:06,425 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas begun execution 
+2021-07-02 01:23:06,556 INFO  [Log] Contact No is getting displayed correctly 
+2021-07-02 01:23:08,795 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:23:08,804 INFO  [Log] Checkout menu is not getting displayed 
+2021-07-02 01:23:09,914 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:09,915 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas completed execution 
+2021-07-02 01:23:10,403 INFO  [Log] User on landing page 
+2021-07-02 01:23:10,411 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:10,411 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas begun execution 
+2021-07-02 01:23:10,462 INFO  [Log] Contact No icon getting displayed 
+2021-07-02 01:23:11,815 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:23:11,824 INFO  [Log] Checkout Cart menu is not getting displayed 
+2021-07-02 01:23:13,848 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:13,848 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas completed execution 
+2021-07-02 01:23:14,252 INFO  [Log] User on landing page 
+2021-07-02 01:23:14,256 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:14,257 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas begun execution 
+2021-07-02 01:23:14,832 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:23:14,835 INFO  [Log] Desktop menu is not displaying 
+2021-07-02 01:23:15,580 INFO  [Log] No new tab is opened 
+2021-07-02 01:23:15,588 INFO  [Log] User Navigated to Contact No page 
+2021-07-02 01:23:17,851 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:23:17,854 INFO  [Log] Laptops&Desktops menu is not displaying 
+2021-07-02 01:23:18,871 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:18,871 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas completed execution 
+2021-07-02 01:23:19,286 INFO  [Log] User not on landing page 
+2021-07-02 01:23:19,665 INFO  [Log] User navigating to landing page 
+2021-07-02 01:23:19,669 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:19,669 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas begun execution 
+2021-07-02 01:23:19,829 INFO  [Log] My Account menu is getting displayed correctly 
+2021-07-02 01:23:20,859 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:23:20,866 INFO  [Log] Laptops&Desktops menu is not displaying 
+2021-07-02 01:23:23,275 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:23,275 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas completed execution 
+2021-07-02 01:23:23,777 INFO  [Log] User on landing page 
+2021-07-02 01:23:23,780 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:23,780 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas begun execution 
+2021-07-02 01:23:23,873 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:23:23,876 INFO  [Log] Laptops&Desktops menu is not displaying 
+2021-07-02 01:23:24,015 INFO  [Log] My Account menu dropdown is getting displayed correctly 
+2021-07-02 01:23:26,887 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:23:28,138 INFO  [Log] User on Register Account page 
+2021-07-02 01:23:28,144 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:28,144 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas begun execution 
+2021-07-02 01:23:28,148 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:23:28,149 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas completed execution 
+2021-07-02 01:23:29,232 INFO  [Log] User not on landing page 
+2021-07-02 01:23:29,270 INFO  [Log] First Name is not entered 
+2021-07-02 01:23:29,545 INFO  [Log] User navigating to landing page 
+2021-07-02 01:24:29,570 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:24:29,571 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas begun execution 
+2021-07-02 01:24:29,581 INFO  [Log] Last Name is not entered 
+2021-07-02 01:25:29,697 INFO  [Log] E-mail is not entered 
+2021-07-02 01:26:29,789 INFO  [Log] Telepnone number  is not entered 
+2021-07-02 01:27:29,920 INFO  [Log] Password is not entered 
+2021-07-02 01:28:30,010 INFO  [Log] Confirm Password is not entered 
+2021-07-02 01:29:30,152 INFO  [Log] Privacy Policy required checkbox is not checked 
+2021-07-02 01:30:30,269 INFO  [Log] Continue button is not clicked 
+2021-07-02 01:30:30,297 INFO  [Log] Registration process failed 
+2021-07-02 01:30:31,263 INFO  [Log] The following Array1 elements missing in Array2:- 
+2021-07-02 01:30:31,263 INFO  [Log]  
+2021-07-02 01:30:31,263 INFO  [Log]  
+2021-07-02 01:30:31,263 INFO  [Log] The following Array2 elements missing in Array1 :- 
+2021-07-02 01:30:31,263 INFO  [Log] Register 
+2021-07-02 01:30:31,263 INFO  [Log] Login 
+2021-07-02 01:30:31,263 INFO  [Log] All System Menu bar elements are not getting correctly displayed 
+2021-07-02 01:30:35,256 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:30:35,256 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas completed execution 
+2021-07-02 01:30:35,259 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:30:35,259 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas completed execution 
+2021-07-02 01:30:36,033 INFO  [Log] User not on landing page 
+2021-07-02 01:30:36,037 INFO  [Log] User on Register Account page 
+2021-07-02 01:30:36,442 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:30:36,443 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas begun execution 
+2021-07-02 01:30:36,443 INFO  [Log] User navigating to landing page 
+2021-07-02 01:30:36,448 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:30:36,448 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas begun execution 
+2021-07-02 01:31:36,472 INFO  [Log] First Name is not entered 
+2021-07-02 01:32:36,602 INFO  [Log] Last Name is not entered 
+2021-07-02 01:33:36,697 INFO  [Log] E-mail is not entered 
+2021-07-02 01:34:36,739 INFO  [Log] Telepnone number  is not entered 
+2021-07-02 01:35:36,845 INFO  [Log] Password is not entered 
+2021-07-02 01:39:39,361 ERROR [Log] Class Utils | Method OpenBrowser | Exception desc : Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-7E7STVE', ip: '192.168.29.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}] 
+2021-07-02 01:39:40,046 INFO  [Log] New driver instantiated 
+2021-07-02 01:39:40,071 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2021-07-02 01:39:40,318 INFO  [Log] Page title is not getting displayed 
+2021-07-02 01:39:43,325 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:39:43,339 INFO  [Log] Menu bar is not getting displayed 
+2021-07-02 01:39:43,733 INFO  [Log] Web application launched successfully 
+2021-07-02 01:39:46,356 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:39:46,369 INFO  [Log] Menu bar is not getting displayed 
+2021-07-02 01:39:49,413 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:39:49,437 INFO  [Log] Contact No is not getting displayed 
+2021-07-02 01:39:52,449 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:39:52,451 INFO  [Log] Contact No icon is not getting displayed 
+2021-07-02 01:39:55,278 INFO  [Log] User on landing page 
+2021-07-02 01:39:55,286 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:39:55,286 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-07-02 01:39:55,457 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:39:55,467 INFO  [Log] Contact No icon is not getting displayed 
+2021-07-02 01:39:55,504 INFO  [Log] Page title is being displyed correctly 
+2021-07-02 01:39:58,477 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:39:58,497 INFO  [Log] My Account menu is not getting displayed 
+2021-07-02 01:39:59,127 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:39:59,128 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-07-02 01:40:00,953 INFO  [Log] User on landing page 
+2021-07-02 01:40:00,957 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:00,957 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas begun execution 
+2021-07-02 01:40:01,023 INFO  [Log] Menu bar is being displyed 
+2021-07-02 01:40:01,524 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:40:01,549 INFO  [Log] My Account menu is not getting displayed 
+2021-07-02 01:40:04,444 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:04,444 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas completed execution 
+2021-07-02 01:40:04,723 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:40:04,733 INFO  [Log] My Account menu is not getting displayed 
+2021-07-02 01:40:05,705 INFO  [Log] User on landing page 
+2021-07-02 01:40:05,711 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:05,711 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas begun execution 
+2021-07-02 01:40:06,234 INFO  [Log] The following Array2 elements missing in Array1 :- 
+2021-07-02 01:40:06,234 INFO  [Log] Promit 
+2021-07-02 01:40:06,234 INFO  [Log] All System Menu bar elements are not getting correctly displayed 
+2021-07-02 01:40:07,751 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:40:07,760 INFO  [Log] Wish List menu is not getting displayed 
+2021-07-02 01:40:09,697 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:09,697 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas completed execution 
+2021-07-02 01:40:10,194 INFO  [Log] User on landing page 
+2021-07-02 01:40:10,198 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:10,198 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas begun execution 
+2021-07-02 01:40:10,327 INFO  [Log] Contact No is getting displayed correctly 
+2021-07-02 01:40:10,778 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:40:10,787 INFO  [Log] Wish List menu is not getting displayed 
+2021-07-02 01:40:13,704 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:13,705 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas completed execution 
+2021-07-02 01:40:13,814 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:40:13,822 INFO  [Log] Shopping Cart menu is not getting displayed 
+2021-07-02 01:40:14,154 INFO  [Log] User on landing page 
+2021-07-02 01:40:14,158 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:14,158 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas begun execution 
+2021-07-02 01:40:14,203 INFO  [Log] Contact No icon getting displayed 
+2021-07-02 01:40:16,840 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:40:16,843 INFO  [Log] Shopping Cart menu is not getting displayed 
+2021-07-02 01:40:17,548 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:17,549 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas completed execution 
+2021-07-02 01:40:17,963 INFO  [Log] User on landing page 
+2021-07-02 01:40:17,968 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:17,968 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas begun execution 
+2021-07-02 01:40:18,473 INFO  [Log] No new tab is opened 
+2021-07-02 01:40:18,483 INFO  [Log] User Navigated to Contact No page 
+2021-07-02 01:40:19,851 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:40:19,860 INFO  [Log] Checkout menu is not getting displayed 
+2021-07-02 01:40:21,693 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:21,693 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas completed execution 
+2021-07-02 01:40:22,026 INFO  [Log] User not on landing page 
+2021-07-02 01:40:22,408 INFO  [Log] User navigating to landing page 
+2021-07-02 01:40:22,414 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:22,415 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas begun execution 
+2021-07-02 01:40:22,597 INFO  [Log] My Account menu is getting displayed correctly 
+2021-07-02 01:40:22,876 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:40:22,884 INFO  [Log] Checkout Cart menu is not getting displayed 
+2021-07-02 01:40:25,908 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:40:25,911 INFO  [Log] Desktop menu is not displaying 
+2021-07-02 01:40:26,019 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:26,020 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas completed execution 
+2021-07-02 01:40:26,428 INFO  [Log] User on landing page 
+2021-07-02 01:40:26,432 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:26,432 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas begun execution 
+2021-07-02 01:40:26,823 INFO  [Log] My Account menu dropdown is getting displayed correctly 
+2021-07-02 01:40:28,929 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:40:28,946 INFO  [Log] Laptops&Desktops menu is not displaying 
+2021-07-02 01:40:30,522 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:30,522 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas completed execution 
+2021-07-02 01:40:31,044 INFO  [Log] User on landing page 
+2021-07-02 01:40:31,053 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:31,053 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas begun execution 
+2021-07-02 01:40:31,467 INFO  [Log] Both arrays are equal 
+2021-07-02 01:40:31,467 INFO  [Log] All My Account dropdown options are getting correctly displayed 
+2021-07-02 01:40:31,959 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:40:31,961 INFO  [Log] Laptops&Desktops menu is not displaying 
+2021-07-02 01:40:34,964 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:40:34,972 INFO  [Log] Laptops&Desktops menu is not displaying 
+2021-07-02 01:40:35,102 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:35,102 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas completed execution 
+2021-07-02 01:40:35,498 INFO  [Log] User on landing page 
+2021-07-02 01:40:35,501 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:35,501 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas begun execution 
+2021-07-02 01:40:35,622 INFO  [Log] Wish List menu is getting displayed correctly 
+2021-07-02 01:40:37,985 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null 
+2021-07-02 01:40:39,734 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:39,734 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas completed execution 
+2021-07-02 01:40:40,173 INFO  [Log] User not on landing page 
+2021-07-02 01:40:40,576 INFO  [Log] User navigating to landing page 
+2021-07-02 01:40:40,600 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:40,600 INFO  [Log] TC11_fnCheck_LandingPage_WishList_menu_functionalityhas begun execution 
+2021-07-02 01:40:40,600 INFO  [Log] User not on RegisterAccount page 
+2021-07-02 01:40:40,990 INFO  [Log] User now navigated to Register Account page 
+2021-07-02 01:40:41,006 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:40:41,006 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas begun execution 
+2021-07-02 01:40:43,567 INFO  [Log] First Name is entered 
+2021-07-02 01:42:49,474 INFO  [Log] New driver instantiated 
+2021-07-02 01:42:49,769 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2021-07-02 01:42:58,476 INFO  [Log] Web application launched successfully 
+2021-07-02 01:43:14,137 INFO  [Log] User on landing page 
+2021-07-02 01:43:14,144 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:14,144 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-07-02 01:43:15,413 INFO  [Log] Page title is being displyed correctly 
+2021-07-02 01:43:20,022 INFO  [Log] New driver instantiated 
+2021-07-02 01:43:20,348 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2021-07-02 01:43:20,978 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:20,979 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-07-02 01:43:23,547 INFO  [Log] User on landing page 
+2021-07-02 01:43:23,552 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:23,554 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas begun execution 
+2021-07-02 01:43:23,613 INFO  [Log] Menu bar is being displyed 
+2021-07-02 01:43:27,089 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:27,089 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas completed execution 
+2021-07-02 01:43:28,285 INFO  [Log] User on landing page 
+2021-07-02 01:43:28,291 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:28,291 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas begun execution 
+2021-07-02 01:43:29,320 INFO  [Log] The following Array2 elements missing in Array1 :- 
+2021-07-02 01:43:29,320 INFO  [Log] Promit 
+2021-07-02 01:43:29,320 INFO  [Log] All System Menu bar elements are not getting correctly displayed 
+2021-07-02 01:43:32,850 INFO  [Log] Web application launched successfully 
+2021-07-02 01:43:33,161 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:33,162 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas completed execution 
+2021-07-02 01:43:33,701 INFO  [Log] User on landing page 
+2021-07-02 01:43:33,706 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:33,706 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas begun execution 
+2021-07-02 01:43:33,846 INFO  [Log] Contact No is getting displayed correctly 
+2021-07-02 01:43:34,393 INFO  [Log] User on landing page 
+2021-07-02 01:43:34,400 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:34,400 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-07-02 01:43:35,613 INFO  [Log] Page title is being displyed correctly 
+2021-07-02 01:43:37,308 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:37,309 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas completed execution 
+2021-07-02 01:43:37,813 INFO  [Log] User on landing page 
+2021-07-02 01:43:37,816 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:37,817 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas begun execution 
+2021-07-02 01:43:37,867 INFO  [Log] Contact No icon getting displayed 
+2021-07-02 01:43:41,475 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:41,475 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas completed execution 
+2021-07-02 01:43:41,910 INFO  [Log] User on landing page 
+2021-07-02 01:43:41,914 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:41,914 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas begun execution 
+2021-07-02 01:43:45,992 INFO  [Log] No new tab is opened 
+2021-07-02 01:43:46,011 INFO  [Log] User Navigated to Contact No page 
+2021-07-02 01:43:46,183 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:46,183 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-07-02 01:43:48,758 INFO  [Log] User on landing page 
+2021-07-02 01:43:48,765 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:48,765 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas begun execution 
+2021-07-02 01:43:49,263 INFO  [Log] Menu bar is being displyed 
+2021-07-02 01:43:49,386 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:49,386 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas completed execution 
+2021-07-02 01:43:49,661 INFO  [Log] User not on landing page 
+2021-07-02 01:43:50,072 INFO  [Log] User navigating to landing page 
+2021-07-02 01:43:50,078 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:50,078 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas begun execution 
+2021-07-02 01:43:50,251 INFO  [Log] My Account menu is getting displayed correctly 
+2021-07-02 01:43:52,518 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:52,518 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas completed execution 
+2021-07-02 01:43:53,541 INFO  [Log] User on landing page 
+2021-07-02 01:43:53,545 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:53,545 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas begun execution 
+2021-07-02 01:43:53,780 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:53,780 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas completed execution 
+2021-07-02 01:43:54,460 INFO  [Log] User on landing page 
+2021-07-02 01:43:54,464 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:54,464 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas begun execution 
+2021-07-02 01:43:54,586 INFO  [Log] The following Array2 elements missing in Array1 :- 
+2021-07-02 01:43:54,587 INFO  [Log] Promit 
+2021-07-02 01:43:54,587 INFO  [Log] All System Menu bar elements are not getting correctly displayed 
+2021-07-02 01:43:55,008 INFO  [Log] My Account menu dropdown is getting displayed correctly 
+2021-07-02 01:43:57,932 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:57,933 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas completed execution 
+2021-07-02 01:43:58,961 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:58,961 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas completed execution 
+2021-07-02 01:43:59,510 INFO  [Log] User on landing page 
+2021-07-02 01:43:59,525 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:59,525 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas begun execution 
+2021-07-02 01:43:59,578 INFO  [Log] User on landing page 
+2021-07-02 01:43:59,582 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:43:59,582 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas begun execution 
+2021-07-02 01:43:59,710 INFO  [Log] Contact No is getting displayed correctly 
+2021-07-02 01:43:59,932 INFO  [Log] Both arrays are equal 
+2021-07-02 01:43:59,932 INFO  [Log] All My Account dropdown options are getting correctly displayed 
+2021-07-02 01:44:02,960 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:02,960 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas completed execution 
+2021-07-02 01:44:03,336 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:03,337 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas completed execution 
+2021-07-02 01:44:03,999 INFO  [Log] User on landing page 
+2021-07-02 01:44:04,003 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:04,003 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas begun execution 
+2021-07-02 01:44:04,085 INFO  [Log] User on landing page 
+2021-07-02 01:44:04,092 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:04,092 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas begun execution 
+2021-07-02 01:44:04,153 INFO  [Log] Contact No icon getting displayed 
+2021-07-02 01:44:04,251 INFO  [Log] Wish List menu is getting displayed correctly 
+2021-07-02 01:44:07,641 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:07,641 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas completed execution 
+2021-07-02 01:44:07,919 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:07,919 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas completed execution 
+2021-07-02 01:44:08,112 INFO  [Log] User on landing page 
+2021-07-02 01:44:08,115 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:08,115 INFO  [Log] TC11_fnCheck_LandingPage_WishList_menu_functionalityhas begun execution 
+2021-07-02 01:44:08,691 INFO  [Log] User navigated to the correct page i.e. Login page 
+2021-07-02 01:44:10,529 INFO  [Log] User on landing page 
+2021-07-02 01:44:10,557 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:10,558 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas begun execution 
+2021-07-02 01:44:12,529 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:12,530 INFO  [Log] TC11_fnCheck_LandingPage_WishList_menu_functionalityhas completed execution 
+2021-07-02 01:44:12,918 INFO  [Log] User not on landing page 
+2021-07-02 01:44:13,444 INFO  [Log] User navigating to landing page 
+2021-07-02 01:44:13,454 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:13,454 INFO  [Log] TC12_fnCheck_LandingPage_ShoppingCart_menuhas begun execution 
+2021-07-02 01:44:13,570 INFO  [Log] Shopping Cart menu is getting displayed correctly 
+2021-07-02 01:44:14,482 INFO  [Log] No new tab is opened 
+2021-07-02 01:44:14,718 INFO  [Log] User Navigated to Contact No page 
+2021-07-02 01:44:16,991 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:16,992 INFO  [Log] TC12_fnCheck_LandingPage_ShoppingCart_menuhas completed execution 
+2021-07-02 01:44:17,552 INFO  [Log] User on landing page 
+2021-07-02 01:44:17,555 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:17,555 INFO  [Log] TC13_fnCheck_LandingPage_ShoppingCart_menu_functionalityhas begun execution 
+2021-07-02 01:44:18,312 INFO  [Log] User navigated to the Shopping Cart page 
+2021-07-02 01:44:18,416 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:18,416 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas completed execution 
+2021-07-02 01:44:19,073 INFO  [Log] User not on landing page 
+2021-07-02 01:44:19,530 INFO  [Log] User navigating to landing page 
+2021-07-02 01:44:19,540 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:19,540 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas begun execution 
+2021-07-02 01:44:19,678 INFO  [Log] My Account menu is getting displayed correctly 
+2021-07-02 01:44:21,660 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:21,660 INFO  [Log] TC13_fnCheck_LandingPage_ShoppingCart_menu_functionalityhas completed execution 
+2021-07-02 01:44:22,013 INFO  [Log] User not on landing page 
+2021-07-02 01:44:22,488 INFO  [Log] User navigating to landing page 
+2021-07-02 01:44:22,490 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:22,491 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas begun execution 
+2021-07-02 01:44:22,596 INFO  [Log] Incorrect name for Checkout menu getting displayed 
+2021-07-02 01:44:23,094 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:23,094 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas completed execution 
+2021-07-02 01:44:23,922 INFO  [Log] User on landing page 
+2021-07-02 01:44:23,928 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:23,928 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas begun execution 
+2021-07-02 01:44:24,721 INFO  [Log] My Account menu dropdown is getting displayed correctly 
+2021-07-02 01:44:26,059 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:26,059 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas completed execution 
+2021-07-02 01:44:26,498 INFO  [Log] User on landing page 
+2021-07-02 01:44:26,504 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:26,504 INFO  [Log] TC15_fnCheck_LandingPage_Checkout_menu_functionalityhas begun execution 
+2021-07-02 01:44:27,078 INFO  [Log] User navigated to correct page i.e. the Shopping Cart page 
+2021-07-02 01:44:28,906 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:28,906 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas completed execution 
+2021-07-02 01:44:29,776 INFO  [Log] User on landing page 
+2021-07-02 01:44:29,781 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:29,781 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas begun execution 
+2021-07-02 01:44:30,236 INFO  [Log] Both arrays are equal 
+2021-07-02 01:44:30,236 INFO  [Log] All My Account dropdown options are getting correctly displayed 
+2021-07-02 01:44:30,304 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:30,304 INFO  [Log] TC15_fnCheck_LandingPage_Checkout_menu_functionalityhas completed execution 
+2021-07-02 01:44:30,610 INFO  [Log] User not on landing page 
+2021-07-02 01:44:30,966 INFO  [Log] User navigating to landing page 
+2021-07-02 01:44:30,974 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:30,975 INFO  [Log] TC16_fnCheck_LandingPage_Desktop_menu_functionalityhas begun execution 
+2021-07-02 01:44:31,861 INFO  [Log] Both arrays are equal 
+2021-07-02 01:44:31,861 INFO  [Log] All items within Desktop menu displaying correctly 
+2021-07-02 01:44:33,614 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:33,615 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas completed execution 
+2021-07-02 01:44:34,513 INFO  [Log] User on landing page 
+2021-07-02 01:44:34,520 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:34,520 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas begun execution 
+2021-07-02 01:44:34,629 INFO  [Log] Wish List menu is getting displayed correctly 
+2021-07-02 01:44:35,193 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:35,193 INFO  [Log] TC16_fnCheck_LandingPage_Desktop_menu_functionalityhas completed execution 
+2021-07-02 01:44:35,681 INFO  [Log] User on landing page 
+2021-07-02 01:44:35,682 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:35,682 INFO  [Log] TC17_fnCheck_LandingPage_LaptopsNotebooks_menu_functionalityhas begun execution 
+2021-07-02 01:44:36,182 INFO  [Log] Both arrays are equal 
+2021-07-02 01:44:36,183 INFO  [Log] All items within Laptops&Desktops menu displaying correctly 
+2021-07-02 01:44:37,941 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:37,941 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas completed execution 
+2021-07-02 01:44:38,839 INFO  [Log] User on landing page 
+2021-07-02 01:44:38,843 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:38,844 INFO  [Log] TC11_fnCheck_LandingPage_WishList_menu_functionalityhas begun execution 
+2021-07-02 01:44:39,639 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:39,640 INFO  [Log] TC17_fnCheck_LandingPage_LaptopsNotebooks_menu_functionalityhas completed execution 
+2021-07-02 01:44:39,820 INFO  [Log] User navigated to the correct page i.e. Login page 
+2021-07-02 01:44:40,119 INFO  [Log] User on landing page 
+2021-07-02 01:44:40,120 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:40,120 INFO  [Log] TC18_fnCheck_LandingPage_Components_menu_functionalityhas begun execution 
+2021-07-02 01:44:40,738 INFO  [Log] Both arrays are equal 
+2021-07-02 01:44:40,738 INFO  [Log] All items within Components menu displaying correctly 
+2021-07-02 01:44:43,271 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:43,271 INFO  [Log] TC11_fnCheck_LandingPage_WishList_menu_functionalityhas completed execution 
+2021-07-02 01:44:44,017 INFO  [Log] User not on landing page 
+2021-07-02 01:44:44,204 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:44,204 INFO  [Log] TC18_fnCheck_LandingPage_Components_menu_functionalityhas completed execution 
+2021-07-02 01:44:44,546 INFO  [Log] User navigating to landing page 
+2021-07-02 01:44:44,551 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:44,552 INFO  [Log] TC12_fnCheck_LandingPage_ShoppingCart_menuhas begun execution 
+2021-07-02 01:44:44,772 INFO  [Log] Shopping Cart menu is getting displayed correctly 
+2021-07-02 01:44:44,898 INFO  [Log] User on landing page 
+2021-07-02 01:44:44,901 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:44,901 INFO  [Log] TC19_fnCheck_LandingPage_MP3Players_menu_functionalityhas begun execution 
+2021-07-02 01:44:46,076 INFO  [Log] Both arrays are equal 
+2021-07-02 01:44:46,076 INFO  [Log] All items within MP3Players menu displaying correctly 
+2021-07-02 01:44:48,334 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:48,334 INFO  [Log] TC12_fnCheck_LandingPage_ShoppingCart_menuhas completed execution 
+2021-07-02 01:44:49,206 INFO  [Log] User on landing page 
+2021-07-02 01:44:49,213 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:49,214 INFO  [Log] TC13_fnCheck_LandingPage_ShoppingCart_menu_functionalityhas begun execution 
+2021-07-02 01:44:49,601 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:49,601 INFO  [Log] TC19_fnCheck_LandingPage_MP3Players_menu_functionalityhas completed execution 
+2021-07-02 01:44:49,676 INFO  [Log] User navigated to the Shopping Cart page 
+2021-07-02 01:44:51,374 INFO  [Log] User on Register Account page 
+2021-07-02 01:44:51,379 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:51,379 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas begun execution 
+2021-07-02 01:44:51,822 INFO  [Log] First Name is entered 
+2021-07-02 01:44:52,050 INFO  [Log] Last Name is entered 
+2021-07-02 01:44:52,167 INFO  [Log] E-mail is entered 
+2021-07-02 01:44:52,284 INFO  [Log] Telepnone number is entered 
+2021-07-02 01:44:52,374 INFO  [Log] Password is entered 
+2021-07-02 01:44:52,721 INFO  [Log] Confirm Password is entered 
+2021-07-02 01:44:52,967 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:52,967 INFO  [Log] TC13_fnCheck_LandingPage_ShoppingCart_menu_functionalityhas completed execution 
+2021-07-02 01:44:53,203 INFO  [Log] Privacy Policy required checkbox is checked 
+2021-07-02 01:44:54,092 INFO  [Log] User not on landing page 
+2021-07-02 01:44:54,488 INFO  [Log] User navigating to landing page 
+2021-07-02 01:44:54,572 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:54,572 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas begun execution 
+2021-07-02 01:44:54,679 INFO  [Log] Incorrect name for Checkout menu getting displayed 
+2021-07-02 01:44:54,701 INFO  [Log] Continue button is not clicked 
+2021-07-02 01:44:54,713 INFO  [Log] Registration process failed 
+2021-07-02 01:44:58,206 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:58,207 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas completed execution 
+2021-07-02 01:44:58,376 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:44:58,376 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas completed execution 
+2021-07-02 01:45:00,390 INFO  [Log] User not on landing page 
+2021-07-02 01:45:00,390 INFO  [Log] User on Register Account page 
+2021-07-02 01:45:00,936 INFO  [Log] User navigating to landing page 
+2021-07-02 01:45:00,940 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:45:00,940 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas begun execution 
+2021-07-02 01:45:00,943 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:45:00,943 INFO  [Log] TC15_fnCheck_LandingPage_Checkout_menu_functionalityhas begun execution 
+2021-07-02 01:46:00,986 INFO  [Log] First Name is not entered 
+2021-07-02 01:47:01,036 INFO  [Log] Last Name is not entered 
+2021-07-02 01:47:25,309 INFO  [Log] E-mail is entered 
+2021-07-02 01:48:13,159 INFO  [Log] User navigated to incorrect page 
+2021-07-02 01:48:13,382 INFO  [Log] Telepnone number is entered 
+2021-07-02 01:48:13,504 INFO  [Log] Password is entered 
+2021-07-02 01:48:13,582 INFO  [Log] Confirm Password is entered 
+2021-07-02 01:48:13,868 INFO  [Log] Privacy Policy required checkbox is checked 
+2021-07-02 01:48:14,609 INFO  [Log] Continue button is clicked 
+2021-07-02 01:48:14,612 INFO  [Log] Registration process failed 
+2021-07-02 01:48:16,410 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:16,410 INFO  [Log] TC15_fnCheck_LandingPage_Checkout_menu_functionalityhas completed execution 
+2021-07-02 01:48:17,200 INFO  [Log] User not on landing page 
+2021-07-02 01:48:17,551 INFO  [Log] User navigating to landing page 
+2021-07-02 01:48:17,564 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:17,564 INFO  [Log] TC16_fnCheck_LandingPage_Desktop_menu_functionalityhas begun execution 
+2021-07-02 01:48:18,165 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:18,165 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas completed execution 
+2021-07-02 01:48:19,050 INFO  [Log] Both arrays are equal 
+2021-07-02 01:48:19,050 INFO  [Log] All items within Desktop menu displaying correctly 
+2021-07-02 01:48:22,336 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:22,336 INFO  [Log] TC16_fnCheck_LandingPage_Desktop_menu_functionalityhas completed execution 
+2021-07-02 01:48:23,181 INFO  [Log] User on landing page 
+2021-07-02 01:48:23,185 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:23,185 INFO  [Log] TC17_fnCheck_LandingPage_LaptopsNotebooks_menu_functionalityhas begun execution 
+2021-07-02 01:48:23,497 INFO  [Log] Both arrays are equal 
+2021-07-02 01:48:23,497 INFO  [Log] All items within Laptops&Desktops menu displaying correctly 
+2021-07-02 01:48:26,801 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:26,801 INFO  [Log] TC17_fnCheck_LandingPage_LaptopsNotebooks_menu_functionalityhas completed execution 
+2021-07-02 01:48:27,650 INFO  [Log] User on landing page 
+2021-07-02 01:48:27,660 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:27,661 INFO  [Log] TC18_fnCheck_LandingPage_Components_menu_functionalityhas begun execution 
+2021-07-02 01:48:28,116 INFO  [Log] Both arrays are equal 
+2021-07-02 01:48:28,116 INFO  [Log] All items within Components menu displaying correctly 
+2021-07-02 01:48:31,514 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:31,514 INFO  [Log] TC18_fnCheck_LandingPage_Components_menu_functionalityhas completed execution 
+2021-07-02 01:48:32,374 INFO  [Log] User on landing page 
+2021-07-02 01:48:32,378 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:32,379 INFO  [Log] TC19_fnCheck_LandingPage_MP3Players_menu_functionalityhas begun execution 
+2021-07-02 01:48:33,030 INFO  [Log] Both arrays are equal 
+2021-07-02 01:48:33,030 INFO  [Log] All items within MP3Players menu displaying correctly 
+2021-07-02 01:48:36,264 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:36,264 INFO  [Log] TC19_fnCheck_LandingPage_MP3Players_menu_functionalityhas completed execution 
+2021-07-02 01:48:37,623 INFO  [Log] User on Register Account page 
+2021-07-02 01:48:37,627 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:37,627 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas begun execution 
+2021-07-02 01:48:37,695 INFO  [Log] First Name is entered 
+2021-07-02 01:48:37,753 INFO  [Log] Last Name is entered 
+2021-07-02 01:48:37,823 INFO  [Log] E-mail is entered 
+2021-07-02 01:48:37,896 INFO  [Log] Telepnone number is entered 
+2021-07-02 01:48:37,994 INFO  [Log] Password is entered 
+2021-07-02 01:48:38,084 INFO  [Log] Confirm Password is entered 
+2021-07-02 01:48:38,448 INFO  [Log] Privacy Policy required checkbox is checked 
+2021-07-02 01:48:38,993 INFO  [Log] Continue button is clicked 
+2021-07-02 01:48:38,996 INFO  [Log] Registration process failed 
+2021-07-02 01:48:42,750 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:42,750 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas completed execution 
+2021-07-02 01:48:43,614 INFO  [Log] User on Register Account page 
+2021-07-02 01:48:43,624 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:43,624 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas begun execution 
+2021-07-02 01:48:43,716 INFO  [Log] First Name is entered 
+2021-07-02 01:48:43,790 INFO  [Log] Last Name is entered 
+2021-07-02 01:48:43,893 INFO  [Log] E-mail is entered 
+2021-07-02 01:48:43,975 INFO  [Log] Telepnone number is entered 
+2021-07-02 01:48:44,094 INFO  [Log] Password is entered 
+2021-07-02 01:48:44,211 INFO  [Log] Confirm Password is entered 
+2021-07-02 01:48:44,592 INFO  [Log] Privacy Policy required checkbox is checked 
+2021-07-02 01:48:45,059 INFO  [Log] Continue button is clicked 
+2021-07-02 01:48:45,061 INFO  [Log] Registration process failed 
+2021-07-02 01:48:48,655 INFO  [Log] **************************************************************************************** 
+2021-07-02 01:48:48,656 INFO  [Log] TC80_fnCheck_RegisterAccount_Page_titlehas completed execution 
