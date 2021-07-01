@@ -10,7 +10,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -22,7 +24,15 @@ public class Utils {
 		//sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
 		//if(sBrowserName.equals("Chrome")){
 			System.setProperty("webdriver.chrome.driver", "src\\Resources\\chromedriver.exe");
-			driver = new ChromeDriver();
+			DesiredCapabilities caps= new DesiredCapabilities();
+			
+			caps.setCapability("browserName", "Chrome");
+			caps.setCapability("Version", "91.0.4472.114");
+			caps.setCapability("platform", "Windows 10");
+			ChromeOptions option= new ChromeOptions();
+			option.merge(caps);
+			
+			driver = new ChromeDriver(option);
 			Log.info("New driver instantiated");
 			System.out.println("New driver instantiated");
 		    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -33,6 +43,9 @@ public class Utils {
 		    
 		    Log.info("Web application launched successfully");
 		    System.out.println("Web application launched successfully");
+		    System.out.println(caps.getCapability("browserName"));
+		    System.out.println(caps.getCapability("Version"));
+		    System.out.println(caps.getCapability("platform"));
 			//}
 		}catch (Exception e){
 			Log.error("Class Utils | Method OpenBrowser | Exception desc : "+e.getMessage());

@@ -47,7 +47,7 @@ public class LandingPage {
 	String[] S;
 	String[][] Excel_data;
 
-	@BeforeSuite
+	@BeforeTest
 	public void fnCheckforActiveBrowser() {
 		try {
 			Report = ExtentManager.getInstance();
@@ -98,7 +98,7 @@ public class LandingPage {
 
 	}
 
-	@AfterSuite
+	@AfterTest
 	public void Browser_Close() {
 		try {
 
