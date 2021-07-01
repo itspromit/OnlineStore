@@ -5,12 +5,14 @@
 		<listener class-name="utility.Listener"></listener>
 	</listeners>
 	<test name="Random Test">
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="testCases.LandingPage" />
 			<class name="testCases.Registration" />
 		</classes>
 	</test> <!-- Test -->
 	<test name="Random Test1">
+		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="testCases.LandingPage" />
 			<class name="testCases.Registration" />

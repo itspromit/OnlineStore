@@ -19,6 +19,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -47,13 +48,14 @@ public class LandingPage {
 	String[] S;
 	String[][] Excel_data;
 
+	@Parameters("browser")
 	@BeforeTest
-	public void fnCheckforActiveBrowser() {
+	public void fnCheckforActiveBrowser(String browser) {
 		try {
 			Report = ExtentManager.getInstance();
 			Report_old = Report;
 			DOMConfigurator.configure("log4j.xml");
-			driver = Utils.OpenBrowser(driver);
+			driver = Utils.OpenBrowser(driver, browser);
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -75,7 +77,7 @@ public class LandingPage {
 				driver.get(Constant.URL);
 			}
 			Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Landing Page");
-			for (int i=0; i<Excel_data.length;i++) {
+			for (int i = 0; i < Excel_data.length; i++) {
 				System.out.println(Excel_data[i][0]);
 			}
 
@@ -138,7 +140,6 @@ public class LandingPage {
 			if (Str.contains(",")) {
 				S = CommonFunctionandEvents.fnStringSplit(Str, ",");
 			}
-			
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -800,7 +801,6 @@ public class LandingPage {
 		}
 	}
 
-	
 	@Test
 	public void TC17_fnCheck_LandingPage_LaptopsNotebooks_menu_functionality() {
 		String[] S1 = null;
@@ -808,8 +808,8 @@ public class LandingPage {
 			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.LaptopsandNotebooks_menu)) {
 				if (CommonFunctionandEvents.fnMenuHover(driver, LP.LaptopsandNotebooks_menu)) {
 					if (CommonFunctionandEvents.fnIsElementDisplayed(LP.LaptopsandNotebooks_dropdown)) {
-						if (CommonFunctionandEvents.fnValidateArray(
-								CommonFunctionandEvents.fncreateArray_Elements(LP.LaptopsandNotebooks_dropdown_elements, S1), S)) {
+						if (CommonFunctionandEvents.fnValidateArray(CommonFunctionandEvents
+								.fncreateArray_Elements(LP.LaptopsandNotebooks_dropdown_elements, S1), S)) {
 							Result = true;
 							Log.info("All items within Laptops&Desktops menu displaying correctly");
 							Test.log(LogStatus.PASS, "All items within Laptops&Desktops menu displaying correctly");
@@ -849,7 +849,7 @@ public class LandingPage {
 			System.out.println(Ex);
 		}
 	}
-	
+
 	@Test
 	public void TC18_fnCheck_LandingPage_Components_menu_functionality() {
 		String[] S1 = null;
@@ -858,7 +858,8 @@ public class LandingPage {
 				if (CommonFunctionandEvents.fnMenuHover(driver, LP.Components_menu)) {
 					if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Components_dropdown)) {
 						if (CommonFunctionandEvents.fnValidateArray(
-								CommonFunctionandEvents.fncreateArray_Elements(LP.Components_dropdown_elements, S1), S)) {
+								CommonFunctionandEvents.fncreateArray_Elements(LP.Components_dropdown_elements, S1),
+								S)) {
 							Result = true;
 							Log.info("All items within Components menu displaying correctly");
 							Test.log(LogStatus.PASS, "All items within Components menu displaying correctly");
@@ -948,5 +949,4 @@ public class LandingPage {
 		}
 	}
 
-	
 }
