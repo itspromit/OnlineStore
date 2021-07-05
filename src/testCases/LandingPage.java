@@ -5,7 +5,12 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import pageObjects.Landing_Page;
+
+import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
@@ -52,11 +57,23 @@ public class LandingPage {
 	@BeforeTest
 	public void fnCheckforActiveBrowser(String browser) {
 		try {
-			System.out.println(browser);
-			Report = ExtentManager.getInstance();
-			Report_old = Report;
-			DOMConfigurator.configure("log4j.xml");
-			driver = Utils.OpenBrowser(driver, browser);
+			if (CommonFunctionandEvents.fnCheck_Connection()) {
+				Report = ExtentManager.getInstance();
+				Report_old = Report;
+				DOMConfigurator.configure("log4j.xml");
+				driver = Utils.OpenBrowser(driver, browser);
+				if (CommonFunctionandEvents.fnCheck_Page_Links(Constant.URL)) {
+					Log.info("The website url is valid");
+					System.out.println("The website url is valid");
+				} else {
+					Log.info("The website url is invalid");
+					System.out.println("The website url is invalid");
+				}
+			} else {
+				Log.info("Execution couldn't continue due to no internet connectivity");
+				System.out.println("Execution couldn't continue due to no internet connectivity");
+				System.exit(1);
+			}
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -72,14 +89,21 @@ public class LandingPage {
 	@BeforeClass
 	public void fnCheck() {
 		try {
-			LP = new Landing_Page(driver);
-			if (driver.getTitle().contains("Your Store")) {
+			if (CommonFunctionandEvents.fnCheck_Connection()) {
+				LP = new Landing_Page(driver);
+				if (driver.getTitle().contains("Your Store")) {
+				} else {
+					driver.get(Constant.URL);
+				}
+				Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Landing Page");
+				for (int i = 0; i < Excel_data.length; i++) {
+					System.out.println(Excel_data[i][0]);
+				}
 			} else {
-				driver.get(Constant.URL);
-			}
-			Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Landing Page");
-			for (int i = 0; i < Excel_data.length; i++) {
-				System.out.println(Excel_data[i][0]);
+				driver.quit();
+				Log.info("Execution couldn't continue due to no internet connectivity");
+				System.out.println("Execution couldn't continue due to no internet connectivity");
+				System.exit(1);
 			}
 
 		} catch (Exception e) {
@@ -115,31 +139,38 @@ public class LandingPage {
 	@BeforeMethod
 	public void Before_method(Method test_method) {
 		try {
-			Test = Report.startTest(test_method.getName());
-			if (driver.getTitle().contains("Your Store")) {
-				Log.info("User on landing page");
-				Test.log(LogStatus.INFO, "User on Landing page");
+			if (CommonFunctionandEvents.fnCheck_Connection()) {
+				Test = Report.startTest(test_method.getName());
+				if (driver.getTitle().contains("Your Store")) {
+					Log.info("User on landing page");
+					Test.log(LogStatus.INFO, "User on Landing page");
 
-			} else {
-				Log.info("User not on landing page");
-				Test.log(LogStatus.INFO, "User not on landing page");
-				driver.get(Constant.URL);
-				Log.info("User navigating to landing page");
-				Test.log(LogStatus.INFO, "User not on landing page");
+				} else {
+					Log.info("User not on landing page");
+					Test.log(LogStatus.INFO, "User not on landing page");
+					driver.get(Constant.URL);
+					Log.info("User navigating to landing page");
+					Test.log(LogStatus.INFO, "User not on landing page");
 
-			}
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			Log.startTestCase(test_method.getName());
-
-			for (int i = 0; i < Excel_data.length; i++) {
-				if (Excel_data[i][0].contentEquals(test_method.getName())) {
-					Str = Excel_data[i][1];
-					break;
 				}
-			}
+				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+				Log.startTestCase(test_method.getName());
 
-			if (Str.contains(",")) {
-				S = CommonFunctionandEvents.fnStringSplit(Str, ",");
+				for (int i = 0; i < Excel_data.length; i++) {
+					if (Excel_data[i][0].contentEquals(test_method.getName())) {
+						Str = Excel_data[i][1];
+						break;
+					}
+				}
+
+				if (Str.contains(",")) {
+					S = CommonFunctionandEvents.fnStringSplit(Str, ",");
+				}
+			} else {
+				driver.quit();
+				Log.info("Execution couldn't continue due to no internet connectivity");
+				System.out.println("Execution couldn't continue due to no internet connectivity");
+				System.exit(1);
 			}
 
 		} catch (Exception e) {

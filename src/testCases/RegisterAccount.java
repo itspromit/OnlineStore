@@ -48,13 +48,12 @@ public class RegisterAccount {
 	String[] S;
 	JavascriptExecutor JS;
 	String[][] Excel_data;
-	
 
 	@BeforeClass
 	public void fnCheck_RegisterAccount_page() {
 
 		try {
-
+			if (CommonFunctionandEvents.fnCheck_Connection()) {
 			if (driver == null) {
 				driver = Utils.Return_driver();
 				R_Acc = new RegisterAccount_Page(driver);
@@ -79,8 +78,13 @@ public class RegisterAccount {
 				}
 			}
 
-			
 			Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Register Account");
+			}
+			else {
+				Log.info("Execution couldn't continue due to no internet connectivity");
+				System.out.println("Execution couldn't continue due to no internet connectivity");
+				System.exit(1);
+			}
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -103,32 +107,38 @@ public class RegisterAccount {
 	@BeforeMethod
 	public void Before_method(Method test_method) {
 		try {
-			Test = Report.startTest(test_method.getName());
-			if (driver.getTitle().contains("Register Account")) {
-				Log.info("User on Register Account page");
-				Test.log(LogStatus.INFO, "User on Register Account page");
+			if (CommonFunctionandEvents.fnCheck_Connection()) {
+				Test = Report.startTest(test_method.getName());
+				if (driver.getTitle().contains("Register Account")) {
+					Log.info("User on Register Account page");
+					Test.log(LogStatus.INFO, "User on Register Account page");
 
-			} else {
-				Log.info("User not on RegisterAccount page");
-				Test.log(LogStatus.INFO, "User not on RegisterAccount page");
-				driver.navigate().to(Constant.RegisterAccount_Page);
-				Log.info("User now navigated to Register Account page");
-				Test.log(LogStatus.INFO, "User now navigated to Register Account page");
+				} else {
+					Log.info("User not on RegisterAccount page");
+					Test.log(LogStatus.INFO, "User not on RegisterAccount page");
+					driver.navigate().to(Constant.RegisterAccount_Page);
+					Log.info("User now navigated to Register Account page");
+					Test.log(LogStatus.INFO, "User now navigated to Register Account page");
 
-			}
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			Log.startTestCase(test_method.getName());
-
-			
-			for (int i = 0; i < Excel_data.length; i++) {
-				if (Excel_data[i][0].contentEquals(test_method.getName())) {
-					Str = Excel_data[i][1];
-					break;
 				}
-			}
+				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+				Log.startTestCase(test_method.getName());
 
-			if (Str.contains(",")) {
-				S = CommonFunctionandEvents.fnStringSplit(Str, ",");
+				for (int i = 0; i < Excel_data.length; i++) {
+					if (Excel_data[i][0].contentEquals(test_method.getName())) {
+						Str = Excel_data[i][1];
+						break;
+					}
+				}
+
+				if (Str.contains(",")) {
+					S = CommonFunctionandEvents.fnStringSplit(Str, ",");
+				}
+			} else {
+				driver.quit();
+				Log.info("Execution couldn't continue due to no internet connectivity");
+				System.out.println("Execution couldn't continue due to no internet connectivity");
+				System.exit(1);
 			}
 
 		} catch (Exception e) {
@@ -1174,7 +1184,7 @@ public class RegisterAccount {
 						R_Acc.Subscribe_label);
 			}
 			Assert.assertEquals(Result, true);
-			
+
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);

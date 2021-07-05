@@ -12,6 +12,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -19,7 +21,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utils {
 	public static WebDriver existing_driver;
+	
 
+	
 	public static WebDriver OpenBrowser(WebDriver driver, String sBrowserName) throws Exception {
 		try {
 			// sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
@@ -32,7 +36,7 @@ public class Utils {
 				caps.setCapability("platform", "Windows 10");
 				ChromeOptions option = new ChromeOptions();
 				option.merge(caps);
-
+				
 				driver = new ChromeDriver(option);
 				Log.info("New driver instantiated");
 				System.out.println("New driver instantiated");
@@ -48,7 +52,14 @@ public class Utils {
 				System.out.println(caps.getCapability("Version"));
 				System.out.println(caps.getCapability("platform"));
 			} else if (sBrowserName.equalsIgnoreCase("Firefox")) {
-				System.setProperty("webdriver.gecko.driver", "src\\Resources\\geckodriver.exe");
+				
+				DesiredCapabilities capabilities = new DesiredCapabilities();  
+			    capabilities.setCapability("marionette",false); 
+			    capabilities.setCapability("browserName", "Firefox");
+			    capabilities.setCapability("Version", "89.0.2");
+			    capabilities.setCapability("platform", "Windows 10");
+			    
+			    System.setProperty("webdriver.gecko.driver", "src\\Resources\\geckodriver.exe");
 				driver = new FirefoxDriver();
 				Log.info("New driver instantiated");
 				System.out.println("New driver instantiated");
@@ -60,6 +71,9 @@ public class Utils {
 
 				Log.info("Web application launched successfully");
 				System.out.println("Web application launched successfully");
+				System.out.println(capabilities.getCapability("browserName"));
+				System.out.println(capabilities.getCapability("Version"));
+				System.out.println(capabilities.getCapability("platform"));
 			}
 		} catch (Exception e) {
 			Log.error("Class Utils | Method OpenBrowser | Exception desc : " + e.getMessage());
