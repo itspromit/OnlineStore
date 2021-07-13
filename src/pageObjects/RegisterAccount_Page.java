@@ -130,10 +130,10 @@ public class RegisterAccount_Page extends Landing_Page {
     public WebElement Continue_button;
 	
 	@FindBy(xpath="//aside[@id='column-right']")
-    public WebElement Menu_bar;
+    public WebElement Right_Menu_bar;
 	
 	@FindBy(xpath="//aside[@id='column-right']/descendant::a")
-	public List<WebElement> Menubar_items;
+	public List<WebElement> Right_Menubar_items;
 	
 	
 	
