@@ -1,5 +1,9 @@
 package utility;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+
+import org.testng.IAnnotationTransformer;
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestContext;
@@ -7,8 +11,9 @@ import org.testng.ITestListener;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.annotations.ITestAnnotation;
 
-public class Listener implements ITestListener, IInvokedMethodListener {
+public class Listener implements ITestListener, IInvokedMethodListener, IAnnotationTransformer{
 
 	public void onFinish(ITestContext arg0) {
 		Reporter.log("Completed executing test " + arg0.getName(), true);
@@ -73,6 +78,13 @@ public class Listener implements ITestListener, IInvokedMethodListener {
 
 	private String returnMethodName(ITestNGMethod method) {
 		return method.getRealClass().getSimpleName() + "." + method.getMethodName();
+	}
+
+	@Override
+	public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
+		annotation.setRetryAnalyzer(RetryAnalyzer.class);
+		// TODO Auto-generated method stub
+		
 	}
 
 }
