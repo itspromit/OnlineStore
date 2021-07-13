@@ -55,38 +55,43 @@ public class Registration {
 	public void fnCheck_RegisterAccount_page() {
 
 		try {
+			if (CommonFunctionandEvents.fnCheck_Connection()) {
+				if (driver == null) {
+					driver = Utils.Return_driver();
+					R_Acc = new RegisterAccount_Page(driver);
+					M_Acc = new MyAccount(driver);
+					L_out = new Logout(driver);
+					// LPage= new LandingPage();
+					Report = LandingPage.Return_Report();
+					JS = CommonFunctionandEvents.JavaScript_Executor(driver);
 
-			if (driver == null) {
-				driver = Utils.Return_driver();
-				R_Acc = new RegisterAccount_Page(driver);
-				M_Acc= new MyAccount(driver);
-				L_out= new Logout(driver);
-				// LPage= new LandingPage();
-				Report = LandingPage.Return_Report();
-				JS = CommonFunctionandEvents.JavaScript_Executor(driver);
+					if (driver.getTitle().contains("Register Account")) {
 
-				if (driver.getTitle().contains("Register Account")) {
+					} else {
 
+						driver.navigate().to(Constant.RegisterAccount_Page);
+
+					}
 				} else {
+					if (driver.getTitle().contains("Register Account")) {
 
-					driver.navigate().to(Constant.RegisterAccount_Page);
+					} else {
 
+						driver.navigate().to(Constant.RegisterAccount_Page);
+
+					}
+				}
+
+				Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Registration");
+				for (int i = 0; i < Excel_data.length; i++) {
+					for (int j = 0; j < Excel_data[0].length; j++) {
+						System.out.println(Excel_data[i][j]);
+					}
 				}
 			} else {
-				if (driver.getTitle().contains("Register Account")) {
-
-				} else {
-
-					driver.navigate().to(Constant.RegisterAccount_Page);
-
-				}
-			}
-
-			Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Registration");
-			for (int i=0; i<Excel_data.length;i++) {
-				for (int j=0; j<Excel_data[0].length; j++) {
-					System.out.println(Excel_data[i][j]);
-				}
+				Log.info("Execution couldn't continue due to no internet connectivity");
+				System.out.println("Execution couldn't continue due to no internet connectivity");
+				System.exit(1);
 			}
 
 		} catch (Exception e) {
@@ -110,21 +115,28 @@ public class Registration {
 	@BeforeMethod
 	public void Before_method(Method test_method) {
 		try {
-			Test = Report.startTest(test_method.getName());
-			if (driver.getTitle().contains("Register Account")) {
-				Log.info("User on Register Account page");
-				Test.log(LogStatus.INFO, "User on Register Account page");
+			if (CommonFunctionandEvents.fnCheck_Connection()) {
+				Test = Report.startTest(test_method.getName());
+				if (driver.getTitle().contains("Register Account")) {
+					Log.info("User on Register Account page");
+					Test.log(LogStatus.INFO, "User on Register Account page");
 
+				} else {
+					Log.info("User not on RegisterAccount page");
+					Test.log(LogStatus.INFO, "User not on RegisterAccount page");
+					driver.navigate().to(Constant.RegisterAccount_Page);
+					Log.info("User now navigated to Register Account page");
+					Test.log(LogStatus.INFO, "User now navigated to Register Account page");
+
+				}
+				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+				Log.startTestCase(test_method.getName());
 			} else {
-				Log.info("User not on RegisterAccount page");
-				Test.log(LogStatus.INFO, "User not on RegisterAccount page");
-				driver.navigate().to(Constant.RegisterAccount_Page);
-				Log.info("User now navigated to Register Account page");
-				Test.log(LogStatus.INFO, "User now navigated to Register Account page");
-
+				driver.quit();
+				Log.info("Execution couldn't continue due to no internet connectivity");
+				System.out.println("Execution couldn't continue due to no internet connectivity");
+				System.exit(1);
 			}
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			Log.startTestCase(test_method.getName());
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -150,7 +162,7 @@ public class Registration {
 	}
 
 	@Test(dataProvider = "Registration")
-	public void TC80_fnCheck_RegisterAccount_Page_title(String FName, String LName, String E_Mail, String Phone,
+	public void TC80_fnCheck_Account_Registration_successful(String FName, String LName, String E_Mail, String Phone,
 			String Password, String Confirm_Password) {
 		try {
 			if (CommonFunctionandEvents.fnClickNEnterText(R_Acc.FirstName_field, FName)) {
@@ -219,12 +231,12 @@ public class Registration {
 				M_Acc.MyAccount_menu.click();
 				CommonFunctionandEvents.fnclickArray_Element(M_Acc.MyAccount_dropdown_options_MyAccount_Page, "Logout");
 				L_out.Continue_button_LogoutPage.click();
-				
+
 			} else {
 				Result = false;
 				Log.info("Registration process failed");
 				Test.log(LogStatus.FAIL, "Registration process failed");
-				
+
 			}
 			driver.get(Constant.RegisterAccount_Page);
 
@@ -237,6 +249,7 @@ public class Registration {
 			}
 
 			Assert.assertEquals(Result, true);
+
 		} catch (Exception e) {
 			String Ex = e.toString();
 			System.out.println(Ex);

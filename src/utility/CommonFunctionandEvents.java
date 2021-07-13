@@ -1,5 +1,10 @@
 package utility;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -79,7 +84,6 @@ public class CommonFunctionandEvents {
 		try {
 			Actions builder = new Actions(driver);
 			builder.moveToElement(element1).build().perform();
-			
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -89,13 +93,12 @@ public class CommonFunctionandEvents {
 		return bstatus;
 
 	}
-	
+
 	public static boolean fnMenuHoverClick(WebDriver driver, WebElement element1, WebElement element2) {
 		try {
 			Actions builder = new Actions(driver);
 			builder.moveToElement(element1).build().perform();
 			builder.moveToElement(element2).click().build().perform();
-			
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -216,7 +219,7 @@ public class CommonFunctionandEvents {
 			arr = new String[list.size()];
 			for (int i = 0; i < list.size(); i++) {
 				arr[i] = list.get(i).getText();
-				//Log.info(list.get(i).getText());
+				// Log.info(list.get(i).getText());
 
 			}
 
@@ -380,5 +383,46 @@ public class CommonFunctionandEvents {
 	public static Alert fnValidate_Alert(WebDriver driver) {
 		Alert alert = driver.switchTo().alert();
 		return alert;
+	}
+
+	public static boolean fnCheck_Page_Links(String linkUrl) {
+		try {
+			URL url = new URL(linkUrl);
+
+			// Now we will be creating url connection and getting the response code
+			HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
+			httpURLConnect.setConnectTimeout(5000);
+			httpURLConnect.connect();
+			if (httpURLConnect.getResponseCode() >= 200) {
+				bstatus= true;
+			}
+
+			// Fetching and Printing the response code obtained
+			else {
+				bstatus= true;
+			}
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+			bstatus= false;
+		}
+		return bstatus;
+
+	}
+	public static boolean fnCheck_Connection() {
+		try {
+			URL url = new URL("http://www.google.com");
+			URLConnection connection = url.openConnection();
+			connection.connect();
+			bstatus= true;
+			System.out.println("Internet is connected");
+		} catch (MalformedURLException e) {
+			System.out.println("Internet is not connected");
+			bstatus= false;
+		} catch (IOException e) {
+			System.out.println("Internet is not connected");
+			bstatus= false;	
+		}
+		return bstatus;
 	}
 }

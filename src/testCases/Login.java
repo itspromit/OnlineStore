@@ -52,30 +52,35 @@ public class Login {
 	public void fnCheck_RegisterAccount_page() {
 
 		try {
+			if (CommonFunctionandEvents.fnCheck_Connection()) {
+				if (driver == null) {
+					driver = Utils.Return_driver();
+					Login = new LogIn_Page(driver);
+					// LPage= new LandingPage();
+					Report = LandingPage.Return_Report();
 
-			if (driver == null) {
-				driver = Utils.Return_driver();
-				Login = new LogIn_Page(driver);
-				// LPage= new LandingPage();
-				Report = LandingPage.Return_Report();
+					if (driver.getTitle().contains("Account Login")) {
 
-				if (driver.getTitle().contains("Account Login")) {
+					} else {
+						driver.navigate().to(Constant.Login_Page);
 
+					}
 				} else {
-					driver.navigate().to(Constant.Login_Page);
+					if (driver.getTitle().contains("Account Login")) {
 
+					} else {
+
+						driver.navigate().to(Constant.Login_Page);
+
+					}
 				}
+
+				Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Login");
 			} else {
-				if (driver.getTitle().contains("Account Login")) {
-
-				} else {
-
-					driver.navigate().to(Constant.Login_Page);
-
-				}
+				Log.info("Execution couldn't continue due to no internet connectivity");
+				System.out.println("Execution couldn't continue due to no internet connectivity");
+				System.exit(1);
 			}
-
-			Excel_data = ExcelUtils.Return_table(Constant.Path_TestData, "Login");
 
 		} catch (Exception e) {
 			String Ex = e.toString();
@@ -99,30 +104,37 @@ public class Login {
 	public void Before_method(Method test_method) {
 
 		try {
-			Test = Report.startTest(test_method.getName());
-			if (driver.getTitle().contains("Account Login")) {
-				Log.info("User on Login page");
-				Test.log(LogStatus.INFO, "User on Login page");
+			if (CommonFunctionandEvents.fnCheck_Connection()) {
+				Test = Report.startTest(test_method.getName());
+				if (driver.getTitle().contains("Account Login")) {
+					Log.info("User on Login page");
+					Test.log(LogStatus.INFO, "User on Login page");
 
-			} else {
-				Log.info("User not on Login page");
-				Test.log(LogStatus.INFO, "User not on Login page");
-				driver.navigate().to(Constant.Login_Page);
-				Log.info("User navigated to Login page");
-				Test.log(LogStatus.INFO, "User navigated to Login page");
+				} else {
+					Log.info("User not on Login page");
+					Test.log(LogStatus.INFO, "User not on Login page");
+					driver.navigate().to(Constant.Login_Page);
+					Log.info("User navigated to Login page");
+					Test.log(LogStatus.INFO, "User navigated to Login page");
 
-			}
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			Log.startTestCase(test_method.getName());
-
-			for (int i = 0; i < Excel_data.length; i++) {
-				if (Excel_data[i][0].contentEquals(test_method.getName())) {
-					Str = Excel_data[i][1];
-					break;
 				}
-			}
-			if (Str.contains(",")) {
-				S = CommonFunctionandEvents.fnStringSplit(Str, ",");
+				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+				Log.startTestCase(test_method.getName());
+
+				for (int i = 0; i < Excel_data.length; i++) {
+					if (Excel_data[i][0].contentEquals(test_method.getName())) {
+						Str = Excel_data[i][1];
+						break;
+					}
+				}
+				if (Str.contains(",")) {
+					S = CommonFunctionandEvents.fnStringSplit(Str, ",");
+				}
+			} else {
+				driver.quit();
+				Log.info("Execution couldn't continue due to no internet connectivity");
+				System.out.println("Execution couldn't continue due to no internet connectivity");
+				System.exit(1);
 			}
 
 		} catch (Exception e) {
