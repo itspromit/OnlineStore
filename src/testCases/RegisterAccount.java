@@ -1425,5 +1425,76 @@ public class RegisterAccount {
 			System.out.println(Ex);
 		}
 	}
+	
+	@Test
+	public void TC55_fnCheck_RegisterAccount_Page_Right_MenuBar() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Menu_bar)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Menu_bar);
+				Result = true;
+				Log.info("Register Account Page Right hand side Menu bar is being displyed");
+				Test.log(LogStatus.PASS, "Register Account Page Right hand side Menu bar is being displyed");
+
+			} else {
+				Result = false;
+				Log.info("Register Account Page Right hand side Menu bar is not getting displayed");
+				Test.log(LogStatus.FAIL, "Register Account Page Menu bar is not getting displayed");
+			}
+			if (Result) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Menu_bar);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", R_Acc.Menu_bar);
+			}
+
+			Assert.assertEquals(Result, true);
+
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC56_fnCheck_RegisterAccount_Page_Right_MenuBar_Elements() {
+		String[] S1 = null;
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Menu_bar)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Menu_bar);
+				if (CommonFunctionandEvents
+						.fnValidateArray(CommonFunctionandEvents.fncreateArray_Elements(R_Acc.Menu_bar_items, S1), S)) {
+					Result = true;
+					Log.info("All Register Account page Right hand side Menu bar elements are getting correctly displayed");
+					Test.log(LogStatus.PASS, "All Register Account page Right hand side Menu bar elements are getting correctly displayed");
+				} else {
+					Result = false;
+					Log.info("All Register Account page Right hand side Menu bar elements are not getting correctly displayed");
+					Test.log(LogStatus.FAIL, "All Register Account page Right hand side Menu bar elements are not getting correctly displayed");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Register Account Page Right hand side Menu bar is not getting displayed");
+				Test.log(LogStatus.FAIL, "Register Account Page Right hand side Menu bar is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						R_Acc.Menu_bar);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", R_Acc.Menu_bar);
+			}
+
+			Assert.assertEquals(Result, true);
+
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
 
 }

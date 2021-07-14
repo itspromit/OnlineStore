@@ -9,6 +9,7 @@ import pageObjects.Landing_Page;
 import pageObjects.RegisterAccount_Page;
 import pageObjects.LogIn_Page;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -47,6 +48,7 @@ public class Login {
 	String Str;
 	String[] S;
 	String[][] Excel_data;
+	JavascriptExecutor JS;
 
 	@BeforeClass
 	public void fnCheck_RegisterAccount_page() {
@@ -58,6 +60,7 @@ public class Login {
 					Login = new LogIn_Page(driver);
 					// LPage= new LandingPage();
 					Report = LandingPage.Return_Report();
+					JS = JS;
 
 					if (driver.getTitle().contains("Account Login")) {
 
@@ -184,11 +187,11 @@ public class Login {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						Login.Home_menu);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						Login.Home_menu);
 			}
@@ -225,10 +228,10 @@ public class Login {
 				Test.log(LogStatus.FAIL, "Home menu is not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
+				JS
 						.executeScript("document.body.style.backgroundColor = 'green';");
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
+				JS
 						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
@@ -259,11 +262,11 @@ public class Login {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						Login.Account_menu);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						Login.Account_menu);
 			}
@@ -299,10 +302,10 @@ public class Login {
 				Test.log(LogStatus.FAIL, "Account menu is not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
+				JS
 						.executeScript("document.body.style.backgroundColor = 'green';");
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
+				JS
 						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
@@ -333,11 +336,11 @@ public class Login {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						Login.Login_menu);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						Login.Login_menu);
 			}
@@ -373,10 +376,10 @@ public class Login {
 				Test.log(LogStatus.FAIL, "Login menu is not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
+				JS
 						.executeScript("document.body.style.backgroundColor = 'green';");
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
+				JS
 						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
@@ -400,11 +403,11 @@ public class Login {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						Login.NewCustomer_menu);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						Login.NewCustomer_menu);
 			}
@@ -437,11 +440,11 @@ public class Login {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						Login.NewCustomer_header);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						Login.NewCustomer_header);
 			}
@@ -474,11 +477,11 @@ public class Login {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						Login.RegisterAccount_label);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						Login.RegisterAccount_label);
 			}
@@ -511,11 +514,11 @@ public class Login {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						Login.NewCustomer_text);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						Login.NewCustomer_text);
 			}
@@ -549,11 +552,11 @@ public class Login {
 			}
 			if (Result) {
 
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						Login.Continue_button);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						Login.Continue_button);
 			}
@@ -589,10 +592,10 @@ public class Login {
 				Test.log(LogStatus.FAIL, "Continue button in New Customer section not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
+				JS
 						.executeScript("document.body.style.backgroundColor = 'green';");
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver)
+				JS
 						.executeScript("document.body.style.backgroundColor = 'red';");
 			}
 			Assert.assertEquals(Result, true);
@@ -601,5 +604,77 @@ public class Login {
 			System.out.println(Ex);
 		}
 	}
+	
+	
+	@Test
+	public void TC67_fnCheck_Login_Page_Right_MenuBar() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Menu_bar)) {
+				JS.executeScript("arguments[0].scrollIntoView();", Login.Menu_bar);
+				Result = true;
+				Log.info("Login Page Right hand side Menu bar is being displyed");
+				Test.log(LogStatus.PASS, "Login Page Right hand side Menu bar is being displyed");
+
+			} else {
+				Result = false;
+				Log.info("Login Page Right hand side Menu bar is not getting displayed");
+				Test.log(LogStatus.FAIL, "Login Page Menu bar is not getting displayed");
+			}
+			if (Result) {
+				JS.executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						Login.Menu_bar);
+			} else {
+				JS.executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", Login.Menu_bar);
+			}
+
+			Assert.assertEquals(Result, true);
+
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC68_fnCheck_Login_Page_Right_MenuBar_Elements() {
+		String[] S1 = null;
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Menu_bar)) {
+				JS.executeScript("arguments[0].scrollIntoView();", Login.Menu_bar);
+				if (CommonFunctionandEvents
+						.fnValidateArray(CommonFunctionandEvents.fncreateArray_Elements(Login.Menu_bar_items, S1), S)) {
+					Result = true;
+					Log.info("All Login page Right hand side Menu bar elements are getting correctly displayed");
+					Test.log(LogStatus.PASS, "All Login page Right hand side Menu bar elements are getting correctly displayed");
+				} else {
+					Result = false;
+					Log.info("All Login page Right hand side Menu bar elements are not getting correctly displayed");
+					Test.log(LogStatus.FAIL, "All Login page Right hand side Menu bar elements are not getting correctly displayed");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Login Page Right hand side Menu bar is not getting displayed");
+				Test.log(LogStatus.FAIL, "Login Page Right hand side Menu bar is not getting displayed");
+			}
+			if (Result == true) {
+				JS.executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						Login.Menu_bar);
+			} else {
+				JS.executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", Login.Menu_bar);
+			}
+
+			Assert.assertEquals(Result, true);
+
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
 
 }

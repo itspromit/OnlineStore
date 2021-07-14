@@ -237,7 +237,7 @@ public class LandingPage {
 	@Test
 	public void TC02_fnCheck_LandingPage_SystemMenu() {
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Menu_bar)) {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.SystemMenu_bar)) {
 				Result = true;
 				Log.info("Menu bar is being displyed");
 				Test.log(LogStatus.PASS, "Menu bar is being displyed");
@@ -250,10 +250,10 @@ public class LandingPage {
 			if (Result) {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
-						LP.Menu_bar);
+						LP.SystemMenu_bar);
 			} else {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", LP.Menu_bar);
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", LP.SystemMenu_bar);
 			}
 
 			Assert.assertEquals(Result, true);
@@ -268,9 +268,9 @@ public class LandingPage {
 	public void TC03_fnCheck_LandingPage_SystemMenu_Elements() {
 		String[] S1 = null;
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Menu_bar)) {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.SystemMenu_bar)) {
 				if (CommonFunctionandEvents
-						.fnValidateArray(CommonFunctionandEvents.fncreateArray_Elements(LP.Menu_bar_elements, S1), S)) {
+						.fnValidateArray(CommonFunctionandEvents.fncreateArray_Elements(LP.SystemMenu_bar_elements, S1), S)) {
 					Result = true;
 					Log.info("All System Menu bar elements are getting correctly displayed");
 					Test.log(LogStatus.PASS, "All System Menu bar elements are getting correctly displayed");
@@ -288,10 +288,10 @@ public class LandingPage {
 			if (Result == true) {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
-						LP.Menu_bar);
+						LP.SystemMenu_bar);
 			} else {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", LP.Menu_bar);
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", LP.SystemMenu_bar);
 			}
 
 			Assert.assertEquals(Result, true);

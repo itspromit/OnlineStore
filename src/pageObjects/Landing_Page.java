@@ -78,7 +78,7 @@ import utility.Utils;
         public WebElement Cart;
         
         @FindBy(xpath="//div[@class='collapse navbar-collapse navbar-ex1-collapse']")
-        public WebElement Menu_bar;
+        public WebElement SystemMenu_bar;
         
         @FindBy(xpath="//a[text()='Desktops']/following-sibling::div[1]")
         public WebElement Desktop_dropdown;
@@ -93,7 +93,7 @@ import utility.Utils;
         public WebElement MP3Players_dropdown;
         
         @FindBy(xpath="//div[@class='collapse navbar-collapse navbar-ex1-collapse']/child::ul/child::li")
-        public List<WebElement> Menu_bar_elements;
+        public List<WebElement> SystemMenu_bar_elements;
         
         @FindBy(xpath="//a[text()='Desktops']/following-sibling::div[1]/descendant::a")
         public List<WebElement> Desktop_dropdown_elements;
