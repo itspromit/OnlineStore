@@ -1430,8 +1430,8 @@ public class RegisterAccount {
 	@Test
 	public void TC55_fnCheck_RegisterAccount_Page_Right_MenuBar() {
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Menu_bar)) {
-				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Menu_bar);
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Right_Menu_bar)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Right_Menu_bar);
 				Result = true;
 				Log.info("Register Account Page Right hand side Menu bar is being displyed");
 				Test.log(LogStatus.PASS, "Register Account Page Right hand side Menu bar is being displyed");
@@ -1444,10 +1444,10 @@ public class RegisterAccount {
 			if (Result) {
 				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
-						R_Acc.Menu_bar);
+						R_Acc.Right_Menu_bar);
 			} else {
 				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", R_Acc.Menu_bar);
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", R_Acc.Right_Menu_bar);
 			}
 
 			Assert.assertEquals(Result, true);
@@ -1462,10 +1462,10 @@ public class RegisterAccount {
 	public void TC56_fnCheck_RegisterAccount_Page_Right_MenuBar_Elements() {
 		String[] S1 = null;
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Menu_bar)) {
-				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Menu_bar);
+			if (CommonFunctionandEvents.fnIsElementDisplayed(R_Acc.Right_Menu_bar)) {
+				JS.executeScript("arguments[0].scrollIntoView();", R_Acc.Right_Menu_bar);
 				if (CommonFunctionandEvents
-						.fnValidateArray(CommonFunctionandEvents.fncreateArray_Elements(R_Acc.Menu_bar_items, S1), S)) {
+						.fnValidateArray(CommonFunctionandEvents.fncreateArray_Elements(R_Acc.Right_Menubar_items, S1), S)) {
 					Result = true;
 					Log.info("All Register Account page Right hand side Menu bar elements are getting correctly displayed");
 					Test.log(LogStatus.PASS, "All Register Account page Right hand side Menu bar elements are getting correctly displayed");
@@ -1483,10 +1483,10 @@ public class RegisterAccount {
 			if (Result == true) {
 				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
-						R_Acc.Menu_bar);
+						R_Acc.Right_Menu_bar);
 			} else {
 				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", R_Acc.Menu_bar);
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", R_Acc.Right_Menu_bar);
 			}
 
 			Assert.assertEquals(Result, true);

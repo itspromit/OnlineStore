@@ -1,3 +1,4 @@
+
 package testCases;
 
 import java.lang.reflect.Method;
@@ -609,8 +610,8 @@ public class Login {
 	@Test
 	public void TC67_fnCheck_Login_Page_Right_MenuBar() {
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Menu_bar)) {
-				JS.executeScript("arguments[0].scrollIntoView();", Login.Menu_bar);
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Right_Menu_bar)) {
+				JS.executeScript("arguments[0].scrollIntoView();", Login.Right_Menu_bar);
 				Result = true;
 				Log.info("Login Page Right hand side Menu bar is being displyed");
 				Test.log(LogStatus.PASS, "Login Page Right hand side Menu bar is being displyed");
@@ -623,10 +624,10 @@ public class Login {
 			if (Result) {
 				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
-						Login.Menu_bar);
+						Login.Right_Menu_bar);
 			} else {
 				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", Login.Menu_bar);
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", Login.Right_Menu_bar);
 			}
 
 			Assert.assertEquals(Result, true);
@@ -641,10 +642,10 @@ public class Login {
 	public void TC68_fnCheck_Login_Page_Right_MenuBar_Elements() {
 		String[] S1 = null;
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Menu_bar)) {
-				JS.executeScript("arguments[0].scrollIntoView();", Login.Menu_bar);
+			if (CommonFunctionandEvents.fnIsElementDisplayed(Login.Right_Menu_bar)) {
+				JS.executeScript("arguments[0].scrollIntoView();", Login.Right_Menu_bar);
 				if (CommonFunctionandEvents
-						.fnValidateArray(CommonFunctionandEvents.fncreateArray_Elements(Login.Menu_bar_items, S1), S)) {
+						.fnValidateArray(CommonFunctionandEvents.fncreateArray_Elements(Login.Right_Menubar_items, S1), S)) {
 					Result = true;
 					Log.info("All Login page Right hand side Menu bar elements are getting correctly displayed");
 					Test.log(LogStatus.PASS, "All Login page Right hand side Menu bar elements are getting correctly displayed");
@@ -662,10 +663,10 @@ public class Login {
 			if (Result == true) {
 				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
-						Login.Menu_bar);
+						Login.Right_Menu_bar);
 			} else {
 				JS.executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", Login.Menu_bar);
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", Login.Right_Menu_bar);
 			}
 
 			Assert.assertEquals(Result, true);
