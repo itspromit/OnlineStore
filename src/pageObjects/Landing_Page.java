@@ -71,7 +71,7 @@ import utility.Utils;
         public WebElement Search_txtbox;
         
         
-        @FindBy(xpath="//button[@class='form-control input-lg']")
+        @FindBy(xpath="//button[@class='btn btn-default btn-lg']")
         public WebElement Search_button;
         
         @FindBy(id="cart")
