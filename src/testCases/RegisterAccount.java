@@ -1,3 +1,4 @@
+
 package testCases;
 
 import java.lang.reflect.Method;
@@ -1441,11 +1442,11 @@ public class RegisterAccount {
 				Test.log(LogStatus.FAIL, "Register Account Page Menu bar is not getting displayed");
 			}
 			if (Result) {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Menu_bar);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", R_Acc.Menu_bar);
 			}
 
@@ -1480,11 +1481,11 @@ public class RegisterAccount {
 				Test.log(LogStatus.FAIL, "Register Account Page Right hand side Menu bar is not getting displayed");
 			}
 			if (Result == true) {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
 						R_Acc.Menu_bar);
 			} else {
-				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+				JS.executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", R_Acc.Menu_bar);
 			}
 
@@ -1496,5 +1497,6 @@ public class RegisterAccount {
 		}
 	}
 
+	
 
 }
