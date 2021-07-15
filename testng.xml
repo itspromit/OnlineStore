@@ -8,14 +8,8 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="testCases.LandingPage" />
-			<class name="testCases.Registration" />
-		</classes>
-	</test> <!-- Test -->	
-	<test name="Random Test1">
-		<parameter name="browser" value="firefox" />
-		<classes>
-			<class name="testCases.LandingPage" />
-			<class name="testCases.Registration" />
+			<class name="testCases.RegisterAccount" />
+			<class name="testCases.Login" />
 		</classes>
 	</test> <!-- Test -->	
 </suite> <!-- Suite --> 

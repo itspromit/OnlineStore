@@ -980,5 +980,170 @@ public class LandingPage {
 			System.out.println(Ex);
 		}
 	}
+	
+	@Test
+	public void TC20_fnCheck_LandingPage_SystemMenu_Tablets_Submenu_functionality() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Tablets_menu)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.Tablets_menu)) {
+					Log.info("Tablets submenu option in the System Menu is clicked");
+					Test.log(LogStatus.INFO, "Tablets submenu option in the System Menu is clicked");
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
+						Result = true;
+						Log.info("User navigated to correct page i.e. the Tablets page");
+						Test.log(LogStatus.PASS, "User navigated to correct page i.e. the Tablets page");
+					} else {
+						Result = false;
+						Log.info("User navigated to incorrect page");
+						Test.log(LogStatus.FAIL, "User navigated to incorrect page");
+					}
+				} else {
+					Result = false;
+					Log.info("Tablets submenu option in System Menu is not clickable");
+					Test.log(LogStatus.FAIL, "Tablets submenu option in System Menu is not clickable");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Tablets submenu option in System Menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Tablets submenu option in System Menu is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC21_fnCheck_LandingPage_SystemMenu_Software_Submenu_functionality() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Software_menu)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.Software_menu)) {
+					Log.info("Software submenu option in the System Menu is clicked");
+					Test.log(LogStatus.INFO, "Software submenu option in the System Menu is clicked");
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
+						Result = true;
+						Log.info("User navigated to correct page i.e. the Software page");
+						Test.log(LogStatus.PASS, "User navigated to correct page i.e. the Software page");
+					} else {
+						Result = false;
+						Log.info("User navigated to incorrect page");
+						Test.log(LogStatus.FAIL, "User navigated to incorrect page");
+					}
+				} else {
+					Result = false;
+					Log.info("Software submenu option in System Menu is not clickable");
+					Test.log(LogStatus.FAIL, "Software submenu option in System Menu is not clickable");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Software submenu option in System Menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Software submenu option in System Menu is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC22_fnCheck_LandingPage_SystemMenu_PhonesandPDAs_Submenu_functionality() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.PhonesandPDAs_menu)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.PhonesandPDAs_menu)) {
+					Log.info("Phones & PDAs submenu option in the System Menu is clicked");
+					Test.log(LogStatus.INFO, "Phones & PDAs submenu option in the System Menu is clicked");
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
+						Result = true;
+						Log.info("User navigated to correct page i.e. the Phones & PDAs page");
+						Test.log(LogStatus.PASS, "User navigated to correct page i.e. the Phones & PDAs page");
+					} else {
+						Result = false;
+						Log.info("User navigated to incorrect page");
+						Test.log(LogStatus.FAIL, "User navigated to incorrect page");
+					}
+				} else {
+					Result = false;
+					Log.info("Phones & PDAs submenu option in System Menu is not clickable");
+					Test.log(LogStatus.FAIL, "Phones & PDAs submenu option in System Menu is not clickable");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Phones & PDAs submenu option in System Menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Phones & PDAs submenu option in System Menu is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC23_fnCheck_LandingPage_SystemMenu_Cameras_Submenu_functionality() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Cameras_menu)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.Cameras_menu)) {
+					Log.info("Cameras submenu option in the System Menu is clicked");
+					Test.log(LogStatus.INFO, "Cameras submenu option in the System Menu is clicked");
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
+						Result = true;
+						Log.info("User navigated to correct page i.e. the Cameras page");
+						Test.log(LogStatus.PASS, "User navigated to correct page i.e. the Cameras page");
+					} else {
+						Result = false;
+						Log.info("User navigated to incorrect page");
+						Test.log(LogStatus.FAIL, "User navigated to incorrect page");
+					}
+				} else {
+					Result = false;
+					Log.info("Phones & PDAs submenu option in System Menu is not clickable");
+					Test.log(LogStatus.FAIL, "Phones & PDAs submenu option in System Menu is not clickable");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Phones & PDAs submenu option in System Menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Phones & PDAs submenu option in System Menu is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
 
 }
