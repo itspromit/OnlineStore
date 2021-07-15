@@ -61,7 +61,7 @@ public class Login {
 					Login = new LogIn_Page(driver);
 					// LPage= new LandingPage();
 					Report = LandingPage.Return_Report();
-					JS = JS;
+					JS = CommonFunctionandEvents.JavaScript_Executor(driver);
 
 					if (driver.getTitle().contains("Account Login")) {
 
