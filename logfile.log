@@ -1,0 +1,531 @@
+2021-07-15 23:36:16,586 INFO  [Log] New driver instantiated 
+2021-07-15 23:36:16,712 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2021-07-15 23:36:21,738 INFO  [Log] Web application launched successfully 
+2021-07-15 23:36:21,951 INFO  [Log] The website url is valid 
+2021-07-15 23:36:28,667 INFO  [Log] User on landing page 
+2021-07-15 23:36:28,675 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:36:28,675 INFO  [Log] TC01_fnCheck_LandingPage_titlehas begun execution 
+2021-07-15 23:36:29,516 INFO  [Log] Page title is being displyed correctly 
+2021-07-15 23:36:33,862 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:36:33,862 INFO  [Log] TC01_fnCheck_LandingPage_titlehas completed execution 
+2021-07-15 23:36:35,770 INFO  [Log] User on landing page 
+2021-07-15 23:36:35,777 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:36:35,777 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas begun execution 
+2021-07-15 23:36:35,857 INFO  [Log] Menu bar is being displyed 
+2021-07-15 23:36:39,514 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:36:39,514 INFO  [Log] TC02_fnCheck_LandingPage_SystemMenuhas completed execution 
+2021-07-15 23:36:40,386 INFO  [Log] User on landing page 
+2021-07-15 23:36:40,390 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:36:40,390 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas begun execution 
+2021-07-15 23:36:41,526 INFO  [Log] The following Array2 elements missing in Array1 :- 
+2021-07-15 23:36:41,526 INFO  [Log] Promit 
+2021-07-15 23:36:41,526 INFO  [Log] All System Menu bar elements are not getting correctly displayed 
+2021-07-15 23:36:45,110 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:36:45,110 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas completed execution 
+2021-07-15 23:36:45,694 INFO  [Log] User on landing page 
+2021-07-15 23:36:45,699 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:36:45,699 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas begun execution 
+2021-07-15 23:36:46,396 INFO  [Log] The following Array2 elements missing in Array1 :- 
+2021-07-15 23:36:46,397 INFO  [Log] Promit 
+2021-07-15 23:36:46,397 INFO  [Log] All System Menu bar elements are not getting correctly displayed 
+2021-07-15 23:36:49,692 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:36:49,693 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas completed execution 
+2021-07-15 23:36:50,342 INFO  [Log] User on landing page 
+2021-07-15 23:36:50,349 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:36:50,349 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas begun execution 
+2021-07-15 23:36:50,843 INFO  [Log] The following Array2 elements missing in Array1 :- 
+2021-07-15 23:36:50,843 INFO  [Log] Promit 
+2021-07-15 23:36:50,843 INFO  [Log] All System Menu bar elements are not getting correctly displayed 
+2021-07-15 23:36:54,178 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:36:54,178 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas completed execution 
+2021-07-15 23:36:54,615 INFO  [Log] User on landing page 
+2021-07-15 23:36:54,618 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:36:54,618 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas begun execution 
+2021-07-15 23:36:55,040 INFO  [Log] The following Array2 elements missing in Array1 :- 
+2021-07-15 23:36:55,040 INFO  [Log] Promit 
+2021-07-15 23:36:55,040 INFO  [Log] All System Menu bar elements are not getting correctly displayed 
+2021-07-15 23:36:58,337 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:36:58,337 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas completed execution 
+2021-07-15 23:36:58,818 INFO  [Log] User on landing page 
+2021-07-15 23:36:58,820 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:36:58,820 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas begun execution 
+2021-07-15 23:36:59,253 INFO  [Log] The following Array2 elements missing in Array1 :- 
+2021-07-15 23:36:59,253 INFO  [Log] Promit 
+2021-07-15 23:36:59,253 INFO  [Log] All System Menu bar elements are not getting correctly displayed 
+2021-07-15 23:37:02,543 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:02,543 INFO  [Log] TC03_fnCheck_LandingPage_SystemMenu_Elementshas completed execution 
+2021-07-15 23:37:03,120 INFO  [Log] User on landing page 
+2021-07-15 23:37:03,123 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:03,124 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas begun execution 
+2021-07-15 23:37:03,570 INFO  [Log] Contact No is getting displayed correctly 
+2021-07-15 23:37:06,908 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:06,908 INFO  [Log] TC04_fnCheck_LandingPage_ContactNo_menuhas completed execution 
+2021-07-15 23:37:07,383 INFO  [Log] User on landing page 
+2021-07-15 23:37:07,390 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:07,390 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas begun execution 
+2021-07-15 23:37:07,477 INFO  [Log] Contact No icon getting displayed 
+2021-07-15 23:37:10,897 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:10,897 INFO  [Log] TC05_fnCheck_LandingPage_ContactNo_iconhas completed execution 
+2021-07-15 23:37:11,440 INFO  [Log] User on landing page 
+2021-07-15 23:37:11,442 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:11,442 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas begun execution 
+2021-07-15 23:37:12,934 INFO  [Log] No new tab is opened 
+2021-07-15 23:37:12,942 INFO  [Log] User Navigated to Contact No page 
+2021-07-15 23:37:16,398 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:16,399 INFO  [Log] TC06_fnCheck_LandingPage_ContactNo_Pagehas completed execution 
+2021-07-15 23:37:16,760 INFO  [Log] User not on landing page 
+2021-07-15 23:37:17,188 INFO  [Log] User navigating to landing page 
+2021-07-15 23:37:17,191 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:17,191 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas begun execution 
+2021-07-15 23:37:17,341 INFO  [Log] My Account menu is getting displayed correctly 
+2021-07-15 23:37:20,694 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:20,694 INFO  [Log] TC07_fnCheck_LandingPage_MyAccount_menuhas completed execution 
+2021-07-15 23:37:21,049 INFO  [Log] User on landing page 
+2021-07-15 23:37:21,053 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:21,054 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas begun execution 
+2021-07-15 23:37:21,258 INFO  [Log] My Account menu dropdown is getting displayed correctly 
+2021-07-15 23:37:24,808 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:24,808 INFO  [Log] TC08_fnCheck_LandingPage_MyAccount_menu_dropdownhas completed execution 
+2021-07-15 23:37:25,245 INFO  [Log] User on landing page 
+2021-07-15 23:37:25,247 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:25,247 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas begun execution 
+2021-07-15 23:37:25,499 INFO  [Log] Both arrays are equal 
+2021-07-15 23:37:25,499 INFO  [Log] All My Account dropdown options are getting correctly displayed 
+2021-07-15 23:37:28,789 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:28,790 INFO  [Log] TC09_fnCheck_LandingPage_MyAccount_Elementshas completed execution 
+2021-07-15 23:37:29,268 INFO  [Log] User on landing page 
+2021-07-15 23:37:29,271 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:29,271 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas begun execution 
+2021-07-15 23:37:29,389 INFO  [Log] Wish List menu is getting displayed correctly 
+2021-07-15 23:37:32,702 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:32,702 INFO  [Log] TC10_fnCheck_LandingPage_WishList_menuhas completed execution 
+2021-07-15 23:37:33,199 INFO  [Log] User on landing page 
+2021-07-15 23:37:33,202 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:33,202 INFO  [Log] TC11_fnCheck_LandingPage_WishList_menu_functionalityhas begun execution 
+2021-07-15 23:37:33,700 INFO  [Log] User navigated to the correct page i.e. Login page 
+2021-07-15 23:37:36,875 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:36,875 INFO  [Log] TC11_fnCheck_LandingPage_WishList_menu_functionalityhas completed execution 
+2021-07-15 23:37:37,230 INFO  [Log] User not on landing page 
+2021-07-15 23:37:37,605 INFO  [Log] User navigating to landing page 
+2021-07-15 23:37:37,608 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:37,608 INFO  [Log] TC12_fnCheck_LandingPage_ShoppingCart_menuhas begun execution 
+2021-07-15 23:37:37,718 INFO  [Log] Shopping Cart menu is getting displayed correctly 
+2021-07-15 23:37:41,035 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:41,035 INFO  [Log] TC12_fnCheck_LandingPage_ShoppingCart_menuhas completed execution 
+2021-07-15 23:37:41,435 INFO  [Log] User on landing page 
+2021-07-15 23:37:41,438 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:41,438 INFO  [Log] TC13_fnCheck_LandingPage_ShoppingCart_menu_functionalityhas begun execution 
+2021-07-15 23:37:41,805 INFO  [Log] User navigated to the Shopping Cart page 
+2021-07-15 23:37:45,075 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:45,075 INFO  [Log] TC13_fnCheck_LandingPage_ShoppingCart_menu_functionalityhas completed execution 
+2021-07-15 23:37:45,431 INFO  [Log] User not on landing page 
+2021-07-15 23:37:45,753 INFO  [Log] User navigating to landing page 
+2021-07-15 23:37:45,758 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:45,759 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas begun execution 
+2021-07-15 23:37:45,937 INFO  [Log] Incorrect name for Checkout menu getting displayed 
+2021-07-15 23:37:49,285 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:49,285 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas completed execution 
+2021-07-15 23:37:49,722 INFO  [Log] User on landing page 
+2021-07-15 23:37:49,724 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:49,724 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas begun execution 
+2021-07-15 23:37:49,834 INFO  [Log] Incorrect name for Checkout menu getting displayed 
+2021-07-15 23:37:53,217 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:53,218 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas completed execution 
+2021-07-15 23:37:53,653 INFO  [Log] User on landing page 
+2021-07-15 23:37:53,655 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:53,655 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas begun execution 
+2021-07-15 23:37:53,751 INFO  [Log] Incorrect name for Checkout menu getting displayed 
+2021-07-15 23:37:57,056 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:57,056 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas completed execution 
+2021-07-15 23:37:57,510 INFO  [Log] User on landing page 
+2021-07-15 23:37:57,512 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:37:57,512 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas begun execution 
+2021-07-15 23:37:57,605 INFO  [Log] Incorrect name for Checkout menu getting displayed 
+2021-07-15 23:38:00,941 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:00,942 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas completed execution 
+2021-07-15 23:38:01,306 INFO  [Log] User on landing page 
+2021-07-15 23:38:01,309 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:01,309 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas begun execution 
+2021-07-15 23:38:01,408 INFO  [Log] Incorrect name for Checkout menu getting displayed 
+2021-07-15 23:38:04,738 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:04,738 INFO  [Log] TC14_fnCheck_LandingPage_Checkout_menuhas completed execution 
+2021-07-15 23:38:05,224 INFO  [Log] User on landing page 
+2021-07-15 23:38:05,226 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:05,227 INFO  [Log] TC15_fnCheck_LandingPage_Checkout_menu_functionalityhas begun execution 
+2021-07-15 23:38:05,848 INFO  [Log] User navigated to correct page i.e. the Shopping Cart page 
+2021-07-15 23:38:09,031 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:09,031 INFO  [Log] TC15_fnCheck_LandingPage_Checkout_menu_functionalityhas completed execution 
+2021-07-15 23:38:09,397 INFO  [Log] User not on landing page 
+2021-07-15 23:38:09,770 INFO  [Log] User navigating to landing page 
+2021-07-15 23:38:09,772 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:09,772 INFO  [Log] TC16_fnCheck_LandingPage_Desktop_menu_functionalityhas begun execution 
+2021-07-15 23:38:10,287 INFO  [Log] Both arrays are equal 
+2021-07-15 23:38:10,287 INFO  [Log] All items within Desktop menu displaying correctly 
+2021-07-15 23:38:13,576 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:13,576 INFO  [Log] TC16_fnCheck_LandingPage_Desktop_menu_functionalityhas completed execution 
+2021-07-15 23:38:14,015 INFO  [Log] User on landing page 
+2021-07-15 23:38:14,018 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:14,018 INFO  [Log] TC17_fnCheck_LandingPage_LaptopsNotebooks_menu_functionalityhas begun execution 
+2021-07-15 23:38:14,386 INFO  [Log] Both arrays are equal 
+2021-07-15 23:38:14,386 INFO  [Log] All items within Laptops&Desktops menu displaying correctly 
+2021-07-15 23:38:17,661 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:17,661 INFO  [Log] TC17_fnCheck_LandingPage_LaptopsNotebooks_menu_functionalityhas completed execution 
+2021-07-15 23:38:18,099 INFO  [Log] User on landing page 
+2021-07-15 23:38:18,101 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:18,101 INFO  [Log] TC18_fnCheck_LandingPage_Components_menu_functionalityhas begun execution 
+2021-07-15 23:38:18,623 INFO  [Log] Both arrays are equal 
+2021-07-15 23:38:18,623 INFO  [Log] All items within Components menu displaying correctly 
+2021-07-15 23:38:21,934 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:21,934 INFO  [Log] TC18_fnCheck_LandingPage_Components_menu_functionalityhas completed execution 
+2021-07-15 23:38:22,301 INFO  [Log] User on landing page 
+2021-07-15 23:38:22,304 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:22,304 INFO  [Log] TC19_fnCheck_LandingPage_MP3Players_menu_functionalityhas begun execution 
+2021-07-15 23:38:23,358 INFO  [Log] Both arrays are equal 
+2021-07-15 23:38:23,358 INFO  [Log] All items within MP3Players menu displaying correctly 
+2021-07-15 23:38:26,601 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:26,601 INFO  [Log] TC19_fnCheck_LandingPage_MP3Players_menu_functionalityhas completed execution 
+2021-07-15 23:38:26,979 INFO  [Log] User on landing page 
+2021-07-15 23:38:26,984 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:26,984 INFO  [Log] TC20_fnCheck_LandingPage_SystemMenu_Tablets_Submenu_functionalityhas begun execution 
+2021-07-15 23:38:27,440 INFO  [Log] Tablets submenu option in the System Menu is clicked 
+2021-07-15 23:38:27,454 INFO  [Log] User navigated to correct page i.e. the Tablets page 
+2021-07-15 23:38:30,626 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:30,626 INFO  [Log] TC20_fnCheck_LandingPage_SystemMenu_Tablets_Submenu_functionalityhas completed execution 
+2021-07-15 23:38:30,976 INFO  [Log] User not on landing page 
+2021-07-15 23:38:31,277 INFO  [Log] User navigating to landing page 
+2021-07-15 23:38:31,281 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:31,281 INFO  [Log] TC21_fnCheck_LandingPage_SystemMenu_Software_Submenu_functionalityhas begun execution 
+2021-07-15 23:38:31,660 INFO  [Log] Software submenu option in the System Menu is clicked 
+2021-07-15 23:38:31,674 INFO  [Log] User navigated to correct page i.e. the Software page 
+2021-07-15 23:38:34,933 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:34,934 INFO  [Log] TC21_fnCheck_LandingPage_SystemMenu_Software_Submenu_functionalityhas completed execution 
+2021-07-15 23:38:35,354 INFO  [Log] User not on landing page 
+2021-07-15 23:38:35,674 INFO  [Log] User navigating to landing page 
+2021-07-15 23:38:35,678 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:35,678 INFO  [Log] TC22_fnCheck_LandingPage_SystemMenu_PhonesandPDAs_Submenu_functionalityhas begun execution 
+2021-07-15 23:38:36,193 INFO  [Log] Phones & PDAs submenu option in the System Menu is clicked 
+2021-07-15 23:38:36,213 INFO  [Log] User navigated to correct page i.e. the Phones & PDAs page 
+2021-07-15 23:38:39,450 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:39,450 INFO  [Log] TC22_fnCheck_LandingPage_SystemMenu_PhonesandPDAs_Submenu_functionalityhas completed execution 
+2021-07-15 23:38:39,850 INFO  [Log] User not on landing page 
+2021-07-15 23:38:40,236 INFO  [Log] User navigating to landing page 
+2021-07-15 23:38:40,243 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:40,243 INFO  [Log] TC23_fnCheck_LandingPage_SystemMenu_Cameras_Submenu_functionalityhas begun execution 
+2021-07-15 23:38:40,702 INFO  [Log] Cameras submenu option in the System Menu is clicked 
+2021-07-15 23:38:40,715 INFO  [Log] User navigated to correct page i.e. the Cameras page 
+2021-07-15 23:38:43,979 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:43,979 INFO  [Log] TC23_fnCheck_LandingPage_SystemMenu_Cameras_Submenu_functionalityhas completed execution 
+2021-07-15 23:38:45,301 INFO  [Log] User on Register Account page 
+2021-07-15 23:38:45,304 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:45,304 INFO  [Log] TC20_fnCheck_RegisterAccount_Page_titlehas begun execution 
+2021-07-15 23:38:45,440 INFO  [Log] Page title is being displyed correctly 
+2021-07-15 23:38:48,647 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:48,647 INFO  [Log] TC20_fnCheck_RegisterAccount_Page_titlehas completed execution 
+2021-07-15 23:38:49,039 INFO  [Log] User on Register Account page 
+2021-07-15 23:38:49,042 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:49,042 INFO  [Log] TC21_fnCheck_RegisterAccount_Page_Home_menuhas begun execution 
+2021-07-15 23:38:49,183 INFO  [Log] Home menu is being displyed correctly 
+2021-07-15 23:38:52,460 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:52,460 INFO  [Log] TC21_fnCheck_RegisterAccount_Page_Home_menuhas completed execution 
+2021-07-15 23:38:52,875 INFO  [Log] User on Register Account page 
+2021-07-15 23:38:52,881 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:52,881 INFO  [Log] TC22_fnCheck_RegisterAccount_Page_Home_menu_functionalityhas begun execution 
+2021-07-15 23:38:53,423 INFO  [Log] User navigated to Landing page upon clicking on Home menu 
+2021-07-15 23:38:56,734 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:56,734 INFO  [Log] TC22_fnCheck_RegisterAccount_Page_Home_menu_functionalityhas completed execution 
+2021-07-15 23:38:57,145 INFO  [Log] User not on RegisterAccount page 
+2021-07-15 23:38:57,474 INFO  [Log] User now navigated to Register Account page 
+2021-07-15 23:38:57,478 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:38:57,479 INFO  [Log] TC23_fnCheck_RegisterAccount_Page_Account_menuhas begun execution 
+2021-07-15 23:38:57,623 INFO  [Log] Account menu is being displyed correctly 
+2021-07-15 23:39:00,829 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:00,829 INFO  [Log] TC23_fnCheck_RegisterAccount_Page_Account_menuhas completed execution 
+2021-07-15 23:39:01,207 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:01,209 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:01,209 INFO  [Log] TC24_fnCheck_RegisterAccount_Page_Account_menu_functionalityhas begun execution 
+2021-07-15 23:39:01,709 INFO  [Log] User navigated to Login page upon clicking on Account menu 
+2021-07-15 23:39:04,888 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:04,888 INFO  [Log] TC24_fnCheck_RegisterAccount_Page_Account_menu_functionalityhas completed execution 
+2021-07-15 23:39:05,253 INFO  [Log] User not on RegisterAccount page 
+2021-07-15 23:39:05,516 INFO  [Log] User now navigated to Register Account page 
+2021-07-15 23:39:05,520 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:05,521 INFO  [Log] TC25_fnCheck_RegisterAccount_Page_Register_menuhas begun execution 
+2021-07-15 23:39:05,641 INFO  [Log] Register menu is being displyed correctly 
+2021-07-15 23:39:08,894 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:08,894 INFO  [Log] TC25_fnCheck_RegisterAccount_Page_Register_menuhas completed execution 
+2021-07-15 23:39:09,331 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:09,334 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:09,334 INFO  [Log] TC26_fnCheck_RegisterAccount_Page_Home_menu_functionalityhas begun execution 
+2021-07-15 23:39:09,719 INFO  [Log] User navigated to Register Account page upon clicking on Register menu 
+2021-07-15 23:39:12,921 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:12,921 INFO  [Log] TC26_fnCheck_RegisterAccount_Page_Home_menu_functionalityhas completed execution 
+2021-07-15 23:39:13,315 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:13,317 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:13,317 INFO  [Log] TC27_fnCheck_RegisterAccount_Page_RegisterAccount_msghas begun execution 
+2021-07-15 23:39:13,437 INFO  [Log] Register Account message getting displayed 
+2021-07-15 23:39:16,636 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:16,636 INFO  [Log] TC27_fnCheck_RegisterAccount_Page_RegisterAccount_msghas completed execution 
+2021-07-15 23:39:16,969 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:16,971 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:16,971 INFO  [Log] TC28_fnCheck_RegisterAccount_Page_LoginPage_Linkhas begun execution 
+2021-07-15 23:39:17,095 INFO  [Log] Login Page link getting displayed 
+2021-07-15 23:39:20,378 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:20,379 INFO  [Log] TC28_fnCheck_RegisterAccount_Page_LoginPage_Linkhas completed execution 
+2021-07-15 23:39:20,784 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:20,786 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:20,786 INFO  [Log] TC29_fnCheck_RegisterAccount_Page_LoginPage_Link_functionalityhas begun execution 
+2021-07-15 23:39:21,212 INFO  [Log] User navigated to Login page upon clicking on Login Page link 
+2021-07-15 23:39:24,419 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:24,419 INFO  [Log] TC29_fnCheck_RegisterAccount_Page_LoginPage_Link_functionalityhas completed execution 
+2021-07-15 23:39:24,783 INFO  [Log] User not on RegisterAccount page 
+2021-07-15 23:39:25,384 INFO  [Log] User now navigated to Register Account page 
+2021-07-15 23:39:25,386 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:25,387 INFO  [Log] TC30_fnCheck_RegisterAccount_Page_PersonalDetails_sectionhas begun execution 
+2021-07-15 23:39:25,464 INFO  [Log] Personal Details section getting displayed 
+2021-07-15 23:39:28,826 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:28,826 INFO  [Log] TC30_fnCheck_RegisterAccount_Page_PersonalDetails_sectionhas completed execution 
+2021-07-15 23:39:29,229 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:29,231 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:29,231 INFO  [Log] TC31_fnCheck_RegisterAccount_Page_PersonalDetails_section_Headerhas begun execution 
+2021-07-15 23:39:29,350 INFO  [Log] Personal Details section header getting displayed 
+2021-07-15 23:39:32,565 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:32,565 INFO  [Log] TC31_fnCheck_RegisterAccount_Page_PersonalDetails_section_Headerhas completed execution 
+2021-07-15 23:39:32,948 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:32,952 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:32,953 INFO  [Log] TC32_fnCheck_RegisterAccount_Page_PersonalDetails_section_FirstName_labelhas begun execution 
+2021-07-15 23:39:33,064 INFO  [Log] First Name field label in Personal Details section getting displayed 
+2021-07-15 23:39:36,260 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:36,260 INFO  [Log] TC32_fnCheck_RegisterAccount_Page_PersonalDetails_section_FirstName_labelhas completed execution 
+2021-07-15 23:39:36,609 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:36,618 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:36,618 INFO  [Log] TC33_fnCheck_RegisterAccount_Page_PersonalDetails_section_FirstName_fieldhas begun execution 
+2021-07-15 23:39:36,726 INFO  [Log] First Name field in Personal Details section getting displayed 
+2021-07-15 23:39:39,927 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:39,927 INFO  [Log] TC33_fnCheck_RegisterAccount_Page_PersonalDetails_section_FirstName_fieldhas completed execution 
+2021-07-15 23:39:40,344 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:40,346 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:40,346 INFO  [Log] TC34_fnCheck_RegisterAccount_Page_PersonalDetails_section_LastName_labelhas begun execution 
+2021-07-15 23:39:40,457 INFO  [Log] Last Name field label in Personal Details section getting displayed 
+2021-07-15 23:39:43,701 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:43,701 INFO  [Log] TC34_fnCheck_RegisterAccount_Page_PersonalDetails_section_LastName_labelhas completed execution 
+2021-07-15 23:39:44,058 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:44,060 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:44,060 INFO  [Log] TC35_fnCheck_RegisterAccount_Page_PersonalDetails_section_LastName_fieldhas begun execution 
+2021-07-15 23:39:44,165 INFO  [Log] Last Name field in Personal Details section getting displayed 
+2021-07-15 23:39:47,365 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:47,365 INFO  [Log] TC35_fnCheck_RegisterAccount_Page_PersonalDetails_section_LastName_fieldhas completed execution 
+2021-07-15 23:39:47,751 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:47,753 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:47,753 INFO  [Log] TC36_fnCheck_RegisterAccount_Page_PersonalDetails_section_Email_labelhas begun execution 
+2021-07-15 23:39:47,876 INFO  [Log] E-Mail field label in Personal Details section getting displayed 
+2021-07-15 23:39:51,129 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:51,129 INFO  [Log] TC36_fnCheck_RegisterAccount_Page_PersonalDetails_section_Email_labelhas completed execution 
+2021-07-15 23:39:51,467 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:51,468 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:51,468 INFO  [Log] TC37_fnCheck_RegisterAccount_Page_PersonalDetails_section_Email_fieldhas begun execution 
+2021-07-15 23:39:51,583 INFO  [Log] E-Mail field in Personal Details section getting displayed 
+2021-07-15 23:39:54,783 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:54,783 INFO  [Log] TC37_fnCheck_RegisterAccount_Page_PersonalDetails_section_Email_fieldhas completed execution 
+2021-07-15 23:39:55,131 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:55,132 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:55,132 INFO  [Log] TC38_fnCheck_RegisterAccount_Page_PersonalDetails_section_Telephone_labelhas begun execution 
+2021-07-15 23:39:55,245 INFO  [Log] Telephone field label in Personal Details section getting displayed 
+2021-07-15 23:39:58,473 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:58,473 INFO  [Log] TC38_fnCheck_RegisterAccount_Page_PersonalDetails_section_Telephone_labelhas completed execution 
+2021-07-15 23:39:58,831 INFO  [Log] User on Register Account page 
+2021-07-15 23:39:58,832 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:39:58,832 INFO  [Log] TC39_fnCheck_RegisterAccount_Page_PersonalDetails_section_Telephone_fieldhas begun execution 
+2021-07-15 23:39:58,951 INFO  [Log] Telephone field in Personal Details section getting displayed 
+2021-07-15 23:40:02,116 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:02,116 INFO  [Log] TC39_fnCheck_RegisterAccount_Page_PersonalDetails_section_Telephone_fieldhas completed execution 
+2021-07-15 23:40:02,509 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:02,511 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:02,511 INFO  [Log] TC40_fnCheck_RegisterAccount_Page_YourPassword_sectionhas begun execution 
+2021-07-15 23:40:02,569 INFO  [Log] Your Password section getting displayed 
+2021-07-15 23:40:05,769 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:05,769 INFO  [Log] TC40_fnCheck_RegisterAccount_Page_YourPassword_sectionhas completed execution 
+2021-07-15 23:40:06,107 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:06,110 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:06,110 INFO  [Log] TC41_fnCheck_RegisterAccount_Page_YourPassword_section_Headerhas begun execution 
+2021-07-15 23:40:06,249 INFO  [Log] Your Password section header getting displayed 
+2021-07-15 23:40:09,460 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:09,460 INFO  [Log] TC41_fnCheck_RegisterAccount_Page_YourPassword_section_Headerhas completed execution 
+2021-07-15 23:40:09,840 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:09,842 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:09,842 INFO  [Log] TC42_fnCheck_RegisterAccount_Page_YourPassword_section_Password_labelhas begun execution 
+2021-07-15 23:40:09,976 INFO  [Log] Password field label in Your Password section getting displayed 
+2021-07-15 23:40:13,166 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:13,166 INFO  [Log] TC42_fnCheck_RegisterAccount_Page_YourPassword_section_Password_labelhas completed execution 
+2021-07-15 23:40:13,634 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:13,635 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:13,636 INFO  [Log] TC43_fnCheck_RegisterAccount_Page_YourPassword_section_Password_fieldhas begun execution 
+2021-07-15 23:40:13,788 INFO  [Log] Password field in Your Password section getting displayed 
+2021-07-15 23:40:17,022 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:17,022 INFO  [Log] TC43_fnCheck_RegisterAccount_Page_YourPassword_section_Password_fieldhas completed execution 
+2021-07-15 23:40:17,405 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:17,407 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:17,407 INFO  [Log] TC44_fnCheck_RegisterAccount_Page_YourPassword_section_ConfirmPassword_labelhas begun execution 
+2021-07-15 23:40:17,559 INFO  [Log] Confirm Password field label in Your Password section getting displayed 
+2021-07-15 23:40:20,745 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:20,745 INFO  [Log] TC44_fnCheck_RegisterAccount_Page_YourPassword_section_ConfirmPassword_labelhas completed execution 
+2021-07-15 23:40:21,093 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:21,094 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:21,094 INFO  [Log] TC45_fnCheck_RegisterAccount_Page_YourPassword_section_ConfirmPassword_fieldhas begun execution 
+2021-07-15 23:40:21,237 INFO  [Log] Password field in Your Password section getting displayed 
+2021-07-15 23:40:24,413 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:24,413 INFO  [Log] TC45_fnCheck_RegisterAccount_Page_YourPassword_section_ConfirmPassword_fieldhas completed execution 
+2021-07-15 23:40:24,783 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:24,788 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:24,788 INFO  [Log] TC46_fnCheck_RegisterAccount_Page_Newsletter_sectionhas begun execution 
+2021-07-15 23:40:24,863 INFO  [Log] Newsletter section getting displayed 
+2021-07-15 23:40:28,125 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:28,125 INFO  [Log] TC46_fnCheck_RegisterAccount_Page_Newsletter_sectionhas completed execution 
+2021-07-15 23:40:28,530 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:28,531 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:28,531 INFO  [Log] TC47_fnCheck_RegisterAccount_Page_Newsletter_section_Headerhas begun execution 
+2021-07-15 23:40:28,669 INFO  [Log] Newsletter section header getting displayed 
+2021-07-15 23:40:31,873 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:31,873 INFO  [Log] TC47_fnCheck_RegisterAccount_Page_Newsletter_section_Headerhas completed execution 
+2021-07-15 23:40:32,207 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:32,210 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:32,210 INFO  [Log] TC48_fnCheck_RegisterAccount_Page_Newsletter_section_Subscribe_labelhas begun execution 
+2021-07-15 23:40:32,347 INFO  [Log] Subscribe field label in Newsletter section getting displayed 
+2021-07-15 23:40:35,544 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:35,544 INFO  [Log] TC48_fnCheck_RegisterAccount_Page_Newsletter_section_Subscribe_labelhas completed execution 
+2021-07-15 23:40:35,938 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:35,940 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:35,940 INFO  [Log] TC49_fnCheck_RegisterAccount_Subscribe_Radiobutton_optionshas begun execution 
+2021-07-15 23:40:36,125 INFO  [Log] Both arrays are equal 
+2021-07-15 23:40:36,125 INFO  [Log] All Subscribe radio button options are getting correctly displayed 
+2021-07-15 23:40:39,311 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:39,312 INFO  [Log] TC49_fnCheck_RegisterAccount_Subscribe_Radiobutton_optionshas completed execution 
+2021-07-15 23:40:39,702 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:39,705 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:39,705 INFO  [Log] TC50_fnCheck_RegisterAccount_Page_PrivacyPolicy_texthas begun execution 
+2021-07-15 23:40:39,835 INFO  [Log] Privacy Policy text getting displayed 
+2021-07-15 23:40:43,048 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:43,048 INFO  [Log] TC50_fnCheck_RegisterAccount_Page_PrivacyPolicy_texthas completed execution 
+2021-07-15 23:40:43,439 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:43,441 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:43,441 INFO  [Log] TC51_fnCheck_RegisterAccount_Page_PrivacyPolicy_linkhas begun execution 
+2021-07-15 23:40:43,573 INFO  [Log] Privacy Policy link getting displayed 
+2021-07-15 23:40:46,835 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:46,835 INFO  [Log] TC51_fnCheck_RegisterAccount_Page_PrivacyPolicy_linkhas completed execution 
+2021-07-15 23:40:47,221 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:47,222 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:47,222 INFO  [Log] TC52_fnCheck_RegisterAccount_Page_PrivacyPolicy_Link_functionalityhas begun execution 
+2021-07-15 23:40:47,580 INFO  [Log] Privacy Policy modal dialog box opens up 
+2021-07-15 23:40:50,818 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:50,818 INFO  [Log] TC52_fnCheck_RegisterAccount_Page_PrivacyPolicy_Link_functionalityhas completed execution 
+2021-07-15 23:40:51,193 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:51,195 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:51,195 INFO  [Log] TC53_fnCheck_RegisterAccount_Page_PrivacyPolicy_Modal_headerhas begun execution 
+2021-07-15 23:40:51,496 INFO  [Log] Privacy Policy modal header getting displayed 
+2021-07-15 23:40:54,697 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:54,697 INFO  [Log] TC53_fnCheck_RegisterAccount_Page_PrivacyPolicy_Modal_headerhas completed execution 
+2021-07-15 23:40:55,122 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:55,125 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:55,125 INFO  [Log] TC54_fnCheck_RegisterAccount_Page_PrivacyPolicy_Modal_body_contenthas begun execution 
+2021-07-15 23:40:55,502 INFO  [Log] Privacy Policy modal body content getting displayed 
+2021-07-15 23:40:58,769 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:58,769 INFO  [Log] TC54_fnCheck_RegisterAccount_Page_PrivacyPolicy_Modal_body_contenthas completed execution 
+2021-07-15 23:40:59,173 INFO  [Log] User on Register Account page 
+2021-07-15 23:40:59,175 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:40:59,175 INFO  [Log] TC55_fnCheck_RegisterAccount_Page_Right_MenuBarhas begun execution 
+2021-07-15 23:40:59,230 INFO  [Log] Register Account Page Right hand side Menu bar is being displyed 
+2021-07-15 23:41:02,407 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:02,407 INFO  [Log] TC55_fnCheck_RegisterAccount_Page_Right_MenuBarhas completed execution 
+2021-07-15 23:41:02,758 INFO  [Log] User on Register Account page 
+2021-07-15 23:41:02,760 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:02,760 INFO  [Log] TC56_fnCheck_RegisterAccount_Page_Right_MenuBar_Elementshas begun execution 
+2021-07-15 23:41:03,288 INFO  [Log] Both arrays are equal 
+2021-07-15 23:41:03,289 INFO  [Log] All Register Account page Right hand side Menu bar elements are getting correctly displayed 
+2021-07-15 23:41:06,602 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:06,602 INFO  [Log] TC56_fnCheck_RegisterAccount_Page_Right_MenuBar_Elementshas completed execution 
+2021-07-15 23:41:07,368 INFO  [Log] User on Login page 
+2021-07-15 23:41:07,370 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:07,370 INFO  [Log] TC55_fnCheck_Login_Page_Home_menuhas begun execution 
+2021-07-15 23:41:07,462 INFO  [Log] Home menu is being displyed correctly 
+2021-07-15 23:41:10,700 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:10,700 INFO  [Log] TC55_fnCheck_Login_Page_Home_menuhas completed execution 
+2021-07-15 23:41:11,029 INFO  [Log] User on Login page 
+2021-07-15 23:41:11,030 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:11,031 INFO  [Log] TC56_fnCheck_Login_Page_Home_menu_functionalityhas begun execution 
+2021-07-15 23:41:11,498 INFO  [Log] User navigated to Landing page upon clicking on Home menu 
+2021-07-15 23:41:14,795 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:14,795 INFO  [Log] TC56_fnCheck_Login_Page_Home_menu_functionalityhas completed execution 
+2021-07-15 23:41:15,225 INFO  [Log] User not on Login page 
+2021-07-15 23:41:15,449 INFO  [Log] User navigated to Login page 
+2021-07-15 23:41:15,452 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:15,452 INFO  [Log] TC57_fnCheck_Login_Page_Account_menuhas begun execution 
+2021-07-15 23:41:15,552 INFO  [Log] Account menu is being displyed correctly 
+2021-07-15 23:41:18,737 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:18,737 INFO  [Log] TC57_fnCheck_Login_Page_Account_menuhas completed execution 
+2021-07-15 23:41:19,109 INFO  [Log] User on Login page 
+2021-07-15 23:41:19,111 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:19,111 INFO  [Log] TC58_fnCheck_Login_Page_Account_menu_functionalityhas begun execution 
+2021-07-15 23:41:19,554 INFO  [Log] User navigated to Login page upon clicking on Account menu 
+2021-07-15 23:41:22,755 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:22,755 INFO  [Log] TC58_fnCheck_Login_Page_Account_menu_functionalityhas completed execution 
+2021-07-15 23:41:23,118 INFO  [Log] User on Login page 
+2021-07-15 23:41:23,120 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:23,120 INFO  [Log] TC59_fnCheck_Login_Page_Login_menuhas begun execution 
+2021-07-15 23:41:23,208 INFO  [Log] Login menu is being displyed correctly 
+2021-07-15 23:41:26,507 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:26,507 INFO  [Log] TC59_fnCheck_Login_Page_Login_menuhas completed execution 
+2021-07-15 23:41:26,795 INFO  [Log] User on Login page 
+2021-07-15 23:41:26,798 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:26,798 INFO  [Log] TC60_fnCheck_Login_Page_Home_menu_functionalityhas begun execution 
+2021-07-15 23:41:27,179 INFO  [Log] User navigated to Login page upon clicking on Login menu 
+2021-07-15 23:41:30,368 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:30,368 INFO  [Log] TC60_fnCheck_Login_Page_Home_menu_functionalityhas completed execution 
+2021-07-15 23:41:30,703 INFO  [Log] User on Login page 
+2021-07-15 23:41:30,705 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:30,705 INFO  [Log] TC61_fnCheck_Login_Page_NewCustomer_sectionhas begun execution 
+2021-07-15 23:41:30,747 INFO  [Log] New Customer section getting displayed 
+2021-07-15 23:41:33,991 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:33,991 INFO  [Log] TC61_fnCheck_Login_Page_NewCustomer_sectionhas completed execution 
+2021-07-15 23:41:34,360 INFO  [Log] User on Login page 
+2021-07-15 23:41:34,362 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:34,362 INFO  [Log] TC62_fnCheck_Login_Page_NewCustomer_section_headerhas begun execution 
+2021-07-15 23:41:34,452 INFO  [Log] New Customer section header getting displayed 
+2021-07-15 23:41:37,667 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:37,667 INFO  [Log] TC62_fnCheck_Login_Page_NewCustomer_section_headerhas completed execution 
+2021-07-15 23:41:37,975 INFO  [Log] User on Login page 
+2021-07-15 23:41:37,977 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:37,977 INFO  [Log] TC63_fnCheck_Login_Page_NewCustomer_section_RegisterAccount_labelhas begun execution 
+2021-07-15 23:41:38,082 INFO  [Log] New Customer section Register Account label getting displayed 
+2021-07-15 23:41:41,250 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:41,250 INFO  [Log] TC63_fnCheck_Login_Page_NewCustomer_section_RegisterAccount_labelhas completed execution 
+2021-07-15 23:41:41,583 INFO  [Log] User on Login page 
+2021-07-15 23:41:41,585 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:41,585 INFO  [Log] TC64_fnCheck_Login_Page_NewCustomer_section_texthas begun execution 
+2021-07-15 23:41:41,684 INFO  [Log] New Customer section text getting displayed 
+2021-07-15 23:41:44,891 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:44,891 INFO  [Log] TC64_fnCheck_Login_Page_NewCustomer_section_texthas completed execution 
+2021-07-15 23:41:45,234 INFO  [Log] User on Login page 
+2021-07-15 23:41:45,236 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:45,236 INFO  [Log] TC65_fnCheck_Login_Page_NewCustomer_section_Continue_buttonhas begun execution 
+2021-07-15 23:41:45,331 INFO  [Log] Continue button in New Customer section getting displayed 
+2021-07-15 23:41:48,589 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:48,589 INFO  [Log] TC65_fnCheck_Login_Page_NewCustomer_section_Continue_buttonhas completed execution 
+2021-07-15 23:41:48,936 INFO  [Log] User on Login page 
+2021-07-15 23:41:48,937 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:48,938 INFO  [Log] TC66_fnCheck_Login_Page_NewCustomer_section_Continue_button_functionalityhas begun execution 
+2021-07-15 23:41:49,348 INFO  [Log] User navigated to Register Account page upon clicking on Continue button 
+2021-07-15 23:41:52,545 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:52,546 INFO  [Log] TC66_fnCheck_Login_Page_NewCustomer_section_Continue_button_functionalityhas completed execution 
+2021-07-15 23:41:52,936 INFO  [Log] User not on Login page 
+2021-07-15 23:41:53,150 INFO  [Log] User navigated to Login page 
+2021-07-15 23:41:53,152 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:53,152 INFO  [Log] TC67_fnCheck_Login_Page_Right_MenuBarhas begun execution 
+2021-07-15 23:41:53,213 INFO  [Log] Login Page Right hand side Menu bar is being displyed 
+2021-07-15 23:41:56,412 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:56,412 INFO  [Log] TC67_fnCheck_Login_Page_Right_MenuBarhas completed execution 
+2021-07-15 23:41:56,738 INFO  [Log] User on Login page 
+2021-07-15 23:41:56,740 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:41:56,740 INFO  [Log] TC68_fnCheck_Login_Page_Right_MenuBar_Elementshas begun execution 
+2021-07-15 23:41:57,322 INFO  [Log] Both arrays are equal 
+2021-07-15 23:41:57,322 INFO  [Log] All Login page Right hand side Menu bar elements are getting correctly displayed 
+2021-07-15 23:42:00,528 INFO  [Log] **************************************************************************************** 
+2021-07-15 23:42:00,528 INFO  [Log] TC68_fnCheck_Login_Page_Right_MenuBar_Elementshas completed execution 

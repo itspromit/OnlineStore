@@ -185,6 +185,18 @@ import utility.Utils;
         @FindBy(xpath="//h5[text()='My Account']/parent::div/descendant::a")
         public List<WebElement> MyAccount_section_menu_items;
         
+        @FindBy(xpath="//div[@class='swiper-button-next']")
+        public WebElement Swipe_button_Next;
+        
+        @FindBy(xpath="//div[@class='swiper-button-prev']")
+        public WebElement Swipe_button_Previous;
+        
+        @FindBy(xpath="//div[@class='swiper-viewport']")
+        public WebElement Swipe_Content_Box;
+        
+        @FindBy(xpath="//div[@class='swiper-pagination slideshow0 swiper-pagination-clickable swiper-pagination-bullets']/descendant::span")
+        public List<WebElement> SwipeContent_Box_Bullet_options;
+        
         public Landing_Page(WebDriver driver) {
         	
         	PageFactory.initElements(driver, this);
@@ -193,6 +205,3 @@ import utility.Utils;
         
     }
     
-  //*[@id="menu"]/div[2]/ul/li[1]/a
-  //*[@id="menu"]/div[2]/ul/li[1]/div
-  //*[@id="menu"]/div[2]/ul/li[1]/div/div/ul

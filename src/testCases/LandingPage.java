@@ -1145,5 +1145,120 @@ public class LandingPage {
 		}
 	}
 
+	@Test
+	public void TC24_fnCheck_LandingPage_Swiper_Content_Box() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Swipe_Content_Box)) {
+				    Result = true;
+					Log.info("Swiper Content box is getting displayed");
+					Test.log(LogStatus.PASS, "Swiper Content box is getting displayed");			
+			} else {
+				Result = false;
+				Log.info("Swiper Content box is not getting displayed");
+				Test.log(LogStatus.FAIL, "Swiper Content box is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						LP.Swipe_Content_Box);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.Swipe_Content_Box);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+	
+	@Test
+	public void TC25_fnCheck_LandingPage_Swiper_Content_Box_Next_button() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Swipe_Content_Box)) {
+				if(CommonFunctionandEvents.fnMenuHover(driver, LP.Swipe_Content_Box)) {
+					Test.log(LogStatus.PASS, "Mouse is hovered over the Swiper Content box ");
+					if(CommonFunctionandEvents.fnIsElementDisplayed(LP.Swipe_button_Next)) {
+				    Result = true;
+					Log.info("Next button within Swiper Content box is getting displayed");
+					Test.log(LogStatus.PASS, "Next button within Swiper Content box is getting displayed");
+				}
+					else {
+						Result = false;
+						Log.info("Next button within Swiper Content box is not getting displayed");
+						Test.log(LogStatus.FAIL, "Next button within Swiper Content box is not getting displayed");
+					}
+				}
+				else {
+					Result = false;
+					Log.info("Swiper Content box is not hoverable");
+					Test.log(LogStatus.FAIL, "Swiper Content box is not hoverable");
+				}
+					
+			} else {
+				Result = false;
+				Log.info("Swiper Content box is not getting displayed");
+				Test.log(LogStatus.FAIL, "Swiper Content box is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						LP.Swipe_button_Next);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.Swipe_Content_Box);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC26_fnCheck_LandingPage_Swiper_Content_Box_Previous_button() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Swipe_Content_Box)) {
+				if(CommonFunctionandEvents.fnMenuHover(driver, LP.Swipe_Content_Box)) {
+					Test.log(LogStatus.PASS, "Mouse is hovered over the Swiper Content box ");
+					if(CommonFunctionandEvents.fnIsElementDisplayed(LP.Swipe_button_Previous)) {
+				    Result = true;
+					Log.info("Previous button within Swiper Content box is getting displayed");
+					Test.log(LogStatus.PASS, "Previous button within Swiper Content box is getting displayed");
+				}
+					else {
+						Result = false;
+						Log.info("Previous button within Swiper Content box is not getting displayed");
+						Test.log(LogStatus.FAIL, "Previous button within Swiper Content box is not getting displayed");
+					}
+				}
+				else {
+					Result = false;
+					Log.info("Swiper Content box is not hoverable");
+					Test.log(LogStatus.FAIL, "Swiper Content box is not hoverable");
+				}
+					
+			} else {
+				Result = false;
+				Log.info("Swiper Content box is not getting displayed");
+				Test.log(LogStatus.FAIL, "Swiper Content box is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						LP.Swipe_button_Previous);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.Swipe_Content_Box);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
 
 }
