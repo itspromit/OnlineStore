@@ -10,19 +10,28 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utils {
 	public static WebDriver existing_driver;
 		
-	public static WebDriver OpenBrowser(WebDriver driver) throws Exception{
+	public static WebDriver OpenBrowser(WebDriver driver, String sBrowserName) throws Exception{
 		try{
-		//sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
-		//if(sBrowserName.equals("Chrome")){
+		
+		if(sBrowserName.equals("Chrome")){
+			
 			System.setProperty("webdriver.chrome.driver", "src\\Resources\\chromedriver.exe");
 			driver = new ChromeDriver();
+		}
+		else if(sBrowserName.equals("Firefox")) {
+			System.setProperty("webdriver.gecko.driver", "src\\Resources\\geckodriver.exe");
+			driver = new FirefoxDriver();
+		}
 			Log.info("New driver instantiated");
 			System.out.println("New driver instantiated");
 		    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

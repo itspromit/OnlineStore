@@ -23,10 +23,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+import org.testng.annotations.Parameters;
 
 //import utility.CommonFunctionandEvents;
 //import utility.ExtentManager;
 import utility.*;
+
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -46,14 +48,16 @@ public class LandingPage {
 	String Str;
 	String[] S;
 	String[][] Excel_data;
-
+	
+	
+	
 	@BeforeSuite
 	public void fnCheckforActiveBrowser() {
 		try {
 			Report = ExtentManager.getInstance();
 			Report_old = Report;
 			DOMConfigurator.configure("log4j.xml");
-			driver = Utils.OpenBrowser(driver);
+			driver = Utils.OpenBrowser(driver,"Chrome");
 
 		} catch (Exception e) {
 			String Ex = e.toString();

@@ -4,10 +4,11 @@
 	<listeners>
 		<listener class-name="utility.Listener"></listener>
 	</listeners>
+	
 	<test name="Random Test">
 		<classes>
 			<class name="testCases.LandingPage" />
 			<class name="testCases.Registration" />
 		</classes>
-	</test> <!-- Test -->
+	</test> <!-- Test -->	
 </suite> <!-- Suite --> 
