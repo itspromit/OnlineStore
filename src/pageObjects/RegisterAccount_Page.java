@@ -134,6 +134,7 @@ public class RegisterAccount_Page extends Landing_Page {
 	
 	@FindBy(xpath="//aside[@id='column-right']/descendant::a")
 	public List<WebElement> Right_Menubar_items;
+
 	
 	
 	

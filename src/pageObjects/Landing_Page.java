@@ -71,14 +71,14 @@ import utility.Utils;
         public WebElement Search_txtbox;
         
         
-        @FindBy(xpath="//button[@class='form-control input-lg']")
+        @FindBy(xpath="//button[@class='btn btn-default btn-lg']")
         public WebElement Search_button;
         
         @FindBy(id="cart")
         public WebElement Cart;
         
         @FindBy(xpath="//div[@class='collapse navbar-collapse navbar-ex1-collapse']")
-        public WebElement Menu_bar;
+        public WebElement SystemMenu_bar;
         
         @FindBy(xpath="//a[text()='Desktops']/following-sibling::div[1]")
         public WebElement Desktop_dropdown;
@@ -93,7 +93,7 @@ import utility.Utils;
         public WebElement MP3Players_dropdown;
         
         @FindBy(xpath="//div[@class='collapse navbar-collapse navbar-ex1-collapse']/child::ul/child::li")
-        public List<WebElement> Menu_bar_elements;
+        public List<WebElement> SystemMenu_bar_elements;
         
         @FindBy(xpath="//a[text()='Desktops']/following-sibling::div[1]/descendant::a")
         public List<WebElement> Desktop_dropdown_elements;
@@ -185,6 +185,26 @@ import utility.Utils;
         @FindBy(xpath="//h5[text()='My Account']/parent::div/descendant::a")
         public List<WebElement> MyAccount_section_menu_items;
         
+        @FindBy(xpath="//div[@class='swiper-button-next']")
+        public WebElement Swipe_button_Next;
+        
+        @FindBy(xpath="//div[@class='swiper-button-prev']")
+        public WebElement Swipe_button_Previous;
+        
+        @FindBy(xpath="//div[@class='swiper-viewport']")
+        public WebElement Swipe_Content_Box;
+        
+        @FindBy(xpath="//div[@class='swiper-pagination slideshow0 swiper-pagination-clickable swiper-pagination-bullets']")
+        public WebElement SwipeContent_Box_Bullet_options_menu;
+        
+        @FindBy(xpath="//div[@class='swiper-pagination slideshow0 swiper-pagination-clickable swiper-pagination-bullets']/descendant::span")
+        public List<WebElement> SwipeContent_Box_Bullet_options;
+        
+        @FindBy(xpath="//img[@alt='iPhone 6']")
+        public WebElement Swipe_Content_Box_IPhone_image;
+        
+        @FindBy(xpath="//img[@alt='MacBookAir']")
+        public WebElement Swipe_Content_Box_MacBook_image;
         public Landing_Page(WebDriver driver) {
         	
         	PageFactory.initElements(driver, this);
@@ -193,6 +213,3 @@ import utility.Utils;
         
     }
     
-  //*[@id="menu"]/div[2]/ul/li[1]/a
-  //*[@id="menu"]/div[2]/ul/li[1]/div
-  //*[@id="menu"]/div[2]/ul/li[1]/div/div/ul

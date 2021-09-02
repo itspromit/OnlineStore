@@ -237,7 +237,7 @@ public class LandingPage {
 	@Test
 	public void TC02_fnCheck_LandingPage_SystemMenu() {
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Menu_bar)) {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.SystemMenu_bar)) {
 				Result = true;
 				Log.info("Menu bar is being displyed");
 				Test.log(LogStatus.PASS, "Menu bar is being displyed");
@@ -250,10 +250,11 @@ public class LandingPage {
 			if (Result) {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
-						LP.Menu_bar);
+						LP.SystemMenu_bar);
 			} else {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", LP.Menu_bar);
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.SystemMenu_bar);
 			}
 
 			Assert.assertEquals(Result, true);
@@ -268,9 +269,9 @@ public class LandingPage {
 	public void TC03_fnCheck_LandingPage_SystemMenu_Elements() {
 		String[] S1 = null;
 		try {
-			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Menu_bar)) {
-				if (CommonFunctionandEvents
-						.fnValidateArray(CommonFunctionandEvents.fncreateArray_Elements(LP.Menu_bar_elements, S1), S)) {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.SystemMenu_bar)) {
+				if (CommonFunctionandEvents.fnValidateArray(
+						CommonFunctionandEvents.fncreateArray_Elements(LP.SystemMenu_bar_elements, S1), S)) {
 					Result = true;
 					Log.info("All System Menu bar elements are getting correctly displayed");
 					Test.log(LogStatus.PASS, "All System Menu bar elements are getting correctly displayed");
@@ -288,10 +289,11 @@ public class LandingPage {
 			if (Result == true) {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
 						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
-						LP.Menu_bar);
+						LP.SystemMenu_bar);
 			} else {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
-						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');", LP.Menu_bar);
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.SystemMenu_bar);
 			}
 
 			Assert.assertEquals(Result, true);
@@ -973,6 +975,389 @@ public class LandingPage {
 				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
 						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
 						LP.MP3Players_menu);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC20_fnCheck_LandingPage_SystemMenu_Tablets_Submenu_functionality() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Tablets_menu)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.Tablets_menu)) {
+					Log.info("Tablets submenu option in the System Menu is clicked");
+					Test.log(LogStatus.INFO, "Tablets submenu option in the System Menu is clicked");
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
+						Result = true;
+						Log.info("User navigated to correct page i.e. the Tablets page");
+						Test.log(LogStatus.PASS, "User navigated to correct page i.e. the Tablets page");
+					} else {
+						Result = false;
+						Log.info("User navigated to incorrect page");
+						Test.log(LogStatus.FAIL, "User navigated to incorrect page");
+					}
+				} else {
+					Result = false;
+					Log.info("Tablets submenu option in System Menu is not clickable");
+					Test.log(LogStatus.FAIL, "Tablets submenu option in System Menu is not clickable");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Tablets submenu option in System Menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Tablets submenu option in System Menu is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC21_fnCheck_LandingPage_SystemMenu_Software_Submenu_functionality() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Software_menu)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.Software_menu)) {
+					Log.info("Software submenu option in the System Menu is clicked");
+					Test.log(LogStatus.INFO, "Software submenu option in the System Menu is clicked");
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
+						Result = true;
+						Log.info("User navigated to correct page i.e. the Software page");
+						Test.log(LogStatus.PASS, "User navigated to correct page i.e. the Software page");
+					} else {
+						Result = false;
+						Log.info("User navigated to incorrect page");
+						Test.log(LogStatus.FAIL, "User navigated to incorrect page");
+					}
+				} else {
+					Result = false;
+					Log.info("Software submenu option in System Menu is not clickable");
+					Test.log(LogStatus.FAIL, "Software submenu option in System Menu is not clickable");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Software submenu option in System Menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Software submenu option in System Menu is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC22_fnCheck_LandingPage_SystemMenu_PhonesandPDAs_Submenu_functionality() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.PhonesandPDAs_menu)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.PhonesandPDAs_menu)) {
+					Log.info("Phones & PDAs submenu option in the System Menu is clicked");
+					Test.log(LogStatus.INFO, "Phones & PDAs submenu option in the System Menu is clicked");
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
+						Result = true;
+						Log.info("User navigated to correct page i.e. the Phones & PDAs page");
+						Test.log(LogStatus.PASS, "User navigated to correct page i.e. the Phones & PDAs page");
+					} else {
+						Result = false;
+						Log.info("User navigated to incorrect page");
+						Test.log(LogStatus.FAIL, "User navigated to incorrect page");
+					}
+				} else {
+					Result = false;
+					Log.info("Phones & PDAs submenu option in System Menu is not clickable");
+					Test.log(LogStatus.FAIL, "Phones & PDAs submenu option in System Menu is not clickable");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Phones & PDAs submenu option in System Menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Phones & PDAs submenu option in System Menu is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC23_fnCheck_LandingPage_SystemMenu_Cameras_Submenu_functionality() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Cameras_menu)) {
+				if (CommonFunctionandEvents.fnCheckPresenceandClick(driver, LP.Cameras_menu)) {
+					Log.info("Cameras submenu option in the System Menu is clicked");
+					Test.log(LogStatus.INFO, "Cameras submenu option in the System Menu is clicked");
+					if (CommonFunctionandEvents.fnTextContains(driver.getTitle(), Str)) {
+						Result = true;
+						Log.info("User navigated to correct page i.e. the Cameras page");
+						Test.log(LogStatus.PASS, "User navigated to correct page i.e. the Cameras page");
+					} else {
+						Result = false;
+						Log.info("User navigated to incorrect page");
+						Test.log(LogStatus.FAIL, "User navigated to incorrect page");
+					}
+				} else {
+					Result = false;
+					Log.info("Phones & PDAs submenu option in System Menu is not clickable");
+					Test.log(LogStatus.FAIL, "Phones & PDAs submenu option in System Menu is not clickable");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Phones & PDAs submenu option in System Menu is not getting displayed");
+				Test.log(LogStatus.FAIL, "Phones & PDAs submenu option in System Menu is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'green';");
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver)
+						.executeScript("document.body.style.backgroundColor = 'red';");
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC24_fnCheck_LandingPage_Swiper_Content_Box() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Swipe_Content_Box)) {
+				Result = true;
+				Log.info("Swiper Content box is getting displayed");
+				Test.log(LogStatus.PASS, "Swiper Content box is getting displayed");
+			} else {
+				Result = false;
+				Log.info("Swiper Content box is not getting displayed");
+				Test.log(LogStatus.FAIL, "Swiper Content box is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						LP.Swipe_Content_Box);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.Swipe_Content_Box);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC25_fnCheck_LandingPage_Swiper_Content_Box_Next_button() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Swipe_Content_Box)) {
+				if (CommonFunctionandEvents.fnMenuHover(driver, LP.Swipe_Content_Box)) {
+					Test.log(LogStatus.PASS, "Mouse is hovered over the Swiper Content box ");
+					if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Swipe_button_Next)) {
+						Result = true;
+						Log.info("Next button within Swiper Content box is getting displayed");
+						Test.log(LogStatus.PASS, "Next button within Swiper Content box is getting displayed");
+					} else {
+						Result = false;
+						Log.info("Next button within Swiper Content box is not getting displayed");
+						Test.log(LogStatus.FAIL, "Next button within Swiper Content box is not getting displayed");
+					}
+				} else {
+					Result = false;
+					Log.info("Swiper Content box is not hoverable");
+					Test.log(LogStatus.FAIL, "Swiper Content box is not hoverable");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Swiper Content box is not getting displayed");
+				Test.log(LogStatus.FAIL, "Swiper Content box is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						LP.Swipe_button_Next);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.Swipe_Content_Box);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC26_fnCheck_LandingPage_Swiper_Content_Box_Previous_button() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Swipe_Content_Box)) {
+				if (CommonFunctionandEvents.fnMenuHover(driver, LP.Swipe_Content_Box)) {
+					Test.log(LogStatus.PASS, "Mouse is hovered over the Swiper Content box ");
+					if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Swipe_button_Previous)) {
+						Result = true;
+						Log.info("Previous button within Swiper Content box is getting displayed");
+						Test.log(LogStatus.PASS, "Previous button within Swiper Content box is getting displayed");
+					} else {
+						Result = false;
+						Log.info("Previous button within Swiper Content box is not getting displayed");
+						Test.log(LogStatus.FAIL, "Previous button within Swiper Content box is not getting displayed");
+					}
+				} else {
+					Result = false;
+					Log.info("Swiper Content box is not hoverable");
+					Test.log(LogStatus.FAIL, "Swiper Content box is not hoverable");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Swiper Content box is not getting displayed");
+				Test.log(LogStatus.FAIL, "Swiper Content box is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						LP.Swipe_button_Previous);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.Swipe_Content_Box);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC27_fnCheck_LandingPage_Swiper_Content_Box_Bullet_options() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Swipe_Content_Box)) {
+				if (CommonFunctionandEvents.fnIsElementDisplayed(LP.SwipeContent_Box_Bullet_options_menu)) {
+					Result = true;
+					Log.info("Bullet options below Swiper Content box is getting displayed");
+					Test.log(LogStatus.PASS, "Bullet options below Swiper Content box is getting displayed");
+				} else {
+					Result = false;
+					Log.info("Bullet options below Swiper Content box is not getting displayed");
+					Test.log(LogStatus.FAIL, "Bullet options below Swiper Content box is getting displayed");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Swiper Content box is not getting displayed");
+				Test.log(LogStatus.FAIL, "Swiper Content box is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						LP.SwipeContent_Box_Bullet_options_menu);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.SwipeContent_Box_Bullet_options_menu);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+
+	@Test
+	public void TC28_fnCheck_LandingPage_Swiper_Content_Box_FirstBullet_option_displaying_correct_image_onclick() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.SwipeContent_Box_Bullet_options_menu)) {
+				LP.SwipeContent_Box_Bullet_options.get(0).click();
+				if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Swipe_Content_Box_MacBook_image)) {
+					Result = true;
+					Log.info("MacBook Air image is getting displayed within Swipe Content box");
+					Test.log(LogStatus.PASS, "MacBook Air image is getting displayed within Swipe Content box");
+				} else {
+					Result = false;
+					Log.info("Incorrect image is getting displayed within Swipe Content box");
+					Test.log(LogStatus.FAIL, "Incorrect image is getting displayed within Swipe Content box");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Bullet options below Swiper Content box is not getting displayed");
+				Test.log(LogStatus.FAIL, "Bullet options below Swiper Content box is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						LP.Swipe_Content_Box_MacBook_image);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.Swipe_Content_Box);
+			}
+			Assert.assertEquals(Result, true);
+		} catch (Exception e) {
+			String Ex = e.toString();
+			System.out.println(Ex);
+		}
+	}
+	
+	@Test
+	public void TC29_fnCheck_LandingPage_Swiper_Content_Box_SecondBullet_option_displaying_correct_image_onclick() {
+		try {
+			if (CommonFunctionandEvents.fnIsElementDisplayed(LP.SwipeContent_Box_Bullet_options_menu)) {
+				LP.SwipeContent_Box_Bullet_options.get(1).click();
+				if (CommonFunctionandEvents.fnIsElementDisplayed(LP.Swipe_Content_Box_IPhone_image)) {
+					Result = true;
+					Log.info("IPhone image is getting displayed within Swipe Content box");
+					Test.log(LogStatus.PASS, "IPhone image is getting displayed within Swipe Content box");
+				} else {
+					Result = false;
+					Log.info("Incorrect image is getting displayed within Swipe Content box");
+					Test.log(LogStatus.FAIL, "Incorrect image is getting displayed within Swipe Content box");
+				}
+
+			} else {
+				Result = false;
+				Log.info("Bullet options below Swiper Content box is not getting displayed");
+				Test.log(LogStatus.FAIL, "Bullet options below Swiper Content box is not getting displayed");
+			}
+			if (Result == true) {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: green; border: 2px solid black;');",
+						LP.Swipe_Content_Box_IPhone_image);
+			} else {
+				CommonFunctionandEvents.JavaScript_Executor(driver).executeScript(
+						"arguments[0].setAttribute('style','background: red; border: 2px solid black;');",
+						LP.Swipe_Content_Box);
 			}
 			Assert.assertEquals(Result, true);
 		} catch (Exception e) {
