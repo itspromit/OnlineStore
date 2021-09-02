@@ -194,9 +194,17 @@ import utility.Utils;
         @FindBy(xpath="//div[@class='swiper-viewport']")
         public WebElement Swipe_Content_Box;
         
+        @FindBy(xpath="//div[@class='swiper-pagination slideshow0 swiper-pagination-clickable swiper-pagination-bullets']")
+        public WebElement SwipeContent_Box_Bullet_options_menu;
+        
         @FindBy(xpath="//div[@class='swiper-pagination slideshow0 swiper-pagination-clickable swiper-pagination-bullets']/descendant::span")
         public List<WebElement> SwipeContent_Box_Bullet_options;
         
+        @FindBy(xpath="//img[@alt='iPhone 6']")
+        public WebElement Swipe_Content_Box_IPhone_image;
+        
+        @FindBy(xpath="//img[@alt='MacBookAir']")
+        public WebElement Swipe_Content_Box_MacBook_image;
         public Landing_Page(WebDriver driver) {
         	
         	PageFactory.initElements(driver, this);
